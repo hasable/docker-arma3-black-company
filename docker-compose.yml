@@ -17,6 +17,7 @@ services:
       - EXILE_CONFIG_PASSWORD_COMMAND=jrcnlHB9xwqVlVueLlT6
     volumes:
       - /mnt/shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
+      - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
     networks:
       local:
         aliases:
