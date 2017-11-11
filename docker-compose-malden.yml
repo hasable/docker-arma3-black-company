@@ -1,0 +1,41 @@
+version: '3'
+services:
+  a3-exile-modded:
+    depends_on: 
+        - db
+    build: .
+    ports:
+      - "2302:2302/udp" 
+      - "2303:2303/udp" 
+      - "2304:2304/udp"
+      - "2305:2305/udp"
+    environment:
+      - EXILE_CONFIG_MISSION=Exile.Malden
+      - EXILE_DATABASE_HOST=database
+      - EXILE_DATABASE_NAME=maldendb
+      - EXILE_DATABASE_USER=maldenu
+      - EXILE_DATABASE_PASS=maldenpw
+      - EXILE_CONFIG_PASSWORD_COMMAND=jrcnlHB9xwqVlVueLlT6
+    volumes:
+      - /shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
+      - /shares/logs:/opt/arma3/@ExileServer/extDB/logs/
+    networks:
+      local:
+        aliases:
+          - server
+  db:
+    image: "mysql/mysql-server:5.7.19-1.1.1"
+    volumes:
+      - database-content:/var/lib/mysql
+      - /shares/exile.sql:/tmp/exile.sql
+    networks:
+      local:
+        aliases:
+          - database
+    command: "--sql-mode=ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+volumes:
+    database-content:
+        external:
+            name: exile-db-content
+networks:
+    local:

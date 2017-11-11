@@ -16,8 +16,8 @@ services:
       - EXILE_DATABASE_PASS=altispw
       - EXILE_CONFIG_PASSWORD_COMMAND=jrcnlHB9xwqVlVueLlT6
     volumes:
-      - /mnt/shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
-      - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
+      - /shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
+      - /shares/logs:/opt/arma3/@ExileServer/extDB/logs/
     networks:
       local:
         aliases:
@@ -26,7 +26,7 @@ services:
     image: "mysql/mysql-server:5.7.19-1.1.1"
     volumes:
       - database-content:/var/lib/mysql
-      - /mnt/shares/exile.sql:/tmp/exile.sql
+      - /shares/exile.sql:/tmp/exile.sql
     networks:
       local:
         aliases:
