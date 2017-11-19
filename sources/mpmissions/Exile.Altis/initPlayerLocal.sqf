@@ -506,3 +506,10 @@ call ExileClient_object_trader_create;
     187.428
 ]
 call ExileClient_object_trader_create;
+
+[] spawn {
+  while {true} do {
+  { if(!isPlayer _x && side _x != playerSide) then { player reveal [_x,4] } }forEach allUnits;
+  sleep 60;
+  }
+};
