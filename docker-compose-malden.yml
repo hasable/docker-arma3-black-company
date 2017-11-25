@@ -10,10 +10,11 @@ services:
       - "2304:2304/udp"
       - "2305:2305/udp"
     environment:
+      - EXILE_CONFIG_MISSION=Exile.Malden
       - EXILE_DATABASE_HOST=database
-      - EXILE_DATABASE_NAME=altisdb
-      - EXILE_DATABASE_USER=altisu
-      - EXILE_DATABASE_PASS=altispw
+      - EXILE_DATABASE_NAME=maldendb
+      - EXILE_DATABASE_USER=maldenu
+      - EXILE_DATABASE_PASS=maldenpw
       - EXILE_CONFIG_PASSWORD_COMMAND=jrcnlHB9xwqVlVueLlT6
     volumes:
       - /shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
