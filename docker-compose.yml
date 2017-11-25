@@ -1,6 +1,7 @@
-version: '3'
+version: '2'
 services:
   a3-exile-modded:
+    image: "hasable/black-company:latest"
     depends_on: 
         - db
     build: .
@@ -10,31 +11,24 @@ services:
       - "2304:2304/udp"
       - "2305:2305/udp"
     environment:
+      - EXILE_CONFIG_HOSTNAME="Exile Dev Server"
       - EXILE_DATABASE_HOST=database
       - EXILE_DATABASE_NAME=altisdb
       - EXILE_DATABASE_USER=altisu
       - EXILE_DATABASE_PASS=altispw
       - EXILE_CONFIG_PASSWORD_COMMAND=jrcnlHB9xwqVlVueLlT6
     volumes:
-      - /shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
-      - /shares/logs:/opt/arma3/@ExileServer/extDB/logs/
-    networks:
-      local:
-        aliases:
-          - server
+      - /mnt/shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
+      - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
+    links:
+        - "db:database"
   db:
     image: "mysql/mysql-server:5.7.19-1.1.1"
     volumes:
       - database-content:/var/lib/mysql
-      - /shares/exile.sql:/tmp/exile.sql
-    networks:
-      local:
-        aliases:
-          - database
+      - /mnt/shares/mysql/logs:/var/log
     command: "--sql-mode=ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
 volumes:
     database-content:
         external:
-            name: exile-db-content
-networks:
-    local:
+            name: database
