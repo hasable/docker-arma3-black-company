@@ -28,7 +28,7 @@ USER server
 CMD [	"\"-config=@ExileServer/config.cfg\"", \
 		"\"-servermod=@ExileServer;@AdminToolkitServer;@ExAd;@A3XAI\"", \
 		"\"-mod=@Exile;expansion;heli;jets;mark;@CBA_A3;@DynaSound2;@EnhancedMovement\"", \
-		"-bepath=/opt/arma3/battleye", \
- 		"-maxMem=3500", \
-		"-world=empty", \
- 		"-autoinit" ]
+		"-bepath=/opt/arma3/battleye" \
+		"-maxMem=3500" \
+		"-world=empty" \
+		"-autoinit" ]
