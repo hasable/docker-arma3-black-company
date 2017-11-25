@@ -11,7 +11,7 @@ services:
       - "2304:2304/udp"
       - "2305:2305/udp"
     environment:
-      - EXILE_CONFIG_HOSTNAME="Exile Dev Server"
+      - EXILE_CONFIG_HOSTNAME=BLACK COMPANY DEV SERVER 
       - EXILE_DATABASE_HOST=database
       - EXILE_DATABASE_NAME=altisdb
       - EXILE_DATABASE_USER=altisu
