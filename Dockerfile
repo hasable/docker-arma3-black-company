@@ -3,31 +3,25 @@ LABEL maintainer='hasable'
 
 WORKDIR /opt/arma3
 
-USER root
+COPY --chown=server resources/@A3XAI @A3XAI
+COPY --chown=server resources/@AdminToolkitServer @AdminToolkitServer
+COPY --chown=server resources/keys/admintoolkit.bikey keys/
+COPY --chown=server resources/@ExileServer @ExileServer
+COPY --chown=server resources/@ExAd @ExAd
 
-COPY resources/@A3XAI @A3XAI
-COPY resources/@AdminToolkitServer @AdminToolkitServer
-COPY resources/keys/admintoolkit.bikey keys/
-COPY resources/@ExileServer @ExileServer
-COPY resources/@ExAd @ExAd
+COPY --chown=server resources/mpmissions mpmissions
+COPY --chown=server resources/keys/badbenson.bikey resources/keys/cba_3.4.1.170912.bikey resources/keys/ds20_jul2017.bikey keys/
 
-COPY resources/mpmissions mpmissions
-COPY resources/keys/badbenson.bikey resources/keys/cba_3.4.1.170912.bikey resources/keys/ds20_jul2017.bikey keys/
+#COPY --chown=server resources/@AdvancedRappelling @AdvancedRappelling
+#COPY --chown=server resources/keys/advancedrappelling.bikey keys/
 
-# COPY --chown=server <src> <dest> is available on last version of docker, but not on dockerhub...
-RUN chown -R server:server @A3XAI @AdminToolkitServer @ExileServer @ExAd keys mpmissions \
-	&& chmod -R 755 @A3XAI @AdminToolkitServer @ExileServer @ExAd keys mpmissions
+#COPY --chown=server resources/@AdvancedServerScripts @AdvancedServerScripts
 
-#COPY resources/@AdvancedRappelling @AdvancedRappelling
-#COPY resources/keys/advancedrappelling.bikey keys/
+#COPY --chown=server resources/@AdvancedTowing AdvancedTowing
+#COPY --chown=server resources/keys/advancedtowing.bikey keys/
 
-#COPY resources/@AdvancedServerScripts @AdvancedServerScripts
-
-#COPY resources/@AdvancedTowing AdvancedTowing
-#COPY resources/keys/advancedtowing.bikey keys/
-
-#COPY resources/@AdvancedUrbanRappelling @AdvancedUrbanRappelling
-#COPY resources/keys/advancedurbanrappelling.bikey keys/
+#COPY --chown=server resources/@AdvancedUrbanRappelling @AdvancedUrbanRappelling
+#COPY --chown=server resources/keys/advancedurbanrappelling.bikey keys/
 
 USER server
 
