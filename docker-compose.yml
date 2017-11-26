@@ -1,29 +1,32 @@
 version: '2'
 services:
-  a3-exile-modded:
-    image: "hasable/black-company:latest"
+  arma-3-black-company:
+    image: "hasable/a3-black-company:latest"
+    container_name: "arma-3-black-company"
     depends_on: 
-        - db
+        - arma-3-exile-database
     build: .
     ports:
       - "2302:2302/udp" 
       - "2303:2303/udp" 
       - "2304:2304/udp"
       - "2305:2305/udp"
+      - "2306:2306/udp"
     environment:
       - EXILE_CONFIG_HOSTNAME=BLACK COMPANY DEV SERVER 
+      - EXILE_CONFIG_PASSWORD_COMMAND=jrcnlHB9xwqVlVueLlT6
       - EXILE_DATABASE_HOST=database
       - EXILE_DATABASE_NAME=altisdb
       - EXILE_DATABASE_USER=altisu
       - EXILE_DATABASE_PASS=altispw
-      - EXILE_CONFIG_PASSWORD_COMMAND=jrcnlHB9xwqVlVueLlT6
     volumes:
       - /mnt/shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
       - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
     links:
-        - "db:database"
-  db:
+        - "arma-3-exile-database:database"
+  arma-3-exile-database:
     image: "mysql/mysql-server:5.7.19-1.1.1"
+    container_name: "arma-3-exile-database"
     volumes:
       - database-content:/var/lib/mysql
       - /mnt/shares/mysql/logs:/var/log

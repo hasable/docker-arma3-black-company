@@ -1,5 +1,8 @@
-FROM hasable/a3-exile:1.0.3
+FROM hasable/a3-exile:latest
 LABEL maintainer='hasable'
+
+# Server user
+ARG USER_NAME=steamu
 
 USER root
 
@@ -11,12 +14,14 @@ COPY resources/@ExileServer @ExileServer
 COPY resources/mpmissions/* mpmissions/
 COPY resources/keys/* keys/
 
-RUN chown -R server:server @AdminToolkitServer @A3XAI @ExAd @ExileServer mpmissions keys
+RUN chown -R ${USER_NAME}:${USER_NAME} @AdminToolkitServer @A3XAI @ExAd @ExileServer mpmissions keys
 
-USER server
+USER ${USER_NAME}
 
-CMD ["\"-config=@ExileServer/config.cfg\"", \
+CMD ["\"-config=conf/exile.cfg\"", \
 	"\"-servermod=@ExileServer;@AdminToolkitServer;@ExAd;@A3XAI\"", \
 	"\"-mod=@Exile;expansion;heli;jets;mark\"", \
-	"-autoinit"]
-
+	"-bepath=/opt/arma3/battleye", \
+		"-maxMem=3500", \
+		"-world=empty", \
+		"-autoinit"]
