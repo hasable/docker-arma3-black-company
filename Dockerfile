@@ -22,6 +22,5 @@ CMD ["\"-config=conf/exile.cfg\"", \
 	"\"-servermod=@ExileServer;@AdminToolkitServer;@ExAd;@A3XAI\"", \
 	"\"-mod=@Exile;expansion;heli;jets;mark\"", \
 	"-bepath=/opt/arma3/battleye", \
-		"-maxMem=3500", \
 		"-world=empty", \
 		"-autoinit"]
