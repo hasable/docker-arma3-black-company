@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		A3XAIVersion = "0.2.1";
+		A3XAIVersion = "3";
 		requiredAddons[] = {};
 	};
 };
@@ -15,10 +15,10 @@ class CfgA3XAISettings {
 	
 	//Enable or disable event logging to the server RPT file (named arma3server_[date]_[time].rpt). Debug level setting. 0: No debug output, 1: Basic Debug output, 2: Detailed Debug output. (Default: 0)
 	//Debug output may help finding additional information about A3XAI's background behavior. This output is helpful when asking for help regarding bugs or unexpected behaviors.
-	debugLevel = 2;
+	debugLevel = 1;
 	
 	//Frequency of server monitor update to RPT log in seconds. The monitor periodically reports number of max/current AI units and dynamically spawned triggers into RPT log. (Default: 300, 0 = Disable reporting)											
-	monitorReportRate = 300;
+	monitorReportRate = 60;
 	
 	//Enable or disable verification and error-correction of classname tables used by A3XAI. If invalid entries are found, they are removed and logged into the RPT log.
 	//If disabled, any invalid classnames will not be removed and clients may crash if AI bodies with invalid items are looted. Only disable if a previous scan shows no invalid classnames (Default: 1).										
@@ -28,10 +28,16 @@ class CfgA3XAISettings {
 	verifySettings = 1;
 	
 	//Minimum seconds to pass until each dead AI body or destroyed vehicle can be cleaned up by A3XAI's task scheduler. A3XAI will not clean up a body/vehicle if there is a player close by (Default: 900).									
-	cleanupDelay = 900;
+	cleanupDelay = 600;
 	
 	//Enabled: A3XAI will load custom spawn/blacklist definitions file on startup (A3XAI_config.pbo >> custom_defs.sqf) (Default: 0)
 	loadCustomFile = 0;
+	
+	//Minimum server FPS to spawn/respawn AI (Default: 0)
+	minFPS = 15; //0
+	
+	//0: A3XAI uses individual threads to manage each spawned AI group (more accurate ammo/fuel reloading). 1: A3XAI will use a single thread to manage all AI groups (better performance). (Default: 0)
+	groupManageMode = 0;
 	
 	
 	/*	A3XAI HC Settings
@@ -95,6 +101,12 @@ class CfgA3XAISettings {
 	generateDynamicFood = 1;
 	dynamicFoodBlacklist[] = {};
 	
+	//1: Generate AI medical types from Exile trader tables (Default)
+	//0: Food defined by medical Loot
+	//dynamicMedicalBlacklist: List of medical classnames to ignore from Exile trader tables.
+	generateDynamicMedical = 1;
+	dynamicMedicalBlacklist[] = {};
+	
 	//1: Generate AI generic loot types from Exile trader tables. Includes "Hardware", "Smoke", "Flare" -class items. (Default)
 	//0: Loot defined by MiscLoot
 	//dynamicLootBlacklist: List of loot classnames to ignore from Exile trader tables.
@@ -113,7 +125,7 @@ class CfgA3XAISettings {
 	side = east;
 	
 	//Number of online players required for maximum (or minimum) AI spawn chance. Affects Static, Dynamic, Random AI spawns. (Default: 10)	
-	playerCountThreshold = 1;
+	playerCountThreshold = 10;
 	
 	//1: Spawn chance multiplier scales upwards from value defined by chanceScalingThreshold to 1.00. 0: Spawn chance multiplier scales downwards from 1.00 to chanceScalingThreshold.
 	upwardsChanceScaling = 1;
@@ -125,25 +137,25 @@ class CfgA3XAISettings {
 	minAI_village = 1;
 	addAI_village = 1;
 	unitLevel_village = 0;
-	spawnChance_village = 0.40;
+	spawnChance_village = 0.60;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
 	minAI_city = 1;
 	addAI_city = 2;
 	unitLevel_city = 1;
-	spawnChance_city = 0.60;
+	spawnChance_city = 0.70;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
 	minAI_capitalCity = 2;
 	addAI_capitalCity = 1;
 	unitLevel_capitalCity = 1;
-	spawnChance_capitalCity = 0.70;
+	spawnChance_capitalCity = 0.80;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_remoteArea = 1;
-	addAI_remoteArea = 2;
+	minAI_remoteArea = 2;
+	addAI_remoteArea = 1;
 	unitLevel_remoteArea = 2;
-	spawnChance_remoteArea = 0.80;
+	spawnChance_remoteArea = 0.90;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
 	minAI_wilderness = 1;
@@ -166,10 +178,10 @@ class CfgA3XAISettings {
 	//Minimum AI unit level requirement to use underslung grenade launchers. Set to -1 to disable completely. (Default: 1)
 	levelRequiredGL = 1;
 	
-	//Minimum AI unit level requirement to use launcher weapons. Set to -1 to disable completely. Launchers are unlootable and will be removed at death (Default: -1)
+	//Minimum AI unit level requirement to use launcher weapons. Set to -1 to disable completely. Launchers are unlootable and will be removed at death. (Default: -1)
 	levelRequiredLauncher = -1;
 	
-	//List of launcher-type weapons that AI can use.
+	//List of launcher-type weapons that AI can use. Launchers are unlootable and will be removed at death.
 	launcherTypes[] = {"launch_NLAW_F","launch_RPG32_F","launch_B_Titan_F","launch_I_Titan_F","launch_O_Titan_F","launch_B_Titan_short_F","launch_I_Titan_short_F","launch_O_Titan_short_F"}; 
 	
 	//Maximum number of launcher weapons allowed per group (Default: 1)
@@ -201,15 +213,27 @@ class CfgA3XAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/	
 	
 	//Enable or disable static AI spawns. If enabled, AI spawn points will be generated in cities, towns, and other named areas.
-	//Enabled: A3XAI automatically generates static spawns at named locations on map. Disabled: No static spawns will be generated. (Default: 1)
+	//Enabled: A3XAI automatically generates static spawns at named locations on map with buildings nearby. Disabled: No static spawns will be generated. (Default: 1)
 	enableStaticSpawns = 1;
+	
+	//(Requires enableStaticSpawns = 1) 1: Enables additional static spawns at named locations on map that may not have buildings nearby. 0: No extra static spawns will be generated. (Default: 0)
+	enableExtraStaticSpawns = 0;
+	
+	//(Disables enableExtraStaticSpawns) 1: Use manually-defined static spawn locations instead of using automatic generation method. 0: Use automatic static spawn generation method. (Default: 0)
+	useManualStaticSpawns = 0;
+	
+	//(Requires useManualStaticSpawns = 1) Manually-defined static spawn locations. Example: manualStaticSpawnLocations[] = {{2998.06,18175.5,0},{14600,16797.2,0},{23334.6,24188.9,0}};
+	manualStaticSpawnLocations[] = {};
 	
 	//Set minimum and maximum wait time (seconds) to respawn an AI group after all units have been killed. Applies to both static AI and custom spawned AI (Default: Min 300, Max 600).									
 	respawnTimeMin = 300;
 	respawnTimeMax = 600;
 	
-	//Time to allow spawned AI units to exist in seconds before being despawned when no players are present in a trigger area. Applies to both static AI and custom spawned AI (Default: 120)										
-	despawnWait = 120;
+	//[Unused setting] Time to allow spawned AI units to exist in seconds before being despawned when no players are present in a trigger area. Applies to both static AI and custom spawned AI (Default: 120)										
+	despawnWait = 60;
+	
+	//Minimum time to wait to retry spawn if spawn chance roll fails, in seconds (Default: 300)
+	staticLockoutTime = 300;
 	
 	//Respawn Limits. Set to -1 for unlimited respawns. (Default: -1 for each).
 	respawnLimit_village = -1;
@@ -232,11 +256,11 @@ class CfgA3XAISettings {
 	//Players offline for this amount of time (seconds) will have their last spawn timestamp reset (Default: 3600)
 	purgeLastDynamicSpawnTime = 3600;
 	
-	//Probability for dynamic AI to actively hunt a targeted player. If probability check fails, dynamic AI will patrol the area instead of hunting (Default: 0.60)
-	spawnHunterChance = 0.60;
+	//Probability for dynamic AI to actively hunt a targeted player. If probability check fails, dynamic AI will patrol the area instead of hunting (Default: 0.66)
+	spawnHunterChance = 0.66;
 	
 	//Time to wait (seconds) before despawning all AI units in dynamic spawn area when no players are present. (Default: 120)
-	despawnDynamicSpawnTime = 120;
+	despawnDynamicSpawnTime = 60;
 	
 	
 	/*	Random Infantry AI Spawning Settings
@@ -248,7 +272,7 @@ class CfgA3XAISettings {
 	maxRandomSpawns = -1;
 	
 	//Time to wait (seconds) before despawning all AI units in random spawn area when no players are present. (Default: 120)
-	despawnRandomSpawnTime = 120;	
+	despawnRandomSpawnTime = 60;	
 	
 	//Minimum distance between a random spawn location and other random spawns. (Default: 0)
 	distanceBetweenRandomSpawns = 0;
@@ -304,9 +328,9 @@ class CfgA3XAISettings {
 	//Affects: All AI air vehicle patrols, including custom and reinforcement.
 	airDetectChance = 0.80;
 	
-	//Probability of AI to deploy infantry units by parachute if players are nearby when helicopter is investigating a waypoint. (Default: 0.50)
+	//Probability of AI to deploy infantry units by parachute if players are nearby when helicopter is investigating a waypoint. (Default: 1.00)
 	//Affects: Air vehicle patrols.
-	paradropChance = 0.50;
+	paradropChance = 1.00;
 	
 	//Cooldown time for AI paradrop deployment in seconds. (Default: 1800).
 	//Affects: Air vehicle patrols.
@@ -364,6 +388,7 @@ class CfgA3XAISettings {
 	landCargoUnits = 3;
 	
 	
+	
 	/*	AI Air Reinforcement Settings
 
 		Allowed types of AI groups (defined by airReinforcementAllowedTypes) may call for temporary air reinforcements if a player kills one of their units.
@@ -392,6 +417,13 @@ class CfgA3XAISettings {
 	//AI types permitted to summon reinforcements. Default: airReinforcementAllowedFor[] = {"static","dynamic","random"};
 	//Usable AI types: "static", "dynamic", "random", "air", "land", "staticcustom", "aircustom", "landcustom", "vehiclecrew"
 	airReinforcementAllowedFor[] = {"static","dynamic","random"};
+	
+	//Probability to deploy infantry AI. If chance roll fails, air vehicle will remain in area for duration defined by airReinforcementDuration0-3 and engage detected players
+	//Unarmed air vehicle will always have a 1.00 probability to deploy at least 1 infantry AI unit.
+	airReinforceDeployChance0 = 0.60;
+	airReinforceDeployChance1 = 0.70;
+	airReinforceDeployChance2 = 0.80;
+	airReinforceDeployChance3 = 0.90;
 	
 	//Maximum time for reinforcement for armed air vehicles in seconds. AI air vehicle will leave the area after this time if not destroyed.
 	airReinforcementDuration0 = 120;
@@ -428,9 +460,6 @@ class CfgA3XAISettings {
 	respawnUAVMinTime = 600;
 	respawnUAVMaxTime = 900;
 	
-	//Set to '1' to set detection-only behavior (UAV will not directly engage enemies). (Default: 0)
-	detectOnlyUAVs = 0;
-	
 	//Cooldown required in between air reinforcement summons when detecting players. Value in seconds. (Default: 1800)
 	UAVCallReinforceCooldown = 1800;
 	
@@ -462,9 +491,6 @@ class CfgA3XAISettings {
 	//Set minimum and maximum wait time in seconds to respawn a UGV patrol after vehicle is destroyed or disabled. (Default: Min 600, Max 900).
 	respawnUGVMinTime = 600;
 	respawnUGVMaxTime = 900;
-	
-	//Set to '1' to set detection-only behavior (UGV will not directly engage enemies). (Default: 0)
-	detectOnlyUGVs = 0;
 	
 	//Cooldown required in between air reinforcement summons when detecting players. Value in seconds. (Default: 1800)
 	UGVCallReinforceCooldown = 1800;
@@ -593,22 +619,43 @@ class CfgA3XAISettings {
 	underbarrelChance3 = 0.90;
 	
 	
-	/*	AI loot quantity settings
+	/*	AI loot quantity settings (Infantry)
 	--------------------------------------------------------------------------------------------------------------------*/
 
-	//Maximum number of food loot items found on AI. (Default: 2)								
+	//Maximum number of food loot items from foodLoot per infantry unit of each AI group. (Default: 2)								
 	foodLootCount = 2;
 	
-	//Maximum number of items to select from MiscLoot (generic loot) table. (Default: 2)											
+	//Maximum number of items to select from miscLoot table per infantry unit of each AI group. (Default: 2)											
 	miscLootCount = 2;
+	
+	//Maximum number of items to select from medicalLoot table per infantry unit of each AI group. (Default: 1)											
+	medicalLootCount = 1;
+	
+	
+	/*	AI loot quantity settings (Vehicle)
+	
+		Note: A3XAI_vehiclesAllowedForPlayers = 1; must be set in order to enable the settings in this section
+	--------------------------------------------------------------------------------------------------------------------*/
+
+	//Maximum number of weapons from pistolList, rifleList, machinegunList, sniperList found in vehicles recovered by players. (Default: 5)								
+	weaponLootVehicleCount = 5;
+	
+	//Maximum number of magazines to generate for each weapon loot added to vehicle inventory (Default: 3)
+	ammoLootPerWeapon = 3;
+	
+	//Maximum number of food loot items from foodLoot found in vehicles recovered by players. (Default: 10)								
+	foodLootVehicleCount = 10;
+	
+	//Maximum number of items to select from miscLoot found in vehicles recovered by players. (Default: 10)											
+	miscLootVehicleCount = 10;
+	
+	//Maximum number of items to select from medicalLoot found in vehicles recovered by players. (Default: 5)											
+	medicalLootVehicleCount = 5;
 	
 	
 	/*	AI loot probability settings. AI loot is pre-generated into a pool for each unit and randomly pulled to units as time passes.
 	--------------------------------------------------------------------------------------------------------------------*/
 
-	//Chance to add a single InstaDoc to group loot pool per unit (Default: 0.25)
-	firstAidKitChance = 0.25;
-	
 	//Probability to successfully pull a random item from loot pool for level 0-3 AI. Influences the rate at which loot items are added to units.
 	lootPullChance0 = 0.20;
 	lootPullChance1 = 0.40;
@@ -690,6 +737,48 @@ class CfgA3XAISettings {
 	headgearTypes2[] = {"H_Beret_Colonel","H_HelmetB","H_HelmetB_black","H_HelmetB_camo","H_HelmetB_desert","H_HelmetB_grass","H_HelmetB_paint","H_HelmetB_plain_blk","H_HelmetB_sand","H_HelmetB_snakeskin","H_HelmetLeaderO_ocamo","H_HelmetLeaderO_oucamo","H_HelmetO_ocamo","H_HelmetO_oucamo","H_HelmetSpecB","H_HelmetSpecB_blk","H_HelmetSpecB_paint1","H_HelmetSpecB_paint2","H_HelmetSpecO_blk","H_HelmetSpecO_ocamo","H_CrewHelmetHeli_B","H_CrewHelmetHeli_I","H_CrewHelmetHeli_O","H_PilotHelmetHeli_B","H_PilotHelmetHeli_I","H_PilotHelmetHeli_O"};
 	headgearTypes3[] = {"H_Beret_Colonel","H_HelmetB_camo","H_HelmetLeaderO_ocamo","H_HelmetLeaderO_oucamo","H_HelmetO_ocamo","H_HelmetO_oucamo","H_HelmetSpecO_blk","H_HelmetSpecO_ocamo","H_PilotHelmetHeli_B","H_PilotHelmetHeli_I","H_PilotHelmetHeli_O"};
 	
+	//AI glasses-slot items. (Currently unused)
+	glassesTypes0[] = {};
+	glassesTypes1[] = {};
+	glassesTypes2[] = {};
+	glassesTypes3[] = {};
+	
+	//AI goggle-slot items. (Currently unused)
+	goggleTypes0[] = {"NVGoggles"};
+	goggleTypes1[] = {"NVGoggles"};
+	goggleTypes2[] = {"NVGoggles"};
+	goggleTypes3[] = {"NVGoggles"};
+	
+	//AI binocular-slot items. (Currently unused)
+	binocularTypes0[] = {"binocular"};
+	binocularTypes1[] = {"binocular"};
+	binocularTypes2[] = {"binocular"};
+	binocularTypes3[] = {"binocular"};
+	
+	//AI map-slot items. (Currently unused)
+	mapTypes0[] = {"ItemMap"};
+	mapTypes1[] = {"ItemMap"};
+	mapTypes2[] = {"ItemMap"};
+	mapTypes3[] = {"ItemMap"};
+	
+	//AI device-slot items. (Currently unused)
+	deviceTypes0[] = {"ItemGPS"};
+	deviceTypes1[] = {"ItemGPS"};
+	deviceTypes2[] = {"ItemGPS"};
+	deviceTypes3[] = {"ItemGPS"};
+	
+	//AI compass-slot items. (Currently unused)
+	compassTypes0[] = {"ItemCompass"};
+	compassTypes1[] = {"ItemCompass"};
+	compassTypes2[] = {"ItemCompass"};
+	compassTypes3[] = {"ItemCompass"};
+	
+	//AI watch-slot items. (Currently unused)
+	watchTypes0[] = {"Exile_Item_XM8"};
+	watchTypes1[] = {"Exile_Item_XM8"};
+	watchTypes2[] = {"Exile_Item_XM8"};
+	watchTypes3[] = {"Exile_Item_XM8"};
+	
 	
 	//AI Food/Loot item types. 
 	// Note: foodLoot will not be read if generateDynamicFood is enabled.
@@ -697,6 +786,12 @@ class CfgA3XAISettings {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	foodLoot[] = {"Exile_Item_GloriousKnakworst","Exile_Item_SausageGravy","Exile_Item_ChristmasTinner","Exile_Item_BBQSandwich","Exile_Item_Surstromming","Exile_Item_Catfood","Exile_Item_PlasticBottleFreshWater","Exile_Item_Beer","Exile_Item_Energydrink"};
 	miscLoot[] = {"Exile_Item_Rope","Exile_Item_DuctTape","Exile_Item_ExtensionCord","Exile_Item_FuelCanisterEmpty","Exile_Item_JunkMetal","Exile_Item_LightBulb","Exile_Item_MetalBoard","Exile_Item_MetalPole","Exile_Item_CamoTentKit"};
+	
+	
+	//AI Medical item types. 
+	// Note: medicalLoot will not be read if generateMedicalFood is enabled.
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	medicalLoot[] = {"Exile_Item_InstaDoc","Exile_Item_Bandage","Exile_Item_Vishpirin"};
 	
 	
 	//AI toolbelt item types. Toolbelt items are added to AI inventory upon death. Format: [item classname, item probability]

@@ -1642,7 +1642,7 @@ class CfgExileAnimals
 	/**
 	 * Should animals spawn on your server? Y/N?
 	 */
-	enabled = 1;
+	enabled = 0;
 
 	/**
 	 * Should vanilla Arma animals (fish, rabbits, bees, etc.) be disabled?
@@ -2693,11 +2693,11 @@ class CfgExileArsenal
 	class O_NVGoggles_urb_F           { quality = 3; price = 150; };
 	class O_NVGoggles_ghex_F          { quality = 3; price = 150; };
 	class NVGoggles_tna_F             { quality = 2; price = 100; };
-	//class NVGogglesB_blk_F            { quality = 1; price = 1000; }; //Normal NightV but fullscreen thermal
-	//class NVGogglesB_grn_F            { quality = 1; price = 1000; };	//Normal NightV but fullscreen thermal
-	//class NVGogglesB_gry_F            { quality = 1; price = 1000; };	//Normal NightV but fullscreen thermal
-	//class Laserdesignator_01_khk_F    { quality = 1; price = 1000; };	//Thermal
-	//class Laserdesignator_02_ghex_F   { quality = 1; price = 1000; };	//Thermal
+	class NVGogglesB_blk_F            { quality = 1; price = 1000; }; //Normal NightV but fullscreen thermal
+	class NVGogglesB_grn_F            { quality = 1; price = 1000; };	//Normal NightV but fullscreen thermal
+	class NVGogglesB_gry_F            { quality = 1; price = 1000; };	//Normal NightV but fullscreen thermal
+	class Laserdesignator_01_khk_F    { quality = 1; price = 1000; };	//Thermal
+	class Laserdesignator_02_ghex_F   { quality = 1; price = 1000; };	//Thermal
 	class U_B_T_Soldier_F             { quality = 2; price = 40; };
 	class U_B_T_Soldier_AR_F          { quality = 2; price = 40; };
 	class U_B_T_Soldier_SL_F          { quality = 2; price = 40; };
@@ -2739,8 +2739,8 @@ class CfgExileArsenal
 	class U_B_CTRG_Soldier_urb_3_F    { quality = 2; price = 40; };
 	class H_Helmet_Skate              { quality = 2; price = 20; };
 	class H_HelmetB_TI_tna_F          { quality = 4; price = 100; };
-	//class H_HelmetO_ViperSP_hex_F     { quality = 4; price = 1000; };		//Themal
-	//class H_HelmetO_ViperSP_ghex_F    { quality = 4; price = 1000; }; 	//Themal
+	class H_HelmetO_ViperSP_hex_F     { quality = 4; price = 1000; };		//Themal
+	class H_HelmetO_ViperSP_ghex_F    { quality = 4; price = 1000; }; 	//Themal
 	class H_HelmetB_tna_F             { quality = 3; price = 50; };
 	class H_HelmetB_Enh_tna_F         { quality = 4; price = 100; };
 	class H_HelmetB_Light_tna_F       { quality = 2; price = 20; };
@@ -4435,13 +4435,13 @@ class CfgLocker
 {
 	numbersOnly = "0123456789";
 	
-	maxDeposit = 10000;
+	maxDeposit = 1000000;
 };
 
 class CfgPlayer 
 {
 	// In minutes ammount of time it takes to go from 100 - 0 if stationary
-	hungerDecay = 90;
+	hungerDecay = 120;
 	thirstDecay = 60;
 
 	// Damage taken from 0 (health||thirst)/sec
@@ -4550,13 +4550,13 @@ class CfgTerritories
 	minimumDistanceToOtherTerritories = 325; 
 
 	// Maximum number of territories a player can own
-	maximumNumberOfTerritoriesPerPlayer = 2;
+	maximumNumberOfTerritoriesPerPlayer = 1;
 
 	/**
 	 * Defines the minimum distance to safe zones / trader cities where players
 	 * cannot build territories
 	 */
-	minimumDistanceToTraderZones = 1000;
+	minimumDistanceToTraderZones = 750;
 
 	/**
 	 * Defines the minimum distance to spawn zones where players
@@ -4976,8 +4976,9 @@ class CfgTraderCategories
 			//Apex
 			"H_Helmet_Skate",
 			"H_HelmetB_TI_tna_F",
-			//"H_HelmetO_ViperSP_hex_F",
-			//"H_HelmetO_ViperSP_ghex_F",
+			// these 2 ones may not stands...
+			"H_HelmetO_ViperSP_hex_F",
+			"H_HelmetO_ViperSP_ghex_F",
 			"H_HelmetB_tna_F",
 			"H_HelmetB_Enh_tna_F",
 			"H_HelmetB_Light_tna_F",
@@ -5369,12 +5370,10 @@ class CfgTraderCategories
 
 			"Binocular",
 			"Rangefinder",
-			/*
+			// TGO
 			"Laserdesignator",
 			"Laserdesignator_02",
 			"Laserdesignator_03",
-			*/
-			
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
@@ -5393,10 +5392,10 @@ class CfgTraderCategories
 			"Exile_Item_InstaDoc",
 			"Exile_Item_Bandage",
 			"Exile_Item_Vishpirin",
-			"Exile_Item_Heatpack"
+			"Exile_Item_Heatpack",
 
 			// Not available in 0.9.4!
-			//"Exile_Item_Defibrillator"
+			"Exile_Item_Defibrillator"
 		};
 	};
 
@@ -5498,10 +5497,10 @@ class CfgTraderCategories
 			"10Rnd_762x54_Mag",
 			"10Rnd_93x64_DMR_05_Mag",
 			"11Rnd_45ACP_Mag",
-			//"130Rnd_338_Mag", SPMG
+			"130Rnd_338_Mag", // SPMG
 			"150Rnd_762x54_Box",
 			"150Rnd_762x54_Box_Tracer",
-			//"150Rnd_93x64_Mag", // NAVID
+			"150Rnd_93x64_Mag", // NAVID
 			"16Rnd_9x21_Mag",
 			"200Rnd_65x39_cased_Box",
 			"200Rnd_65x39_cased_Box_Tracer",
@@ -6267,7 +6266,7 @@ class CfgTrading
 	* items and vehicles. It is used if there is no sales price defined
 	* in CfgExileArsenal. 
 	*/
-	sellPriceFactor = 0.5;
+	sellPriceFactor = 0.1;
 	
 	rekeyPriceFactor = 0.1;
 
