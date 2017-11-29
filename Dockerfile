@@ -26,5 +26,6 @@ USER ${USER_NAME}
 CMD ["\"-config=conf/exile.cfg\"", \
 	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@ExAd\"", \
 	"\"-mod=@Exile;expansion;heli;jets;mark\"", \
+	"-bepath=/opt/arma3/battleye", \
 		"-world=empty", \
 		"-autoinit"]
