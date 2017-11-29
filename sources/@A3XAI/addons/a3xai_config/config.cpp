@@ -125,46 +125,47 @@ class CfgA3XAISettings {
 	side = east;
 	
 	//Number of online players required for maximum (or minimum) AI spawn chance. Affects Static, Dynamic, Random AI spawns. (Default: 10)	
-	playerCountThreshold = 10;
+	playerCountThreshold = 1;
 	
-	//1: Spawn chance multiplier scales upwards from value defined by chanceScalingThreshold to 1.00. 0: Spawn chance multiplier scales downwards from 1.00 to chanceScalingThreshold.
+	//1: Spawn chance multiplier scales upwards from value defined by chanceScalingThreshold to 1.00. 
+	//0: Spawn chance multiplier scales downwards from 1.00 to chanceScalingThreshold.
 	upwardsChanceScaling = 1;
 	
 	//If upwardsChanceScaling is 1: Initial spawn chance multiplier. If upwardsChanceScaling is 0: Final spawn chance multiplier. (Default: 0.50)
-	chanceScalingThreshold = 0.50;
+	chanceScalingThreshold = 0.75;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_village = 1;
-	addAI_village = 1;
-	unitLevel_village = 0;
+	minAI_village = 3;
+	addAI_village = 3;
+	unitLevel_village = 1;
 	spawnChance_village = 0.60;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_city = 1;
-	addAI_city = 2;
+	minAI_city = 6;
+	addAI_city = 6;
 	unitLevel_city = 1;
 	spawnChance_city = 0.70;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_capitalCity = 2;
-	addAI_capitalCity = 1;
-	unitLevel_capitalCity = 1;
+	minAI_capitalCity = 6;
+	addAI_capitalCity = 6;
+	unitLevel_capitalCity = 2;
 	spawnChance_capitalCity = 0.80;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_remoteArea = 2;
-	addAI_remoteArea = 1;
+	minAI_remoteArea = 6;
+	addAI_remoteArea = 6;
 	unitLevel_remoteArea = 2;
 	spawnChance_remoteArea = 0.90;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_wilderness = 1;
-	addAI_wilderness = 2;
-	unitLevel_wilderness = 1;
+	minAI_wilderness = 12;
+	addAI_wilderness = 8;
+	unitLevel_wilderness = 2;
 	spawnChance_wilderness = 0.50;
 	
 	//(For dynamic and random spawns only) Defines amount of time to wait in seconds until cleaning up temporary blacklist area after dynamic/random spawn is deactivated (Default: 1200)
-	tempBlacklistTime = 1200;
+	tempBlacklistTime = 900;
 	
 	//Enable or disable AI death messages. Messages will be visible to all group members of player responsible for killing the AI unit. (Default: 1)
 	enableDeathMessages = 1;
@@ -173,26 +174,27 @@ class CfgA3XAISettings {
 	enableFindKiller = 1;
 	
 	//If normal probability check for spawning NVGs fails, then give AI temporary NVGs during night hours. Temporary NVGs are unlootable and will be removed at death (Default: 0).									
-	enableTempNVGs = 0;
+	enableTempNVGs = 1;
 	
 	//Minimum AI unit level requirement to use underslung grenade launchers. Set to -1 to disable completely. (Default: 1)
 	levelRequiredGL = 1;
 	
 	//Minimum AI unit level requirement to use launcher weapons. Set to -1 to disable completely. Launchers are unlootable and will be removed at death. (Default: -1)
-	levelRequiredLauncher = -1;
+	levelRequiredLauncher = 1;
 	
 	//List of launcher-type weapons that AI can use. Launchers are unlootable and will be removed at death.
-	launcherTypes[] = {"launch_NLAW_F","launch_RPG32_F","launch_B_Titan_F","launch_I_Titan_F","launch_O_Titan_F","launch_B_Titan_short_F","launch_I_Titan_short_F","launch_O_Titan_short_F"}; 
+	//launcherTypes[] = {"launch_NLAW_F","launch_RPG32_F","launch_B_Titan_F","launch_I_Titan_F","launch_O_Titan_F","launch_B_Titan_short_F","launch_I_Titan_short_F","launch_O_Titan_short_F"}; 
+	launcherTypes[] = {"launch_RPG32_F"}; 
 	
 	//Maximum number of launcher weapons allowed per group (Default: 1)
-	launchersPerGroup = 1;
+	launchersPerGroup = 6;
 	
 	//Enable or disable AI self-healing. Level 0 AI cannot self-heal. Affects: All AI infantry units (Default: 1).
 	enableHealing = 1;
 	
 	//If enabled, A3XAI will remove all explosive ammo (missiles, rockets, bombs - but not HE rounds) from spawned AI air vehicles.  (Default: 1)
 	//Affects: All AI air vehicle types (patrols/custom/reinforcement). Does not affect UAV/UGVs.
-	removeExplosiveAmmo = 1;
+	removeExplosiveAmmo = 0;
 	
 	//if enabled, AI units suffer no damage from vehicle collisions. (Default: 1)
 	noCollisionDamage = 1;
@@ -248,10 +250,10 @@ class CfgA3XAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/		
 
 	//Upper limit of dynamic spawns on map at once. Set to 0 to disable dynamic spawns (Default: 15)
-	maxDynamicSpawns = 15;
+	maxDynamicSpawns = 50;
 	
 	//Minimum time (in seconds) that must pass between dynamic spawns for each player (Default: 900)
-	timePerDynamicSpawn = 900;
+	timePerDynamicSpawn = 300;
 	
 	//Players offline for this amount of time (seconds) will have their last spawn timestamp reset (Default: 3600)
 	purgeLastDynamicSpawnTime = 3600;
@@ -330,15 +332,15 @@ class CfgA3XAISettings {
 	
 	//Probability of AI to deploy infantry units by parachute if players are nearby when helicopter is investigating a waypoint. (Default: 1.00)
 	//Affects: Air vehicle patrols.
-	paradropChance = 1.00;
+	paradropChance = 0.75;
 	
 	//Cooldown time for AI paradrop deployment in seconds. (Default: 1800).
 	//Affects: Air vehicle patrols.
-	paradropCooldown = 1800;
+	paradropCooldown = 900;
 	
 	//Number of infantry AI to paradrop if players are nearby when helicopter is investigating a waypoint, or if helicopter is reinforcing a dynamic AI spawn. Limited by number of cargo seats available in the vehicle. (Default: 3)
 	//Affects: Air vehicle patrols, air reinforcements.
-	paradropAmount = 3;
+	paradropAmount = 6;
 	
 	
 	/*	AI Land Vehicle patrol settings. These AI vehicles will randomly travel between different cities and towns.
@@ -349,7 +351,7 @@ class CfgA3XAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/	
 
 	//Global maximum number of active AI land vehicle patrols. Set at 0 to disable (Default: 0).	
-	maxLandPatrols = 0;
+	maxLandPatrols = 32;
 	
 	//Probability of spawning Level 0/1/2/3 AI land vehicle spawns. Probabilities should add up to 1.00		
 	levelChancesLand[] = {0.00,0.50,0.35,0.15};
@@ -385,7 +387,7 @@ class CfgA3XAISettings {
 	landGunnerUnits = 2;
 	
 	//Maximum number of cargo units per land vehicle. Limited by actual number of available cargo positions. (Default: 3)
-	landCargoUnits = 3;
+	landCargoUnits = 8;
 	
 	
 	
