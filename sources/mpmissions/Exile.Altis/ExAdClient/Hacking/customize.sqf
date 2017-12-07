@@ -16,13 +16,13 @@
 	limitations under the License.
 */
 
-ExAd_HACKING_MIN_PLAYERS_ONLINE = 30;			//SCALAR - Minimun allowed players online to initalize a hack.
+ExAd_HACKING_MIN_PLAYERS_ONLINE = 5;			//SCALAR - Minimun allowed players online to initalize a hack.
 
 ExAd_HACKING_ALLOWED_HACKS = 1;					//SCALAR - Simultaneous hacks allowed.
 
 ExAd_HACKING_MAX_TIME = 1200;					//SCALAR - Time to complete a hack
 
-ExAd_HACKING_MAX_DISTANCE = 50;					//SCALAR - Maximum distance away from the object being hack players for the hack to proceed. 
+ExAd_HACKING_MAX_DISTANCE = 70;					//SCALAR - Maximum distance away from the object being hack players for the hack to proceed. 
 
 ExAd_HACKING_TERRITORY_MAX = 3;					//SCALAR - Maximun times a territory can get hacked before a new restart.
 

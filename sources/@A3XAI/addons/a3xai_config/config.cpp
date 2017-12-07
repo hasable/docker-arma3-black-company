@@ -184,10 +184,10 @@ class CfgA3XAISettings {
 	
 	//List of launcher-type weapons that AI can use. Launchers are unlootable and will be removed at death.
 	//launcherTypes[] = {"launch_NLAW_F","launch_RPG32_F","launch_B_Titan_F","launch_I_Titan_F","launch_O_Titan_F","launch_B_Titan_short_F","launch_I_Titan_short_F","launch_O_Titan_short_F"}; 
-	launcherTypes[] = {"launch_RPG32_F"}; 
+	launcherTypes[] = {"launch_RPG7_F", "launch_RPG32_F",}; 
 	
 	//Maximum number of launcher weapons allowed per group (Default: 1)
-	launchersPerGroup = 6;
+	launchersPerGroup = 3;
 	
 	//Enable or disable AI self-healing. Level 0 AI cannot self-heal. Affects: All AI infantry units (Default: 1).
 	enableHealing = 1;
@@ -219,7 +219,7 @@ class CfgA3XAISettings {
 	enableStaticSpawns = 1;
 	
 	//(Requires enableStaticSpawns = 1) 1: Enables additional static spawns at named locations on map that may not have buildings nearby. 0: No extra static spawns will be generated. (Default: 0)
-	enableExtraStaticSpawns = 0;
+	enableExtraStaticSpawns = 1;
 	
 	//(Disables enableExtraStaticSpawns) 1: Use manually-defined static spawn locations instead of using automatic generation method. 0: Use automatic static spawn generation method. (Default: 0)
 	useManualStaticSpawns = 0;
@@ -289,7 +289,7 @@ class CfgA3XAISettings {
 	vehicleDespawnTime = 600;
 	
 	//Enable player use of AI vehicles. Players must either disable the vehicle or kill all units of the group in order to access the vehicle. (Default: 0)
-	vehiclesAllowedForPlayers = 0;
+	vehiclesAllowedForPlayers = 1;
 	
 	//Add name of location as displayed on map prevent AI vehicle patrols from travelling to these locations. Location names are case-sensitive. Note: Vehicles may still pass through these areas
 	//Example: waypointBlacklistAir[] = {"Aggelochori","Panochori","Zaros"};
@@ -380,8 +380,79 @@ class CfgA3XAISettings {
 		{"Exile_Car_Van_Fuel_Black",5},
 		{"Exile_Car_Zamak",5},
 		{"Exile_Car_Tempest",5},
-		{"Exile_Car_HEMMT",5}
-	};
+		{"Exile_Car_HEMMT",5},
+		{"Exile_Car_Ural_Covered_Blue",5},	
+		{"Exile_Car_Ural_Covered_Yellow",5},		
+	    {"Exile_Car_Ural_Covered_Military",5},		
+	    {"Exile_Car_Ural_Covered_Worker",5},	
+		{"Exile_Car_Ural_Open_Blue",5},	
+		{"Exile_Car_Ural_Open_Yellow",5},	
+		{"Exile_Car_Ural_Open_Worker",5},	
+		{"Exile_Car_Ural_Open_Military",5},
+		{"Exile_Car_Van_Fuel_White",5},
+		{"Exile_Car_Van_Fuel_Red",5},		
+		{"Exile_Car_Van_Fuel_Guerilla01",5},
+		{"Exile_Car_Van_Fuel_Guerilla02",5},
+		{"Exile_Car_Van_Fuel_Guerilla03",5},
+		{"Exile_Car_Van_Box_White",5},		
+		{"Exile_Car_Van_Box_Red",5},		
+		{"Exile_Car_Van_Box_Guerilla01",5},
+		{"Exile_Car_Van_Box_Guerilla02",5},
+		{"Exile_Car_Van_Box_Guerilla03",5},
+		{"Exile_Car_Van_Box_Guerilla04",5},
+		{"Exile_Car_Van_Box_Guerilla05",5},
+		{"Exile_Car_Van_Box_Guerilla06",5},
+		{"Exile_Car_Van_Box_Guerilla07",5},
+		{"Exile_Car_Van_Box_Guerilla08",5},
+		{"Exile_Car_Van_White",5},		
+		{"Exile_Car_Van_Red",5},		
+		{"Exile_Car_Van_Guerilla01",5},
+		{"Exile_Car_Van_Guerilla02",5},
+		{"Exile_Car_Van_Guerilla03",5},
+		{"Exile_Car_Van_Guerilla04",5},
+		{"Exile_Car_Van_Guerilla05",5},
+		{"Exile_Car_Van_Guerilla06",5},
+		{"Exile_Car_Van_Guerilla07",5},
+		{"Exile_Car_Van_Guerilla08",5},
+		{"Exile_Car_SUVXL_Black",5}, 
+		{"Exile_Car_SUV_Black",5}, 
+		{"Exile_Car_SUV_Grey",5}, 	
+		{"Exile_Car_SUV_Orange",5},
+		{"Exile_Car_Offroad_Repair_Red",5},		
+		{"Exile_Car_Offroad_Repair_Beige",5},		
+		{"Exile_Car_Offroad_Repair_White",5},		
+		{"Exile_Car_Offroad_Repair_Blue",5},		
+		{"Exile_Car_Offroad_Repair_DarkRed",5},	
+		{"Exile_Car_Offroad_Repair_BlueCustom",5},
+		{"Exile_Car_Offroad_Repair_Guerilla02",5},
+		{"Exile_Car_Offroad_Repair_Guerilla03",5},
+		{"Exile_Car_Offroad_Repair_Guerilla04",5},
+		{"Exile_Car_Offroad_Repair_Guerilla05",5},
+		{"Exile_Car_Offroad_Repair_Guerilla06",5},
+		{"Exile_Car_Offroad_Repair_Guerilla07",5},
+		{"Exile_Car_Offroad_Repair_Guerilla08",5},
+		{"Exile_Car_Offroad_Repair_Guerilla09",5},
+		{"Exile_Car_Offroad_Repair_Guerilla10",5},
+		{"Exile_Car_Offroad_Repair_Guerilla11",5},
+		{"Exile_Car_Offroad_Repair_Guerilla12",5},
+		{"Exile_Car_Offroad_Armed_Guerilla01",5},
+		{"Exile_Car_Offroad_Armed_Guerilla02",5},
+		{"Exile_Car_Offroad_Armed_Guerilla03",5},
+		{"Exile_Car_Offroad_Armed_Guerilla04",5},
+		{"Exile_Car_Offroad_Armed_Guerilla05",5},
+		{"Exile_Car_Offroad_Armed_Guerilla06",5},
+		{"Exile_Car_Offroad_Armed_Guerilla07",5},
+		{"Exile_Car_Offroad_Armed_Guerilla08",5},
+		{"Exile_Car_Offroad_Armed_Guerilla09",5},
+		{"Exile_Car_Offroad_Armed_Guerilla10",5},
+		{"Exile_Car_Offroad_Armed_Guerilla11",5},
+		{"Exile_Car_Offroad_Armed_Guerilla12",5},
+		{"Exile_Car_LandRover_Red",5},
+		{"Exile_Car_LandRover_Urban",5}, 
+		{"Exile_Car_LandRover_Green",5}, 
+		{"Exile_Car_LandRover_Sand",5}, 
+		{"Exile_Car_LandRover_Desert",5}
+	}; 
 	
 	//Maximum number of gunner units per land vehicle. Limited by actual number of available gunner positions. (Default: 2)
 	landGunnerUnits = 2;

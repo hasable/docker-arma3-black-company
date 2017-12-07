@@ -4155,10 +4155,10 @@ class CfgSettings
 		class Database 
 		{
 			// Remove all deleted items from the database after X days
-			permanentlyDeleteTime = 3;
+			permanentlyDeleteTime = 7;
 			
 			// Remove all territories (and contructions + containers in it) that were not paid after X days
-			territoryLifeTime = 7;
+			territoryLifeTime = 15;
 
 			// Remove all containers outside of territories that have not been used for X days
 			// Example: Tents
@@ -4217,7 +4217,7 @@ class CfgSettings
 		{
 			unlucky = 1; // Dying for an unknown reason costs you 1% respect
 			crash = 1; // Crashing your car costs you 1% respect
-			suicide = 2; // Comitting suicide costs you 2% of your respect
+			suicide = 5; // Comitting suicide costs you 2% of your respect
 			friendyFire = 3; // Friendly fire costs you 3% 
 			npc = 4; // Being killed by an NPC costs you 4%
 			bambiKill = 5; // Killing a bambi costs you 5%
@@ -4285,10 +4285,8 @@ class CfgSettings
 		 */
 		loadOut[] = 
 		{
-			"ItemCompass",
 			"ItemMap", // Because why not
 			"Exile_Item_XM8",
-			"ItemRadio",
 			"Exile_Item_PlasticBottleFreshWater"
 		};
 
@@ -4316,7 +4314,7 @@ class CfgSettings
 		/**
 		 * Parachute drop height in meters. 
 		 */
-		parachuteDropHeight = 1000;
+		parachuteDropHeight = 800;
 
 		/**
 		 * Number of minutes where a fresh spawned player remains in the
@@ -4345,8 +4343,7 @@ class CfgSettings
 			{2,"Exile_Car_Volha_White"},
 			{2,"Exile_Car_Lada_Green"},
 			{2,"Exile_Car_UAZ_Open_Green"},
-			{2,"Exile_Car_UAZ_Green"},
-			{2,"Exile_Car_Octavius_White"}
+			{2,"Exile_Car_UAZ_Green"}
 		};
 	};
 
@@ -4480,8 +4477,8 @@ class CfgSettings
 			Add the keyframes here. The server will pick one random, so if you want one 
 			weather type of be more dominant compared to others, add it multiple times
 		*/
-		//keyframes[] = {"Sunny", "Cloudy", "Thunderstorm"}; 
-		keyframes[] = {"Sunny"}; 
+		keyframes[] = {"Sunny", "Sunny", "Sunny", "Sunny", "Cloudy", "Cloudy", "Cloudy", "Rainy", "Rainy", "Thunderstorm"}; 
+		//keyframes[] = {"Sunny"}; 
 
 		/*
 			This is a keyframe. Look up the BIKI to get more details about the parameters
@@ -4500,8 +4497,8 @@ class CfgSettings
 		*/
 		class Sunny
 		{
-			fogValue = 0.1;
-			fogDecay = 0.2;
+			fogValue = 0;
+			fogDecay = 0;
 			fogBase = 5;
 			overcast = 0.2;
 			waves = 0.2;
@@ -4525,6 +4522,20 @@ class CfgSettings
 			lightnings = 0.1;
 			rainbows = 1;
 		};
+		
+		class Rainy
+		{
+			fogValue = 0.2;
+			fogDecay = 0.1;
+			fogBase = 5;
+			overcast = 0.6;
+			waves = 0.6;
+			wind = 0.50;
+			gusts = 0.5;
+			rain = 0.50;
+			lightnings = 0.1;
+			rainbows = 1;
+		};
 
 		class Thunderstorm
 		{
@@ -4533,7 +4544,7 @@ class CfgSettings
 			fogBase = 5;
 			overcast = 1;
 			waves = 1;
-			wind = 0.25;
+			wind = 1;
 			gusts = 0.5;
 			rain = 1;
 			lightnings = 1;
@@ -4603,7 +4614,7 @@ class CfgSettings
 			0 = off
 			1 = on
 		*/
-		useRestartMessages = 0;
+		useRestartMessages = 1;
 
 		/*
 			Number of minutes before the restart to inform your players.
@@ -4685,7 +4696,7 @@ class CfgSettings
 				The type of box is chosen randomly from the following list.
 				Add a type multiple times to increase the chance of being used.
 			*/
-			types[] = {"Beer", "Beer", "Tools", "Food", "Food", "RepairParts"};
+			types[] = {"Beer", "Beer", "Tools", "Food", "Food", "RepairParts","Survival"};
 
 			class BoxTypes
 			{
@@ -4723,6 +4734,7 @@ class CfgSettings
 						{"Exile_Item_Pliers", 1},
 						{"Exile_Item_Handsaw", 1},
 						{"Exile_Item_FireExtinguisher", 1},
+						{"Exile_Item_Knife", 1},
 						{"Exile_Item_DuctTape", 1}
 					};
 				};
@@ -4735,7 +4747,18 @@ class CfgSettings
 						{"Exile_Item_FuelCanisterFull", 4},
 						{"Exile_Item_OilCanister", 1},
 						{"Exile_Item_Grinder", 1},
+						{"Exile_Headgear_GasMask", 1},
 						{"Exile_Item_CordlessScrewdriver", 1}
+					};
+				};
+				class Survival 
+				{
+					items[] = 
+					{
+						{"Exile_Item_InstaDoc", 2},
+						{"Exile_Item_Vishpirin", 1},
+						{"Exile_Item_Defibrillator", 1},
+						{"Exile_Item_InstantCoffee", 1}
 					};
 				};
 			};

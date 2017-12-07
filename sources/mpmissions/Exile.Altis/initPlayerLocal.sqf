@@ -506,3 +506,10 @@ call ExileClient_object_trader_create;
     187.428
 ]
 call ExileClient_object_trader_create;
+
+///////////////////////////////////////////////////////////////////////////
+// Mod repair joe
+///////////////////////////////////////////////////////////////////////////
+
+JohnO_fnc_repairWheels = compileFinal preprocessFileLineNumbers "JohnO_fnc_repairWheels.sqf";
+JohnO_fnc_repairRotors = compileFinal preprocessFileLineNumbers "JohnO_fnc_repairRotors.sqf";
