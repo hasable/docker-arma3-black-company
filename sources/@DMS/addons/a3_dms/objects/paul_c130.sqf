@@ -1,0 +1,14 @@
+[
+	["C130J_wreck_EP1",[-3.27368,-4.38623,4.76837e-007],0],
+	["AmmoCrates_NoInteractive_Large",[-2.42261,5.78418,-0.816357],0],
+	["CUP_hromada_beden_dekorativniX",[-2.36035,9.07129,-0.696035],0],
+	["Land_PaperBox_open_full_F",[2.552,-2.00781,0],0],
+	["Land_PaperBox_open_empty_F",[1.5603,0.310547,0],0],
+	["Land_PaperBox_open_full_F",[-6.8811,-2.41992,0],0],
+	["Land_Pallet_MilBoxes_F",[-7.67676,1.13379,0],0],
+	["Box_CSAT_Uniforms_F",[-6.7605,-0.541504,0],201.116],
+	["Box_AAF_Uniforms_F",[3.41797,-0.694336,0],103.27],
+	["O_supplyCrate_F",[-8.33032,-1.38086,4.86374e-005],283.184],
+	["Land_CargoBox_V1_F",[1.80908,2.62109,0],0],
+	["CUP_misc_BurnSpruce_PMC",[28.2466,-17.7163,-4.76837e-007],0]
+]

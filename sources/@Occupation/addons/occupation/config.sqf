@@ -20,8 +20,8 @@ SC_infiSTAR_log					= true;						// true Use infiSTAR logging, false logs to ser
 SC_useApexClasses           	= true;                 	// true if you want to use the Apex class list over rides, false to use vanilla Arma gear
 SC_useMapOverrides          	= true;                 	// set to true to enable over riding options per map (see the bottom of this file for examples)
 
-SC_maxAIcount					= 100;						// the maximum amount of AI, if the AI count is above this then additional AI won't spawn
-SC_mapMarkers					= false;                	// Place map markers at the occupied areas (occupyPlaces and occupyMilitary only) true/false
+SC_maxAIcount					= 500;						// the maximum amount of AI, if the AI count is above this then additional AI won't spawn
+SC_mapMarkers					= false;                	    // Place map markers at the occupied areas (occupyPlaces and occupyMilitary only) true/false
 SC_minFPS						= 5;				    	// any lower than minFPS on the server and additional AI won't spawn
 SC_scaleAI						= 10;						// any more than _scaleAI players on the server and _maxAIcount is reduced for each extra player
 
@@ -41,10 +41,10 @@ SC_fastNights               	= true;						// true if you want night time to go f
 SC_occupyPlaces 				= true;						// true if you want villages,towns,cities patrolled by bandits
 SC_occupyTraders            	= true;						// true if you want to create trader camps at positions specified in SC_occupyTraderDetails
 SC_occupyStatic	 		    	= false;		    		// true if you want to add AI in specific locations
-SC_occupyTransport 	        	= true;						// true if you want pubic transport (travels between traders)
+SC_occupyTransport 	        	= false;					// true if you want pubic transport (travels between traders)
 SC_occupyLootCrates		    	= true;						// true if you want to have random loot crates with guards
 SC_occupyRandomSpawn        	= true;                		// (WORK IN PROGRESS) true if you want random spawning AI that hunt for nearby players
-SC_occupyMilitary 		    	= false;			    	// true if you want military buildings patrolled
+SC_occupyMilitary 		    	= true;			    	// true if you want military buildings patrolled
 SC_occupyVehicle				= true;						// true if you want to have roaming AI land vehicles
 SC_occupySky					= true;						// true if you want to have roaming AI helis
 SC_occupySea					= false;					// true if you want to have roaming AI boats
@@ -143,12 +143,12 @@ SC_occupyLootCratesLocations	= [
                                     [4000,4000,0]
                                 ];
 SC_SpawnLootCrateGuards			= true;						// true if you want to enable AI guards
-SC_numberofLootCrates       	= 6;                    	// if SC_occupyLootCrates = true spawn this many loot crates (overrided below for Namalsk)
-SC_LootCrateGuards          	= 2;                    	// number of AI to spawn at each crate
+SC_numberofLootCrates       	= 3;                    	// if SC_occupyLootCrates = true spawn this many loot crates (overrided below for Namalsk)
+SC_LootCrateGuards          	= 3;                    	// number of AI to spawn at each crate
 SC_LootCrateGuardsRandomize 	= true;                 	// Use a random number of guards up to a maximum = SC_LootCrateGuards (so between 1 and SC_LootCrateGuards)
 SC_occupyLootCratesMarkers		= true;						// true if you want to have markers on the loot crate spawns
 
-SC_ropeAttach               	= false;                	// Allow lootcrates to be airlifted (for SC_occupyLootCrates and SC_occupyHeliCrashes)
+SC_ropeAttach               	= true;                	// Allow lootcrates to be airlifted (for SC_occupyLootCrates and SC_occupyHeliCrashes)
 
 // Array of possible common items to go in loot crates ["classname",fixed amount,random amount]
 // ["Exile_Item_Matches",1,2] this example would add between 1 and 3 Exile_Item_Matches to the crate (1 + 0 to 2 more)
@@ -207,7 +207,7 @@ SC_occupyHeliCrashesLocations	= [
                                 ];
 SC_HeliCrashesOnFire			= true;                 	// true if you want the crash on fire, false if you just want smoke
 SC_SpawnHeliCrashGuards			= true;						// true if you want to enable AI guards
-SC_numberofHeliCrashes      	= 5;						// if SC_occupyHeliCrashes = true spawn this many Heli Crashes
+SC_numberofHeliCrashes      	= 2;						// if SC_occupyHeliCrashes = true spawn this many Heli Crashes
 SC_HeliCrashGuards          	= 6;                    	// number of AI to spawn at each crate
 SC_HeliCrashGuardsRandomize 	= true;                 	// Use a random number of guards up to a maximum = SC_HeliCrashGuards (so between 1 and SC_HeliCrashGuards)
 SC_HeliCrashMarkers				= true;						// true if you want to have markers on the Heli Crashes
@@ -311,7 +311,7 @@ SC_occupySkyVehicleIgnoreCount		= false;	// true if you want spawn vehicles rega
 // Array of aircraft which can be used by AI patrols (the number next to next vehicle is the maximum amount of that class allowed, 0 for no limit)
 SC_HeliClassToUse 		    	=   [ ["Exile_Chopper_Huey_Armed_Green",0] ];
 
-SC_occupyHeliUseFixedPos		= true;		// True if you want to specify the patrol positions and radius of the area to patrol / false for random
+SC_occupyHeliUseFixedPos		= false;		// True if you want to specify the patrol positions and radius of the area to patrol / false for random
 
 											// if you set SC_maxNumberofHelis higher than the number of static positions, the remainder will be random
 											// they will also ignore any blacklisted areas
@@ -391,7 +391,7 @@ SC_BanditLastNames      		= ["Dimitrov","Petrov","Horvat","Novak","Dvorak","Vese
 SC_SurvivorsChance          	= 20;						// chance in % to spawn survivors instead of bandits (for places and land vehicles)
 
 
-SC_SurvivorsFriendly        	= true;                 	// true if you want survivors to be friendly to players (until they are attacked by players)
+SC_SurvivorsFriendly        	= false;                 	// true if you want survivors to be friendly to players (until they are attacked by players)
 															// false if you want survivors to be aggressive to players
 
 // Possible equipment for survivor AI to spawn with 

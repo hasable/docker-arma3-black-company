@@ -26,7 +26,7 @@ class CfgSettings
         /**
          * list of allowed admins using its player UID (default: me)
          */
-        AdminList[] = {"76561197990024201", "76561198007339024"};
+        AdminList[] = {};
         /**
          * list of admins with restricted access only
          */
@@ -48,18 +48,7 @@ class CfgSettings
                             "getweapon", /* get me a weapon */
                             "getammo", /* get me ammo */
                             "getitem", /* get me any other item */
-                            "spawn", /* span vehicles */
-                            "buildpers", /* build a persistent object */
-                            "build", /* build a temp object */
-                            "buildremove", /* remove tempory/pers. objects */
-                            "buildpersistent", /* save the persistent buildings - neccessary?! */
-                            "buildinfopersistent", /* get some info */
-                            "buildabort", /* abourt the building process - should always be in that list when building is allowed */
-                            "clearpersistent", /* Cleanup all persistent buildings */
-                            "savepersistent", /* ??? */
-                            "specplayer",  /* allow spectating other players */
-                            "godmodeon", /* allow godmode */
-                            "godmodeoff" /* allow disable its godmode once enabled - huh?! */
+                            "spawn"
                             };
         /**
          * Used for server commands achieved from extensions

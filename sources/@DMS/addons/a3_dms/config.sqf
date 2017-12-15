@@ -53,7 +53,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 /* Mission System Settings */
 	/*General settings for dynamic missions*/
 	DMS_DynamicMission					= true;						// Enable/disable dynamic mission system.
-	DMS_MaxBanditMissions				= 3;						// Maximum number of Bandit Missions running at the same time
+	DMS_MaxBanditMissions				= 5;						// Maximum number of Bandit Missions running at the same time
 	DMS_TimeToFirstMission				= [180,420];				// [Minimum,Maximum] time between first mission spawn. | DEFAULT: 3-7 minutes.
 	DMS_TimeBetweenMissions				= [600,900];				// [Minimum,Maximum] time between missions (if mission limit is not reached) | DEFAULT: 10-15 mins
 	DMS_MissionTimeout					= [900,1800]; 				// [Minimum,Maximum] time it will take for a mission to timeout | DEFAULT: 15-30 mins
@@ -85,7 +85,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_ShowMarkerCircle				= false;					// Whether or not to show the colored "circle" around a mission marker.
 	DMS_MarkerText_ShowMissionPrefix	= true;						// Whether or not to place a prefix before the mission marker text. Enable this if your players get confused by the marker names :P
 	DMS_MarkerText_MissionPrefix		= "Mission:";				// The text displayed before the mission name in the mission marker.
-	DMS_MarkerText_ShowAICount			= true;						// Whether or not to display the number of remaining AI in the marker name.
+	DMS_MarkerText_ShowAICount			= false;						// Whether or not to display the number of remaining AI in the marker name.
 	DMS_MarkerText_ShowAICount_Static	= true;						// Whether or not to display the number of remaining AI in the marker name for STATIC missions.
 	DMS_MarkerText_AIName				= "Units";					// What the AI will be called in the map marker. For example, the marker text can show: "Car Dealer (3 Units remaining)"
 	DMS_MarkerPosRandomization			= false;					// Randomize the position of the circle marker of a mission
@@ -275,6 +275,17 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											//["slums",1]			//<--Example (already imported by default on Altis in map configs)
 											//["occupation",1]		//<--Example
 											//["sectorB",1]			//<--Example for Taviana
+											//["a_village",1]
+											//["ai_island",1]
+											//["thelosracetrack",1]
+											//["bomos",1]
+											//["castle_183",1]
+											//["chelonisi",1]
+											//["kastro_castle",1]
+											//["kore_factory",1]
+											//["mayor",1]
+											//["military_junkyard",1]
+											//["storage_invasion",1]
 										];
 
 	DMS_SpecialMissions =				[								// List of special missions with restrictions. Each element must be defined as [mission<STRING>, minPlayers<SCALAR>, maxPlayers<SCALAR>, timesPerRestart<SCALAR>, _timeBetween<SCALAR>].
@@ -283,7 +294,18 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 
 	DMS_BasesToImportOnServerStart = 	[								// List of static bases to import on server startup (spawned post-init). This will reduce the amount of work the server has to do when it actually spawns static missions, and players won't be surprised when a base suddenly pops up. You can also include any other M3E-exported bases to spawn here.
 											//"saltflatsbase",		//<--Example (already imported by default on Altis)
-											//"slums_objects"		//<--Example (already imported by default on Altis)
+											//"slums_objects",		//<--Example (already imported by default on Altis)
+											//"a_village_buildings",
+											//"ai_island_buildings",
+											//"bomos_buildings",
+											//"castle_183_buildings",
+											//"chelonisi_buildings",
+											//"kastro_castle_buildings",
+											//"kore_factory_buildings",
+											//"mayor_buildings",
+											//"military_junkyard_buildings",
+											//"storage_invasion_buildings",
+											"thelosracetrack_buildings"
 										];
 
 	DMS_BanditMissionsOnServerStart =	[
@@ -966,7 +988,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 										];
 
 	DMS_ai_use_launchers				= true;						// Enable/disable spawning an AI in a group with a launcher
-	DMS_ai_launchers_per_group			= 2;						// How many units per AI group can get a launcher.
+	DMS_ai_launchers_per_group			= 1;						// How many units per AI group can get a launcher.
 	DMS_ai_use_launchers_chance			= 50;						// Percentage chance to actually spawn the launcher (per-unit). With "DMS_ai_launchers_per_group" set to 2, and "DMS_ai_use_launchers_chance" set to 50, there will be an average of 1 launcher per group.
 	DMS_AI_launcher_ammo_count			= 2;						// How many rockets an AI will get with its launcher
 	DMS_ai_remove_launchers				= true;						// Remove rocket launchers on AI death
@@ -976,11 +998,11 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											"launch_RPG7_F",
 											#endif
 											"launch_NLAW_F",
-											"launch_RPG32_F",
-											"launch_B_Titan_short_F"
+											//"launch_B_Titan_short_F",
+											"launch_RPG32_F"
 										];
 	DMS_AI_wep_launchers_AA =			[							// AA Launchers
-											"launch_B_Titan_F"
+											//"launch_B_Titan_F"
 										];
 
 	DMS_RHeli_Height					= 500;						// Altitude of the heli when flying to drop point.

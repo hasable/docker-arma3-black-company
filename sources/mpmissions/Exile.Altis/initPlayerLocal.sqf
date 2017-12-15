@@ -511,5 +511,6 @@ call ExileClient_object_trader_create;
 // Mod repair joe
 ///////////////////////////////////////////////////////////////////////////
 
-JohnO_fnc_repairWheels = compileFinal preprocessFileLineNumbers "JohnO_fnc_repairWheels.sqf";
-JohnO_fnc_repairRotors = compileFinal preprocessFileLineNumbers "JohnO_fnc_repairRotors.sqf";
+//Advanced repair
+Bones_fnc_salvageAndRepairMenuHelo = compileFinal preprocessFileLineNumbers "Custom\advancedRepair\Bones_fnc_salvageAndRepairMenuHelo.sqf";
+Bones_fnc_salvageAndRepairMenuCar = compileFinal preprocessFileLineNumbers "Custom\advancedRepair\Bones_fnc_salvageAndRepairMenuCar.sqf";

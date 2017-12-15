@@ -53,18 +53,32 @@ showUAVFeed = 0;
 reviveDelay = 6;
 reviveForceRespawnDelay = 3;
 reviveBleedOutDelay = 120;
-
-showHUD[] =
+////
+//original
+///
+//showHUD[] =
+//{
+   // true,   // Scripted HUD (same as showHUD command)
+  //  true,   // Vehicle + soldier info
+  //  true,   // Vehicle radar
+  //  true,   // Vehicle compass
+  //  true,   // Tank direction indicator
+  //  false,  // Commanding menu
+  //  false,  // Group Bar
+  //  true,   // HUD Weapon Cursors
+  //  true   // Vehicle Panel (Required for GPS)
+//};
+showHUD[] = 
 {
     true,   // Scripted HUD (same as showHUD command)
     true,   // Vehicle + soldier info
-    true,   // Vehicle radar
+    true,   // Vehicle radar 
     true,   // Vehicle compass
     true,   // Tank direction indicator
-    false,  // Commanding menu
+    true,  // Commanding menu
     false,  // Group Bar
     true,   // HUD Weapon Cursors
-    true   // Vehicle Panel (Required for GPS)
+    false   // Squad Radar
 };
 
 #include "config.cpp"
@@ -77,7 +91,7 @@ class CfgRemoteExec
         jip = 0;
 
         class ExileServer_system_network_dispatchIncomingMessage { allowedTargets = 2; };
-		
+
 		// ATK
 		class AdminToolkit_network_receiveRequest { allowedTargets = 2; };
 		

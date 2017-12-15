@@ -46,8 +46,8 @@ class CfgXM8
 
 	class ExAd_Info 
 	{
-		title = "Server Info";
 		controlID = 50100;					//IDC:50100 -> 50102 || These need to be unique and out of range from each other
+        title = "Server Info";
 		logo = "ExadClient\XM8\Apps\Info\Icon_SI.paa";
 		onLoad = "ExAdClient\XM8\Apps\Info\onLoad.sqf";
 		onOpen = "ExAdClient\XM8\Apps\Info\onOpen.sqf";
@@ -56,8 +56,8 @@ class CfgXM8
 	
 	class ExAd_CHVD 
 	{
-		title = "View Distance Settings";
 		controlID = 50200;					//IDC:50200 -> 50102 || These need to be unique and out of range from each other
+        title = "View Distance Settings";
 		config = "ExadClient\XM8\Apps\CHVD\config.sqf";
 		logo = "ExadClient\XM8\Apps\CHVD\Icon_CHVD.paa";
 		onLoad = "ExAdClient\XM8\Apps\CHVD\onLoad.sqf";
@@ -87,11 +87,12 @@ class CfgXM8
 	};
 	class ExAd_SB 
 	{
-		title = "Statsbar Settings";
 		controlID = 50400;					//IDC:50400 -> 50475 || These need to be unique and out of range from each other
+        title = "Statsbar Settings";
 		logo = "ExadClient\XM8\Apps\SB_Settings\Icon_SB.paa";
 		onLoad = "ExAdClient\XM8\Apps\SB_Settings\onLoad.sqf";
 	};
+	
 	class BRAmaRecipes 
 	{
 		controlID = 107000;
@@ -569,7 +570,6 @@ class CraftWoodDoorWay: Exile_AbstractCraftingRecipe
     };
     category = "Construction Wooden";
 };
-/*
 class CraftWoodDrawBridge: Exile_AbstractCraftingRecipe
 {
     name = "Craft Wood Draw-Bridge";
@@ -585,7 +585,6 @@ class CraftWoodDrawBridge: Exile_AbstractCraftingRecipe
         {2, "Exile_Item_Rope"}
     };
 };
-*/
 class CraftWoodFloor: Exile_AbstractCraftingRecipe
 {
     name = "Craft Wood Floor";
@@ -1403,7 +1402,7 @@ class CfgExileArsenal
 	class optic_LRPS								{ quality = 5; price = 300; };
 	class optic_MRCO								{ quality = 1; price = 100; };
 	class optic_MRD									{ quality = 1; price = 10; };
-	class optic_Nightstalker						{ quality = 6; price = 1000; };
+	class optic_Nightstalker						{ quality = 6; price = 2000; };
 	class optic_NVS									{ quality = 4; price = 500; };
 	class optic_SOS									{ quality = 2; price = 200; };
 	//class optic_tws									{ quality = QUALITY_LEVEL_9000; price = 1500; };
@@ -1421,9 +1420,9 @@ class CfgExileArsenal
 	class Exile_Item_LightBulb						{ quality = 1; price = 20; };
 	class Exile_Item_MetalBoard						{ quality = 1; price = 600; };
 	//class Exile_Item_MetalHedgehogKit				{ quality = 1; price = 1200; };
-	class Exile_Item_SafeKit						{ quality = 4; price = 25000; };
-	class Exile_Item_CodeLock						{ quality = 1; price = 5000; };
-	//class Exile_Item_Laptop						{ quality = 2; price = 9000; };
+	class Exile_Item_SafeKit						{ quality = 4; price = 25000; sellPrice = 20000; };
+	class Exile_Item_CodeLock						{ quality = 1; sellPrice = 1000;};
+	class Exile_Item_Laptop						    { quality = 2; sellPrice = 1000;};
 	//class Exile_Item_BaseCameraKit				{ quality = 2; price = 5000; };
 	class Exile_Item_CamoTentKit					{ quality = 1; price = 250; };
 	class Exile_Item_MetalPole						{ quality = 1; price = 800; };
@@ -1515,7 +1514,7 @@ class CfgExileArsenal
 	class Exile_Item_Bandage	                    { quality = 2; price = 100; };
 	class Exile_Item_Heatpack	                    { quality = 1; price = 50; };
 
-	//class Exile_Item_Defibrillator				{ quality = 1; price = 7500; };
+	class Exile_Item_Defibrillator				{ quality = 1; sellPrice = 10000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Tools
@@ -1527,7 +1526,7 @@ class CfgExileArsenal
 	class Exile_Item_CanOpener						{ quality = 1; price = 80; };
 	class Exile_Item_Handsaw						{ quality = 2; price = 500; };
 	class Exile_Item_Pliers							{ quality = 2; price = 350; };
-	class Exile_Item_Grinder						{ quality = 2; price = 1250; };
+	class Exile_Item_Grinder						{ quality = 2; sellPrice = 800;};
 	class Exile_Item_Foolbox						{ quality = 2; price = 4000; };
 	//class Exile_Item_CordlessScrewdriver			{ quality = 1; price = 750; };
 	//class Exile_Item_FireExtinguisher				{ quality = 1; price = 650; };
@@ -1547,7 +1546,7 @@ class CfgExileArsenal
 	class ItemGPS									{ quality = 2; price = 40; };
 	class ItemMap									{ quality = 1; price = 6; };
 	class ItemCompass								{ quality = 1; price = 6; };
-	class ItemRadio									{ quality = 1; price = 40; };
+	//class ItemRadio									{ quality = 1; price = 40; };
 	class Binocular									{ quality = 1; price = 40; };
 	class Rangefinder								{ quality = 3; price = 200; };
 	class Laserdesignator							{ quality = 6; price = 750; };
@@ -1562,7 +1561,7 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	// Watch out for a Walter fart! He has gas!
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Headgear_GasMask					{ quality = 4; price = 500; };
+	class Exile_Headgear_GasMask					{ quality = 4; sellPrice = 5000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Rebreather
@@ -1829,8 +1828,8 @@ class CfgExileArsenal
 	class srifle_DMR_06_camo_F 						{ quality = 5; price = 800; };
 	class srifle_DMR_06_olive_F 					{ quality = 5; price = 800; };
 	class srifle_EBR_F 								{ quality = 3; price = 700; };
-	class srifle_GM6_camo_F 						{ quality = 6; price = 900; };
-	class srifle_GM6_F 								{ quality = 6; price = 900; };
+	class srifle_GM6_camo_F 						{ quality = 6; price = 1000; };
+	class srifle_GM6_F 								{ quality = 6; price = 1000; };
 	class srifle_LRR_camo_F 						{ quality = 6; price = 850; };
 	class srifle_LRR_F 								{ quality = 6; price = 850; };
 
@@ -1860,8 +1859,8 @@ class CfgExileArsenal
 	class Exile_Weapon_TaurusGold					{ quality = 1; price = 150; };
 	class Exile_Weapon_M1014						{ quality = 2; price = 200; };
 	class Exile_Weapon_SA61							{ quality = 1; price = 150; };
-	class Exile_Weapon_m107							{ quality = 5; price = 850; };
-	class Exile_Weapon_ksvk							{ quality = 5; price = 850; };
+	class Exile_Weapon_m107							{ quality = 5; price = 1500; };
+	class Exile_Weapon_ksvk							{ quality = 5; price = 1500; };
 	class Exile_Weapon_M4							{ quality = 2; price = 300; };
 	class Exile_Weapon_M16A4						{ quality = 2; price = 350; };
 	class Exile_Weapon_M16A2						{ quality = 1; price = 300; };
@@ -2169,14 +2168,14 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Chopper_Huey_Green 					{ quality = 2; price = 21000; };
 	class Exile_Chopper_Huey_Desert					{ quality = 2; price = 21000; };
-	class Exile_Chopper_Huey_Armed_Green			{ quality = 2; price = 25000; };
-	class Exile_Chopper_Huey_Armed_Desert			{ quality = 2; price = 25000; };
+	class Exile_Chopper_Huey_Armed_Green			{ quality = 2; price = 30000; };
+	class Exile_Chopper_Huey_Armed_Desert			{ quality = 2; price = 30000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Hellcat
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Chopper_Hellcat_Green				{ quality = 3; price = 27500; };
-	class Exile_Chopper_Hellcat_FIA					{ quality = 3; price = 27500; };
+	class Exile_Chopper_Hellcat_Green				{ quality = 3; price = 35000; };
+	class Exile_Chopper_Hellcat_FIA					{ quality = 3; price = 35000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Hummingbird
@@ -2207,26 +2206,32 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	// Huron
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Chopper_Huron_Black								{ quality = 5; price = 50000; };
-	class Exile_Chopper_Huron_Green								{ quality = 5; price = 50000; };
+	class Exile_Chopper_Huron_Black								{ quality = 5; price = 80000; };
+	class Exile_Chopper_Huron_Green								{ quality = 5; price = 80000; };
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // UH-80 Ghost Hawk
+    ///////////////////////////////////////////////////////////////////////////////
+    class B_Heli_Transport_01_F                                 { quality = 5; price = 150000; };//Armée
+    class B_Heli_Transport_01_camo_F                            { quality = 5; price = 150000; };//Armée
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Mohawk
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Chopper_Mohawk_FIA								{ quality = 4; price = 45000; };
+	class Exile_Chopper_Mohawk_FIA								{ quality = 4; price = 75000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Orca
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Chopper_Orca_CSAT								{ quality = 3; price = 28000; };
-	class Exile_Chopper_Orca_Black								{ quality = 3; price = 28000; };
-	class Exile_Chopper_Orca_BlackCustom						{ quality = 3; price = 28000; };
+	class Exile_Chopper_Orca_CSAT								{ quality = 3; price = 60000; };
+	class Exile_Chopper_Orca_Black								{ quality = 3; price = 60000; };
+	class Exile_Chopper_Orca_BlackCustom						{ quality = 3; price = 60000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Taru
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Chopper_Taru_Transport_CSAT						{ quality = 3; price = 17000; };
-	class Exile_Chopper_Taru_Transport_Black					{ quality = 3; price = 17000; };
+	class Exile_Chopper_Taru_Transport_CSAT						{ quality = 3; price = 19000; };
+	class Exile_Chopper_Taru_Transport_Black					{ quality = 3; price = 19000; };
 
 	class Exile_Chopper_Taru_CSAT								{ quality = 4; price = 33000; };
 	class Exile_Chopper_Taru_Black								{ quality = 4; price = 33000; };
@@ -2237,14 +2242,14 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	// Cessna
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Plane_Cessna									{ quality = 1; price = 16500; };
+	class Exile_Plane_Cessna									{ quality = 1; price = 15000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// An-2
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Plane_AN2_Green									{ quality = 2; price = 17000; };
-	class Exile_Plane_AN2_White									{ quality = 2; price = 17000; };
-	class Exile_Plane_AN2_Stripe								{ quality = 2; price = 17000; };
+	class Exile_Plane_AN2_Green									{ quality = 2; price = 15000; };
+	class Exile_Plane_AN2_White									{ quality = 2; price = 15000; };
+	class Exile_Plane_AN2_Stripe								{ quality = 2; price = 15000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Hatchback
@@ -2383,12 +2388,14 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	// Hunter
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Hunter 								{ quality = 5; price = 26500; };
+    class Exile_Car_Hunter                              { quality = 5; price = 40000; };
+	class B_MRAP_01_hmg_F 								{ quality = 5; price = 90000; };//Armée
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Ifrit
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Ifrit 								{ quality = 4; price = 23000; };
+    class Exile_Car_Ifrit                               { quality = 4; price = 44000; };
+	class O_MRAP_02_hmg_F 								{ quality = 4; price = 100000; };//Armée
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Offroad
@@ -2457,7 +2464,8 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	// Strider
 	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Car_Strider 							{ quality = 6; price = 44000; };
+    class Exile_Car_Strider                             { quality = 6; price = 44000; };
+	class I_MRAP_03_hmg_F  							    { quality = 6; price = 100000; }; //Armée
 
 	///////////////////////////////////////////////////////////////////////////////
 	// SUV
@@ -2619,15 +2627,12 @@ class CfgExileCustomCode
 		ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
 	*/
 	
-	// Server restart 
-	ExileServer_system_rcon_thread_check = "Custom\Restart\Custom_exileServerSystemRconThreadCheck.sqf";
-	
 	// Custom Loadout joe
 	ExileServer_object_player_network_createPlayerRequest = "Custom\CustomLoadout\ExileServer_object_player_network_createPlayerRequest.sqf";
 	ExileServer_object_player_createBambi = "Custom\CustomLoadout\ExileServer_object_player_createBambi.sqf";
 
     // Custom Repair
-    //ExileClient_object_vehicle_repair = "ExileClient_object_vehicle_repair.sqf";
+    ExileClient_object_vehicle_repair = "ExileClient_object_vehicle_repair.sqf";
 
 	ExileClient_gui_xm8_slide = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_slide.sqf";
 	ExileClient_gui_xm8_show = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_show.sqf";  
@@ -3030,16 +3035,23 @@ class CfgInteractionMenus
 			};
 
 			// Repairs a vehicle to 100%. Requires Duckttape
-			class Repair: ExileAbstractAction
+			/*class Repair: ExileAbstractAction
 			{
-				title = "Repair";
-				condition = "true";
-				action = "['RepairVehicle', _this select 0] call ExileClient_action_execute";
+				//title = "Repair";
+				//condition = "true";
+				//action = "['RepairVehicle', _this select 0] call ExileClient_action_execute";
 
                 //title = "Repair Body";
                 //condition = "call ExileClient_object_vehicle_interaction_show";
-                //action = "_this call ExileClient_object_vehicle_Repair";
-			};/*
+                //action = "['RepairVehicle', _this select 0] call ExileClient_object_vehicle_Repair";
+            };*/
+            class Repair: ExileAbstractAction
+            {
+                title = "Repair/Salvage";
+                condition = "true";
+                action = "_this call Bones_fnc_salvageAndRepairMenuCar";
+            };
+            /*
             // ADD Mod Repair joe 
             class RepairWheels: ExileAbstractAction
             {
@@ -3127,12 +3139,19 @@ class CfgInteractionMenus
 			};
 
 			// Repairs a vehicle to 100%. Requires Duckttape
-			class Repair: ExileAbstractAction
+			/*class Repair: ExileAbstractAction
 			{
 				title = "Repair";
 				condition = "true";
 				action = "['RepairVehicle', _this select 0] call ExileClient_action_execute";
-			};
+			};*/
+
+            class Repair: ExileAbstractAction
+            {
+                title = "Repair/Salvage";
+                condition = "true";
+                action = "_this call Bones_fnc_salvageAndRepairMenuHelo";
+            };
 
 			// Flips a vehicle so the player doesnt have to call an admin
 			// Check if vector up is fucked
@@ -3743,7 +3762,7 @@ class CfgLocker
 {
 	numbersOnly = "0123456789";
 	
-	maxDeposit = 1000000;
+	maxDeposit = 600000;
 };
 
 class CfgPlayer 
@@ -4285,8 +4304,8 @@ class CfgTraderCategories
 			"H_Helmet_Skate",
 			"H_HelmetB_TI_tna_F",
 			// these 2 ones may not stands...
-			"H_HelmetO_ViperSP_hex_F",
-			"H_HelmetO_ViperSP_ghex_F",
+			//"H_HelmetO_ViperSP_hex_F",
+			//"H_HelmetO_ViperSP_ghex_F",
 			"H_HelmetB_tna_F",
 			"H_HelmetB_Enh_tna_F",
 			"H_HelmetB_Light_tna_F",
@@ -4512,33 +4531,34 @@ class CfgTraderCategories
 			"Exile_Item_MetalPole",
 			"Exile_Item_SafeKit",
 			"Exile_Item_CamoTentKit",
-			"Exile_Item_CodeLock",
-			"Exile_Item_MetalScrews"
+			//"Exile_Item_CodeLock",
+			"Exile_Item_Rope",
+            "Exile_Item_MetalScrews"
 
-			/*
-			--Not for Sale--
-			"Exile_Item_MetalWire",
-			"Exile_Item_Laptop",
-			"Exile_Item_BaseCameraKit",
-			"Exile_Item_MetalHedgehogKit",
-			"Exile_Item_Cement",
-			"Exile_Item_Sand",
-			"Exile_Item_MobilePhone",
-			--Unused--
-			"Exile_Item_SprayCan_Black",
-			"Exile_Item_SprayCan_Red",
-			"Exile_Item_SprayCan_Green",
-			"Exile_Item_SprayCan_White",
-			"Exile_Item_SprayCan_Blue",
-			"Exile_Item_CordlessScrewdriver",
-			"Exile_Item_FireExtinguisher",
-			"Exile_Item_OilCanister",
-			"Exile_Item_Hammer",
-			"Exile_Item_Carwheel",
-			"Exile_Item_SleepingMat",
-			"Exile_Item_Defibrillator",
-			"Exile_Item_Wrench",
-			"Exile_Item_Rope"
+            /*
+            --Not for Sale--
+            "Exile_Item_MetalWire",
+            "Exile_Item_Laptop",
+            "Exile_Item_BaseCameraKit",
+            "Exile_Item_MetalHedgehogKit",
+            "Exile_Item_Cement",
+            "Exile_Item_Sand",
+            "Exile_Item_MobilePhone",
+            --Unused--
+            "Exile_Item_SprayCan_Black",
+            "Exile_Item_SprayCan_Red",
+            "Exile_Item_SprayCan_Green",
+            "Exile_Item_SprayCan_White",
+            "Exile_Item_SprayCan_Blue",
+            "Exile_Item_CordlessScrewdriver",
+            "Exile_Item_FireExtinguisher",
+            "Exile_Item_OilCanister",
+            "Exile_Item_Hammer",
+            "Exile_Item_Carwheel",
+            "Exile_Item_SleepingMat",
+            "Exile_Item_Defibrillator",
+            "Exile_Item_Wrench",
+            "Exile_Item_Rope"
 		*/
 		};
 	};
@@ -4656,7 +4676,7 @@ class CfgTraderCategories
 			"Exile_Item_CanOpener",
 			"Exile_Item_Handsaw",
 			"Exile_Item_Pliers",
-			"Exile_Item_Grinder",
+			//"Exile_Item_Grinder",
 			"Exile_Item_Foolbox",
 
 			/*
@@ -4685,7 +4705,7 @@ class CfgTraderCategories
 			"ItemGPS",
 			"ItemMap",
 			"ItemCompass",
-			"ItemRadio",
+			//"ItemRadio",
 			"ItemWatch",
 			"Exile_Item_XM8"			
 		};
@@ -4703,7 +4723,7 @@ class CfgTraderCategories
 			"Exile_Item_Heatpack",
 
 			// Not available in 0.9.4!
-			"Exile_Item_Defibrillator"
+			//"Exile_Item_Defibrillator"
 		};
 	};
 
@@ -5164,8 +5184,8 @@ class CfgTraderCategories
 			"srifle_DMR_07_blk_F",
 			"srifle_DMR_07_hex_F",
 			"srifle_DMR_07_ghex_F",
-			"Exile_Weapon_m107",
-			"Exile_Weapon_ksvk"
+			//"Exile_Weapon_m107",
+			//"Exile_Weapon_ksvk"
 		};
 	};
 
@@ -5186,7 +5206,7 @@ class CfgTraderCategories
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] =
 		{
-			"Exile_Car_Kart_Black",
+			//"Exile_Car_Kart_Black",
 			"Exile_Bike_QuadBike_Black",
 			"Exile_Car_OldTractor_Red",
 			"Exile_Car_TowTractor_White",
@@ -5194,6 +5214,7 @@ class CfgTraderCategories
 			"Exile_Car_UAZ_Green",
 			"Exile_Car_UAZ_Open_Green",
 			"Exile_Car_Octavius_White",
+            "Exile_Car_Octavius_Black",
 			"Exile_Car_Golf_Red",
 			"Exile_Car_LandRover_Green",
 			"Exile_Car_LandRover_Ambulance_Green",
@@ -5210,6 +5231,7 @@ class CfgTraderCategories
 			"Exile_Car_Offroad_Rusty2",
 			"Exile_Car_Offroad_Rusty3",
 			"Exile_Car_Offroad_Repair_Civillian",
+            "Exile_Car_Offroad_Repair_DarkRed",
 			"Exile_Car_Offroad_Armed_Guerilla01",
 			"Exile_Car_BRDM2_HQ",
 			"Exile_Car_BTR40_MG_Green",
@@ -5219,13 +5241,16 @@ class CfgTraderCategories
 			"Exile_Car_HMMWV_MEV_Green",
 			"Exile_Car_HMMWV_UNA_Green",
 			"Exile_Car_Strider",
+            "I_MRAP_03_hmg_F",
 			"Exile_Car_Hunter",
+            "B_MRAP_01_hmg_F",
 			"Exile_Car_Ifrit",
+            "O_MRAP_02_hmg_F",
 			"Exile_Car_ProwlerLight",
 			"Exile_Car_ProwlerUnarmed",
 			"Exile_Car_QilinUnarmed",
 			"Exile_Car_MB4WD",
-			"Exile_Car_MB4WDOpen"
+			"Exile_Car_MB4WDOpen",
 		};
 	};
 
@@ -5240,12 +5265,13 @@ class CfgTraderCategories
 			"Exile_Car_Van_Fuel_Black",
 			"Exile_Car_Ural_Open_Worker",
 			"Exile_Car_Ural_Covered_Worker",
+            "Exile_Car_Ural_Covered_Military",
 			"Exile_Car_V3S_Covered",
 			"Exile_Car_Zamak",
 			"Exile_Car_Tempest",
 			"Exile_Car_HEMMT",
 			"Exile_Car_Ikarus_Blue",
-			"B_Truck_01_fuel_F"
+            "Exile_Car_Ikarus_Party"
 		};
 	};
 
@@ -5257,15 +5283,42 @@ class CfgTraderCategories
 		{
 			"Exile_Chopper_Hummingbird_Green",
 			"Exile_Chopper_Hummingbird_Civillian_Wasp",
-			"Exile_Chopper_Huey_Green",
-			"Exile_Chopper_Huey_Armed_Green",
-			"Exile_Chopper_Taru_Black",
-			"Exile_Chopper_Taru_Covered_Black",
-			"Exile_Chopper_Taru_Transport_Black",
+            "Exile_Chopper_Hummingbird_Civillian_Blue",
+            "Exile_Chopper_Hummingbird_Civillian_Red",
+            "Exile_Chopper_Hummingbird_Civillian_ION",
+            "Exile_Chopper_Hummingbird_Civillian_BlueLine",
+            "Exile_Chopper_Hummingbird_Civillian_Digital",
+            "Exile_Chopper_Hummingbird_Civillian_Elliptical",
+            "Exile_Chopper_Hummingbird_Civillian_Furious",
+            "Exile_Chopper_Hummingbird_Civillian_GrayWatcher",
+            "Exile_Chopper_Hummingbird_Civillian_Jeans",
+            "Exile_Chopper_Hummingbird_Civillian_Light",
+            "Exile_Chopper_Hummingbird_Civillian_Shadow",
+            "Exile_Chopper_Hummingbird_Civillian_Sheriff",
+            "Exile_Chopper_Hummingbird_Civillian_Speedy",
+            "Exile_Chopper_Hummingbird_Civillian_Sunset",
+            "Exile_Chopper_Hummingbird_Civillian_Vrana",
+            "Exile_Chopper_Hummingbird_Civillian_Wave",
+            "Exile_Chopper_Huey_Green",
+            "Exile_Chopper_Huey_Desert",
+            "Exile_Chopper_Huey_Armed_Desert",
+            "Exile_Chopper_Huey_Armed_Green",
+            "Exile_Chopper_Taru_Black",
+            "Exile_Chopper_Taru_CSAT",
+            "Exile_Chopper_Taru_Covered_Black",
+            "Exile_Chopper_Taru_Transport_Black",
+            "Exile_Chopper_Taru_Transport_CSAT",
+            "Exile_Chopper_Taru_Covered_CSAT",
+            "Exile_Chopper_Orca_CSAT",
+            "Exile_Chopper_Orca_Black",
 			"Exile_Chopper_Orca_BlackCustom",
 			"Exile_Chopper_Mohawk_FIA",
 			"Exile_Chopper_Huron_Black",
-			"Exile_Chopper_Hellcat_Green"
+            "Exile_Chopper_Huron_Green",
+			"Exile_Chopper_Hellcat_Green",
+            "Exile_Chopper_Hellcat_FIA",
+            "B_Heli_Transport_01_F",
+            "B_Heli_Transport_01_camo_F"
 		};
 	};
 
@@ -6105,8 +6158,8 @@ class CfgVehicleCustoms
 		{
 			{"Exile_Car_Ural_Covered_Blue",			300, "Blue",		{"Exile_psycho_Ural\data\ural_kabina_civil_co.paa","Exile_psycho_Ural\data\ural_plachta_civil_co.paa"}},
 			{"Exile_Car_Ural_Covered_Yellow",		300, "Yellow",		{"Exile_psycho_Ural\data\ural_kabina_civ1_co.paa","Exile_psycho_Ural\data\ural_plachta_civ1_co.paa"}},
-			{"Exile_Car_Ural_Covered_Military",		300, "Military",	{"Exile_psycho_Ural\data\ural_kabina_khk_co.paa","Exile_psycho_Ural\data\ural_plachta_co.paa"}},
 			{"Exile_Car_Ural_Covered_Worker",		300, "Worker",		{"Exile_psycho_Ural\data\ural_kabina_civ2_co.paa","Exile_psycho_Ural\data\Ural_plachta_civil_co.paa"}},
+			{"Exile_Car_Ural_Covered_Military",		300, "Military",	{"Exile_psycho_Ural\data\ural_kabina_khk_co.paa","Exile_psycho_Ural\data\ural_plachta_co.paa"}}
 		};
 	};
 
@@ -6393,7 +6446,10 @@ class CfgVehicleCustoms
 	};
 };
 
-class CfgVehicleTransport 
+////////
+// Original
+///////
+/*class CfgVehicleTransport 
 {
 	class Exile_Container_SupplyBox
 	{
@@ -6434,4 +6490,66 @@ class CfgVehicleTransport
 			detachPosition[] = {0.08, -6};
 		};
 	};
+};*/
+
+
+class CfgVehicleTransport 
+{
+    class Exile_Container_SupplyBox
+    {
+        vehicles[] = {"Exile_Car_Van_Abstract", "Exile_Car_Offroad_Abstract", "Exile_Car_Zamak_Abstract", "Exile_Car_HEMMT_Abstract", "Exile_Car_Tempest_Abstract","Exile_Chopper_Taru_Transport_Abstract","Exile_Chopper_Mohawk_FIA","Exile_Chopper_Huron_Abstract"};
+
+        class Exile_Car_Van_Abstract
+        {
+            attachPosition[] = {0, -1.1, 0.2};
+            cargoIndizes[] = {2, 3, 4, 5, 6, 7}; 
+            detachPosition[] = {0, -4.5};
+        };
+
+        class Exile_Car_Offroad_Abstract
+        {
+            attachPosition[] = {0, -1.6, 0.4};
+            cargoIndizes[] = {1, 2, 3, 4}; 
+            detachPosition[] = {0, -4};
+        };
+
+        class Exile_Car_Zamak_Abstract
+        {
+            attachPosition[] = {0.03, 0.3, 0};
+            cargoIndizes[] = {2, 3, 4, 5, 6, 7}; 
+            detachPosition[] = {0.03, -4.8};
+        };
+
+        class Exile_Car_HEMMT_Abstract
+        {
+            attachPosition[] = {0.05, -0.1, 0.3};
+            cargoIndizes[] = {1, 2, 8, 9}; 
+            detachPosition[] = {0.05, -6.1};
+        };
+
+        class Exile_Car_Tempest_Abstract
+        {
+            attachPosition[] = {0, -4, 0.4};
+            cargoIndizes[] = {1, 6, 7, 9}; 
+            detachPosition[] = {0, -6, -1.4};
+        };
+        class Exile_Chopper_Taru_Transport_Abstract
+        {
+            attachPosition[] = {0, 0.5, -1.5};
+            cargoIndizes[] = {1, 6, 7, 9}; 
+            detachPosition[] = {0, 0.5, -2};
+        };
+        class Exile_Chopper_Mohawk_FIA
+        {
+            attachPosition[] = {0, -0.85, -1.4};
+            cargoIndizes[] = {1, 6, 7, 9}; 
+            detachPosition[] = {0, -6, -2.7};
+        };
+        class Exile_Chopper_Huron_Abstract
+        {
+            attachPosition[] = {0, -4.4, -1};
+            cargoIndizes[] = {1, 6, 7, 9}; 
+            detachPosition[] = {0, -8, -2.3};
+        };
+    };
 };

@@ -14,13 +14,13 @@ services:
       - "2306:2306/udp"
     environment:
       - EXILE_CONFIG_HOSTNAME=BLACK COMPANY DEV SERVER 
-      - EXILE_CONFIG_PASSWORD_COMMAND=jrcnlHB9xwqVlVueLlT6
+      - EXILE_CONFIG_PASSWORD_COMMAND=exileConfigPasswordCommand
       - EXILE_DATABASE_HOST=database
       - EXILE_DATABASE_NAME=altisdb
       - EXILE_DATABASE_USER=altisu
       - EXILE_DATABASE_PASS=altispw
+      - ATK_CONFIG_ADMIN_LIST=76561197990024201,76561198007339024
     volumes:
-      - /mnt/shares/admintoolkit_servercfg.pbo:/opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo
       - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
     links:
         - "arma-3-exile-database:database"
