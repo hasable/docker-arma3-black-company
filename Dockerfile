@@ -7,7 +7,7 @@ ARG USER_NAME=steamu
 USER root
 
 WORKDIR /root
-RUN apt-get install -y liblzo2-2 libvorbis0a libvorbisfile3 libvorbisenc2 libogg0 \
+RUN apt-get install -y liblzo2-2 libvorbis0a libvorbisfile3 libvorbisenc2 libogg0 p7zip-full rename \
 	&& wget https://armaservices.maverick-applications.com/Products/MikerosDosTools/DownloadFree.aspx?download=depbo-tools-0.6.54-linux-64bit.tgz -O depbo-tools-0.6.54-linux-64bit.tgz \
 	&& tar xvfz depbo-tools-0.6.54-linux-64bit.tgz \ 
 	&& cp depbo-tools-0.6.54/bin/* /usr/local/bin/ \
@@ -27,7 +27,6 @@ COPY resources/@AdvancedRappelling @AdvancedRappelling
 COPY resources/@AdvancedServerScripts @AdvancedServerScripts
 COPY resources/@AdvancedTowing @AdvancedTowing
 COPY resources/@AdvancedUrbanRappelling @AdvancedUrbanRappelling
-COPY resources/@ExileServer @ExileServer
 COPY resources/keys/* keys/
 
 RUN chown -R ${USER_NAME}:${USER_NAME} @A3XAI @AdminToolkitServer @AdvancedRappelling @AdvancedServerScripts @AdvancedTowing @AdvancedUrbanRappelling @ExileServer keys 
@@ -37,6 +36,25 @@ COPY sources ./
 RUN cd .. && chown -R ${USER_NAME}:${USER_NAME} sources
 
 USER ${USER_NAME}
+
+WORKDIR /tmp
+RUN wget -nv http://team-r3f.org/public/addons/R3F_ARMES_3.5.7z \
+	&& p7zip -d R3F_ARMES_3.5.7z \
+	&& cd \@R3F_ARMES \
+		&& rm -f *.pdf *.url \
+		&& mv Server_Key/r3f.bikey /opt/arma3/keys/r3fa.bikey && rmdir Server_Key \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+		&& cd .. \
+	&& mv \@R3F_ARMES /opt/arma3/\@R3FArmes \
+	&& wget -nv http://team-r3f.org/public/addons/R3F_UNITES_3.7.7z \
+	&& p7zip -d R3F_UNITES_3.7.7z  \
+	&& cd \@R3F_UNITES \
+		&& rm -f *.pdf *.url \
+		&& mv Server_Key/r3f.bikey /opt/arma3/keys/r3fu.bikey && rmdir Server_Key \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+		&& cd .. \
+	&& mv \@R3F_UNITES /opt/arma3/\@R3FUnites
+	
 WORKDIR /home/${USER_NAME}/sources
 RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/arma3/@ExileServer/addons/ \
 		&& mv exile_server_config.pbo /opt/arma3/@ExileServer/addons/exile_server_config.pbo \
@@ -69,7 +87,8 @@ WORKDIR /opt/arma3
 CMD ["\"-config=conf/exile.cfg\"", \
 	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation\"", \
 	"\"-mod=@Exile;expansion;heli;jets;mark\"", \
-		"-world=empty", \
+	"-bepath=/opt/arma3/battleye", \
+	"-world=empty", \
 		"-autoinit"]
 
-	#"-bepath=/opt/arma3/battleye", \
+	
