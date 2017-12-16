@@ -85,7 +85,7 @@ RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/ar
 WORKDIR /opt/arma3
 
 CMD ["\"-config=conf/exile.cfg\"", \
-	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation\"", \
+	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation;@R3FArmes;@R3FUnites\"", \
 	"\"-mod=@Exile;expansion;heli;jets;mark\"", \
 	"-bepath=/opt/arma3/battleye", \
 	"-world=empty", \
