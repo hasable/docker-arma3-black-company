@@ -48,7 +48,7 @@ if [ ! -z "${DEVELOPMENT}" ]; then
 	done
 	
 	if [ -d mpmissions ]; then 
-		pushd mpmssions
+		pushd mpmissions
 		for dir in *; do
 			if [ -d ${dir} ]; then 
 				makepbo -N ${dir}
