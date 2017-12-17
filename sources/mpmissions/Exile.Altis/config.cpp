@@ -2215,6 +2215,16 @@ class CfgExileArsenal
     class B_Heli_Transport_01_F                                 { quality = 5; price = 150000; };//Armée
     class B_Heli_Transport_01_camo_F                            { quality = 5; price = 150000; };//Armée
 
+    ///////////////////////////////////////////////////////////////////////////////
+    // Mi17_CDF
+    ///////////////////////////////////////////////////////////////////////////////
+    class Mi17_CDF                                              { quality = 5; price = 55000; };
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // MH60S
+    ///////////////////////////////////////////////////////////////////////////////
+    class MH60S                                                 { quality = 5; price = 55000; };
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Mohawk
 	///////////////////////////////////////////////////////////////////////////////
@@ -2395,7 +2405,21 @@ class CfgExileArsenal
 	// Ifrit
 	///////////////////////////////////////////////////////////////////////////////
     class Exile_Car_Ifrit                               { quality = 4; price = 44000; };
-	class O_MRAP_02_hmg_F 								{ quality = 4; price = 100000; };//Armée
+    class O_MRAP_02_hmg_F                               { quality = 4; price = 100000; };//Armée
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // BRDM2_HQ_Gue / BTR90_HQ / LAV25_HQ
+    ///////////////////////////////////////////////////////////////////////////////
+    class BRDM2_HQ_Gue                                  { quality = 4; price = 90000; };//Armée
+    class BTR90_HQ                                      { quality = 4; price = 100000; };//Armée
+    class LAV25_HQ                                      { quality = 4; price = 100000; };//Armée
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // Vodnik
+    ///////////////////////////////////////////////////////////////////////////////
+    class GAZ_Vodnik_MedEvac                            { quality = 4; price = 35000; };
+    class GAZ_Vodnik                                    { quality = 4; price = 45000; };
+	class GAZ_Vodnik_HMG							    { quality = 4; price = 85000; };//Armée
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Offroad
@@ -3040,31 +3064,14 @@ class CfgInteractionMenus
 				//title = "Repair";
 				//condition = "true";
 				//action = "['RepairVehicle', _this select 0] call ExileClient_action_execute";
-
-                //title = "Repair Body";
-                //condition = "call ExileClient_object_vehicle_interaction_show";
-                //action = "['RepairVehicle', _this select 0] call ExileClient_object_vehicle_Repair";
             };*/
+            // ADD Mod Repair joe 
             class Repair: ExileAbstractAction
             {
                 title = "Repair/Salvage";
                 condition = "true";
                 action = "_this call Bones_fnc_salvageAndRepairMenuCar";
             };
-            /*
-            // ADD Mod Repair joe 
-            class RepairWheels: ExileAbstractAction
-            {
-                title = "Repair Wheels";
-                condition = "call ExileClient_object_vehicle_interaction_show";
-                action = "_this call JohnO_fnc_repairWheels";
-            };
-            class RepairRotors: ExileAbstractAction
-            {
-                title = "Repair Rotors";
-                condition = "call ExileClient_object_vehicle_interaction_show";
-                action = "_this call JohnO_fnc_repairRotors";
-            };*/
 			// Hot-wires a vehicle
 			class Hotwire: ExileAbstractAction
 			{
@@ -3145,7 +3152,7 @@ class CfgInteractionMenus
 				condition = "true";
 				action = "['RepairVehicle', _this select 0] call ExileClient_action_execute";
 			};*/
-
+            // ADD Mod Repair joe
             class Repair: ExileAbstractAction
             {
                 title = "Repair/Salvage";
@@ -5251,6 +5258,12 @@ class CfgTraderCategories
 			"Exile_Car_QilinUnarmed",
 			"Exile_Car_MB4WD",
 			"Exile_Car_MB4WDOpen",
+            "GAZ_Vodnik",
+            "GAZ_Vodnik_MedEvac",
+            "GAZ_Vodnik_HMG",
+            "BRDM2_HQ_Gue",
+            "BTR90_HQ",
+            "LAV25_HQ"
 		};
 	};
 
@@ -5318,7 +5331,9 @@ class CfgTraderCategories
 			"Exile_Chopper_Hellcat_Green",
             "Exile_Chopper_Hellcat_FIA",
             "B_Heli_Transport_01_F",
-            "B_Heli_Transport_01_camo_F"
+            "B_Heli_Transport_01_camo_F",
+            "Mi17_CDF",
+            "MH60S"
 		};
 	};
 

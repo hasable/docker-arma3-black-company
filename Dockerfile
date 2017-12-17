@@ -86,6 +86,9 @@ RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/ar
 	&& cd @Occupation/addons && makepbo -N occupation && mkdir -p /opt/arma3/@Occupation/addons/ \
 		&& mv occupation.pbo /opt/arma3/@Occupation/addons/occupation.pbo \
 		&& cd ../.. && rm -rf @Occupation \
+	&& cd @ZCP/addons && makepbo -N a3_zcp_exile && mkdir -p /opt/arma3/@ZCP/addons/ \
+		&& mv a3_zcp_exile.pbo /opt/arma3/@ZCP/addons/a3_zcp_exile.pbo \
+		&& cd ../.. && rm -rf @ZCP \
 	&& cd mpmissions \
 		&& for mission in *; do makepbo -N ${mission} && mv -f ${mission}.pbo /opt/arma3/mpmissions/; done \
 		&& cd .. && rm -rf mpmissions
@@ -93,11 +96,11 @@ RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/ar
 WORKDIR /opt/arma3
 
 CMD ["\"-config=conf/exile.cfg\"", \
-	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation\"", \
+	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation;@ZCP\"", \
 	"\"-mod=@Exile;@CBA_A3;@R3FArmes;@R3FUnites;expansion;heli;jets;mark\"", \
-	"-bepath=/opt/arma3/battleye", \
 	"-world=empty", \
 		"-autoinit"]
 
+	# "-bepath=/opt/arma3/battleye", \
 	
 	
