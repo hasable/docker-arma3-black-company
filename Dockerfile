@@ -38,7 +38,15 @@ RUN cd .. && chown -R ${USER_NAME}:${USER_NAME} sources
 USER ${USER_NAME}
 
 WORKDIR /tmp
-RUN wget -nv http://team-r3f.org/public/addons/R3F_ARMES_3.5.7z \
+RUN wget -nv https://github.com/CBATeam/CBA_A3/releases/download/v3.5.0.171204/CBA_A3_v3.5.0.zip \
+	&& unzip CBA_A3_v3.5.0.zip && rm -f CBA_A3_v3.5.0.zip \
+	&& cd \@CBA_A3 \
+		&& rm -f *.md \
+		&& mv keys/* /opt/arma3/keys && rmdir keys \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+		&& cd .. \
+	&& mv \@CBA_A3 /opt/arma3/@\CBA_A3 \
+	&& wget -nv http://team-r3f.org/public/addons/R3F_ARMES_3.5.7z \
 	&& p7zip -d R3F_ARMES_3.5.7z \
 	&& cd \@R3F_ARMES \
 		&& rm -f *.pdf *.url \
@@ -85,8 +93,8 @@ RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/ar
 WORKDIR /opt/arma3
 
 CMD ["\"-config=conf/exile.cfg\"", \
-	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation;@R3FArmes;@R3FUnites\"", \
-	"\"-mod=@Exile;expansion;heli;jets;mark\"", \
+	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation\"", \
+	"\"-mod=@Exile;@CBA_A3;@R3FArmes;@R3FUnites;expansion;heli;jets;mark\"", \
 	"-bepath=/opt/arma3/battleye", \
 	"-world=empty", \
 		"-autoinit"]
