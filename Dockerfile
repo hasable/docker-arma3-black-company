@@ -141,6 +141,8 @@ RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/ar
 	&& cd mpmissions \
 		&& for mission in *; do makepbo -N ${mission} && mv -f ${mission}.pbo /opt/arma3/mpmissions/; done \
 		&& cd .. && rm -rf mpmissions
+
+EXPOSE 2309/udp
 		
 WORKDIR /opt/arma3
 
@@ -149,7 +151,7 @@ CMD ["\"-config=conf/exile.cfg\"", \
 	"\"-mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites;expansion;heli;jets;mark\"", \
 	"-bepath=/opt/arma3/battleye", \
 	"-world=empty", \
-		"-autoinit"]
+	"-autoinit"]
 
 	
 	

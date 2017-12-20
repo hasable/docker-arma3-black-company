@@ -12,13 +12,15 @@ services:
       - "2304:2304/udp"
       - "2305:2305/udp"
       - "2306:2306/udp"
+      - "2309:2309/udp"
     environment:
-      - EXILE_CONFIG_HOSTNAME=BLACK COMPANY DEV SERVER 
+      - EXILE_CONFIG_HOSTNAME=Black Company DEV
       - EXILE_CONFIG_PASSWORD_COMMAND=exileConfigPasswordCommand
       - EXILE_DATABASE_HOST=database
       - EXILE_DATABASE_NAME=altisdb
       - EXILE_DATABASE_USER=altisu
       - EXILE_DATABASE_PASS=altispw
+      - EXILE_CONFIG_PASSWORD_RCON=exileConfigPasswordRcon
       - ATK_CONFIG_ADMIN_LIST=76561197990024201,76561198007339024
     volumes:
       - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/

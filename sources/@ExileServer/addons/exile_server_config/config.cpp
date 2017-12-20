@@ -4574,7 +4574,7 @@ class CfgSettings
 		*/
 
 		// This needs to match config.cfg serverCommandPassword
-		serverPassword = "bE9YuG5zeidiZJgV1NoX";
+		serverPassword = "";
 
 		// Autolocks server until its ready to accept players
 		useAutoLock = 1;
