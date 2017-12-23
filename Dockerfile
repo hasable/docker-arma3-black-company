@@ -30,9 +30,10 @@ COPY resources/@AdvancedRappelling @AdvancedRappelling
 COPY resources/@AdvancedServerScripts @AdvancedServerScripts
 COPY resources/@AdvancedTowing @AdvancedTowing
 COPY resources/@AdvancedUrbanRappelling @AdvancedUrbanRappelling
+COPY resources/@VEMF @VEMF
 COPY resources/keys/* keys/
 
-RUN chown -R ${USER_NAME}:${USER_NAME} @A3XAI @AdminToolkitServer @AdvancedRappelling @AdvancedServerScripts @AdvancedTowing @AdvancedUrbanRappelling keys 
+RUN chown -R ${USER_NAME}:${USER_NAME} @A3XAI @AdminToolkitServer @AdvancedRappelling @AdvancedServerScripts @AdvancedTowing @AdvancedUrbanRappelling @VEMF keys 
 
 WORKDIR /home/${USER_NAME}/sources
 COPY sources ./
@@ -137,6 +138,9 @@ RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/ar
 	&& cd @Occupation/addons && makepbo -N occupation && mkdir -p /opt/arma3/@Occupation/addons/ \
 		&& mv occupation.pbo /opt/arma3/@Occupation/addons/occupation.pbo \
 		&& cd ../.. && rm -rf @Occupation \
+	&& cd @VEMF/addons && makepbo -N a3_vemf_reloaded_config && mkdir -p /opt/arma3/@VEMF/addons/ \
+		&& mv a3_vemf_reloaded_config.pbo /opt/arma3/@VEMF/addons/a3_vemf_reloaded_config.pbo \
+		&& cd ../.. && rm -rf @VEMF \
 	&& cd @ZCP/addons && makepbo -N a3_zcp_exile && mkdir -p /opt/arma3/@ZCP/addons/ \
 		&& mv a3_zcp_exile.pbo /opt/arma3/@ZCP/addons/a3_zcp_exile.pbo \
 		&& cd ../.. && rm -rf @ZCP \
@@ -156,7 +160,7 @@ EXPOSE 2309/udp
 WORKDIR /opt/arma3
 
 CMD ["\"-config=conf/exile.cfg\"", \
-	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation;@ZCP\"", \
+	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation;@VEMF;@ZCP\"", \
 	"\"-mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites;expansion;heli;jets;mark\"", \
 	"-bepath=/opt/arma3/battleye", \
 	"-world=empty", \

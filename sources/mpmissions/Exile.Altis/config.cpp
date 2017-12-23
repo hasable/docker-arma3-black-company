@@ -3003,6 +3003,8 @@ class CfgExileCustomCode
 
 	ExileClient_gui_xm8_slide = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_slide.sqf";
 	ExileClient_gui_xm8_show = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_show.sqf";  
+	
+	ExileClient_object_player_event_onEnterSafezon = "Igiload\ExileClient_object_player_event_onEnterSafezone.sqf"
 };
 class CfgExileEnvironment
 {

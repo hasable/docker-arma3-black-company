@@ -141,6 +141,8 @@ class CfgFunctions
 class RscTitles
 {
 	#include "ExAdClient\RscTitles.cpp"
+	#include "VEMFr_client\gui\RscDisplayVEMFrClient.hpp"
+	#include "VEMFr_client\gui\RscDisplayBaseAttack.hpp"
 };
 
 class CfgHints
@@ -152,3 +154,5 @@ class CfgNetworkMessages
 {
 	#include "ExAdClient\CfgNetworkMessages.cpp"
 };
+
+
