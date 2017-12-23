@@ -419,8 +419,8 @@ SC_BanditMagazines          	= ["Exile_Item_InstaDoc","Exile_Item_Vishpirin","Ex
 SC_BanditPistol             	= ["hgun_ACPC2_F","hgun_P07_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_02_F","hgun_Rook40_F"];
 SC_BanditPistolAttachments  	= [];
 SC_BanditAssignedItems      	= ["ItemMap","ItemCompass","ItemRadio","ItemWatch"]; // all these items will be added
-SC_BanditLauncher           	= [];
-SC_BanditBackpack           	= ["B_HuntingBackpack","B_Kitbag_cbr","B_Kitbag_mcamo","B_Kitbag_sgg","B_OutdoorPack_blk","B_OutdoorPack_blu","B_OutdoorPack_tan","B_TacticalPack_blk","B_TacticalPack_mcamo","B_TacticalPack_ocamo","B_TacticalPack_oli","B_TacticalPack_rgr"];
+SC_BanditLauncher           	= ["R3F_AT4CS","launch_RPG7_F", "launch_RPG32_F"];
+SC_BanditBackpack           	= ["B_HuntingBackpack","B_Kitbag_cbr","B_Kitbag_mcamo","B_Kitbag_sgg","B_OutdoorPack_blk","B_OutdoorPack_blu","B_OutdoorPack_tan","B_TacticalPack_blk","B_TacticalPack_mcamo","B_TacticalPack_ocamo","B_TacticalPack_oli","B_TacticalPack_rgr","R3F_AT4CS_Mag"];
 
 // Possible equipment for random ai to spawn with 
 // spawning random ai without vests or backpacks will result in them having no ammunition                                                    

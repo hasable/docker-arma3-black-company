@@ -1865,11 +1865,207 @@ class CfgExileArsenal
 	class Exile_Weapon_M16A4						{ quality = 2; price = 350; };
 	class Exile_Weapon_M16A2						{ quality = 1; price = 300; };
 
-	///////////////////////////////////////////////////////////////////////////////
-	// ArmA 2 Ammunition
-	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Magazine_30Rnd_762x39_AK				{ quality = 3; price = 20; };
-	class Exile_Magazine_30Rnd_545x39_AK				{ quality = 1; price = 20; };
+    ///////////////////////////////////////////////////////////////////////////////
+    // R3F Weapons
+    ///////////////////////////////////////////////////////////////////////////////
+
+    class R3F_FAMAS_F1                              { quality = 2; price = 350; };
+    class R3F_FAMAS_F1_DES                          { quality = 2; price = 350; };
+    class R3F_FAMAS_F1_HG                           { quality = 2; price = 350; };
+    class R3F_FAMAS_F1_HG_DES                       { quality = 2; price = 300; };
+    class R3F_FAMAS_F1_M203                         { quality = 2; price = 400; };
+    class R3F_FAMAS_F1_M203_DES                     { quality = 2; price = 400; };
+    class R3F_FAMAS_G2                              { quality = 2; price = 350; };
+    class R3F_FAMAS_G2_DES                          { quality = 2; price = 400; };
+    class R3F_FAMAS_G2_HG                           { quality = 2; price = 350; };
+    class R3F_FAMAS_G2_HG_DES                       { quality = 2; price = 400; };
+    class R3F_FAMAS_G2_M203                         { quality = 2; price = 400; };
+    class R3F_FAMAS_G2_M203_DES                     { quality = 2; price = 400; };
+    class R3F_FAMAS_surb                            { quality = 2; price = 400; };
+    class R3F_FAMAS_surb_DES                        { quality = 2; price = 350; };
+    class R3F_FAMAS_surb_HG                         { quality = 2; price = 350; };
+    class R3F_FAMAS_surb_HG_DES                     { quality = 2; price = 400; };
+    class R3F_FAMAS_surb_M203                       { quality = 2; price = 400; };
+    class R3F_FAMAS_surb_M203_DES                   { quality = 2; price = 400; };
+    class R3F_FAMAS_FELIN                           { quality = 2; price = 400; };
+    class R3F_FAMAS_FELIN_DES                       { quality = 2; price = 400; };
+
+    class R3F_Minimi                                { quality = 2; price = 300; };
+    class R3F_Minimi_762                            { quality = 3; price = 400; };
+    class R3F_Minimi_HG                             { quality = 2; price = 300; };
+    class R3F_Minimi_762_HG                         { quality = 3; price = 400; };
+
+    class R3F_FRF2                                  { quality = 6; price = 1500; };
+    class R3F_FRF2_DES                              { quality = 6; price = 1500; };
+    class R3F_PGM_Hecate_II                         { quality = 6; price = 1500; };
+    class R3F_PGM_Hecate_II_DES                     { quality = 6; price = 1500; };
+    class R3F_PGM_Hecate_II_POLY                    { quality = 6; price = 1500; };
+    class R3F_TAC50                                 { quality = 6; price = 1500; };
+    class R3F_M107_DES                              { quality = 6; price = 1500; };
+
+    class R3F_HK417L                                { quality = 3; price = 400; };
+    class R3F_HK417L_DES                            { quality = 3; price = 400; };
+    class R3F_HK417M                                { quality = 3; price = 400; };
+    class R3F_HK417M_DES                            { quality = 3; price = 400; };
+    class R3F_HK417M_HG                             { quality = 3; price = 400; };
+    class R3F_HK417M_HG_DES                         { quality = 3; price = 400; };
+    class R3F_HK417S_HG                             { quality = 3; price = 400; };
+    class R3F_HK417S_HG_DES                         { quality = 2; price = 400; };
+    class R3F_HK416M                                { quality = 2; price = 400; };
+    class R3F_HK416M_DES                            { quality = 2; price = 400; };
+    class R3F_HK416M_HG                             { quality = 2; price = 400; };
+    class R3F_HK416M_HG_DES                         { quality = 2; price = 400; };
+    class R3F_HK416M_M203_DES                       { quality = 2; price = 400; };
+    class R3F_HK416S_HG                             { quality = 2; price = 400; };
+    class R3F_HK416S_HG_DES                         { quality = 2; price = 400; };
+    class R3F_SIG551                                { quality = 2; price = 400; };
+    class R3F_SIG551_CE                             { quality = 2; price = 400; };
+    class R3F_MP5A5                                 { quality = 2; price = 400; };
+    class R3F_MP5SD                                 { quality = 2; price = 400; };
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // R3F Ammunition
+    ///////////////////////////////////////////////////////////////////////////////
+    class R3F_25Rnd_556x45_FAMAS                    { quality = 1; price = 20; }
+	class R3F_25Rnd_556x45_TRACER_FAMAS			    { quality = 1; price = 20; }
+    class R3F_30Rnd_556x45_FAMAS                    { quality = 1; price = 20; }
+    class R3F_30Rnd_556x45_TRACER_FAMAS             { quality = 1; price = 20; }
+
+    class R3F_20Rnd_762x51_HK417                    { quality = 3; price = 20; }
+    class R3F_20Rnd_762x51_TRACER_HK417             { quality = 3; price = 20; }
+
+    class R3F_30Rnd_556x45_HK416                    { quality = 1; price = 20; }
+    class R3F_30Rnd_556x45_TRACER_HK416             { quality = 1; price = 20; }
+
+    class R3F_30Rnd_556x45_SIG551                   { quality = 1; price = 20; }
+    class R3F_30Rnd_556x45_TRACER_SIG551            { quality = 1; price = 20; }
+
+    class R3F_30Rnd_9x19_MP5                        { quality = 1; price = 20; }
+
+    class R3F_200Rnd_556x45_MINIMI                  { quality = 1; price = 30; }
+    class R3F_100Rnd_762x51_MINIMI                  { quality = 3; price = 30; }
+
+    class R3F_7Rnd_127x99_PGM                       { quality = 6; price = 30; }
+    class R3F_7Rnd_127x99_PEI_PGM                   { quality = 6; price = 30; }
+    class R3F_10Rnd_127x99_M107                     { quality = 6; price = 30; }
+    class R3F_10Rnd_127x99_PEI_M107                 { quality = 6; price = 30; }
+    class R3F_5Rnd_127x99_PEI_TAC50                 { quality = 6; price = 30; }
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // R3F Headgear
+    ///////////////////////////////////////////////////////////////////////////////
+    class R3F_casque_spectra                        { quality = 3; price = 40; };
+    class R3F_casque_spectra_jaune                  { quality = 3; price = 40; };
+    class R3F_casque_spectra_bleu                   { quality = 3; price = 40; };
+    class R3F_casque_spectra_vert                   { quality = 3; price = 40; };
+    class R3F_casque_spectra_orange                 { quality = 3; price = 40; };
+    class R3F_casque_spectra_violet                 { quality = 3; price = 40; };
+    class R3F_casque_spectra_EOD                    { quality = 3; price = 40; };
+    class R3F_casque_pilote                         { quality = 3; price = 40; };
+    class R3F_casque_equipage                       { quality = 3; price = 40; };
+    class R3F_casquette                             { quality = 3; price = 40; };
+    class R3F_casquette_TAN                         { quality = 3; price = 40; };
+    class R3F_casquette_ops                         { quality = 3; price = 40; };
+    class R3F_casquette_ops_TAN                     { quality = 3; price = 40; };
+    class R3F_chapeaubrousse_CE                     { quality = 3; price = 40; };
+    class R3F_chapeaubrousse_TAN                    { quality = 3; price = 40; };
+    class R3F_beret                                 { quality = 3; price = 40; };
+    class R3F_beret_para                            { quality = 3; price = 40; };
+    class R3F_beret_commando                        { quality = 3; price = 40; };
+    class R3F_beret_alat                            { quality = 3; price = 40; };
+    class R3F_Bonnet                                { quality = 3; price = 40; };
+    class R3F_Bonnet_vert                           { quality = 3; price = 40; };
+    class R3F_Bonnet_snow                           { quality = 3; price = 40; };
+    class R3F_casquette_off                         { quality = 3; price = 80; };
+    class R3F_casquette_off_DA                      { quality = 3; price = 80; };
+    class R3F_casque_spectra_DA                     { quality = 3; price = 80; };
+    class R3F_casque_spectra_DA_jaune               { quality = 3; price = 80; };
+    class R3F_casque_spectra_DA_bleu                { quality = 3; price = 80; };
+    class R3F_casque_spectra_DA_vert                { quality = 3; price = 80; };
+    class R3F_casque_spectra_DA_orange              { quality = 3; price = 80; };
+    class R3F_casque_spectra_DA_violet              { quality = 3; price = 80; };
+    class R3F_casque_spectra_EOD_DA                 { quality = 3; price = 80; };
+    class R3F_casqueFS_olive                        { quality = 3; price = 80; };
+    class R3F_casqueFS_TAN                          { quality = 3; price = 80; };
+    class R3F_casqueFS_noir                         { quality = 3; price = 80; };
+    class R3F_casqueFS_snow                         { quality = 3; price = 80; };
+    class R3F_bandana_olive                         { quality = 3; price = 40; };
+    class R3F_bandana_TAN                           { quality = 3; price = 40; };
+    class R3F_bandana_noir                          { quality = 3; price = 40; };
+    class R3F_casque_spectra_SNOW                   { quality = 3; price = 80; };
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // R3F Vest
+    ///////////////////////////////////////////////////////////////////////////////
+
+    class R3F_veste_ce600                           {quality = 3; price = 250;}
+    class R3F_veste_ce300                           {quality = 3; price = 250;}
+    class R3F_veste_APSO                            {quality = 3; price = 250;}
+    class R3F_veste_APSO_EOD                        {quality = 3; price = 250;}
+    class R3F_veste_APSO_CE                         {quality = 3; price = 250;}
+    class R3F_veste_APSO_EOD_CE                     {quality = 3; price = 250;}
+    class R3F_veste_APSO_TAN                        {quality = 3; price = 250;}
+    class R3F_veste_APSO_EOD_TAN                    {quality = 3; price = 250;}
+    class R3F_vestetactique_noire                   {quality = 3; price = 250;}
+    class R3F_veste_noire                           {quality = 3; price = 250;}
+    class R3F_veste_TAN                             {quality = 3; price = 250;}
+    class R3F_veste_off                             {quality = 3; price = 12;}
+    class R3F_veste_equipage                        {quality = 3; price = 250;}
+    class R3F_veste_SNOW                            {quality = 3; price = 250;}
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // R3F Uniform
+    ///////////////////////////////////////////////////////////////////////////////
+
+    class R3F_UniformBox                            {quality = 3; price = 200;}
+    class R3F_sousvet                               {quality = 3; price = 200;}
+    class R3F_uniform_pilot                         {quality = 3; price = 200;}
+    class R3F_uniform_piheli                        {quality = 3; price = 200;}
+    class R3F_uniform_piheli_DA                     {quality = 3; price = 200;}
+    class R3F_uniform_diver                         {quality = 3; price = 200;}
+    class R3F_uniform_Ghillie                       {quality = 3; price = 200;}
+    class R3F_uniform_urr                           {quality = 3; price = 200;}
+    class R3F_uniform_urr_medic                     {quality = 3; price = 200;}
+    class R3F_uniform_off                           {quality = 3; price = 200;}
+    class R3F_uniform_f1                            {quality = 3; price = 200;}
+    class R3F_uniform_f1_medic                      {quality = 3; price = 200;}
+    class R3F_uniform_apso                          {quality = 3; price = 200;}
+    class R3F_uniform_Ghillie_DA                    {quality = 3; price = 200;}
+    class R3F_uniform_urr_DA                        {quality = 3; price = 200;}
+    class R3F_uniform_urr_medic_DA                  {quality = 3; price = 200;}
+    class R3F_uniform_off_DA                        {quality = 3; price = 200;}
+    class R3F_uniform_f1_DA                         {quality = 3; price = 200;}
+    class R3F_uniform_f1_medic_DA                   {quality = 3; price = 200;}
+    class R3F_uniform_apso_DA                       {quality = 3; price = 200;}
+    class R3F_uniform_Ghillie_SNOW                  {quality = 3; price = 200;}
+    class R3F_uniform_urr_SNOW                      {quality = 3; price = 200;}
+    class R3F_uniform_f1_SNOW                       {quality = 3; price = 200;}
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // R3F Backpacks
+    ///////////////////////////////////////////////////////////////////////////////
+
+    class R3F_sac_petit_noir                        {quality = 2; price = 100;}
+    class R3F_sac_petit_TE_noir                     {quality = 2; price = 100;}
+    class R3F_sac_moyen_CE                          {quality = 3; price = 200;}
+    class R3F_sac_moyen_TAN                         {quality = 3; price = 200;}
+    class R3F_sac_moyen_SNOW                        {quality = 3; price = 200;}
+    class R3F_sac_moyen_medic_CE                    {quality = 3; price = 200;}
+    class R3F_sac_moyen_medic_noir                  {quality = 3; price = 200;}
+    class R3F_sac_moyen_medic_TAN                   {quality = 3; price = 200;}
+    class R3F_sac_lourd_CE                          {quality = 4; price = 300;}
+    class R3F_sac_lourd_APSO_CE                     {quality = 4; price = 12;}
+    class R3F_sac_lourd_TAN                         {quality = 4; price = 300;}
+    class R3F_sac_lourd_APSO_TAN                    {quality = 4; price = 12;}
+    class R3F_sac_lourd_noir                        {quality = 4; price = 300;}
+    class R3F_sac_lourd_SNOW                        {quality = 4; price = 300;}
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // ArmA 2 Ammunition
+    ///////////////////////////////////////////////////////////////////////////////
+    class Exile_Magazine_30Rnd_762x39_AK                { quality = 3; price = 20; };
+    class Exile_Magazine_30Rnd_545x39_AK                { quality = 1; price = 20; };
 	class Exile_Magazine_30Rnd_545x39_AK_Green			{ quality = 1; price = 20; };
 	class Exile_Magazine_30Rnd_545x39_AK_Red			{ quality = 1; price = 20; };
 	class Exile_Magazine_30Rnd_545x39_AK_White			{ quality = 1; price = 20; };
@@ -2215,16 +2411,6 @@ class CfgExileArsenal
     class B_Heli_Transport_01_F                                 { quality = 5; price = 150000; };//Armée
     class B_Heli_Transport_01_camo_F                            { quality = 5; price = 150000; };//Armée
 
-    ///////////////////////////////////////////////////////////////////////////////
-    // Mi17_CDF
-    ///////////////////////////////////////////////////////////////////////////////
-    class Mi17_CDF                                              { quality = 5; price = 55000; };
-
-    ///////////////////////////////////////////////////////////////////////////////
-    // MH60S
-    ///////////////////////////////////////////////////////////////////////////////
-    class MH60S                                                 { quality = 5; price = 55000; };
-
 	///////////////////////////////////////////////////////////////////////////////
 	// Mohawk
 	///////////////////////////////////////////////////////////////////////////////
@@ -2406,20 +2592,6 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
     class Exile_Car_Ifrit                               { quality = 4; price = 44000; };
     class O_MRAP_02_hmg_F                               { quality = 4; price = 100000; };//Armée
-
-    ///////////////////////////////////////////////////////////////////////////////
-    // BRDM2_HQ_Gue / BTR90_HQ / LAV25_HQ
-    ///////////////////////////////////////////////////////////////////////////////
-    class BRDM2_HQ_Gue                                  { quality = 4; price = 90000; };//Armée
-    class BTR90_HQ                                      { quality = 4; price = 100000; };//Armée
-    class LAV25_HQ                                      { quality = 4; price = 100000; };//Armée
-
-    ///////////////////////////////////////////////////////////////////////////////
-    // Vodnik
-    ///////////////////////////////////////////////////////////////////////////////
-    class GAZ_Vodnik_MedEvac                            { quality = 4; price = 35000; };
-    class GAZ_Vodnik                                    { quality = 4; price = 45000; };
-	class GAZ_Vodnik_HMG							    { quality = 4; price = 85000; };//Armée
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Offroad
@@ -2616,6 +2788,177 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_MB4WD							{ quality = 2; price = 15000; };
 	class Exile_Car_MB4WDOpen							{ quality = 2; price = 15000; };
+
+    /////////////////////////////////////////////
+    // CUP Vehicle Price List
+    /////////////////////////////////////////////
+        ///// Wheeled
+    class CUP_O_UAZ_MG_CHDKZ                                { quality = 2; price = 10000; };
+    class CUP_O_UAZ_MG_RU                                   { quality = 2; price = 10000; };
+    class CUP_O_UAZ_MG_TKA                                  { quality = 2; price = 10000; };
+    class CUP_B_UAZ_MG_CDF                                  { quality = 2; price = 10000; };
+    class CUP_I_UAZ_MG_UN                                   { quality = 2; price = 10000; };
+    class CUP_B_UAZ_MG_ACR                                  { quality = 2; price = 10000; };
+    class CUP_C_UAZ_Open_TK_CIV                             { quality = 2; price = 8000; };
+    class CUP_O_UAZ_Open_CHDKZ                              { quality = 2; price = 8000; };
+    class CUP_O_UAZ_Open_RU                                 { quality = 2; price = 8000; };
+    class CUP_O_UAZ_Open_TKA                                { quality = 2; price = 8000; };
+    class CUP_B_UAZ_Open_ACR                                { quality = 2; price = 8000; };
+    class CUP_B_UAZ_Open_CDF                                { quality = 2; price = 8000; };
+    class CUP_I_UAZ_Open_UN                                 { quality = 2; price = 8000; };
+    class CUP_C_UAZ_Unarmed_TK_CIV                          { quality = 2; price = 7000; };
+    class CUP_O_UAZ_Unarmed_CHDKZ                           { quality = 2; price = 7000; };
+    class CUP_O_UAZ_Unarmed_RU                              { quality = 2; price = 7000; };
+    class CUP_O_UAZ_Unarmed_TKA                             { quality = 2; price = 7000; };
+    class CUP_B_UAZ_Unarmed_ACR                             { quality = 2; price = 7000; };
+    class CUP_B_UAZ_Unarmed_CDF                             { quality = 2; price = 7000; };
+    class CUP_I_UAZ_Unarmed_UN                              { quality = 2; price = 7000; };
+    class CUP_B_Ural_CDF                                    { quality = 2; price = 28000; };
+    class CUP_O_Ural_CHDKZ                                  { quality = 2; price = 28000; };
+    class CUP_O_Ural_SLA                                    { quality = 2; price = 28000; };
+    class CUP_O_Ural_TKA                                    { quality = 2; price = 28000; };
+    class CUP_C_Ural_Civ_01                                 { quality = 2; price = 28000; };
+    class CUP_C_Ural_Civ_02                                 { quality = 2; price = 28000; };
+    class CUP_C_Ural_Civ_03                                 { quality = 2; price = 28000; };
+    class CUP_I_Ural_UN                                     { quality = 2; price = 28000; };
+    class CUP_O_Ural_RU                                     { quality = 2; price = 28000; };
+    class CUP_B_Ural_Open_CDF                               { quality = 2; price = 25000; };
+    class CUP_O_Ural_Open_CHDKZ                             { quality = 2; price = 25000; };
+    class CUP_O_Ural_Open_RU                                { quality = 2; price = 25000; };
+    class CUP_O_Ural_Open_SLA                               { quality = 2; price = 25000; };
+    class CUP_O_Ural_Open_TKA                               { quality = 2; price = 25000; };
+    class CUP_C_Ural_Open_Civ_01                            { quality = 2; price = 25000; };
+    class CUP_C_Ural_Open_Civ_02                            { quality = 2; price = 25000; };
+    class CUP_C_Ural_Open_Civ_03                            { quality = 2; price = 25000; };
+    class CUP_I_Ural_Reammo_UN                              { quality = 3; price = 35000; };
+    class CUP_B_Ural_Reammo_CDF                             { quality = 3; price = 35000; };
+    class CUP_O_Ural_Reammo_CHDKZ                           { quality = 3; price = 35000; };
+    class CUP_O_Ural_Reammo_RU                              { quality = 3; price = 35000; };
+    class CUP_O_Ural_Reammo_SLA                             { quality = 3; price = 35000; };
+    class CUP_O_Ural_Reammo_TKA                             { quality = 3; price = 35000; };
+    class CUP_O_Ural_Refuel_CHDKZ                           { quality = 3; price = 35000; };
+    class CUP_O_Ural_Refuel_RU                              { quality = 3; price = 35000; };
+    class CUP_B_Ural_Refuel_CDF                             { quality = 3; price = 35000; };
+    class CUP_O_Ural_Refuel_SLA                             { quality = 3; price = 35000; };
+    class CUP_O_Ural_Refuel_TKA                             { quality = 3; price = 35000; };
+    class CUP_B_Ural_Repair_CDF                             { quality = 3; price = 35000; };
+    class CUP_I_Ural_Repair_UN                              { quality = 3; price = 35000; };
+    class CUP_O_Ural_Repair_CHDKZ                           { quality = 3; price = 35000; };
+    class CUP_O_Ural_Repair_RU                              { quality = 3; price = 35000; };
+    class CUP_O_Ural_Repair_SLA                             { quality = 3; price = 35000; };
+    class CUP_O_Ural_Repair_TKA                             { quality = 3; price = 35000; };
+    class CUP_C_Datsun                                      { quality = 2; price = 6000; };
+    class CUP_C_Datsun_4seat                                { quality = 2; price = 6000; };
+    class CUP_C_Datsun_Covered                              { quality = 2; price = 6000; };
+    class CUP_C_Datsun_Plain                                { quality = 2; price = 6000; };
+    class CUP_C_Datsun_Tubeframe                            { quality = 2; price = 6000; };
+    class CUP_I_Datsun_PK                                   { quality = 2; price = 7000; };
+    class CUP_I_Datsun_PK_Random                            { quality = 2; price = 7000; };
+    class CUP_I_Datsun_PK_TK                                { quality = 2; price = 7000; };
+    class CUP_I_Datsun_PK_TK_Random                         { quality = 2; price = 7000; };
+    class CUP_O_Datsun_PK                                   { quality = 2; price = 7000; };
+    class CUP_O_Datsun_PK_Random                            { quality = 2; price = 7000; };
+    class CUP_BAF_Jackal2_GMG_D                             { quality = 5; price = 30000; };
+    class CUP_BAF_Jackal2_GMG_W                             { quality = 5; price = 30000; };
+    class CUP_BAF_Jackal2_L2A1_D                            { quality = 5; price = 30000; };
+    class CUP_BAF_Jackal2_L2A1_W                            { quality = 5; price = 30000; };
+    class CUP_B_Dingo_Des                                   { quality = 5; price = 50000; };
+    class CUP_B_Dingo_GL_Des                                { quality = 5; price = 50000; };
+    class CUP_B_Dingo_GL_Wdl                                { quality = 5; price = 50000; };
+    class CUP_B_Dingo_Wdl                                   { quality = 5; price = 50000; };
+    class CUP_B_HMMWV_Crows_M2_USA                          { quality = 6; price = 40000; };
+    class CUP_B_HMMWV_Crows_MK19_USA                        { quality = 6; price = 40000; };
+    class CUP_B_HMMWV_AGS_GPK_ACR                           { quality = 6; price = 40000; };
+    class CUP_B_HMMWV_DSHKM_GPK_ACR                         { quality = 6; price = 40000; };
+    class CUP_B_HMMWV_M1114_USMC                            { quality = 6; price = 40000; };
+    class CUP_B_HMMWV_M2_GPK_ACR                            { quality = 5; price = 30000; };
+    class CUP_B_HMMWV_M2_GPK_USA                            { quality = 5; price = 30000; };
+    class CUP_B_HMMWV_M2_USA                                { quality = 5; price = 30000; };
+    class CUP_B_HMMWV_M2_USMC                               { quality = 5; price = 30000; };
+    class CUP_B_HMMWV_MK19_USA                              { quality = 5; price = 30000; };
+    class CUP_B_HMMWV_MK19_USMC                             { quality = 5; price = 33000; };
+    class CUP_B_HMMWV_SOV_USA                               { quality = 4; price = 30000; };
+    class CUP_B_HMMWV_Terminal_USA                          { quality = 3; price = 21000; };
+    class CUP_B_HMMWV_Transport_USA                         { quality = 3; price = 21000; };
+    class CUP_B_HMMWV_Ambulance_USA                         { quality = 3; price = 21000; };
+    class CUP_B_HMMWV_Unarmed_USA                           { quality = 3; price = 21000; };
+    class CUP_B_HMMWV_Unarmed_USMC                          { quality = 3; price = 21000; };
+    class CUP_B_LR_Special_CZ_W                             { quality = 4; price = 22000; };
+    class CUP_B_LR_Special_Des_CZ_D                         { quality = 4; price = 22000; };
+    class CUP_B_LR_MG_CZ_W                                  { quality = 4; price = 22000; };
+    class CUP_B_LR_MG_GB_W                                  { quality = 4; price = 22000; };
+    class CUP_I_LR_MG_RACS                                  { quality = 4; price = 22000; };
+    class CUP_O_LR_MG_TKA                                   { quality = 4; price = 22000; };
+    class CUP_B_LR_Transport_CZ_D                           { quality = 3; price = 11000; };
+    class CUP_C_LR_Transport_CTK                            { quality = 3; price = 11000; };
+    class CUP_B_LR_Transport_CZ_W                           { quality = 3; price = 11000; };
+    class CUP_B_LR_Transport_GB_D                           { quality = 3; price = 11000; };
+    class CUP_B_LR_Transport_GB_W                           { quality = 3; price = 11000; };
+    class CUP_I_LR_Transport_RACS                           { quality = 3; price = 11000; };
+    class CUP_O_LR_Transport_TKA                            { quality = 3; price = 11000; };
+    class CUP_O_LR_Ambulance_TKA                            { quality = 3; price = 11000; };
+    class CUP_I_BRDM2_HQ_TK_Gue                             { quality = 5; price = 25000; };
+    class CUP_I_BRDM2_HQ_UN                                 { quality = 5; price = 25000; };
+    class CUP_O_BRDM2_HQ_CHDKZ                              { quality = 5; price = 25000; };
+    class CUP_B_BRDM2_HQ_CDF                                { quality = 5; price = 25000; };
+    class CUP_I_BRDM2_TK_Gue                                { quality = 5; price = 25000; };
+    class CUP_I_BRDM2_UN                                    { quality = 5; price = 25000; };
+    class CUP_O_BRDM2_CHDKZ                                 { quality = 5; price = 25000; };
+    class CUP_B_BRDM2_CDF                                   { quality = 5; price = 25000; };
+    class CUP_O_BTR60_TK                                    { quality = 6; price = 60000; };
+    class CUP_B_M1133_MEV_Desert                            { quality = 6; price = 130000; };
+    class CUP_B_M1133_MEV_Woodland                          { quality = 6; price = 130000; };
+
+    ///// Air Helis
+    class CUP_B_AW159_Unarmed_BAF                        	{ quality = 3; price = 30000; };
+    class CUP_B_CH47F_GB                                	{ quality = 5; price = 80000; };
+    class CUP_B_CH47F_USA                                	{ quality = 5; price = 80000; };
+    class CUP_B_CH53E_USMC                                	{ quality = 5; price = 80000; };
+    class CUP_B_UH1Y_MEV_USMC                            	{ quality = 2; price = 25000; };
+    class CUP_B_UH1Y_UNA_USMC                            	{ quality = 2; price = 25000; };
+    class CUP_O_UH1H_TKA                                	{ quality = 2; price = 21000; };
+    class CUP_I_UH1H_TK_GUE                                	{ quality = 2; price = 21000; };
+    class CUP_B_UH1D_GER_KSK                            	{ quality = 2; price = 30000; };
+    class CUP_B_MH60S_FFV_USMC                            	{ quality = 3; price = 35000; };
+    class CUP_B_MH60S_USMC                                	{ quality = 3; price = 35000; };
+    class CUP_B_UH60L_FFV_US                            	{ quality = 3; price = 35000; };
+    class CUP_B_UH60L_US                                	{ quality = 3; price = 35000; };
+    class CUP_B_UH60L_Unarmed_FFV_MEV_US                	{ quality = 3; price = 30000; };
+    class CUP_B_UH60L_Unarmed_FFV_US                    	{ quality = 3; price = 30000; };
+    class CUP_B_UH60L_Unarmed_US                        	{ quality = 3; price = 30000; };
+    class CUP_I_UH60L_FFV_RACS                            	{ quality = 3; price = 35000; };
+    class CUP_I_UH60L_RACS                                	{ quality = 3; price = 35000; };
+    class CUP_I_UH60L_Unarmed_FFV_MEV_Racs                	{ quality = 3; price = 30000; };
+    class CUP_I_UH60L_Unarmed_FFV_Racs                    	{ quality = 3; price = 30000; };
+    class CUP_I_UH60L_Unarmed_RACS                        	{ quality = 3; price = 30000; };
+    class CUP_B_UH60M_FFV_US                            	{ quality = 3; price = 35000; };
+    class CUP_B_UH60M_US                                	{ quality = 3; price = 35000; };
+    class CUP_B_UH60M_Unarmed_FFV_MEV_US                	{ quality = 3; price = 30000; };
+    class CUP_B_UH60M_Unarmed_FFV_US                    	{ quality = 3; price = 30000; };
+    class CUP_B_UH60M_Unarmed_US                        	{ quality = 3; price = 30000; };
+    class CUP_O_Mi8_CHDKZ                                	{ quality = 4; price = 70000; };
+    class CUP_O_Mi8_RU                                    	{ quality = 4; price = 70000; };
+    class CUP_O_Mi8_medevac_CHDKZ                        	{ quality = 4; price = 70000; };
+    class CUP_O_Mi8_medevac_RU                            	{ quality = 4; price = 70000; };
+    class CUP_B_Mi171Sh_Unarmed_ACR                        	{ quality = 4; price = 75000; };
+    class CUP_B_Mi17_CDF                                	{ quality = 4; price = 75000; };
+    class CUP_B_Mi17_medevac_CDF                        	{ quality = 4; price = 75000; };
+    class CUP_I_Mi17_UN                                    	{ quality = 4; price = 75000; };
+    class CUP_O_Mi17_TK                                    	{ quality = 4; price = 75000; };
+    class CUP_C_Mi17_Civilian_RU                        	{ quality = 4; price = 75000; };
+    class CUP_I_M163_RACS                                	{ quality = 4; price = 75000; };
+    class CUP_B_Merlin_HC3A_GB                            	{ quality = 5; price = 80000; };
+    class CUP_B_SA330_Puma_HC1_BAF                        	{ quality = 5; price = 80000; };
+    class CUP_B_SA330_Puma_HC2_BAF                        	{ quality = 5; price = 80000; };
+    
+    ///// Planes
+    class CUP_C_DC3_CIV                                    	{ quality = 2; price = 17000; };
+    class CUP_B_MV22_USMC                                	{ quality = 6; price = 130000; };
+    class CUP_B_C130J_USMC                               	{ quality = 6; price = 90000; };
+    class CUP_B_C130J_GB                               		{ quality = 6; price = 90000; };
+    class CUP_I_C130J_AAF                               	{ quality = 6; price = 90000; };
+    class CUP_I_C130J_RACS                               	{ quality = 6; price = 90000; };
+    class CUP_O_C130J_TKA                               	{ quality = 6; price = 90000; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Flags
@@ -3884,7 +4227,7 @@ class CfgTerritories
 	minimumDistanceToOtherTerritories = 325; 
 
 	// Maximum number of territories a player can own
-	maximumNumberOfTerritoriesPerPlayer = 1;
+	maximumNumberOfTerritoriesPerPlayer = 10;
 
 	/**
 	 * Defines the minimum distance to safe zones / trader cities where players
@@ -4119,7 +4462,32 @@ class CfgTraderCategories
 			"U_C_Man_casual_6_F",
 			"U_B_CTRG_Soldier_urb_1_F",
 			"U_B_CTRG_Soldier_urb_2_F",
-			"U_B_CTRG_Soldier_urb_3_F"
+			"U_B_CTRG_Soldier_urb_3_F",
+            //ADD joe
+            "R3F_UniformBox",
+            "R3F_sousvet",
+            "R3F_uniform_pilot",
+            "R3F_uniform_piheli",
+            "R3F_uniform_piheli_DA",
+            "R3F_uniform_diver",
+            "R3F_uniform_Ghillie",
+            "R3F_uniform_urr",
+            "R3F_uniform_urr_medic",
+            "R3F_uniform_off",
+            "R3F_uniform_f1",
+            "R3F_uniform_f1_medic",
+            "R3F_uniform_apso",
+            "R3F_uniform_Ghillie_DA",
+            "R3F_uniform_urr_DA",
+            "R3F_uniform_urr_medic_DA",
+            "R3F_uniform_off_DA",
+            "R3F_uniform_f1_DA",
+            "R3F_uniform_f1_medic_DA",
+            "R3F_uniform_apso_DA",
+            "R3F_uniform_Ghillie_SNOW",
+            "R3F_uniform_urr_SNOW",
+            "R3F_uniform_f1_SNOW"
+
 		};
 	};
 
@@ -4192,7 +4560,23 @@ class CfgTraderCategories
 			"V_DeckCrew_red_F",
 			"V_DeckCrew_white_F",
 			"V_DeckCrew_brown_F",
-			"V_DeckCrew_violet_F"
+			"V_DeckCrew_violet_F",
+            //ADD joe
+            "R3F_veste_ce600",
+            "R3F_veste_ce300",
+            "R3F_vestetactique_noire",
+            "R3F_veste_noire",
+            "R3F_veste_TAN",
+            "R3F_veste_APSO",
+            "R3F_veste_APSO_EOD",
+            "R3F_veste_APSO_CE",
+            "R3F_veste_APSO_EOD_CE",
+            "R3F_veste_APSO_TAN",
+            "R3F_veste_APSO_EOD_TAN",
+            "R3F_veste_off",
+            "R3F_veste_equipage",
+            "R3F_veste_SNOW"
+
 		};
 	};
 
@@ -4328,7 +4712,48 @@ class CfgTraderCategories
 			"H_Cap_oli_Syndikat_F",
 			"H_Cap_tan_Syndikat_F",
 			"H_Cap_blk_Syndikat_F",
-			"H_Cap_grn_Syndikat_F"
+			"H_Cap_grn_Syndikat_F",
+            //ADD joe
+            "R3F_casque_spectra",
+            "R3F_casque_spectra_jaune",
+            "R3F_casque_spectra_bleu",
+            "R3F_casque_spectra_vert",
+            "R3F_casque_spectra_orange",
+            "R3F_casque_spectra_violet",
+            "R3F_casque_spectra_EOD",
+            "R3F_casque_pilote",
+            "R3F_casque_equipage",
+            "R3F_casquette",
+            "R3F_casquette_TAN",
+            "R3F_casquette_ops",
+            "R3F_casquette_ops_TAN",
+            "R3F_chapeaubrousse_CE",
+            "R3F_chapeaubrousse_TAN",
+            "R3F_beret",
+            "R3F_beret_para",
+            "R3F_beret_commando",
+            "R3F_beret_alat",
+            "R3F_Bonnet",
+            "R3F_Bonnet_vert",
+            "R3F_Bonnet_snow",
+            "R3F_casquette_off",
+            "R3F_casquette_off_DA",
+            "R3F_casque_spectra_DA",
+            "R3F_casque_spectra_DA_jaune",
+            "R3F_casque_spectra_DA_bleu",
+            "R3F_casque_spectra_DA_vert",
+            "R3F_casque_spectra_DA_orange",
+            "R3F_casque_spectra_DA_violet",
+            "R3F_casque_spectra_EOD_DA",
+            "R3F_casqueFS_olive",
+            "R3F_casqueFS_TAN",
+            "R3F_casqueFS_noir",
+            "R3F_casqueFS_snow",
+            "R3F_bandana_olive",
+            "R3F_bandana_TAN",
+            "R3F_bandana_noir",
+            "R3F_casque_spectra_SNOW"
+
 		};
 	};
 
@@ -4815,7 +5240,23 @@ class CfgTraderCategories
 			"B_ViperLightHarness_ghex_F",
 			"B_ViperLightHarness_hex_F",
 			"B_ViperLightHarness_khk_F",
-			"B_ViperLightHarness_oli_F"
+			"B_ViperLightHarness_oli_F",
+            // ADD joe
+            "R3F_sac_petit_noir",
+            "R3F_sac_petit_TE_noir",
+            "R3F_sac_moyen_CE",
+            "R3F_sac_moyen_TAN",
+            "R3F_sac_moyen_SNOW",
+            "R3F_sac_moyen_medic_CE",
+            "R3F_sac_moyen_medic_noir",
+            "R3F_sac_moyen_medic_TAN",
+            "R3F_sac_lourd_CE",
+            "R3F_sac_lourd_APSO_CE",
+            "R3F_sac_lourd_TAN",
+            "R3F_sac_lourd_APSO_TAN",
+            "R3F_sac_lourd_noir",
+            "R3F_sac_lourd_SNOW"
+
 		};
 	};
 
@@ -4925,7 +5366,26 @@ class CfgTraderCategories
 			"Exile_Magazine_20Rnd_765x17_SA61",
 			"Exile_Magazine_10Rnd_127x99_m107",
 			"Exile_Magazine_5Rnd_127x108_APDS_KSVK",
-			"Exile_Magazine_5Rnd_127x108_KSVK"
+			"Exile_Magazine_5Rnd_127x108_KSVK",
+            //ADD joe
+            "R3F_25Rnd_556x45_FAMAS",
+            "R3F_25Rnd_556x45_TRACER_FAMAS",
+            "R3F_30Rnd_556x45_FAMAS",
+            "R3F_30Rnd_556x45_TRACER_FAMAS",
+            "R3F_7Rnd_127x99_PGM",                       
+            "R3F_7Rnd_127x99_PEI_PGM",                   
+            "R3F_10Rnd_127x99_M107",                     
+            "R3F_10Rnd_127x99_PEI_M107",                 
+            "R3F_5Rnd_127x99_PEI_TAC50",
+            "R3F_100Rnd_762x51_MINIMI",
+            "R3F_200Rnd_556x45_MINIMI",
+            "R3F_20Rnd_762x51_HK417",
+            "R3F_20Rnd_762x51_TRACER_HK417",
+            "R3F_30Rnd_556x45_HK416",
+            "R3F_30Rnd_556x45_TRACER_HK416",
+            "R3F_30Rnd_556x45_SIG551",
+            "R3F_30Rnd_556x45_TRACER_SIG551",
+            "R3F_30Rnd_9x19_MP5"                
 		};
 	};
 
@@ -5059,7 +5519,12 @@ class CfgTraderCategories
 			"LMG_03_F",
 			"Exile_Weapon_RPK",
 			"Exile_Weapon_PK",
-			"Exile_Weapon_PKP"
+			"Exile_Weapon_PKP",
+            //ADD joe
+            "R3F_Minimi",
+            "R3F_Minimi_762",
+            "R3F_Minimi_HG",
+            "R3F_Minimi_762_HG"
 
 			/*
 			"MMG_01_hex_F",
@@ -5136,7 +5601,47 @@ class CfgTraderCategories
 			"arifle_MXM_khk_F",
 			"Exile_Weapon_M4",
 			"Exile_Weapon_M16A4",
-			"Exile_Weapon_M16A2"
+			"Exile_Weapon_M16A2",
+            //ADD joe
+            "R3F_FAMAS_F1",           
+            "R3F_FAMAS_F1_DES",       
+            "R3F_FAMAS_F1_HG",        
+            "R3F_FAMAS_F1_HG_DES",   
+            "R3F_FAMAS_F1_M203",      
+            "R3F_FAMAS_F1_M203_DES",  
+            "R3F_FAMAS_G2",           
+            "R3F_FAMAS_G2_DES",       
+            "R3F_FAMAS_G2_HG",        
+            "R3F_FAMAS_G2_HG_DES",    
+            "R3F_FAMAS_G2_M203",      
+            "R3F_FAMAS_G2_M203_DES",                    
+            "R3F_FAMAS_surb",                          
+            "R3F_FAMAS_surb_DES",                      
+            "R3F_FAMAS_surb_HG",                        
+            "R3F_FAMAS_surb_HG_DES",                
+            "R3F_FAMAS_surb_M203",                    
+            "R3F_FAMAS_surb_M203_DES",                  
+            "R3F_FAMAS_FELIN",                          
+            "R3F_FAMAS_FELIN_DES",
+            "R3F_HK417L",                     
+            "R3F_HK417L_DES",                     
+            "R3F_HK417M",                     
+            "R3F_HK417M_DES",                     
+            "R3F_HK417M_HG",                     
+            "R3F_HK417M_HG_DES",
+            "R3F_HK417S_HG",                     
+            "R3F_HK417S_HG_DES",   
+            "R3F_HK416M",                     
+            "R3F_HK416M_DES",
+            "R3F_HK416M_HG",                     
+            "R3F_HK416M_HG_DES",                    
+            "R3F_HK416M_M203_DES",
+            "R3F_HK416S_HG",                     
+            "R3F_HK416S_HG_DES", 
+            "R3F_SIG551",                     
+            "R3F_SIG551_CE",
+            "R3F_MP5A5",
+            "R3F_MP5SD"
 		};
 	};
 
@@ -5193,6 +5698,14 @@ class CfgTraderCategories
 			"srifle_DMR_07_ghex_F",
 			//"Exile_Weapon_m107",
 			//"Exile_Weapon_ksvk"
+            //ADD joe
+            "R3F_FRF2",
+            "R3F_FRF2_DES",
+            "R3F_PGM_Hecate_II",
+            "R3F_PGM_Hecate_II_DES",
+            "R3F_PGM_Hecate_II_POLY",
+            "R3F_TAC50",
+            "R3F_M107_DES"
 		};
 	};
 
@@ -5258,12 +5771,123 @@ class CfgTraderCategories
 			"Exile_Car_QilinUnarmed",
 			"Exile_Car_MB4WD",
 			"Exile_Car_MB4WDOpen",
-            "GAZ_Vodnik",
-            "GAZ_Vodnik_MedEvac",
-            "GAZ_Vodnik_HMG",
-            "BRDM2_HQ_Gue",
-            "BTR90_HQ",
-            "LAV25_HQ"
+            "CUP_C_UAZ_Open_TK_CIV",
+            "CUP_C_UAZ_Unarmed_TK_CIV",
+            "CUP_O_UAZ_MG_CHDKZ",
+            "CUP_O_UAZ_MG_RU",
+            "CUP_O_UAZ_MG_TKA",
+            "CUP_O_UAZ_Open_CHDKZ",
+            "CUP_O_UAZ_Open_RU",
+            "CUP_O_UAZ_Open_TKA",
+            "CUP_O_UAZ_Unarmed_CHDKZ",
+            "CUP_O_UAZ_Unarmed_RU",
+            "CUP_O_UAZ_Unarmed_TKA",
+            "CUP_B_UAZ_MG_ACR",
+            "CUP_B_UAZ_MG_CDF",
+            "CUP_B_UAZ_Open_ACR",
+            "CUP_B_UAZ_Open_CDF",
+            "CUP_B_UAZ_Unarmed_ACR",
+            "CUP_B_UAZ_Unarmed_CDF",
+            "CUP_I_UAZ_MG_UN",
+            "CUP_I_UAZ_Open_UN",
+            "CUP_I_UAZ_Unarmed_UN",
+            "CUP_B_Ural_CDF",
+            "CUP_B_Ural_Open_CDF",
+            "CUP_B_Ural_Reammo_CDF",
+            "CUP_B_Ural_Refuel_CDF",
+            "CUP_B_Ural_Repair_CDF",
+            "CUP_O_Ural_CHDKZ",
+            "CUP_O_Ural_Open_CHDKZ",
+            "CUP_O_Ural_Open_RU",
+            "CUP_O_Ural_Open_SLA",
+            "CUP_O_Ural_Open_TKA",
+            "CUP_O_Ural_RU",
+            "CUP_O_Ural_Reammo_CHDKZ",
+            "CUP_O_Ural_Reammo_RU",
+            "CUP_O_Ural_Reammo_SLA",
+            "CUP_O_Ural_Reammo_TKA",
+            "CUP_O_Ural_Refuel_CHDKZ",
+            "CUP_O_Ural_Refuel_RU",
+            "CUP_O_Ural_Refuel_SLA",
+            "CUP_O_Ural_Refuel_TKA",
+            "CUP_O_Ural_Repair_CHDKZ",
+            "CUP_O_Ural_Repair_RU",
+            "CUP_O_Ural_Repair_SLA",
+            "CUP_O_Ural_Repair_TKA",
+            "CUP_O_Ural_SLA",
+            "CUP_O_Ural_TKA",
+            "CUP_C_Ural_Civ_01",
+            "CUP_C_Ural_Civ_02",
+            "CUP_C_Ural_Civ_03",
+            "CUP_C_Ural_Open_Civ_01",
+            "CUP_C_Ural_Open_Civ_02",
+            "CUP_C_Ural_Open_Civ_03",
+            "CUP_I_Ural_Reammo_UN",
+            "CUP_I_Ural_Repair_UN",
+            "CUP_I_Ural_UN",
+            "CUP_C_Datsun",
+            "CUP_C_Datsun_4seat",
+            "CUP_C_Datsun_Covered",
+            "CUP_C_Datsun_Plain",
+            "CUP_C_Datsun_Tubeframe",
+            "CUP_I_Datsun_PK",
+            "CUP_I_Datsun_PK_Random",
+            "CUP_I_Datsun_PK_TK",
+            "CUP_I_Datsun_PK_TK_Random",
+            "CUP_O_Datsun_PK",
+            "CUP_O_Datsun_PK_Random",
+            "CUP_C_LR_Transport_CTK",
+            "CUP_BAF_Jackal2_GMG_D",
+            "CUP_BAF_Jackal2_GMG_W",
+            "CUP_BAF_Jackal2_L2A1_D",
+            "CUP_BAF_Jackal2_L2A1_W",
+            "CUP_B_Dingo_Des",
+            "CUP_B_Dingo_GL_Des",
+            "CUP_B_Dingo_GL_Wdl",
+            "CUP_B_Dingo_Wdl",
+            "CUP_B_HMMWV_AGS_GPK_ACR",
+            "CUP_B_HMMWV_Ambulance_USA",
+            "CUP_B_HMMWV_Crows_M2_USA",
+            "CUP_B_HMMWV_Crows_MK19_USA",
+            "CUP_B_HMMWV_DSHKM_GPK_ACR",
+            "CUP_B_HMMWV_M1114_USMC",
+            "CUP_B_HMMWV_M2_GPK_ACR",
+            "CUP_B_HMMWV_M2_GPK_USA",
+            "CUP_B_HMMWV_M2_USA",
+            "CUP_B_HMMWV_M2_USMC",
+            "CUP_B_HMMWV_MK19_USA",
+            "CUP_B_HMMWV_MK19_USMC",
+            "CUP_B_HMMWV_SOV_USA",
+            "CUP_B_HMMWV_Terminal_USA",
+            "CUP_B_HMMWV_Transport_USA",
+            "CUP_B_HMMWV_Unarmed_USA",
+            "CUP_B_HMMWV_Unarmed_USMC",
+            "CUP_B_LR_MG_CZ_W",
+            "CUP_B_LR_MG_GB_W",
+            "CUP_B_LR_Special_CZ_W",
+            "CUP_B_LR_Special_Des_CZ_D",
+            "CUP_B_LR_Transport_CZ_D",
+            "CUP_B_LR_Transport_CZ_W",
+            "CUP_B_LR_Transport_GB_D",
+            "CUP_B_LR_Transport_GB_W",
+            "CUP_O_LR_Ambulance_TKA",
+            "CUP_O_LR_MG_TKA",
+            "CUP_O_LR_Transport_TKA",
+///            "CUP_O_LR_Transport_TKM",
+            "CUP_I_LR_Transport_RACS",
+            "CUP_I_LR_MG_RACS",
+///            "CUP_I_LR_Ambulance_RACS",            
+            "CUP_I_BRDM2_HQ_TK_Gue",
+            "CUP_I_BRDM2_HQ_UN",
+            "CUP_O_BRDM2_HQ_CHDKZ",
+            "CUP_B_BRDM2_HQ_CDF",
+            "CUP_I_BRDM2_UN",
+            "CUP_I_BRDM2_TK_Gue",
+            "CUP_O_BRDM2_CHDKZ",
+            "CUP_B_BRDM2_CDF",
+            "CUP_O_BTR60_TK",
+            "CUP_B_M1133_MEV_Desert",
+            "CUP_B_M1133_MEV_Woodland"
 		};
 	};
 
@@ -5314,8 +5938,8 @@ class CfgTraderCategories
             "Exile_Chopper_Hummingbird_Civillian_Wave",
             "Exile_Chopper_Huey_Green",
             "Exile_Chopper_Huey_Desert",
-            "Exile_Chopper_Huey_Armed_Desert",
-            "Exile_Chopper_Huey_Armed_Green",
+///            "Exile_Chopper_Huey_Armed_Desert",
+///            "Exile_Chopper_Huey_Armed_Green",
             "Exile_Chopper_Taru_Black",
             "Exile_Chopper_Taru_CSAT",
             "Exile_Chopper_Taru_Covered_Black",
@@ -5332,8 +5956,45 @@ class CfgTraderCategories
             "Exile_Chopper_Hellcat_FIA",
             "B_Heli_Transport_01_F",
             "B_Heli_Transport_01_camo_F",
-            "Mi17_CDF",
-            "MH60S"
+            "CUP_B_AW159_Unarmed_BAF",
+            "CUP_B_CH47F_GB",
+            "CUP_B_CH47F_USA",
+            "CUP_B_CH53E_USMC",
+            "CUP_B_UH1Y_MEV_USMC",
+            "CUP_B_UH1Y_UNA_USMC",
+            "CUP_O_UH1H_TKA",
+            "CUP_I_UH1H_TK_GUE",
+            "CUP_B_UH1D_GER_KSK",
+            "CUP_B_MH60S_FFV_USMC",
+            "CUP_B_MH60S_USMC",
+            "CUP_B_UH60L_FFV_US",
+            "CUP_B_UH60L_US",
+            "CUP_B_UH60L_Unarmed_FFV_MEV_US",
+            "CUP_B_UH60L_Unarmed_FFV_US",
+            "CUP_B_UH60L_Unarmed_US",
+            "CUP_I_UH60L_FFV_RACS",
+            "CUP_I_UH60L_RACS",
+            "CUP_I_UH60L_Unarmed_FFV_MEV_Racs",
+            "CUP_I_UH60L_Unarmed_FFV_Racs",
+            "CUP_I_UH60L_Unarmed_RACS",
+            "CUP_B_UH60M_FFV_US",
+            "CUP_B_UH60M_US",
+            "CUP_B_UH60M_Unarmed_FFV_MEV_US",
+            "CUP_B_UH60M_Unarmed_FFV_US",
+            "CUP_B_UH60M_Unarmed_US",
+///            "CUP_O_Mi8_CHDKZ",
+///            "CUP_O_Mi8_RU",
+            "CUP_O_Mi8_medevac_CHDKZ",
+            "CUP_O_Mi8_medevac_RU",
+            "CUP_B_Mi171Sh_Unarmed_ACR",
+            "CUP_B_Mi17_CDF",
+            "CUP_B_Mi17_medevac_CDF",
+            "CUP_I_Mi17_UN",
+            "CUP_O_Mi17_TK",
+            "CUP_C_Mi17_Civilian_RU",
+            "CUP_B_Merlin_HC3A_GB",
+///            "CUP_B_SA330_Puma_HC1_BAF",
+            "CUP_B_SA330_Puma_HC2_BAF"
 		};
 	};
 
@@ -5369,7 +6030,14 @@ class CfgTraderCategories
 			"Exile_Plane_AN2_Green",
 			"Exile_Plane_Ceasar",
 			"Exile_Plane_BlackfishInfantry",
-			"Exile_Plane_BlackfishVehicle"
+			"Exile_Plane_BlackfishVehicle",
+            "CUP_C_DC3_CIV",
+            "CUP_B_MV22_USMC",
+            "CUP_B_C130J_USMC",
+            "CUP_B_C130J_GB",
+            "CUP_I_C130J_AAF",
+            "CUP_I_C130J_RACS",
+            "CUP_O_C130J_TKA"
 		};
 	};
 

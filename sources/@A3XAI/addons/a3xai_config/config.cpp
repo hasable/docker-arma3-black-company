@@ -184,7 +184,7 @@ class CfgA3XAISettings {
 	
 	//List of launcher-type weapons that AI can use. Launchers are unlootable and will be removed at death.
 	//launcherTypes[] = {"launch_NLAW_F","launch_RPG32_F","launch_B_Titan_F","launch_I_Titan_F","launch_O_Titan_F","launch_B_Titan_short_F","launch_I_Titan_short_F","launch_O_Titan_short_F"}; 
-	launcherTypes[] = {"launch_RPG7_F", "launch_RPG32_F"}; 
+	launcherTypes[] = {"launch_RPG7_F", "launch_RPG32_F","R3F_AT4CS"}; 
 	
 	//Maximum number of launcher weapons allowed per group (Default: 1)
 	launchersPerGroup = 3;
