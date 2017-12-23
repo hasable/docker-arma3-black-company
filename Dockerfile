@@ -16,6 +16,8 @@ RUN apt-get update \
 	&& ln -s /usr/local/lib/libdepbo.so.0.6.54 /usr/local/lib/libdepbo.so.0 \
 	&& ldconfig \
 	&& rm -rf  depbo-tools-0.6.54*
+
+RUN ln -snf /usr/share/zoneinfo/Europe/Paris /etc/localtime && echo Europe/Paris > /etc/timezone	
 	
 WORKDIR /opt
 COPY bin/docker-entrypoint.sh /opt
@@ -140,8 +142,15 @@ RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/ar
 		&& cd ../.. && rm -rf @ZCP \
 	&& cd mpmissions \
 		&& for mission in *; do makepbo -N ${mission} && mv -f ${mission}.pbo /opt/arma3/mpmissions/; done \
-		&& cd .. && rm -rf mpmissions
+		&& cd .. 
 
+# interval de redemarrage, en seconde
+ENV EXILE_CONFIG_RESTART_CYCLE=14400
+# heure de demarrage du cycle, en seconde par rapport a minuit
+ENV EXILE_CONFIG_RESTART_START=0		
+# ne pas redemarrer si le serveur a demarrer depuis moins de Xs
+ENV EXILE_CONFIG_RESTART_GRACE_TIME=600
+		
 EXPOSE 2309/udp
 		
 WORKDIR /opt/arma3

@@ -4563,7 +4563,7 @@ class CfgSettings
 		// time in ARMA FORMAT << CONFIG
 		// https://community.bistudio.com/wiki/setDate
 
-		staticTime[] = {2039,10,24,15,30};
+		staticTime[] = {2039,10,24,09,00};
 	};
 
 
@@ -4590,7 +4590,7 @@ class CfgSettings
 			{4, 0} = Every 4 hours
 			{1, 30} = Every one and a half hour (who the hell would do this?)
 		*/
-		restartTimer[] = {1, 0};
+		restartTimer[] = {4, 0};
 
 		/*
 			Kicks players before restart to prevent gear loss.
@@ -4606,7 +4606,7 @@ class CfgSettings
 			not disconnect before the restart. Should at least be two
 			minutes!
 		*/
-		kickTime = 2;
+		kickTime = 3;
 
 		/*
 			Self-explanatory
@@ -4621,7 +4621,7 @@ class CfgSettings
 
 			Only use full minutes here. Value like 5.5 have not been tested.
 		*/
-		restartWarningTime[] = {15, 10, 5, 3}; 
+		restartWarningTime[] = {15, 10, 5, 4}; 
 
 		/* 
 			If set to 1 server will execute '#shutdown',

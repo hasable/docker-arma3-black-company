@@ -23,14 +23,55 @@ if [ ! -z "${BUILD_ATK_CFG}" ]; then
 	popd
 fi
 
-if [ ! -z "${EXILE_CONFIG_PASSWORD_COMMAND}" ]; then 
-	echo "Rebuilding Exile server configuration..."
-	pushd /home/steamu/sources/\@ExileServer/addons/
-	sed -i "s#^\(\s*serverPassword\s*=\s*\"\).*\(\".*$\)#\1${EXILE_CONFIG_PASSWORD_COMMAND}\2#"  exile_server_config/config.cpp
-	makepbo -N exile_server_config
-	mv -f exile_server_config.pbo /opt/arma3/\@ExileServer/addons/exile_server_config.pbo
-	popd
+# Update ExileServer configuration...
+echo "Rebuilding Exile server configuration..."
+
+# calcul du decalage UTC
+UTC=$(( ${DECALAGE} + $(date -d @0 +%-H) * 3600 + $(date -d @0 +%-M) * 60 ))
+
+# calcul debut de la session de jeu
+startp=$(( ( ( $(date +%s ) + ${EXILE_CONFIG_RESTART_START} + ${UTC} ) / ${EXILE_CONFIG_RESTART_CYCLE})*${EXILE_CONFIG_RESTART_CYCLE} - ${EXILE_CONFIG_RESTART_START} - ${UTC} ))
+echo "Started at $(date -d @$startp +%H:%M )"
+# et calcul de fin
+endp=$(( ${startp} + ${EXILE_CONFIG_RESTART_CYCLE} ))
+echo "Should end at $(date -d @$endp +%H:%M )"
+current=$(date +%s )
+
+remain=$(( ${endp} - ${current} ))
+if [ "${remain}" -lt "${EXILE_CONFIG_RESTART_GRACE_TIME}" ]; then
+        remain=$(( ${remain} + ${EXILE_CONFIG_RESTART_GRACE_TIME} ))
 fi
+echo "Remaining time $(date -u -d @$remain '+%H:%M')"
+
+sed -i "s#^\(\s*restartTimer\[\] \s*=\s\).*\(;\s*$\)#\1$(date -u -d @$remain '+{%-H, %-M}')\2#"  /home/steamu/sources/\@ExileServer/addons/exile_server_config/config.cpp
+
+if [ ! -z "${EXILE_CONFIG_PASSWORD_COMMAND}" ]; then 
+	sed -i "s#^\(\s*serverPassword\s*=\s*\"\).*\(\".*$\)#\1${EXILE_CONFIG_PASSWORD_COMMAND}\2#"  /home/steamu/sources/\@ExileServer/addons/exile_server_config/config.cpp
+fi
+
+pushd /home/steamu/sources/\@ExileServer/addons/		
+makepbo -N exile_server_config
+mv -f exile_server_config.pbo /opt/arma3/\@ExileServer/addons/exile_server_config.pbo
+popd
+
+# Update missions ...
+# Mise à jour du timer dans la status bar Exad
+pushd /home/steamu/sources/mpmissions
+for mission in *; do 
+	if [ -d ${mission}/ExAdClient ]; then
+		sed -i "s#^\(\s*ExAd_SB_Timer\s*=\).*\(;.*$\)#\1 ${remain}\2#"  ${mission}/ExAdClient/StatsBar/customize.sqf
+	fi
+	makepbo -N ${mission} && mv -f ${mission}.pbo /opt/arma3/mpmissions/
+done
+popd
+
+
+# as a backup, because sometime Exile fails to stop, add a timer...
+remain=$(( ${remain} + ${EXILE_CONFIG_RESTART_GRACE_TIME} ))
+( echo "Server will be hard stopped in ${remain}" \
+       && sleep ${remain} \
+       && kill -9 $$ \
+) &
 
 if [ ! -z "${DEVELOPMENT}" ]; then 
 	pushd ${DEVELOPMENT}

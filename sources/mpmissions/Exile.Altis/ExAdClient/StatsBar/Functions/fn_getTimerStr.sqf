@@ -24,6 +24,10 @@ _time = serverTime;
 _hours = (ExAd_SB_Timer - 1) - floor (_time / 3600);
 _minutes = 59 - floor ((_time % 3600) / 60);
 
+_hours = floor ((ExAd_SB_Timer -_time) / 3600);
+_minutes = floor (((ExAd_SB_Timer -_time) % 3600) / 60);
+
+
 _img = [ExAd_SB_ICON_TIMER] call ExAd_fnc_formatSBImage;
 _text = format["%1:%2", _hours,(if(_minutes < 10 )then{format["0%1",_minutes]}else{_minutes})];
 _request pushBack [_img,_text];

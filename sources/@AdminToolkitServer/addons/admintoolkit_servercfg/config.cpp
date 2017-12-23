@@ -26,7 +26,7 @@ class CfgSettings
         /**
          * list of allowed admins using its player UID (default: me)
          */
-        AdminList[] = { "76561197990024201", "76561198007339024" };
+        AdminList[] = {};
         /**
          * list of admins with restricted access only
          */

@@ -16,11 +16,12 @@ services:
     environment:
       - EXILE_CONFIG_HOSTNAME=Black Company DEV
       - EXILE_CONFIG_PASSWORD_COMMAND=exileConfigPasswordCommand
+      - EXILE_CONFIG_PASSWORD_RCON=exileConfigPasswordRcon
+      - EXILE_CONFIG_MAXPLAYERS=4
       - EXILE_DATABASE_HOST=database
       - EXILE_DATABASE_NAME=altisdb
       - EXILE_DATABASE_USER=altisu
       - EXILE_DATABASE_PASS=altispw
-      - EXILE_CONFIG_PASSWORD_RCON=exileConfigPasswordRcon
       - ATK_CONFIG_ADMIN_LIST=76561197990024201,76561198007339024
     volumes:
       - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
