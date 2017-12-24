@@ -114,7 +114,7 @@ RUN wget -nv http://team-r3f.org/public/addons/R3F_UNITES_3.7.7z \
 		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
 		&& cd .. \
 	&& mv \@R3F_UNITES /opt/arma3/\@R3FUnites
-	
+
 WORKDIR /home/${USER_NAME}/sources
 RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/arma3/@ExileServer/addons/ \
 		&& mv exile_server_config.pbo /opt/arma3/@ExileServer/addons/exile_server_config.pbo \
@@ -153,7 +153,7 @@ ENV EXILE_CONFIG_RESTART_CYCLE=14400
 # heure de demarrage du cycle, en seconde par rapport a minuit
 ENV EXILE_CONFIG_RESTART_START=0		
 # ne pas redemarrer si le serveur a demarrer depuis moins de Xs
-ENV EXILE_CONFIG_RESTART_GRACE_TIME=600
+ENV EXILE_CONFIG_RESTART_GRACE_TIME=900
 		
 EXPOSE 2309/udp
 		

@@ -33,10 +33,12 @@ class CfgAdminToolkitCustomMod {
 		{"Chat", "['message', [netid AdminToolkit_Player, AdminToolkit_Params]] call AdminToolkit_doAction"},
 		/* send a message to everyone using the parameter text field */
 		{"Msg To All", "['messageall', AdminToolkit_Params] call AdminToolkit_doAction"},
+		/* Quickly get an Offroad */
+		{"Offroad", "['getvehicle', 'B_G_Offroad_01_armed_F'] call AdminToolkit_doAction"},
 		/* Quickly get a Helicopter */
-		{"Heli", "['getvehicle', 'B_Heli_Light_01_armed_F'] call AdminToolkit_doAction"},
-		/*4 button*/
-		{"Empty", "['Command', 'Variable'] call AdminToolkit_doAction"}
+		{"Heli", "['getvehicle', 'B_Heli_Light_01_F'] call AdminToolkit_doAction"},
+		
+	
 	};
 };
 
@@ -3004,7 +3006,7 @@ class CfgExileCustomCode
 	ExileClient_gui_xm8_slide = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_slide.sqf";
 	ExileClient_gui_xm8_show = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_show.sqf";  
 	
-	ExileClient_object_player_event_onEnterSafezon = "Igiload\ExileClient_object_player_event_onEnterSafezone.sqf"
+	ExileClient_object_player_event_onEnterSafezon = "Igiload\ExileClient_object_player_event_onEnterSafezone.sqf";
 };
 class CfgExileEnvironment
 {
