@@ -176,7 +176,8 @@ SC_LootCrateItems           	= [
 									["Exile_Item_Sand",2,10],
 									["Exile_Item_MetalWire",1,5],
 									["Exile_Item_WaterCanisterEmpty",0,2],
-									["Exile_Item_Shovel",0,1],
+                                    ["Exile_Item_Shovel",0,1],
+									["Exile_Magazine_Battery",0,1],
 									["Exile_Item_MetalScrews",0,5]
                             ];
 
@@ -220,6 +221,7 @@ SC_HeliCrashItems           	=   [
                                     ["B_Parachute",1,1],
                                     ["H_CrewHelmetHeli_B",1,1],
                                     ["ItemGPS",0,1],
+                                    ["Exile_Magazine_Battery",0,1],
                                     ["Exile_Item_InstaDoc",0,1],
                                     ["Exile_Item_PlasticBottleFreshWater",2,2],
                                     ["Exile_Item_EMRE",2,2]                                 
@@ -388,7 +390,7 @@ SC_SurvivorLastNames    		= ["Smith","Jones","Davids","Johnson","Jobs","Andrews"
 SC_BanditFirstNames     		= ["Alex","Nikita","George","Daniel","Adam","Alexander","Sasha","Sergey","Dmitry","Anton","Jakub","Vlad","Maxim","Oleg","Denis","Wojtek"]; 
 SC_BanditLastNames      		= ["Dimitrov","Petrov","Horvat","Novak","Dvorak","Vesely","Horak","Hansen","Larsen","Tamm","Ivanov","Pavlov","Virtanen"];
 		
-SC_SurvivorsChance          	= 20;						// chance in % to spawn survivors instead of bandits (for places and land vehicles)
+SC_SurvivorsChance          	= 0;						// chance in % to spawn survivors instead of bandits (for places and land vehicles)
 
 
 SC_SurvivorsFriendly        	= false;                 	// true if you want survivors to be friendly to players (until they are attacked by players)
@@ -410,17 +412,17 @@ SC_SurvivorBackpack         	= [];
 
 // Possible equipment for bandit AI to spawn with 
 // spawning bandits without vests or backpacks will result in them having no ammunition                                                    
-SC_BanditUniforms           	= ["U_IG_Guerilla1_1","U_IG_Guerilla2_1","U_IG_Guerilla2_2","U_IG_Guerilla2_3","U_IG_Guerilla3_1","U_BG_Guerilla2_1","U_IG_Guerilla3_2","U_BG_Guerrilla_6_1","U_BG_Guerilla1_1","U_BG_Guerilla2_2","U_BG_Guerilla2_3","U_BG_Guerilla3_1"]; 
+SC_BanditUniforms           	= ["U_IG_Guerilla1_1","U_IG_Guerilla2_1","U_IG_Guerilla2_2","U_IG_Guerilla2_3","U_IG_Guerilla3_1","U_BG_Guerilla2_1","U_IG_Guerilla3_2","U_BG_Guerrilla_6_1","U_BG_Guerilla1_1","U_BG_Guerilla2_2","U_BG_Guerilla2_3","U_BG_Guerilla3_1","R3F_uniform_f1","R3F_uniform_Ghillie"]; 
 SC_BanditVests              	= ["V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_khk","V_BandollierB_oli"]; 
 SC_BanditHeadgear           	= ["H_Shemag_khk","H_Shemag_olive","H_Shemag_olive_hs","H_Shemag_tan","H_ShemagOpen_khk","H_ShemagOpen_tan"];
-SC_BanditWeapon             	= ["LMG_Zafir_F","arifle_Katiba_C_F","arifle_Katiba_F","arifle_Katiba_GL_F","arifle_MXC_Black_F","arifle_MXC_F","arifle_TRG20_F","arifle_TRG21_F","arifle_TRG21_GL_F"];
+SC_BanditWeapon             	= ["LMG_Zafir_F","arifle_Katiba_C_F","arifle_Katiba_F","arifle_Katiba_GL_F","arifle_MXC_Black_F","arifle_MXC_F","arifle_TRG20_F","arifle_TRG21_F","arifle_TRG21_GL_F","R3F_Minimi","R3F_FAMAS_G2","R3F_FAMAS_F1","R3F_SIG551","R3F_HK416M_M203_DES"];
 SC_BanditWeaponAttachments  	= [];
-SC_BanditMagazines          	= ["Exile_Item_InstaDoc","Exile_Item_Vishpirin","Exile_Item_Bandage","Exile_Item_DuctTape","Exile_Item_PlasticBottleFreshWater","Exile_Item_Energydrink","Exile_Item_EMRE","Exile_Item_Cheathas","Exile_Item_Noodles","Exile_Item_BBQSandwich","Exile_Item_Catfood"];
+SC_BanditMagazines          	= ["Exile_Item_InstaDoc","Exile_Item_Vishpirin","Exile_Item_Bandage","Exile_Item_DuctTape","Exile_Item_PlasticBottleFreshWater","Exile_Item_Energydrink","Exile_Item_EMRE","Exile_Item_Cheathas","Exile_Item_Noodles","Exile_Item_BBQSandwich","Exile_Item_Catfood","R3F_AT4CS_Mag"];
 SC_BanditPistol             	= ["hgun_ACPC2_F","hgun_P07_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_02_F","hgun_Rook40_F"];
 SC_BanditPistolAttachments  	= [];
 SC_BanditAssignedItems      	= ["ItemMap","ItemCompass","ItemRadio","ItemWatch"]; // all these items will be added
 SC_BanditLauncher           	= ["R3F_AT4CS","launch_RPG7_F", "launch_RPG32_F"];
-SC_BanditBackpack           	= ["B_HuntingBackpack","B_Kitbag_cbr","B_Kitbag_mcamo","B_Kitbag_sgg","B_OutdoorPack_blk","B_OutdoorPack_blu","B_OutdoorPack_tan","B_TacticalPack_blk","B_TacticalPack_mcamo","B_TacticalPack_ocamo","B_TacticalPack_oli","B_TacticalPack_rgr","R3F_AT4CS_Mag"];
+SC_BanditBackpack           	= ["B_HuntingBackpack","B_Kitbag_cbr","B_Kitbag_mcamo","B_Kitbag_sgg","B_OutdoorPack_blk","B_OutdoorPack_blu","B_OutdoorPack_tan","B_TacticalPack_blk","B_TacticalPack_mcamo","B_TacticalPack_ocamo","B_TacticalPack_oli","B_TacticalPack_rgr"];
 
 // Possible equipment for random ai to spawn with 
 // spawning random ai without vests or backpacks will result in them having no ammunition                                                    

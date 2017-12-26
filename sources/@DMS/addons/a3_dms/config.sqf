@@ -266,7 +266,11 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											["nedural_mission",3],
 											["roguenavyseals",3],
 											["thieves",3],
-											["walmart",3]
+											["walmart",3],
+											["paul_boat_mission",3],
+											["paul_c130",3],
+											["paul_water_mission",3],
+											["testmission",3]
 										];
 
 
@@ -500,10 +504,10 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_AI_WP_Radius_base				= 5;						// Waypoint radius for AI in bases.
 	DMS_AI_WP_Radius_heli				= 500;						// Waypoint radius for AI in helis.
 
-	DMS_AI_destroyVehicleChance			= 75;						// Percent chance that an AI vehicle will be destroyed after the AI have been killed. Set to 100 for always, or 0 for never.
+	DMS_AI_destroyVehicleChance			= 25;						// Percent chance that an AI vehicle will be destroyed after the AI have been killed. Set to 100 for always, or 0 for never.
 
 	DMS_AI_destroyStaticWeapon			= true;						// Whether or not to destroy static HMGs after AI death.
-	DMS_AI_destroyStaticWeapon_chance	= 95;						// Percent chance that a static weapon will be destroyed (only applied if "DMS_AI_destroyStaticWeapon" is true)
+	DMS_AI_destroyStaticWeapon_chance	= 70;						// Percent chance that a static weapon will be destroyed (only applied if "DMS_AI_destroyStaticWeapon" is true)
 
 	DMS_static_weapons =				[							// Static weapons for AI
 											"O_HMG_01_high_F"
@@ -540,6 +544,8 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											"arifle_MX_GL_Black_F",
 											"arifle_Mk20_GL_F",
 											"arifle_TRG21_GL_F",
+											"R3F_HK417M",
+											"R3F_FAMAS_G2_HG",
 											"arifle_Katiba_F",
 											"arifle_MX_Black_F",
 											"arifle_TRG21_F",
@@ -606,7 +612,11 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											"H_HelmetSpecB_paint1",
 											"H_HelmetIA_camo",
 											"H_HelmetLeaderO_ocamo",
-											"H_HelmetLeaderO_oucamo"
+											"H_HelmetLeaderO_oucamo",
+											"R3F_beret_para",
+											"R3F_Bonnet_vert",
+											"R3F_bandana_olive",
+											"R3F_casque_spectra_DA"
 										];
 	DMS_assault_clothes	=				[							// Uniforms for Assault Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -630,7 +640,27 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											"U_B_SpecopsUniform_sgg",
 											"U_I_OfficerUniform",
 											"U_B_CTRG_3",
-											"U_I_G_resistanceLeader_F"
+											"U_I_G_resistanceLeader_F",
+											"R3F_UniformBox",
+											"R3F_sousvet",
+											"R3F_uniform_pilot",
+											"R3F_uniform_piheli",
+											"R3F_uniform_piheli_DA",
+											"R3F_uniform_diver",
+											"R3F_uniform_Ghillie",
+											"R3F_uniform_urr",
+											"R3F_uniform_urr_medic",
+											"R3F_uniform_off",
+											"R3F_uniform_f1",
+											"R3F_uniform_f1_medic",
+											"R3F_uniform_apso",
+											"R3F_uniform_Ghillie_DA",
+											"R3F_uniform_urr_DA",
+											"R3F_uniform_urr_medic_DA",
+											"R3F_uniform_off_DA",
+											"R3F_uniform_f1_DA",
+											"R3F_uniform_f1_medic_DA",
+											"R3F_uniform_apso_DA"
 										];
 	DMS_assault_vests =					[							// Vests for Assault Class
 											#ifdef GIVE_AI_APEX_GEAR
@@ -681,7 +711,8 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											"LMG_Mk200_F",
 											"arifle_MX_SW_Black_F",
 											"Exile_Weapon_RPK",
-											"Exile_Weapon_PKP"
+											"Exile_Weapon_PKP",
+											"R3F_Minimi_762_HG"
 										];
 	DMS_MG_pistols =				[							// Pistols for Assault Class (Set to empty array if you don't want to give them any pistols)
 											"hgun_ACPC2_F",
@@ -826,6 +857,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											#endif
 											"Exile_Weapon_DMR",
 											"Exile_Weapon_SVD",
+											"Exile_Weapon_ksvk",
 											"Exile_Weapon_VSSVintorez"
 										];
 	DMS_sniper_pistols =				[							// Pistols for Assault Class (Set to empty array if you don't want to give them any pistols)
@@ -988,7 +1020,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 										];
 
 	DMS_ai_use_launchers				= true;						// Enable/disable spawning an AI in a group with a launcher
-	DMS_ai_launchers_per_group			= 1;						// How many units per AI group can get a launcher.
+	DMS_ai_launchers_per_group			= 2;						// How many units per AI group can get a launcher.
 	DMS_ai_use_launchers_chance			= 50;						// Percentage chance to actually spawn the launcher (per-unit). With "DMS_ai_launchers_per_group" set to 2, and "DMS_ai_use_launchers_chance" set to 50, there will be an average of 1 launcher per group.
 	DMS_AI_launcher_ammo_count			= 2;						// How many rockets an AI will get with its launcher
 	DMS_ai_remove_launchers				= true;						// Remove rocket launchers on AI death
@@ -1239,6 +1271,8 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_RareLootAmount					= 1;						// How many rare loot items to add.
 	DMS_RareLootList =					[							// List of rare loot to spawn
 											"Exile_Item_SafeKit",
+											"Exile_Item_Knife",
+											"Exile_Magazine_Battery",
 											"Exile_Item_CodeLock"
 										];
 	DMS_RareLootChance					= 10;						// Percentage Chance to spawn rare loot in any crate | Default: 10%
@@ -1249,7 +1283,10 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											"B_T_LSV_01_armed_F",
 											"O_T_LSV_02_armed_F",
 											#endif
-											"Exile_Car_Offroad_Armed_Guerilla01"
+											"Exile_Car_Offroad_Armed_Guerilla01",
+											"CUP_B_HMMWV_MK19_USMC",
+											"CUP_I_BRDM2_UN",
+											"CUP_O_LR_MG_TKA"
 										];
 
 	DMS_MilitaryVehicles =				[							// List of (unarmed) military vehicles that can spawn
@@ -1259,7 +1296,8 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											#endif
 											"Exile_Car_Strider",
 											"Exile_Car_Hunter",
-											"Exile_Car_Ifrit"
+											"Exile_Car_Ifrit",
+											"CUP_B_LR_Transport_CZ_W"
 										];
 
 	DMS_TransportTrucks =				[							// List of transport trucks that can spawn
@@ -1304,7 +1342,10 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											"Exile_Chopper_Mohawk_FIA",
 											"Exile_Chopper_Huron_Black",
 											"Exile_Chopper_Hellcat_Green",
-											"Exile_Chopper_Taru_Transport_Black"
+											"Exile_Chopper_Taru_Transport_Black",
+											"CUP_B_UH60L_FFV_US",
+											"CUP_B_UH1Y_UNA_USMC",
+											"CUP_O_Mi17_TK"
 										];
 
 	DMS_ReinforcementHelis =			[							// List of helis that can spawn for AI paratrooper reinforcements.

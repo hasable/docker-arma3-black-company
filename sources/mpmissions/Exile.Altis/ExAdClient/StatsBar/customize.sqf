@@ -33,7 +33,7 @@ ExAd_SB_ICON_LOGO = 	"ExAdClient\Core\Img\ExAd_logo_128.paa";		//STRING - Path t
 
 ExAd_SB_COMPONENTS_COLORS = ["#000000", "#440B00","#FE1106","#CA7400","#A9C700","#11BF03"]; //STRINGS - Array of color codes, from bad to good. 
 
-ExAd_SB_Timer = 1000; 									//SCALAR - Restart time measured in seconds
+ExAd_SB_Timer = 13439; 										//SCALAR - Restart time measured in hours. 
 
 ExAd_SB_GUI_POS_Default = 	[safeZoneX, safeZoneY + safeZoneH - 32 * pixelH, safeZoneW, 30 * pixelH]; //ARRAY - Position with this attributes [x,y,w,h];
 ExAd_SB_GUI_TextColor_Default = [1,1,1,1];				//ARRAY - rgba array with values between 0-1, 0 => 0 | 255 => 1
