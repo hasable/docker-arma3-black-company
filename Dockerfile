@@ -18,6 +18,99 @@ RUN apt-get update \
 	&& rm -rf  depbo-tools-0.6.54*
 
 RUN ln -snf /usr/share/zoneinfo/Europe/Paris /etc/localtime && echo Europe/Paris > /etc/timezone	
+
+WORKDIR /home/${USER_NAME}
+COPY cache cache
+RUN chown -R ${USER_NAME}:${USER_NAME} cache
+
+USER ${USER_NAME}
+WORKDIR /tmp
+
+# Install CBA_A3
+RUN CACHE="/home/${USER_NAME}/cache/" \
+	&& if [ ! -f ${CACHE}CBA_A3_v3.5.0.zip ]; then CACHE="" && wget -nv https://github.com/CBATeam/CBA_A3/releases/download/v3.5.0.171204/CBA_A3_v3.5.0.zip ; fi \
+	&& unzip ${CACHE}CBA_A3_v3.5.0.zip && rm -f ${CACHE}CBA_A3_v3.5.0.zip \
+	&& cd \@CBA_A3 \
+		&& rm -f *.md \
+		&& mv keys/* /opt/arma3/keys && rmdir keys \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+		&& cd .. \
+	&& mv \@CBA_A3 /opt/arma3/@\CBA_A3
+	
+# Install CUP Weapons
+RUN CACHE="/home/${USER_NAME}/cache/" \
+	&& if [ ! -f ${CACHE}\@CUP_Weapons-1.10.0.zip ]; then CACHE="" \
+		&& ggID=0By04o_GxOry3eHppeUpoNTZ6SjQ \
+			&& ggURL=https://drive.google.com/uc?export=download \
+			&& curl -sc /tmp/gcookie "${ggURL}&id=${ggID}" >/dev/null \
+			&& ggCode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"  \
+			&& curl -LOJb /tmp/gcookie "${ggURL}&confirm=${ggCode}&id=${ggID}" ; \
+		fi \
+	&& unzip ${CACHE}\@CUP_Weapons-1.10.0.zip && rm -f ${CACHE}\@CUP_Weapons-1.10.0.zip \
+	&& cd \@CUP_Weapons \
+		&& mv Keys/cup_weapons-1.10.0.bikey /opt/arma3/keys/cup_weapons-1.10.0.bikey \
+		&& rm -rf *.txt *.sha1 Keys \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+		&& cd .. \
+	&& mv \@CUP_Weapons /opt/arma3/\@CUPWeapons
+
+# Install CUP Units	
+RUN CACHE="/home/${USER_NAME}/cache/" \
+	&& if [ ! -f ${CACHE}\@CUP_Units-1.10.0.zip ]; then CACHE="" \
+		&& ggID=0By04o_GxOry3cm5TVXV4LXhuLVE \
+			&& ggURL=https://drive.google.com/uc?export=download \
+			&& curl -sc /tmp/gcookie "${ggURL}&id=${ggID}" >/dev/null \
+			&& ggCode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"  \
+			&& curl -LOJb /tmp/gcookie "${ggURL}&confirm=${ggCode}&id=${ggID}" ; \
+		fi \
+	&& unzip ${CACHE}\@CUP_Units-1.10.0.zip && rm -f ${CACHE}\@CUP_Units-1.10.0.zip \
+	&& cd \@CUP_Units \
+		&& mv Keys/cup_units-1.10.0.bikey /opt/arma3/keys/cup_units-1.10.0.bikey \
+		&& rm -rf *.txt *.sha1 Keys \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+	&& cd .. \
+	&& mv \@CUP_Units /opt/arma3/\@CUPUnits
+	
+# Install CUP Vehicles	
+RUN CACHE="/home/${USER_NAME}/cache/" \
+	&& if [ ! -f ${CACHE}\@CUP_Vehicles-1.10.0.zip ]; then CACHE="" \
+		&& ggID=0By04o_GxOry3OG1qcC1oUEwyUXM \
+			&& ggURL=https://drive.google.com/uc?export=download \
+			&& curl -sc /tmp/gcookie "${ggURL}&id=${ggID}" >/dev/null \
+			&& ggCode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"  \
+			&& curl -LOJb /tmp/gcookie "${ggURL}&confirm=${ggCode}&id=${ggID}" ; \
+		fi \
+	&& unzip ${CACHE}\@CUP_Vehicles-1.10.0.zip && rm -f ${CACHE}\@CUP_Vehicles-1.10.0.zip \
+	&& cd \@CUP_Vehicles \
+		&& mv Keys/cup_vehicles-1.10.0.bikey /opt/arma3/keys/cup_vehicles-1.10.0.bikey \
+		&& rm -rf *.txt *.sha1 Keys \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+	&& cd .. \
+	&& mv \@CUP_Vehicles /opt/arma3/\@CUPVehicles
+	
+# Install R3F Weapons	
+RUN CACHE="/home/${USER_NAME}/cache/" \
+	&& if [ ! -f ${CACHE}R3F_ARMES_3.5.7z ]; then CACHE="" && wget -nv http://team-r3f.org/public/addons/R3F_ARMES_3.5.7z ; fi \
+	&& p7zip -d ${CACHE}R3F_ARMES_3.5.7z \
+	&& cd \@R3F_ARMES \
+		&& rm -f *.pdf *.url \
+		&& mv Server_Key/r3f.bikey /opt/arma3/keys/r3fa.bikey && rmdir Server_Key \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+		&& cd .. \
+	&& mv \@R3F_ARMES /opt/arma3/\@R3FArmes
+	
+# Install R3F Units
+RUN CACHE="/home/${USER_NAME}/cache/" \
+	&& if [ ! -f ${CACHE}R3F_UNITES_3.7.7z ]; then CACHE="" && wget -nv http://team-r3f.org/public/addons/R3F_UNITES_3.7.7z ; fi \
+	&& p7zip -d ${CACHE}R3F_UNITES_3.7.7z  \
+	&& cd \@R3F_UNITES \
+		&& rm -f *.pdf *.url \
+		&& mv Server_Key/r3f.bikey /opt/arma3/keys/r3fu.bikey && rmdir Server_Key \
+		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
+		&& cd .. \
+	&& mv \@R3F_UNITES /opt/arma3/\@R3FUnites
+
+USER root	
 	
 WORKDIR /opt
 COPY bin/docker-entrypoint.sh /opt
@@ -31,93 +124,17 @@ COPY resources/@AdvancedServerScripts @AdvancedServerScripts
 COPY resources/@AdvancedTowing @AdvancedTowing
 COPY resources/@AdvancedUrbanRappelling @AdvancedUrbanRappelling
 COPY resources/@VEMF @VEMF
-COPY resources/keys/* keys/
-
+COPY resources/keys keys
 RUN chown -R ${USER_NAME}:${USER_NAME} @A3XAI @AdminToolkitServer @AdvancedRappelling @AdvancedServerScripts @AdvancedTowing @AdvancedUrbanRappelling @VEMF keys 
 
-WORKDIR /home/${USER_NAME}/sources
-COPY sources ./
-RUN cd .. && chown -R ${USER_NAME}:${USER_NAME} sources
-
-USER ${USER_NAME}
-
-WORKDIR /tmp
-
-# Install CBA_A3
-RUN wget -nv https://github.com/CBATeam/CBA_A3/releases/download/v3.5.0.171204/CBA_A3_v3.5.0.zip \
-	&& unzip CBA_A3_v3.5.0.zip && rm -f CBA_A3_v3.5.0.zip \
-	&& cd \@CBA_A3 \
-		&& rm -f *.md \
-		&& mv keys/* /opt/arma3/keys && rmdir keys \
-		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
-		&& cd .. \
-	&& mv \@CBA_A3 /opt/arma3/@\CBA_A3
-
-# Install CUP Weapons
-RUN ggID=0By04o_GxOry3eHppeUpoNTZ6SjQ \
-		&& ggURL=https://drive.google.com/uc?export=download \
-		&& curl -sc /tmp/gcookie "${ggURL}&id=${ggID}" >/dev/null \
-		&& ggCode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"  \
-		&& curl -LOJb /tmp/gcookie "${ggURL}&confirm=${ggCode}&id=${ggID}" \
-	&& unzip \@CUP_Weapons-1.10.0.zip && rm -f \@CUP_Weapons-1.10.0.zip \
-	&& cd \@CUP_Weapons \
-		&& mv Keys/cup_weapons-1.10.0.bikey /opt/arma3/keys/cup_weapons-1.10.0.bikey \
-		&& rm -rf *.txt *.sha1 Keys \
-		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
-		&& cd .. \
-	&& mv \@CUP_Weapons /opt/arma3/\@CUPWeapons
-
-# Install CUP Units	
-RUN ggID=0By04o_GxOry3cm5TVXV4LXhuLVE \
-		&& ggURL=https://drive.google.com/uc?export=download \
-		&& curl -sc /tmp/gcookie "${ggURL}&id=${ggID}" >/dev/null \
-		&& ggCode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"  \
-		&& curl -LOJb /tmp/gcookie "${ggURL}&confirm=${ggCode}&id=${ggID}" \
-	&& unzip \@CUP_Units-1.10.0.zip && rm -f \@CUP_Units-1.10.0.zip \
-	&& cd \@CUP_Units \
-		&& mv Keys/cup_units-1.10.0.bikey /opt/arma3/keys/cup_units-1.10.0.bikey \
-		&& rm -rf *.txt *.sha1 Keys \
-		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
-	&& cd .. \
-	&& mv \@CUP_Units /opt/arma3/\@CUPUnits
+WORKDIR /home/${USER_NAME}
+COPY sources sources
+RUN chown -R ${USER_NAME}:${USER_NAME} sources
 	
-# Install CUP Vehicles	
-RUN ggID=0By04o_GxOry3OG1qcC1oUEwyUXM \
-		&& ggURL=https://drive.google.com/uc?export=download \
-		&& curl -sc /tmp/gcookie "${ggURL}&id=${ggID}" >/dev/null \
-		&& ggCode="$(awk '/_warning_/ {print $NF}' /tmp/gcookie)"  \
-		&& curl -LOJb /tmp/gcookie "${ggURL}&confirm=${ggCode}&id=${ggID}" \
-	&& unzip \@CUP_Vehicles-1.10.0.zip && rm -f \@CUP_Vehicles-1.10.0.zip \
-	&& cd \@CUP_Vehicles \
-		&& mv Keys/cup_vehicles-1.10.0.bikey /opt/arma3/keys/cup_vehicles-1.10.0.bikey \
-		&& rm -rf *.txt *.sha1 Keys \
-		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
-	&& cd .. \
-	&& mv \@CUP_Vehicles /opt/arma3/\@CUPVehicles
-
-# Install R3F Weapons	
-RUN wget -nv http://team-r3f.org/public/addons/R3F_ARMES_3.5.7z \
-	&& p7zip -d R3F_ARMES_3.5.7z \
-	&& cd \@R3F_ARMES \
-		&& rm -f *.pdf *.url \
-		&& mv Server_Key/r3f.bikey /opt/arma3/keys/r3fa.bikey && rmdir Server_Key \
-		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
-		&& cd .. \
-	&& mv \@R3F_ARMES /opt/arma3/\@R3FArmes
-	
-# Install R3F Units
-RUN wget -nv http://team-r3f.org/public/addons/R3F_UNITES_3.7.7z \
-	&& p7zip -d R3F_UNITES_3.7.7z  \
-	&& cd \@R3F_UNITES \
-		&& rm -f *.pdf *.url \
-		&& mv Server_Key/r3f.bikey /opt/arma3/keys/r3fu.bikey && rmdir Server_Key \
-		&& find . -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \; \
-		&& cd .. \
-	&& mv \@R3F_UNITES /opt/arma3/\@R3FUnites
-
 WORKDIR /home/${USER_NAME}/sources
-RUN cd @ExileServer/addons && makepbo -N exile_server_config && mkdir -p /opt/arma3/@ExileServer/addons/ \
-		&& mv exile_server_config.pbo /opt/arma3/@ExileServer/addons/exile_server_config.pbo \
+RUN cd @ExileServer/addons \
+		&& ls && makepbo -N exile_server_config \
+		&& mkdir -p /opt/arma3/@ExileServer/addons/ && mv *.pbo /opt/arma3/@ExileServer/addons/ \
 		&& cd ../.. \
 	&& cd @AdminToolkitServer/addons && makepbo -N admintoolkit_servercfg && mkdir -p /opt/arma3/@AdminToolkitServer/addons/ \
 		&& mv admintoolkit_servercfg.pbo /opt/arma3/@AdminToolkitServer/addons/admintoolkit_servercfg.pbo \
@@ -160,9 +177,8 @@ EXPOSE 2309/udp
 WORKDIR /opt/arma3
 
 CMD ["\"-config=conf/exile.cfg\"", \
-	"\"-servermod=@ExileServer;@A3XAI;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation;@VEMF;@ZCP\"", \
+	"\"-servermod=@ExileServer;@AdvancedTowing;@AdvancedServerScripts;@AdminToolkitServer;@DMS;@ExAd;@Occupation;@VEMF;@ZCP;@A3XAI\"", \
 	"\"-mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites;expansion;heli;jets;mark\"", \
-	"-bepath=/opt/arma3/battleye", \
 	"-world=empty", \
 	"-autoinit"]
 

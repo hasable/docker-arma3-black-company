@@ -5,3 +5,5 @@ if hasInterface then
 {
 	[] ExecVM "VEMFr_client\sqf\initClient.sqf"; // Client-side part of VEMFr
 };
+
+setTimeMultiplier 6;

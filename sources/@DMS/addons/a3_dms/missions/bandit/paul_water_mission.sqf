@@ -95,6 +95,7 @@ switch (_difficulty) do
 
 //_msgStart = ['#FFFF00',format["A field hospital is under attack! Go kill the %1 attackers",_difficulty]];
 _msgStart = ['#FFFF00',"Soldiers have stopped their BTR90 to refill Water. Kill the soldiers and steal their BTR90!"];
+_msgStart = ['#FFFF00',"Soldiers have stopped their BTR60 to refill Water. Kill the soldiers and steal their BTR60!"];
 
 _crate_item_list	= ["Exile_Item_EnergyDrink","Exile_Item_Beer","Exile_Item_PlasticBottleFreshWater","Exile_Item_MountainDupe","Exile_Item_PowerDrink","Exile_Item_PlasticBottleCoffee","Exile_Item_Rubberduck","Exile_Item_WaterBarrelKit"];
 
@@ -151,10 +152,12 @@ _baseObjs =
 if (_difficulty isEqualTo "hardcore") then {
 												_pinCode = (1000 +(round (random 8999)));
 												_vehicle = ["CUP_O_BTR90_RU",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
+												_vehicle = ["CUP_O_BTR60_TK",[(_pos select 0) -30, (_pos select 1) -30],_pinCode] call DMS_fnc_SpawnPersistentVehicle;
 												_msgWIN = ['#0080ff',format ["Convicts killed the thirsty Prisoners, entry code of BTR90 is %1...",_pinCode]];
 											} else
 											{
 												_vehicle = ["CUP_O_BTR90_RU",[(_pos select 0) -30, (_pos select 1) -30,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
+												_vehicle = ["CUP_O_BTR60_TK",[(_pos select 0) -30, (_pos select 1) -30,0],[], 0, "CAN_COLLIDE"] call DMS_fnc_SpawnNonPersistentVehicle;
 												_msgWIN = ['#0080ff',"Convicts killed the thirsty Prisoners!"];
 											};
 

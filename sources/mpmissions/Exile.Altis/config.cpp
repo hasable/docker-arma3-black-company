@@ -3669,6 +3669,7 @@ class CfgInteractionMenus
 
 		class Actions 
 		{
+			
 			class ScanLock: ExileAbstractAction
 			{
 				title = "Scan Lock";

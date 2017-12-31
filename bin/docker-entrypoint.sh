@@ -39,7 +39,7 @@ current=$(date +%s )
 
 remain=$(( ${endp} - ${current} ))
 if [ "${remain}" -lt "${EXILE_CONFIG_RESTART_GRACE_TIME}" ]; then
-        remain=$(( ${remain} + ${EXILE_CONFIG_RESTART_GRACE_TIME} ))
+        remain=$(( ${remain} + ${EXILE_CONFIG_RESTART_CYCLE} ))
 fi
 echo "Remaining time $(date -u -d @$remain '+%H:%M')"
 
