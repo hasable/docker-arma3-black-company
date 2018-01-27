@@ -11,6 +11,8 @@ RUN chown -R ${steamu}:${steamu} sources
 # Server user
 USER ${USER_NAME}
 WORKDIR /opt/arma3
+
+USER root
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint", "/opt/arma3/arma3server"]
 CMD ["\"-config=conf/exile.cfg\"", \
 		"\"-servermod=@ExileServer;@A3XAI;@AdminToolkitServer;@AdvancedRappelling;@AdvancedUrbanRappelling;@DMS;@Enigma;@ExAd;@Occupation;@VEMF;@ZCP\"", \
