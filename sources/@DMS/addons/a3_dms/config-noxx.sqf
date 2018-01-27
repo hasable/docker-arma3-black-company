@@ -19,16 +19,16 @@
 #define USE_MARKSMAN_DLC_WEAPONS_IN_CRATES 1
 
 // Uncomment this if you want Apex weapons on AI.
-#define GIVE_AI_APEX_WEAPONS 1
+//#define GIVE_AI_APEX_WEAPONS 1
 
 // Uncomment this if you want Apex gear on AI. Uniforms, Vests, Backpacks, Helmets,Scopes
-#define GIVE_AI_APEX_GEAR 1
+//#define GIVE_AI_APEX_GEAR 1
 
 // Uncomment this if you want Apex weapons in loot crates
-#define USE_APEX_WEAPONS_IN_CRATES 1
+//#define USE_APEX_WEAPONS_IN_CRATES 1
 
 // Uncomment this if you want Apex vehicles to spawn for AI/missions
-#define USE_APEX_VEHICLES 1
+//#define USE_APEX_VEHICLES 1
 
 
 
@@ -40,7 +40,7 @@ DMS_Use_Map_Config = true;	// Whether or not to use config overwrites specific t
 	For any questions regarding map-specific configs, please leave a reply in the DMS thread on the Exile forums.
 */
 
-DMS_Enable_RankChange = true; // Whether or not to use Rank Changes. (Required 'true' if using Occupation)
+DMS_Enable_RankChange = false; // Whether or not to use Rank Changes. (Required 'true' if using Occupation)
 /*
 	I am sharing this upgrade to all. If you utilize GR8 Humanity (fully compatible) or a custom version of a ranking system(simple variable changes), this will allow your players to score +/- for Bandit and Hero kills as well as a custom Survivor Faction added to DMS as well. You can still utilize the HERO / BANDIT / SURVIVOR respect and poptab settings for gameplay :) ENJOY! DONKEYPUNCH.INFO!
 */
@@ -279,6 +279,17 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 											//["slums",1]			//<--Example (already imported by default on Altis in map configs)
 											//["occupation",1]		//<--Example
 											//["sectorB",1]			//<--Example for Taviana
+											//["a_village",1]
+											//["ai_island",1]
+											//["thelosracetrack",1]
+											//["bomos",1]
+											//["castle_183",1]
+											//["chelonisi",1]
+											//["kastro_castle",1]
+											//["kore_factory",1]
+											//["mayor",1]
+											//["military_junkyard",1]
+											//["storage_invasion",1]
 										];
 
 	DMS_SpecialMissions =				[								// List of special missions with restrictions. Each element must be defined as [mission<STRING>, minPlayers<SCALAR>, maxPlayers<SCALAR>, timesPerRestart<SCALAR>, _timeBetween<SCALAR>].

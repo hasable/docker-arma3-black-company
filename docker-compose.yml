@@ -1,11 +1,10 @@
 version: '2'
 services:
-  arma-3-black-company:
-    image: "hasable/a3-black-company:latest"
+  arma-3-bots:
+    image: "hasable/arma3-black-company"
     container_name: "arma-3-black-company"
     depends_on: 
         - arma-3-exile-database
-    build: .
     ports:
       - "2302:2302/udp" 
       - "2303:2303/udp" 
@@ -14,10 +13,7 @@ services:
       - "2306:2306/udp"
       - "2309:2309/udp"
     environment:
-      - EXILE_CONFIG_HOSTNAME=Black Company DEV
-      - EXILE_CONFIG_PASSWORD_COMMAND=exileConfigPasswordCommand
-      - EXILE_CONFIG_PASSWORD_RCON=exileConfigPasswordRcon
-      - EXILE_CONFIG_MAXPLAYERS=4
+      - EXILE_CONFIG_HOSTNAME=[FR] Black Company DEV
       - EXILE_DATABASE_HOST=database
       - EXILE_DATABASE_NAME=altisdb
       - EXILE_DATABASE_USER=altisu

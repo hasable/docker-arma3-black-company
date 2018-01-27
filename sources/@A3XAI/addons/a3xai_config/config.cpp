@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		A3XAIVersion = "3";
+		A3XAIVersion = "0.2.1";
 		requiredAddons[] = {};
 	};
 };
@@ -22,7 +22,7 @@ class CfgA3XAISettings {
 	
 	//Enable or disable verification and error-correction of classname tables used by A3XAI. If invalid entries are found, they are removed and logged into the RPT log.
 	//If disabled, any invalid classnames will not be removed and clients may crash if AI bodies with invalid items are looted. Only disable if a previous scan shows no invalid classnames (Default: 1).										
-	verifyClassnames = 1;
+	verifyClassnames = 0;
 	
 	//Enables checking of all A3XAI config settings. (Default: 1)
 	verifySettings = 1;
@@ -34,7 +34,7 @@ class CfgA3XAISettings {
 	loadCustomFile = 0;
 	
 	//Minimum server FPS to spawn/respawn AI (Default: 0)
-	minFPS = 15; //0
+	minFPS = 0; //0
 	
 	//0: A3XAI uses individual threads to manage each spawned AI group (more accurate ammo/fuel reloading). 1: A3XAI will use a single thread to manage all AI groups (better performance). (Default: 0)
 	groupManageMode = 0;
@@ -115,7 +115,7 @@ class CfgA3XAISettings {
 
 
 	//Enable or disable radio message receiving. Players with radios or part of a group with at least one radio will be able to intercept some AI communications. (Default: 0)
-	enableRadioMessages = 0;
+	enableRadioMessages = 1;
 
 
 	/*	Shared AI Unit Settings. These settings affect all AI spawned unless noted otherwise.
@@ -306,7 +306,7 @@ class CfgA3XAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/		
 
 	//Global maximum number of active AI air vehicle patrols. Set at 0 to disable (Default: 0).							
-	maxAirPatrols = 0;	
+	maxAirPatrols = 4;	
 	
 	//Probability of spawning Level 0/1/2/3 AI air vehicle patrol spawns. Probabilities should add up to 1.00		
 	levelChancesAir[] = {0.00,0.50,0.35,0.15};
@@ -332,7 +332,7 @@ class CfgA3XAISettings {
 	
 	//Probability of AI to deploy infantry units by parachute if players are nearby when helicopter is investigating a waypoint. (Default: 1.00)
 	//Affects: Air vehicle patrols.
-	paradropChance = 0.75;
+	paradropChance = 0.55;
 	
 	//Cooldown time for AI paradrop deployment in seconds. (Default: 1800).
 	//Affects: Air vehicle patrols.
@@ -340,7 +340,7 @@ class CfgA3XAISettings {
 	
 	//Number of infantry AI to paradrop if players are nearby when helicopter is investigating a waypoint, or if helicopter is reinforcing a dynamic AI spawn. Limited by number of cargo seats available in the vehicle. (Default: 3)
 	//Affects: Air vehicle patrols, air reinforcements.
-	paradropAmount = 6;
+	paradropAmount = 4;
 	
 	
 	/*	AI Land Vehicle patrol settings. These AI vehicles will randomly travel between different cities and towns.
@@ -351,7 +351,7 @@ class CfgA3XAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/	
 
 	//Global maximum number of active AI land vehicle patrols. Set at 0 to disable (Default: 0).	
-	maxLandPatrols = 32;
+	maxLandPatrols = 18;
 	
 	//Probability of spawning Level 0/1/2/3 AI land vehicle spawns. Probabilities should add up to 1.00		
 	levelChancesLand[] = {0.00,0.50,0.35,0.15};
@@ -362,6 +362,8 @@ class CfgA3XAISettings {
 	
 	//Classnames of land vehicle types to use, with the maximum amount of each type to spawn.
 	landVehicleList[] = {
+		// base
+		/*
 		{"Exile_Car_Hatchback_Rusty1",5},
 		{"Exile_Car_Hatchback_Rusty2",5},
 		{"Exile_Car_Hatchback_Rusty3",5},
@@ -380,8 +382,41 @@ class CfgA3XAISettings {
 		{"Exile_Car_Van_Fuel_Black",5},
 		{"Exile_Car_Zamak",5},
 		{"Exile_Car_Tempest",5},
-		{"Exile_Car_HEMMT",5},
-		{"Exile_Car_Ural_Covered_Blue",5},	
+		{"Exile_Car_HEMMT",5}
+		*/
+
+		//custom joe
+		{"Exile_Bike_QuadBike_Black",2}, 
+		{"Exile_Car_SUV_Grey",3}, 
+		{"Exile_Car_Octavius_Black",3}, 
+		{"Exile_Car_Hatchback_Rusty2",5},
+		{"Exile_Car_Offroad_Repair_Guerilla08",3}, 
+		{"Exile_Car_Offroad_Armed_Guerilla03",3}, 
+		{"CUP_B_M1133_MEV_Woodland",1},
+		{"Exile_Car_Van_Box_Guerilla05",5},
+		{"CUP_B_LR_Transport_CZ_D",5},
+		{"Exile_Car_LandRover_Green",5},
+		{"Exile_Car_QilinUnarmed",3},
+		{"CUP_BAF_Jackal2_L2A1_D",5},
+		{"CUP_O_GAZ_Vodnik_PK_RU",5},
+		{"CUP_B_HMMWV_M1114_USMC",5},
+		{"Exile_Car_Strider",5},
+		{"I_MRAP_03_hmg_F",2},
+		{"Exile_Car_Hunter",5},
+		{"B_MRAP_01_hmg_F",2},
+		{"Exile_Car_Ifrit",5},
+		{"O_MRAP_02_hmg_F",2},
+		{"CUP_B_T810_ARMED_CZ_WDL",3},
+		{"CUP_B_Ridgback_LMG_GB_W",3},
+		{"CUP_B_Ural_Repair_CDF",3},
+		{"CUP_O_Ural_Refuel_TKA",3},
+		{"CUP_O_Ural_Reammo_RU",3},
+		{"Exile_Car_Ural_Open_Worker",5},
+		{"Exile_Car_Zamak",5},
+		{"Exile_Car_Tempest",5},
+		{"Exile_Car_HEMMT",5}
+
+/*		{"Exile_Car_Ural_Covered_Blue",5},	
 		{"Exile_Car_Ural_Covered_Yellow",5},		
 	    {"Exile_Car_Ural_Covered_Military",5},		
 	    {"Exile_Car_Ural_Covered_Worker",5},	
@@ -451,7 +486,7 @@ class CfgA3XAISettings {
 		{"Exile_Car_LandRover_Urban",5}, 
 		{"Exile_Car_LandRover_Green",5}, 
 		{"Exile_Car_LandRover_Sand",5}, 
-		{"Exile_Car_LandRover_Desert",5}
+		{"Exile_Car_LandRover_Desert",5}*/
 	}; 
 	
 	//Maximum number of gunner units per land vehicle. Limited by actual number of available gunner positions. (Default: 2)
@@ -777,13 +812,13 @@ class CfgA3XAISettings {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	uniformTypes0[] = {"U_C_Journalist","U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_salmon","U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poor_1","U_C_Poor_2","U_C_Poor_shorts_1","U_C_Scientist"};
 	uniformTypes1[] = {"U_B_CombatUniform_mcam_worn","U_B_CTRG_1","U_B_CTRG_2","U_B_CTRG_3","U_I_CombatUniform","U_I_CombatUniform_shortsleeve","U_I_CombatUniform_tshirt","U_I_OfficerUniform","U_O_CombatUniform_ocamo","U_O_CombatUniform_oucamo","U_C_HunterBody_grn","U_IG_Guerilla1_1","U_IG_Guerilla2_1","U_IG_Guerilla2_2","U_IG_Guerilla2_3","U_IG_Guerilla3_1","U_BG_Guerilla2_1","U_IG_Guerilla3_2","U_BG_Guerrilla_6_1","U_BG_Guerilla1_1","U_BG_Guerilla2_2","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_BG_leader","U_IG_leader","U_B_GhillieSuit","U_I_GhillieSuit","U_O_GhillieSuit","U_B_HeliPilotCoveralls","U_I_HeliPilotCoveralls","U_B_PilotCoveralls","U_I_pilotCoveralls"};
-	uniformTypes2[] = {"U_OrestesBody","U_NikosAgedBody","U_NikosBody","U_B_CombatUniform_mcam","U_B_CTRG_1","U_B_CTRG_2","U_B_CTRG_3","U_O_OfficerUniform_ocamo","U_B_SpecopsUniform_sgg","U_O_SpecopsUniform_blk","U_O_SpecopsUniform_ocamo","U_I_G_Story_Protagonist_F","U_IG_Guerilla2_1","U_BG_Guerrilla_6_1","U_I_G_resistanceLeader_F","U_B_FullGhillie_ard","U_B_FullGhillie_lsh","U_B_FullGhillie_sard","U_B_GhillieSuit","U_I_FullGhillie_ard","U_I_FullGhillie_lsh","U_I_FullGhillie_sard","U_I_GhillieSuit","U_O_FullGhillie_ard","U_O_FullGhillie_lsh","U_O_FullGhillie_sard","U_O_GhillieSuit","U_I_Wetsuit","U_O_Wetsuit","U_B_Wetsuit","U_B_survival_uniform"};
-	uniformTypes3[] = {"U_OrestesBody","U_NikosAgedBody","U_NikosBody","U_O_OfficerUniform_ocamo","U_B_SpecopsUniform_sgg","U_O_SpecopsUniform_blk","U_O_SpecopsUniform_ocamo","U_I_G_Story_Protagonist_F","U_I_G_resistanceLeader_F","U_B_FullGhillie_ard","U_B_FullGhillie_lsh","U_B_FullGhillie_sard","U_I_FullGhillie_ard","U_I_FullGhillie_lsh","U_I_FullGhillie_sard","U_O_FullGhillie_ard","U_O_FullGhillie_lsh","U_O_FullGhillie_sard","U_I_Wetsuit","U_O_Wetsuit","U_B_Wetsuit","U_B_survival_uniform"};
+	uniformTypes2[] = {"R3F_uniform_f1","U_OrestesBody","U_NikosAgedBody","U_NikosBody","U_B_CombatUniform_mcam","U_B_CTRG_1","U_B_CTRG_2","U_B_CTRG_3","U_O_OfficerUniform_ocamo","U_B_SpecopsUniform_sgg","U_O_SpecopsUniform_blk","U_O_SpecopsUniform_ocamo","U_I_G_Story_Protagonist_F","U_IG_Guerilla2_1","U_BG_Guerrilla_6_1","U_I_G_resistanceLeader_F","U_B_FullGhillie_ard","U_B_FullGhillie_lsh","U_B_FullGhillie_sard","U_B_GhillieSuit","U_I_FullGhillie_ard","U_I_FullGhillie_lsh","U_I_FullGhillie_sard","U_I_GhillieSuit","U_O_FullGhillie_ard","U_O_FullGhillie_lsh","U_O_FullGhillie_sard","U_O_GhillieSuit","U_I_Wetsuit","U_O_Wetsuit","U_B_Wetsuit","U_B_survival_uniform"};
+	uniformTypes3[] = {"R3F_uniform_f1","R3F_uniform_Ghillie","U_OrestesBody","U_NikosAgedBody","U_NikosBody","U_O_OfficerUniform_ocamo","U_B_SpecopsUniform_sgg","U_O_SpecopsUniform_blk","U_O_SpecopsUniform_ocamo","U_I_G_Story_Protagonist_F","U_I_G_resistanceLeader_F","U_B_FullGhillie_ard","U_B_FullGhillie_lsh","U_B_FullGhillie_sard","U_I_FullGhillie_ard","U_I_FullGhillie_lsh","U_I_FullGhillie_sard","U_O_FullGhillie_ard","U_O_FullGhillie_lsh","U_O_FullGhillie_sard","U_I_Wetsuit","U_O_Wetsuit","U_B_Wetsuit","U_B_survival_uniform"};
 	
 	//AI weapon classnames. Note: pistolList, rifleList, machinegunList, sniperList will not be read if generateDynamicWeapons is enabled.
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	pistolList[] = {"hgun_ACPC2_F","hgun_P07_F","hgun_Pistol_heavy_01_F","hgun_Pistol_heavy_02_F","hgun_Rook40_F"};
-	rifleList[] = {"arifle_Katiba_C_F","arifle_Katiba_F","arifle_Katiba_GL_F","arifle_Mk20_F","arifle_Mk20_GL_F","arifle_Mk20_GL_plain_F","arifle_Mk20_plain_F","arifle_Mk20C_F","arifle_Mk20C_plain_F","arifle_MX_Black_F","arifle_MX_F","arifle_MX_GL_Black_F","arifle_MX_GL_F","arifle_MXC_Black_F","arifle_MXC_F","arifle_SDAR_F","arifle_TRG20_F","arifle_TRG21_F","arifle_TRG21_GL_F"};
+	rifleList[] = {"arifle_Katiba_C_F","arifle_Katiba_F","arifle_Katiba_GL_F","arifle_Mk20_F","arifle_Mk20_GL_F","arifle_Mk20_GL_plain_F","arifle_Mk20_plain_F","arifle_Mk20C_F","arifle_Mk20C_plain_F","arifle_MX_Black_F","arifle_MX_F","arifle_MX_GL_Black_F","arifle_MX_GL_F","arifle_MXC_Black_F","arifle_MXC_F","arifle_SDAR_F","arifle_TRG20_F","arifle_TRG21_F","arifle_TRG21_GL_F","R3F_Minimi","R3F_FAMAS_G2","R3F_FAMAS_F1","R3F_SIG551","R3F_HK416M_M203_DES"};
 	machinegunList[] = {"arifle_MX_SW_Black_F","arifle_MX_SW_F","LMG_Mk200_F","LMG_Zafir_F","MMG_01_hex_F","MMG_01_tan_F","MMG_02_black_F","MMG_02_camo_F","MMG_02_sand_F"};
 	sniperList[] = {"arifle_MXM_Black_F","arifle_MXM_F","srifle_DMR_01_F","srifle_DMR_02_camo_F","srifle_DMR_02_F","srifle_DMR_02_sniper_F","srifle_DMR_03_F","srifle_DMR_03_khaki_F","srifle_DMR_03_multicam_F","srifle_DMR_03_tan_F","srifle_DMR_03_woodland_F","srifle_DMR_04_F","srifle_DMR_04_Tan_F","srifle_DMR_05_blk_F","srifle_DMR_05_hex_F","srifle_DMR_05_tan_f","srifle_DMR_06_camo_F","srifle_DMR_06_olive_F","srifle_EBR_F","srifle_GM6_camo_F","srifle_GM6_F","srifle_LRR_camo_F","srifle_LRR_F"};
 	
