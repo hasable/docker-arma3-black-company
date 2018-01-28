@@ -192,6 +192,7 @@ ZCP_DMS_CrateCase_Sniper =				[							// If you pass "Sniper" in _lootValues, th
                                                 ["srifle_GM6_F",1],
                                                 ["srifle_LRR_F",1],
                                                 ["srifle_EBR_F",1],
+                                                ["R3F_TAC50",1],
                                                 ["hgun_Pistol_heavy_01_F",1],
                                                 ["hgun_PDW2000_F",1]
                                             ],
@@ -199,6 +200,7 @@ ZCP_DMS_CrateCase_Sniper =				[							// If you pass "Sniper" in _lootValues, th
                                                 ["ItemGPS",1],
                                                 ["U_B_FullGhillie_ard",1],
                                                 ["U_I_FullGhillie_lsh",1],
+                                                ["R3F_uniform_Ghillie",1],
                                                 ["U_O_FullGhillie_sard",1],
                                                 ["U_O_GhillieSuit",1],
                                                 ["V_PlateCarrierGL_blk",1],
@@ -231,6 +233,8 @@ ZCP_DMS_BoxWeapons =					[							// List of weapons that can spawn in a crate
 										"arifle_MX_GL_Black_F",
 										"arifle_Mk20_GL_F",
 										"arifle_TRG21_GL_F",
+										"R3F_HK417L_DES",
+										"R3F_FAMAS_surb_HG_DES",
 										"arifle_Katiba_F",
 										"arifle_MX_Black_F",
 										"arifle_TRG21_F",
@@ -325,13 +329,22 @@ ZCP_DMS_BoxItems						= ZCP_DMS_BoxSurvivalSupplies+ZCP_DMS_BoxBuildingSupplies+
 ZCP_DMS_RareLoot						= true;						// Potential chance to spawn rare loot in any crate.
 ZCP_DMS_RareLootList =					[							// List of rare loot to spawn
 										"Exile_Item_SafeKit",
+										"Exile_Magazine_Battery",
+										"Exile_Item_Knife",
 										"Exile_Item_CodeLock"
 									];
 ZCP_DMS_RareLootChance	= 10;						// Percentage Chance to spawn rare loot in any crate | Default: 10%
 
 // Vehicles
 ZCP_DMS_ArmedVehicles =					[							// List of armed vehicles that can spawn
-										"Exile_Car_Offroad_Armed_Guerilla01"
+										"Exile_Car_Offroad_Armed_Guerilla01",
+										"CUP_B_Dingo_Des",
+										"CUP_B_Dingo_Wdl",
+										"CUP_O_GAZ_Vodnik_PK_RU",
+										"CUP_BAF_Jackal2_L2A1_D",
+										"CUP_B_HMMWV_M2_USA",
+										"CUP_B_Ridgback_LMG_GB_W",
+										"CUP_O_BRDM2_HQ_CHDKZ"
 									];
 
 ZCP_DMS_MilitaryVehicles =				[							// List of military vehicles that can spawn
@@ -372,6 +385,9 @@ ZCP_DMS_TransportHelis =				[							// List of transport helis that can spawn
 										"Exile_Chopper_Hummingbird_Green",
 										"Exile_Chopper_Orca_BlackCustom",
 										"Exile_Chopper_Mohawk_FIA",
+										"CUP_I_UH60L_RACS",
+										"CUP_B_UH1D_GER_KSK",
+										"CUP_B_Merlin_HC3A_GB",
 										"Exile_Chopper_Huron_Black",
 										"Exile_Chopper_Hellcat_Green",
 										"Exile_Chopper_Taru_Transport_Black"

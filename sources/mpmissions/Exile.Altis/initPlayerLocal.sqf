@@ -509,3 +509,108 @@ call ExileClient_object_trader_create;
 //Advanced repair
 Bones_fnc_salvageAndRepairMenuHelo = compileFinal preprocessFileLineNumbers "Custom\Repair\Bones_fnc_salvageAndRepairMenuHelo.sqf";
 Bones_fnc_salvageAndRepairMenuCar = compileFinal preprocessFileLineNumbers "Custom\Repair\Bones_fnc_salvageAndRepairMenuCar.sqf";
+
+///////////////////////////////////////////////////////////////////////////
+// Trader joe
+///////////////////////////////////////////////////////////////////////////
+
+_traders = 
+[
+    "Exile_Trader_SpecialOperations",
+    "Exile_Trader_SpecialOperations",
+    "WhiteHead_21",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [23049.5,7283.94,0.00223923],
+    188.13
+]
+call ExileClient_object_trader_create;
+
+_traders = 
+[
+    "Exile_Trader_Aircraft",
+    "Exile_Trader_Aircraft",
+    "WhiteHead_07",
+    ["LHD_krajPaluby"],
+    [23092.4,7318.72,0.00190353],
+    222.189
+]
+call ExileClient_object_trader_create;
+
+_traders = 
+[
+    "Exile_Trader_Boat",
+    "Exile_Trader_Boat",
+    "Sturrock",
+    ["AidlPercMstpSnonWnonDnon_G01", "AidlPercMstpSnonWnonDnon_G02", "AidlPercMstpSnonWnonDnon_G03", "AidlPercMstpSnonWnonDnon_G04", "AidlPercMstpSnonWnonDnon_G05", "AidlPercMstpSnonWnonDnon_G06"],
+    [23089.6,7579.2,3.42203],
+    198.171
+]
+call ExileClient_object_trader_create;
+
+_traders = 
+[
+    "Exile_Trader_Food",
+    "Exile_Trader_Food",
+    "Sturrock",
+    ["LHD_krajPaluby"],
+    [23103.3,7332.52,0.000305176],
+    328.175
+]
+call ExileClient_object_trader_create;
+
+_traders = 
+[
+    "Exile_Trader_Vehicle",
+    "Exile_Trader_Vehicle",
+    "WhiteHead_09",
+    ["LHD_krajPaluby"],
+    [23054,7219.11,-0.00222015],
+    180.078
+]
+call ExileClient_object_trader_create;
+
+_traders = 
+[
+    "Exile_Trader_WasteDump",
+    "Exile_Trader_WasteDump",
+    "WhiteHead_16",
+    ["HubStandingUA_move1", "HubStandingUA_move2", "HubStandingUA_idle1", "HubStandingUA_idle2", "HubStandingUA_idle3"],
+    [23101.1,7267.5,0.00562668],
+    25.5472
+]
+call ExileClient_object_trader_create;
+
+_traders = 
+[
+    "Exile_Trader_Hardware",
+    "Exile_Trader_Hardware",
+    "GreekHead_A3_05",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [23048.8,7260.48,0.000972748],
+    137.77
+]
+call ExileClient_object_trader_create;
+
+_traders = 
+[
+    "Exile_Trader_Equipment",
+    "Exile_Trader_Equipment",
+    "WhiteHead_16",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [23005,7269.14,0.524567],
+    143.611
+]
+call ExileClient_object_trader_create;
+
+_traders = 
+[
+    "Exile_Trader_Armory",
+    "Exile_Trader_Armory",
+    "GreekHead_A3_09",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [23010.4,7272.83,0.527706],
+    146.158
+]
+call ExileClient_object_trader_create;
+
+call compile preprocessfilelinenumbers "zcp.sqf";

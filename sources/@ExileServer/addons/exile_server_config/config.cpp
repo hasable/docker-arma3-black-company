@@ -2806,7 +2806,7 @@ class CfgExileLootServer
 			Food              = 14,89%
 			Trash             = 15,96%
 		*/
-		CivillianLowerClass[] = {"RoadFlares", "RoadFlares", "PistolAmmo", "Shotguns", "Food", "Food", "Food", "Trash", "CivilianHeadgear", "Food", "PistolAttachments", "Drinks", "PistolAttachments", "Chemlights", "Trash", "CivilianItems", "Trash", "CivilianHeadgear", "CivilianHeadgear", "CivilianItems", "Food", "Drinks", "Food", "Food", "CivilianBackpacks", "Drinks", "RoadFlares", "CivilianVests", "CivilianVests", "CivilianHeadgear", "CivilianHeadgear", "CivilianBackpacks", "RoadFlares", "SMGAttachments", "CivilianClothing", "Trash", "Food", "CivilianBackpacks", "Trash", "CivilianClothing", "Trash", "PistolAmmo", "CivilianClothing", "Trash", "Chemlights", "CivilianHeadgear", "CivilianClothing", "Pistols", "Trash", "Chemlights", "CivilianBackpacks", "Food", "PistolAmmo", "Trash", "CivilianVests", "Trash", "Food", "CivilianBackpacks", "Food", "Trash", "CivilianVests", "CivilianItems", "CivilianItems", "SMGAttachments", "CivilianClothing", "SMGAmmo", "Food", "CivilianClothing", "CivilianClothing", "RoadFlares", "Food", "Pistols", "Pistols", "Shotguns", "Chemlights", "RoadFlares", "RoadFlares", "PistolAmmo", "SMGAttachments", "CivilianBackpacks", "CivilianItems", "Trash", "CivilianHeadgear", "CivilianClothing", "CivilianHeadgear", "Trash", "Trash", "SMG", "Food", "Chemlights", "Drinks", "CivilianItems", "CivilianClothing", "SMG", "CivilianClothing", "Trash", "CivilianHeadgear", "CivilianHeadgear", "Food", "Trash", "SMG", "SMG", "Trash", "CivilianHeadgear", "Chemlights", "Drinks", "CivilianClothing", "Pistols", "CivilianHeadgear", "CivilianHeadgear", "CivilianBackpacks", "Trash", "Chemlights", "Chemlights", "CivilianClothing", "CivilianItems", "CivilianClothing", "Trash", "Drinks", "CivilianHeadgear", "CivilianVests", "Food", "CivilianHeadgear", "PistolAttachments", "Pistols", "Drinks", "Shotguns", "CivilianItems", "Drinks", "CivilianClothing", "CivilianItems", "CivilianClothing", "Pistols", "Trash", "Food", "CivilianBackpacks", "Drinks", "RoadFlares", "Trash", "SMGAmmo", "Restraints", "Food", "CivilianClothing", "Trash", "CivilianBackpacks", "Trash", "Trash", "Chemlights", "CivilianClothing", "CivilianBackpacks", "Food", "ShotgunAmmo", "Shotguns", "Trash", "CivilianClothing", "Pistols", "Food", "Trash", "CivilianHeadgear", "Trash", "CivilianHeadgear", "Trash", "Pistols", "Food", "CivilianClothing", "CivilianItems", "Food", "RoadFlares", "CivilianHeadgear", "CivilianClothing", "ShotgunAmmo", "Food", "RoadFlares", "CivilianHeadgear", "Drinks", "Food", "CivilianHeadgear", "Food", "Chemlights", "SMGAmmo", "Trash", "Food", "CivilianBackpacks", "Food", "Food", "Trash", "ShotgunAmmo", "PistolAmmo"};
+		CivillianLowerClass[] = {"RoadFlares", "CivilianItems", "CivilianBackpacks", "CivilianItems", "Food", "CivilianClothing", "Trash", "Trash", "CivilianVests", "Food", "ShotgunAmmo", "CivilianVests", "Trash", "CivilianBackpacks", "RoadFlares", "Trash", "CivilianBackpacks", "PistolAttachments", "Chemlights", "CivilianHeadgear", "CivilianHeadgear", "CivilianHeadgear", "CivilianHeadgear", "Food", "Food", "Trash", "Trash", "Trash", "Food", "Drinks", "RoadFlares", "SMG", "CivilianHeadgear", "Chemlights", "CivilianClothing", "CivilianClothing", "PistolAmmo", "CivilianBackpacks", "PistolAmmo", "Trash", "Trash", "Food", "Food", "Food", "CivilianBackpacks", "Drinks", "Food", "Trash", "Shotguns", "Drinks", "Pistols", "SMG", "CivilianClothing", "CivilianHeadgear", "RoadFlares", "Pistols", "Food", "CivilianBackpacks", "ShotgunAmmo", "Trash", "CivilianHeadgear", "Chemlights", "CivilianHeadgear", "RoadFlares", "PistolAmmo", "Food", "Food", "Restraints", "CivilianBackpacks", "CivilianHeadgear", "PistolAmmo", "SMGAmmo", "Pistols", "Trash", "SMG", "CivilianHeadgear", "Drinks", "CivilianItems", "Chemlights", "Food", "CivilianHeadgear", "Drinks", "Shotguns", "CivilianHeadgear", "Trash", "Food", "CivilianHeadgear", "Food", "Drinks", "CivilianBackpacks", "Trash", "CivilianClothing", "RoadFlares", "SMGAttachments", "Food", "PistolAttachments", "CivilianClothing", "RoadFlares", "ShotgunAmmo", "CivilianHeadgear", "CivilianClothing", "SMGAttachments", "Trash", "Food", "Shotguns", "Food", "CivilianClothing", "CivilianClothing", "PistolAttachments", "Trash", "Trash", "CivilianClothing", "Food", "CivilianClothing", "CivilianHeadgear", "Food", "CivilianClothing", "Trash", "CivilianBackpacks", "Drinks", "RoadFlares", "Chemlights", "SMG", "Pistols", "CivilianItems", "RoadFlares", "PistolAmmo", "Drinks", "Trash", "Pistols", "CivilianHeadgear", "CivilianItems", "CivilianBackpacks", "CivilianHeadgear", "Pistols", "CivilianHeadgear", "CivilianClothing", "Food", "Shotguns", "Food", "Pistols", "Trash", "CivilianBackpacks", "CivilianHeadgear", "CivilianVests", "CivilianItems", "CivilianClothing", "Food", "CivilianClothing", "Drinks", "CivilianItems", "CivilianItems", "CivilianVests", "CivilianClothing", "Trash", "Pistols", "Trash", "SMGAmmo", "RoadFlares", "Chemlights", "Chemlights", "CivilianItems", "Trash", "CivilianClothing", "Trash", "CivilianHeadgear", "Chemlights", "SMGAmmo", "Food", "CivilianClothing", "CivilianItems", "Trash", "Chemlights", "Food", "Chemlights", "Food", "CivilianClothing", "CivilianVests", "Drinks", "Food", "Food", "CivilianClothing", "Trash", "Trash", "Trash", "Trash", "SMGAttachments", "Trash"};
 
 		/*
 			Percental Item Group Spawn Chances of CivillianUpperClass:
@@ -2834,7 +2834,7 @@ class CfgExileLootServer
 			Food              = 14,21%
 			Trash             = 15,23%
 		*/
-		CivillianUpperClass[] = {"PistolAmmo", "RoadFlares", "CivilianHeadgear", "Trash", "CivilianItems", "CivilianHeadgear", "CivilianClothing", "Chemlights", "Drinks", "Pistols", "Trash", "CivilianClothing", "SMGAttachments", "CivilianClothing", "Food", "Pistols", "CivilianBackpacks", "Trash", "CivilianClothing", "PistolAttachments", "SMG", "CivilianItems", "CivilianHeadgear", "Restraints", "SMG", "RifleAttachments", "CivilianClothing", "CivilianClothing", "Food", "SMGAmmo", "SMGAmmo", "Shotguns", "RifleAmmo", "PistolAttachments", "RoadFlares", "Pistols", "Trash", "CivilianClothing", "Shotguns", "CivilianHeadgear", "Trash", "Food", "Drinks", "CivilianHeadgear", "Chemlights", "CivilianBackpacks", "Food", "Trash", "Food", "Trash", "RifleAttachments", "CivilianClothing", "CivilianClothing", "Chemlights", "Trash", "CivilianVests", "CivilianHeadgear", "Food", "SMGAttachments", "SMG", "Food", "CivilianClothing", "CivilianBackpacks", "RoadFlares", "Drinks", "Trash", "Drinks", "Food", "Rifles", "Trash", "Shotguns", "Pistols", "RoadFlares", "CivilianHeadgear", "Trash", "Pistols", "RifleAttachments", "CivilianVests", "Chemlights", "Trash", "CivilianBackpacks", "Chemlights", "CivilianHeadgear", "Drinks", "Trash", "CivilianItems", "Trash", "CivilianHeadgear", "CivilianClothing", "CivilianBackpacks", "PistolAmmo", "CivilianBackpacks", "CivilianHeadgear", "CivilianClothing", "Trash", "CivilianHeadgear", "CivilianHeadgear", "CivilianItems", "Food", "Food", "Food", "Trash", "Trash", "Food", "Trash", "CivilianItems", "CivilianHeadgear", "Food", "CivilianItems", "CivilianClothing", "Food", "SMGAttachments", "Trash", "RoadFlares", "Drinks", "Chemlights", "CivilianHeadgear", "RoadFlares", "Chemlights", "PistolAmmo", "Drinks", "Drinks", "CivilianClothing", "RoadFlares", "Chemlights", "Trash", "Trash", "Trash", "CivilianClothing", "RoadFlares", "Food", "Food", "Drinks", "Food", "Drinks", "Chemlights", "ShotgunAmmo", "CivilianItems", "RoadFlares", "CivilianHeadgear", "RifleAmmo", "Trash", "Food", "Food", "Rifles", "Food", "Food", "CivilianBackpacks", "Trash", "SMGAmmo", "RoadFlares", "Trash", "CivilianClothing", "Food", "CivilianVests", "CivilianBackpacks", "Trash", "Trash", "CivilianHeadgear", "CivilianClothing", "CivilianBackpacks", "CivilianItems", "CivilianHeadgear", "CivilianHeadgear", "Trash", "RifleAmmo", "Food", "Food", "Chemlights", "CivilianClothing", "CivilianClothing", "Pistols", "CivilianItems", "SMG", "Rifles", "Food", "PistolAmmo", "PistolAmmo", "CivilianItems", "Pistols", "CivilianVests", "Food", "CivilianVests", "CivilianHeadgear", "CivilianBackpacks", "CivilianClothing", "ShotgunAmmo", "CivilianBackpacks", "Pistols", "Food", "PistolAttachments", "Food", "CivilianHeadgear", "Trash", "ShotgunAmmo", "Shotguns", "Trash"};
+		CivillianUpperClass[] = {"Rifles", "CivilianClothing", "CivilianHeadgear", "CivilianHeadgear", "CivilianItems", "Food", "Shotguns", "CivilianClothing", "Pistols", "CivilianItems", "CivilianBackpacks", "Chemlights", "CivilianBackpacks", "Food", "Drinks", "Drinks", "RoadFlares", "Trash", "RoadFlares", "CivilianHeadgear", "Chemlights", "CivilianHeadgear", "RoadFlares", "Pistols", "CivilianItems", "SMG", "Trash", "Trash", "CivilianClothing", "Rifles", "RoadFlares", "SMG", "CivilianItems", "Trash", "Pistols", "CivilianHeadgear", "CivilianHeadgear", "CivilianHeadgear", "RifleAmmo", "SMGAttachments", "Trash", "CivilianVests", "CivilianClothing", "RifleAttachments", "Trash", "Food", "SMGAmmo", "PistolAttachments", "Food", "SMGAttachments", "Shotguns", "Food", "PistolAmmo", "Food", "CivilianClothing", "Drinks", "CivilianHeadgear", "RifleAttachments", "CivilianHeadgear", "CivilianItems", "SMG", "Food", "Drinks", "CivilianHeadgear", "RoadFlares", "RoadFlares", "Chemlights", "Food", "CivilianBackpacks", "CivilianHeadgear", "Drinks", "Trash", "CivilianItems", "PistolAttachments", "CivilianClothing", "Food", "Trash", "Food", "PistolAmmo", "CivilianItems", "CivilianBackpacks", "Chemlights", "PistolAmmo", "CivilianBackpacks", "CivilianVests", "Trash", "Trash", "Food", "RifleAmmo", "CivilianHeadgear", "CivilianHeadgear", "CivilianClothing", "Food", "Food", "Chemlights", "ShotgunAmmo", "Restraints", "Food", "CivilianHeadgear", "PistolAmmo", "ShotgunAmmo", "Food", "Drinks", "CivilianClothing", "CivilianHeadgear", "Trash", "SMGAttachments", "Trash", "RoadFlares", "Food", "CivilianItems", "Trash", "CivilianVests", "Food", "Chemlights", "CivilianHeadgear", "CivilianItems", "CivilianClothing", "Food", "CivilianHeadgear", "Drinks", "CivilianClothing", "Trash", "CivilianBackpacks", "RoadFlares", "CivilianClothing", "Drinks", "RifleAttachments", "Food", "CivilianItems", "SMG", "Food", "Trash", "Food", "Drinks", "Trash", "CivilianBackpacks", "CivilianHeadgear", "Trash", "Food", "CivilianBackpacks", "CivilianClothing", "Pistols", "SMGAmmo", "Pistols", "Trash", "RifleAmmo", "CivilianClothing", "Trash", "Trash", "CivilianBackpacks", "Food", "Trash", "RoadFlares", "Trash", "CivilianClothing", "CivilianVests", "Chemlights", "Food", "Pistols", "CivilianClothing", "Food", "CivilianClothing", "PistolAttachments", "Trash", "Food", "Food", "Chemlights", "Drinks", "CivilianClothing", "RoadFlares", "Trash", "ShotgunAmmo", "Rifles", "Food", "CivilianHeadgear", "Trash", "Trash", "Shotguns", "CivilianClothing", "PistolAmmo", "Pistols", "Trash", "CivilianClothing", "CivilianBackpacks", "Chemlights", "CivilianVests", "Pistols", "SMGAmmo", "Trash", "Chemlights", "Trash", "Shotguns", "CivilianBackpacks", "Trash", "CivilianHeadgear", "CivilianClothing"};
 
 		/*
 			Percental Item Group Spawn Chances of Shop:
@@ -2862,7 +2862,7 @@ class CfgExileLootServer
 			Food              = 12,00%
 			Trash             = 24,00%
 		*/
-		Shop[] = {"Trash", "SMG", "Trash", "Trash", "SMG", "Trash", "Pistols", "Food", "SMGAmmo", "SmokeGrenades", "CivilianItems", "Trash", "CivilianClothing", "Pistols", "Trash", "Food", "RoadFlares", "Drinks", "Drinks", "CivilianHeadgear", "MedicalItems", "Chemlights", "Trash", "Food", "CivilianItems", "Chemlights", "Drinks", "Chemlights", "RoadFlares", "CivilianItems", "Trash", "Drinks", "CivilianItems", "Pistols", "Drinks", "Drinks", "CivilianBackpacks", "Drinks", "Drinks", "Trash", "Trash", "Trash", "Food", "CivilianVests", "Pistols", "Pistols", "Trash", "SMG", "Trash", "Chemlights", "Shotguns", "SmokeGrenades", "SMG", "Trash", "Food", "Food", "Food", "CivilianItems", "Restraints", "Trash", "Drinks", "PistolAmmo", "CivilianItems", "CivilianBackpacks", "Food", "Pistols", "SMGAttachments", "CivilianItems", "CivilianBackpacks", "Restraints", "Trash", "Trash", "Food", "CivilianHeadgear", "Food", "IndustrialItems", "Trash", "Food", "Trash", "PistolAmmo", "Trash", "MedicalItems", "Pistols", "Trash", "CivilianHeadgear", "Drinks", "Trash", "SmokeGrenades", "SmokeGrenades", "Shotguns", "Shotguns", "Shotguns", "Trash", "Drinks", "Trash", "RoadFlares", "Food", "Trash", "CivilianBackpacks", "Restraints", "RoadFlares", "PistolAttachments", "IndustrialItems", "Trash", "IndustrialItems", "Pistols", "CivilianBackpacks", "Drinks", "SMG", "Food", "Drinks", "Trash", "MedicalItems", "Chemlights", "Trash", "Food", "Pistols", "Food", "Trash", "Drinks", "ShotgunAmmo", "Pistols", "Trash", "Drinks", "RoadFlares"};
+		Shop[] = {"Shotguns", "CivilianItems", "Drinks", "Chemlights", "Trash", "IndustrialItems", "CivilianHeadgear", "Drinks", "IndustrialItems", "Trash", "Food", "CivilianItems", "Drinks", "Drinks", "Trash", "SMG", "Pistols", "RoadFlares", "Trash", "Food", "Trash", "CivilianItems", "Trash", "Pistols", "RoadFlares", "Food", "SMGAttachments", "RoadFlares", "Food", "CivilianBackpacks", "Drinks", "Trash", "Trash", "Food", "CivilianVests", "Food", "SmokeGrenades", "CivilianBackpacks", "CivilianBackpacks", "Pistols", "Shotguns", "SMGAmmo", "Trash", "Trash", "Chemlights", "Food", "Trash", "Food", "Trash", "Drinks", "Trash", "Trash", "CivilianItems", "Trash", "Trash", "Food", "Drinks", "SmokeGrenades", "MedicalItems", "CivilianClothing", "Pistols", "Food", "Trash", "Trash", "CivilianItems", "SMG", "CivilianHeadgear", "SmokeGrenades", "Trash", "MedicalItems", "CivilianBackpacks", "Trash", "Drinks", "CivilianHeadgear", "Pistols", "Trash", "CivilianItems", "ShotgunAmmo", "Chemlights", "Pistols", "Trash", "CivilianBackpacks", "Trash", "Drinks", "Drinks", "Shotguns", "Restraints", "Pistols", "Drinks", "Trash", "Food", "Restraints", "Chemlights", "Trash", "SMG", "Chemlights", "Trash", "CivilianItems", "Shotguns", "PistolAmmo", "Pistols", "SmokeGrenades", "Trash", "RoadFlares", "Trash", "Pistols", "Trash", "MedicalItems", "IndustrialItems", "Trash", "SMG", "Restraints", "Drinks", "Pistols", "PistolAmmo", "Drinks", "Food", "RoadFlares", "Food", "PistolAttachments", "Food", "Food", "Drinks", "SMG", "Drinks"};
 
 		/*
 			Percental Item Group Spawn Chances of Industrial:
@@ -2873,7 +2873,7 @@ class CfgExileLootServer
 			Trash           = 26,09%
 			IndustrialItems = 34,78%
 		*/
-		Industrial[] = {"RoadFlares", "Trash", "Vehicle", "Trash", "IndustrialItems", "Vehicle", "Vehicle", "RoadFlares", "Restraints", "Trash", "Vehicle", "Trash", "Trash", "Vehicle", "RoadFlares", "Trash", "IndustrialItems", "IndustrialItems", "IndustrialItems", "IndustrialItems", "IndustrialItems", "IndustrialItems", "IndustrialItems"};
+		Industrial[] = {"Vehicle", "Trash", "RoadFlares", "Restraints", "IndustrialItems", "Trash", "Vehicle", "Trash", "RoadFlares", "IndustrialItems", "Trash", "Trash", "RoadFlares", "IndustrialItems", "Trash", "IndustrialItems", "IndustrialItems", "Vehicle", "Vehicle", "IndustrialItems", "IndustrialItems", "IndustrialItems", "Vehicle"};
 
 		/*
 			Percental Item Group Spawn Chances of Factories:
@@ -2882,7 +2882,7 @@ class CfgExileLootServer
 			Trash           = 40,00%
 			IndustrialItems = 50,00%
 		*/
-		Factories[] = {"IndustrialItems", "Trash", "IndustrialItems", "IndustrialItems", "IndustrialItems", "Electronics", "Trash", "Trash", "Trash", "IndustrialItems"};
+		Factories[] = {"IndustrialItems", "Trash", "IndustrialItems", "IndustrialItems", "Trash", "IndustrialItems", "IndustrialItems", "Trash", "Trash", "Electronics"};
 
 		/*
 			Percental Item Group Spawn Chances of VehicleService:
@@ -2893,7 +2893,7 @@ class CfgExileLootServer
 			Trash           = 26,09%
 			Vehicle         = 34,78%
 		*/
-		VehicleService[] = {"RoadFlares", "IndustrialItems", "IndustrialItems", "RoadFlares", "IndustrialItems", "Restraints", "Vehicle", "Vehicle", "Trash", "Trash", "Trash", "IndustrialItems", "Vehicle", "Vehicle", "Vehicle", "Vehicle", "IndustrialItems", "Trash", "Trash", "RoadFlares", "Vehicle", "Trash", "Vehicle"};
+		VehicleService[] = {"Trash", "Vehicle", "Trash", "IndustrialItems", "IndustrialItems", "Vehicle", "Vehicle", "Vehicle", "Vehicle", "Trash", "Trash", "RoadFlares", "Vehicle", "RoadFlares", "Vehicle", "Restraints", "Trash", "IndustrialItems", "IndustrialItems", "Vehicle", "Trash", "IndustrialItems", "RoadFlares"};
 
 		/*
 			Percental Item Group Spawn Chances of Military:
@@ -2935,7 +2935,7 @@ class CfgExileLootServer
 			Rifles            = 2,48%
 			Trash             = 49,50%
 		*/
-		Military[] = {"MilitaryBackpacks", "MilitaryClothing", "RifleAttachments", "Trash", "Trash", "HEGrenades", "GuerillaHeadgear", "Trash", "MilitaryClothing", "RifleAmmo", "Trash", "SniperAttachments", "Trash", "Trash", "Trash", "HEGrenades", "Trash", "CivilianItems", "Trash", "Explosives", "Trash", "GuerillaItems", "Trash", "GuerillaBackpacks", "GuerillaItems", "RifleAmmo", "Snipers", "LMGAmmo", "Trash", "GuerillaVests", "Trash", "Explosives", "CivilianItems", "DLCVests", "Trash", "Trash", "MilitaryClothing", "Trash", "MilitaryVests", "Trash", "MilitaryClothing", "Trash", "Trash", "GuerillaVests", "UGLSmokes", "MedicalItems", "Snipers", "Trash", "Trash", "Trash", "Trash", "MilitaryHeadgear", "SmokeGrenades", "Trash", "Trash", "SmokeGrenades", "Explosives", "Trash", "SniperAttachments", "SniperAmmo", "Rifles", "Trash", "UGLFlares", "Trash", "DLCRifles", "UGLFlares", "Trash", "Trash", "DLCRifles", "LMG", "Trash", "Trash", "Trash", "Trash", "Trash", "Trash", "DLCGhillies", "Trash", "DLCVests", "Rifles", "MilitaryClothing", "Trash", "Trash", "LMGAmmo", "GuerillaBackpacks", "Trash", "Trash", "Trash", "Ghillies", "Trash", "GuerillaItems", "MilitaryHeadgear", "MedicalItems", "Trash", "UGLSmokes", "RifleAttachments", "LMG", "CivilianItems", "Trash", "LMG", "GuerillaBackpacks", "Trash", "Rebreathers", "Trash", "HandGrenades", "DLCOptics", "Trash", "DLCOptics", "Trash", "DLCAmmo", "UGLSmokes", "Trash", "Trash", "Snipers", "DLCAmmo", "CivilianItems", "Trash", "GuerillaClothing", "Trash", "Trash", "Trash", "GuerillaBackpacks", "HEGrenades", "Trash", "DLCSupressor", "RifleAttachments", "Trash", "DLCVests", "GuerillaClothing", "Trash", "Trash", "Trash", "Trash", "Trash", "Trash", "Rifles", "HandGrenades", "SniperAmmo", "Trash", "GuerillaVests", "Rifles", "Trash", "GuerillaHeadgear", "Trash", "Trash", "Trash", "Trash", "Trash", "Trash", "Trash", "GuerillaHeadgear", "Trash", "Trash", "Trash", "Restraints", "Trash", "Trash", "MilitaryVests", "Trash", "MilitaryBackpacks", "RifleAmmo", "GuerillaClothing", "Trash", "DLCRifles", "UGLFlares", "Explosives", "Bipods", "Trash", "Trash", "Bipods", "Trash", "Trash", "Trash", "Trash", "Trash", "Trash", "MilitaryHeadgear", "DLCSupressor", "Trash", "Trash", "Trash", "MilitaryVests", "Trash", "Rifles", "Trash", "SmokeGrenades", "Restraints", "Trash", "HandGrenades", "Trash", "Trash", "MilitaryBackpacks", "GuerillaClothing", "Explosives", "Trash", "LMG", "Trash", "GuerillaClothing", "GuerillaItems", "Trash", "Trash", "Trash"};
+		Military[] = {"Explosives", "DLCVests", "Rifles", "Trash", "MilitaryBackpacks", "Trash", "Trash", "MilitaryClothing", "Rifles", "CivilianItems", "Trash", "Trash", "Trash", "UGLSmokes", "Restraints", "MilitaryHeadgear", "Trash", "GuerillaClothing", "DLCRifles", "Trash", "UGLFlares", "Trash", "Trash", "Trash", "Trash", "Trash", "DLCOptics", "GuerillaBackpacks", "Trash", "Explosives", "Trash", "UGLSmokes", "DLCVests", "Trash", "SniperAmmo", "Trash", "Trash", "MedicalItems", "MilitaryBackpacks", "DLCOptics", "GuerillaBackpacks", "Trash", "Explosives", "Trash", "HEGrenades", "Trash", "Trash", "Bipods", "Trash", "Trash", "Snipers", "Trash", "SmokeGrenades", "Trash", "Trash", "Restraints", "MilitaryHeadgear", "Trash", "UGLSmokes", "MilitaryClothing", "Trash", "Trash", "SniperAttachments", "GuerillaHeadgear", "MilitaryClothing", "RifleAttachments", "Trash", "LMG", "LMG", "Trash", "Trash", "Trash", "Trash", "MilitaryVests", "MilitaryVests", "GuerillaVests", "RifleAttachments", "SniperAmmo", "HandGrenades", "DLCRifles", "Trash", "SmokeGrenades", "Trash", "Trash", "Trash", "Trash", "GuerillaBackpacks", "GuerillaItems", "LMG", "Trash", "Trash", "Trash", "GuerillaVests", "Trash", "Trash", "RifleAttachments", "MilitaryHeadgear", "Trash", "Trash", "Trash", "Trash", "DLCSupressor", "Trash", "DLCAmmo", "HandGrenades", "Rifles", "UGLFlares", "Rifles", "GuerillaItems", "Trash", "Trash", "Trash", "Trash", "GuerillaClothing", "Rebreathers", "DLCVests", "HEGrenades", "Trash", "Trash", "Trash", "LMGAmmo", "Trash", "Trash", "HEGrenades", "Trash", "GuerillaItems", "Trash", "Trash", "Trash", "MilitaryBackpacks", "Snipers", "Trash", "DLCRifles", "Trash", "MedicalItems", "UGLFlares", "Trash", "HandGrenades", "LMGAmmo", "Trash", "Trash", "Trash", "Trash", "GuerillaItems", "MilitaryVests", "Trash", "GuerillaBackpacks", "GuerillaHeadgear", "Trash", "Trash", "Trash", "Trash", "RifleAmmo", "CivilianItems", "Trash", "Bipods", "Explosives", "Trash", "RifleAmmo", "CivilianItems", "Trash", "Trash", "Trash", "GuerillaClothing", "GuerillaClothing", "Trash", "Trash", "Trash", "Ghillies", "Trash", "Rifles", "GuerillaVests", "Trash", "Trash", "MilitaryClothing", "DLCSupressor", "DLCGhillies", "GuerillaHeadgear", "Trash", "Trash", "DLCAmmo", "Trash", "Trash", "CivilianItems", "Trash", "Trash", "Trash", "Trash", "LMG", "SniperAttachments", "Snipers", "GuerillaClothing", "Explosives", "Trash", "RifleAmmo", "MilitaryClothing", "Trash", "Trash", "Trash", "SmokeGrenades", "Trash", "Trash"};
 
 		/*
 			Percental Item Group Spawn Chances of Medical:
@@ -2943,7 +2943,7 @@ class CfgExileLootServer
 			Trash        = 30,00%
 			MedicalItems = 70,00%
 		*/
-		Medical[] = {"MedicalItems", "Trash", "MedicalItems", "MedicalItems", "MedicalItems", "Trash", "MedicalItems", "MedicalItems", "Trash", "MedicalItems"};
+		Medical[] = {"MedicalItems", "Trash", "Trash", "MedicalItems", "MedicalItems", "MedicalItems", "MedicalItems", "Trash", "MedicalItems", "MedicalItems"};
 
 		/*
 			Percental Item Group Spawn Chances of Tourist:
@@ -2965,7 +2965,7 @@ class CfgExileLootServer
 			DLCRifles         = 17,78%
 			Snipers           = 17,78%
 		*/
-		Tourist[] = {"Snipers", "Restraints", "MilitaryBackpacks", "MilitaryHeadgear", "MilitaryBackpacks", "DLCRifles", "MilitaryHeadgear", "DLCOptics", "Snipers", "Snipers", "MilitaryHeadgear", "Snipers", "DLCRifles", "DLCRifles", "Explosives", "CivilianItems", "MedicalItems", "MilitaryBackpacks", "DLCRifles", "CivilianItems", "HandGrenades", "Restraints", "DLCAmmo", "MedicalItems", "DLCRifles", "Snipers", "DLCRifles", "SniperAmmo", "DLCSupressor", "Ghillies", "Snipers", "Snipers", "Explosives", "DLCGhillies", "DLCGhillies", "MilitaryBackpacks", "DLCRifles", "Ghillies", "Ghillies", "SniperAttachments", "MilitaryHeadgear", "DLCGhillies", "DLCRifles", "HandGrenades", "Snipers"};
+		Tourist[] = {"Restraints", "MilitaryBackpacks", "Snipers", "Snipers", "DLCRifles", "DLCGhillies", "HandGrenades", "DLCOptics", "DLCGhillies", "MilitaryBackpacks", "DLCRifles", "MilitaryBackpacks", "CivilianItems", "Ghillies", "MedicalItems", "Snipers", "Snipers", "MilitaryHeadgear", "Ghillies", "DLCRifles", "Snipers", "CivilianItems", "DLCGhillies", "DLCAmmo", "Snipers", "MilitaryHeadgear", "DLCRifles", "SniperAttachments", "Explosives", "DLCRifles", "Snipers", "Ghillies", "DLCSupressor", "SniperAmmo", "HandGrenades", "DLCRifles", "Restraints", "Snipers", "Explosives", "MilitaryHeadgear", "MedicalItems", "MilitaryHeadgear", "DLCRifles", "DLCRifles", "MilitaryBackpacks"};
 
 		/*
 			Percental Item Group Spawn Chances of Radiation:
@@ -2987,7 +2987,7 @@ class CfgExileLootServer
 			DLCRifles         = 11,36%
 			Snipers           = 11,36%
 		*/
-		Radiation[] = {"MilitaryHeadgear", "HandGrenades", "Snipers", "Explosives", "EpicWeapons", "Snipers", "DLCRifles", "DLCRifles", "DLCOptics", "MedicalItems", "MilitaryBackpacks", "Explosives", "HandGrenades", "MilitaryHeadgear", "SniperAmmo", "Restraints", "Snipers", "DLCRifles", "MilitaryBackpacks", "DLCRifles", "Ghillies", "MilitaryHeadgear", "DLCGhillies", "SniperAttachments", "MilitaryBackpacks", "MilitaryBackpacks", "Explosives", "MilitaryHeadgear", "Restraints", "MilitaryBackpacks", "DLCRifles", "EpicWeapons", "DLCGhillies", "Snipers", "Ghillies", "Snipers", "DLCAmmo", "DLCSupressor", "MedicalItems", "Explosives", "Ghillies", "Explosives", "DLCGhillies", "MilitaryHeadgear"};
+		Radiation[] = {"Ghillies", "MilitaryBackpacks", "Snipers", "MedicalItems", "HandGrenades", "DLCGhillies", "Ghillies", "MilitaryHeadgear", "MilitaryBackpacks", "HandGrenades", "DLCRifles", "MilitaryHeadgear", "EpicWeapons", "Explosives", "DLCAmmo", "MilitaryHeadgear", "DLCSupressor", "Explosives", "MilitaryHeadgear", "MilitaryHeadgear", "MedicalItems", "Snipers", "DLCRifles", "MilitaryBackpacks", "DLCRifles", "Snipers", "DLCGhillies", "DLCOptics", "Explosives", "DLCRifles", "DLCGhillies", "SniperAmmo", "DLCRifles", "Snipers", "Explosives", "Restraints", "Ghillies", "Restraints", "Snipers", "MilitaryBackpacks", "EpicWeapons", "MilitaryBackpacks", "SniperAttachments", "Explosives"};
 	};
 
 	class ItemGroups
@@ -3018,7 +3018,7 @@ class CfgExileLootServer
 			Exile_Item_Moobar            = 6,25%
 			Exile_Item_InstantCoffee     = 7,64%
 		*/
-		Food[] = {"Exile_Item_InstantCoffee", "Exile_Item_BeefParts", "Exile_Item_CanOpener", "Exile_Item_Moobar", "Exile_Item_BBQSandwich", "Exile_Item_SausageGravy", "Exile_Item_GloriousKnakworst", "Exile_Item_Cheathas", "Exile_Item_InstantCoffee", "Exile_Item_CockONut", "Exile_Item_Cheathas", "Exile_Item_MacasCheese", "Exile_Item_EMRE", "Exile_Item_Surstromming", "Exile_Item_Noodles", "Exile_Item_EMRE", "Exile_Item_CatFood", "Exile_Item_CockONut", "Exile_Item_CatFood", "Exile_Item_Surstromming", "Exile_Item_Moobar", "Exile_Item_Cheathas", "Exile_Item_CanOpener", "Exile_Item_ChristmasTinner", "Exile_Item_CockONut", "Exile_Item_GloriousKnakworst", "Exile_Item_Dogfood", "Exile_Item_Surstromming", "Exile_Item_GloriousKnakworst", "Exile_Item_CockONut", "Exile_Item_Matches", "Exile_Item_ChristmasTinner", "Exile_Item_CanOpener", "Exile_Item_Moobar", "Exile_Item_SausageGravy", "Exile_Item_CockONut", "Exile_Item_InstantCoffee", "Exile_Item_CanOpener", "Exile_Item_GloriousKnakworst", "Exile_Item_SeedAstics", "Exile_Item_BBQSandwich", "Exile_Item_SausageGravy", "Exile_Item_CockONut", "Exile_Item_ChristmasTinner", "Exile_Item_BBQSandwich", "Exile_Item_BeefParts", "Exile_Item_Raisins", "Exile_Item_CatFood", "Exile_Item_Surstromming", "Exile_Item_Moobar", "Exile_Item_ChristmasTinner", "Exile_Item_Noodles", "Exile_Item_CookingPot", "Exile_Item_DsNuts", "Exile_Item_Cheathas", "Exile_Item_SeedAstics", "Exile_Item_Surstromming", "Exile_Item_InstantCoffee", "Exile_Item_InstantCoffee", "Exile_Item_BeefParts", "Exile_Item_SeedAstics", "Exile_Item_SausageGravy", "Exile_Item_Dogfood", "Exile_Item_SeedAstics", "Exile_Item_DsNuts", "Exile_Item_Raisins", "Exile_Item_CockONut", "Exile_Item_BeefParts", "Exile_Item_MacasCheese", "Exile_Item_Cheathas", "Exile_Item_Raisins", "Exile_Item_Raisins", "Exile_Item_Cheathas", "Exile_Item_InstantCoffee", "Exile_Item_CatFood", "Exile_Item_InstantCoffee", "Exile_Item_DsNuts", "Exile_Item_ChristmasTinner", "Exile_Item_SausageGravy", "Exile_Item_Matches", "Exile_Item_Raisins", "Exile_Item_Raisins", "Exile_Item_DsNuts", "Exile_Item_CatFood", "Exile_Item_MacasCheese", "Exile_Item_MacasCheese", "Exile_Item_Noodles", "Exile_Item_CookingPot", "Exile_Item_GloriousKnakworst", "Exile_Item_SeedAstics", "Exile_Item_Surstromming", "Exile_Item_Raisins", "Exile_Item_Matches", "Exile_Item_BBQSandwich", "Exile_Item_BBQSandwich", "Exile_Item_CockONut", "Exile_Item_SeedAstics", "Exile_Item_DsNuts", "Exile_Item_ChristmasTinner", "Exile_Item_Noodles", "Exile_Item_Matches", "Exile_Item_CanOpener", "Exile_Item_Noodles", "Exile_Item_Moobar", "Exile_Item_MacasCheese", "Exile_Item_SausageGravy", "Exile_Item_Raisins", "Exile_Item_SeedAstics", "Exile_Item_Noodles", "Exile_Item_InstantCoffee", "Exile_Item_BBQSandwich", "Exile_Item_BeefParts", "Exile_Item_EMRE", "Exile_Item_MacasCheese", "Exile_Item_Dogfood", "Exile_Item_InstantCoffee", "Exile_Item_BeefParts", "Exile_Item_Cheathas", "Exile_Item_Moobar", "Exile_Item_InstantCoffee", "Exile_Item_Raisins", "Exile_Item_SeedAstics", "Exile_Item_CookingPot", "Exile_Item_Dogfood", "Exile_Item_Moobar", "Exile_Item_InstantCoffee", "Exile_Item_ChristmasTinner", "Exile_Item_DsNuts", "Exile_Item_Dogfood", "Exile_Item_Noodles", "Exile_Item_Dogfood", "Exile_Item_Matches", "Exile_Item_SausageGravy", "Exile_Item_Dogfood", "Exile_Item_BeefParts", "Exile_Item_CatFood", "Exile_Item_MacasCheese", "Exile_Item_Moobar", "Exile_Item_BBQSandwich", "Exile_Item_DsNuts", "Exile_Item_GloriousKnakworst", "Exile_Item_CatFood", "Exile_Item_Moobar", "Exile_Item_Surstromming"};
+		Food[] = {"Exile_Item_SeedAstics", "Exile_Item_BeefParts", "Exile_Item_Noodles", "Exile_Item_InstantCoffee", "Exile_Item_Matches", "Exile_Item_Moobar", "Exile_Item_Raisins", "Exile_Item_InstantCoffee", "Exile_Item_BBQSandwich", "Exile_Item_Surstromming", "Exile_Item_SeedAstics", "Exile_Item_Dogfood", "Exile_Item_CanOpener", "Exile_Item_CatFood", "Exile_Item_EMRE", "Exile_Item_BeefParts", "Exile_Item_Dogfood", "Exile_Item_CookingPot", "Exile_Item_Matches", "Exile_Item_Cheathas", "Exile_Item_CatFood", "Exile_Item_CanOpener", "Exile_Item_MacasCheese", "Exile_Item_EMRE", "Exile_Item_BBQSandwich", "Exile_Item_Matches", "Exile_Item_DsNuts", "Exile_Item_Dogfood", "Exile_Item_BeefParts", "Exile_Item_Matches", "Exile_Item_CanOpener", "Exile_Item_InstantCoffee", "Exile_Item_SeedAstics", "Exile_Item_CatFood", "Exile_Item_DsNuts", "Exile_Item_InstantCoffee", "Exile_Item_SausageGravy", "Exile_Item_Surstromming", "Exile_Item_Surstromming", "Exile_Item_Matches", "Exile_Item_DsNuts", "Exile_Item_InstantCoffee", "Exile_Item_Surstromming", "Exile_Item_SausageGravy", "Exile_Item_Moobar", "Exile_Item_Raisins", "Exile_Item_ChristmasTinner", "Exile_Item_GloriousKnakworst", "Exile_Item_MacasCheese", "Exile_Item_Moobar", "Exile_Item_CookingPot", "Exile_Item_GloriousKnakworst", "Exile_Item_DsNuts", "Exile_Item_Cheathas", "Exile_Item_Dogfood", "Exile_Item_EMRE", "Exile_Item_Moobar", "Exile_Item_Moobar", "Exile_Item_CockONut", "Exile_Item_CockONut", "Exile_Item_BeefParts", "Exile_Item_CanOpener", "Exile_Item_ChristmasTinner", "Exile_Item_DsNuts", "Exile_Item_BeefParts", "Exile_Item_Cheathas", "Exile_Item_Cheathas", "Exile_Item_Surstromming", "Exile_Item_BBQSandwich", "Exile_Item_CatFood", "Exile_Item_InstantCoffee", "Exile_Item_Surstromming", "Exile_Item_ChristmasTinner", "Exile_Item_SausageGravy", "Exile_Item_BBQSandwich", "Exile_Item_InstantCoffee", "Exile_Item_MacasCheese", "Exile_Item_Noodles", "Exile_Item_InstantCoffee", "Exile_Item_ChristmasTinner", "Exile_Item_CockONut", "Exile_Item_CanOpener", "Exile_Item_CockONut", "Exile_Item_DsNuts", "Exile_Item_Cheathas", "Exile_Item_Cheathas", "Exile_Item_MacasCheese", "Exile_Item_Noodles", "Exile_Item_InstantCoffee", "Exile_Item_Noodles", "Exile_Item_ChristmasTinner", "Exile_Item_Noodles", "Exile_Item_SeedAstics", "Exile_Item_Noodles", "Exile_Item_CatFood", "Exile_Item_Dogfood", "Exile_Item_Raisins", "Exile_Item_GloriousKnakworst", "Exile_Item_Moobar", "Exile_Item_Dogfood", "Exile_Item_GloriousKnakworst", "Exile_Item_BBQSandwich", "Exile_Item_MacasCheese", "Exile_Item_Noodles", "Exile_Item_ChristmasTinner", "Exile_Item_CookingPot", "Exile_Item_SausageGravy", "Exile_Item_BBQSandwich", "Exile_Item_CatFood", "Exile_Item_Raisins", "Exile_Item_InstantCoffee", "Exile_Item_Moobar", "Exile_Item_ChristmasTinner", "Exile_Item_CockONut", "Exile_Item_BBQSandwich", "Exile_Item_Raisins", "Exile_Item_Raisins", "Exile_Item_Raisins", "Exile_Item_DsNuts", "Exile_Item_Moobar", "Exile_Item_SausageGravy", "Exile_Item_Surstromming", "Exile_Item_Raisins", "Exile_Item_SausageGravy", "Exile_Item_CockONut", "Exile_Item_GloriousKnakworst", "Exile_Item_MacasCheese", "Exile_Item_SeedAstics", "Exile_Item_SeedAstics", "Exile_Item_SausageGravy", "Exile_Item_CatFood", "Exile_Item_BeefParts", "Exile_Item_InstantCoffee", "Exile_Item_BeefParts", "Exile_Item_MacasCheese", "Exile_Item_GloriousKnakworst", "Exile_Item_Cheathas", "Exile_Item_SeedAstics", "Exile_Item_CockONut", "Exile_Item_CockONut", "Exile_Item_Dogfood", "Exile_Item_SeedAstics", "Exile_Item_Moobar", "Exile_Item_Raisins"};
 
 		/*
 			Percental Item Spawn Chances of Drinks:
@@ -3031,7 +3031,7 @@ class CfgExileLootServer
 			Exile_Item_ChocolateMilk           = 21,43%
 			Exile_Item_PlasticBottleDirtyWater = 35,71%
 		*/
-		Drinks[] = {"Exile_Item_PlasticBottleDirtyWater", "Exile_Item_ChocolateMilk", "Exile_Item_PowerDrink", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_MountainDupe", "Exile_Item_Beer", "Exile_Item_MountainDupe", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_ChocolateMilk", "Exile_Item_ChocolateMilk", "Exile_Item_PlasticBottleFreshWater", "Exile_Item_EnergyDrink"};
+		Drinks[] = {"Exile_Item_ChocolateMilk", "Exile_Item_PowerDrink", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_EnergyDrink", "Exile_Item_ChocolateMilk", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_MountainDupe", "Exile_Item_PlasticBottleFreshWater", "Exile_Item_PlasticBottleDirtyWater", "Exile_Item_Beer", "Exile_Item_ChocolateMilk", "Exile_Item_MountainDupe"};
 
 		/*
 			Percental Item Spawn Chances of Pistols:
@@ -3050,7 +3050,7 @@ class CfgExileLootServer
 			hgun_Rook40_F           = 11,76%
 			Exile_Weapon_SA61       = 11,76%
 		*/
-		Pistols[] = {"Exile_Weapon_Taurus", "hgun_P07_F", "Exile_Weapon_SA61", "hgun_Rook40_F", "hgun_Pistol_01_F", "Exile_Weapon_Colt1911", "hgun_Rook40_F", "Exile_Weapon_SA61", "hgun_ACPC2_F", "Exile_Weapon_Makarov", "hgun_P07_khk_F", "hgun_P07_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_Signal_F", "Exile_Weapon_TaurusGold", "hgun_Pistol_heavy_01_F", "hgun_ACPC2_F"};
+		Pistols[] = {"hgun_Pistol_heavy_02_F", "hgun_P07_F", "hgun_Pistol_Signal_F", "Exile_Weapon_Makarov", "hgun_Rook40_F", "hgun_ACPC2_F", "Exile_Weapon_Taurus", "hgun_P07_F", "Exile_Weapon_SA61", "Exile_Weapon_SA61", "hgun_Rook40_F", "Exile_Weapon_TaurusGold", "hgun_Pistol_heavy_01_F", "hgun_ACPC2_F", "Exile_Weapon_Colt1911", "hgun_P07_khk_F", "hgun_Pistol_01_F"};
 
 		/*
 			Percental Item Spawn Chances of PistolAmmo:
@@ -3069,7 +3069,7 @@ class CfgExileLootServer
 			Exile_Magazine_10Rnd_765x17_SA61 = 9,76%
 			Exile_Magazine_20Rnd_765x17_SA61 = 9,76%
 		*/
-		PistolAmmo[] = {"Exile_Magazine_6Rnd_45ACP", "Exile_Magazine_20Rnd_765x17_SA61", "11Rnd_45ACP_Mag", "11Rnd_45ACP_Mag", "10Rnd_9x21_Mag", "6Rnd_GreenSignal_F", "Exile_Magazine_8Rnd_9x18", "6Rnd_45ACP_Cylinder", "30Rnd_9x21_Mag", "6Rnd_RedSignal_F", "Exile_Magazine_6Rnd_45ACP", "Exile_Magazine_10Rnd_765x17_SA61", "30Rnd_9x21_Mag", "Exile_Magazine_7Rnd_45ACP", "Exile_Magazine_10Rnd_765x17_SA61", "10Rnd_9x21_Mag", "Exile_Magazine_10Rnd_765x17_SA61", "Exile_Magazine_20Rnd_765x17_SA61", "9Rnd_45ACP_Mag", "Exile_Magazine_20Rnd_765x17_SA61", "16Rnd_9x21_Mag", "Exile_Magazine_8Rnd_9x18", "10Rnd_9x21_Mag", "Exile_Magazine_7Rnd_45ACP", "Exile_Magazine_10Rnd_765x17_SA61", "30Rnd_9x21_Mag", "11Rnd_45ACP_Mag", "9Rnd_45ACP_Mag", "Exile_Magazine_7Rnd_45ACP", "Exile_Magazine_7Rnd_45ACP", "9Rnd_45ACP_Mag", "6Rnd_45ACP_Cylinder", "30Rnd_9x21_Mag", "Exile_Magazine_20Rnd_765x17_SA61", "10Rnd_9x21_Mag", "9Rnd_45ACP_Mag", "Exile_Magazine_6Rnd_45ACP", "Exile_Magazine_8Rnd_9x18", "Exile_Magazine_6Rnd_45ACP", "11Rnd_45ACP_Mag", "Exile_Magazine_8Rnd_9x18"};
+		PistolAmmo[] = {"Exile_Magazine_6Rnd_45ACP", "Exile_Magazine_20Rnd_765x17_SA61", "Exile_Magazine_20Rnd_765x17_SA61", "Exile_Magazine_7Rnd_45ACP", "Exile_Magazine_6Rnd_45ACP", "Exile_Magazine_7Rnd_45ACP", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "10Rnd_9x21_Mag", "11Rnd_45ACP_Mag", "Exile_Magazine_8Rnd_9x18", "9Rnd_45ACP_Mag", "Exile_Magazine_20Rnd_765x17_SA61", "11Rnd_45ACP_Mag", "11Rnd_45ACP_Mag", "Exile_Magazine_10Rnd_765x17_SA61", "11Rnd_45ACP_Mag", "Exile_Magazine_10Rnd_765x17_SA61", "Exile_Magazine_7Rnd_45ACP", "9Rnd_45ACP_Mag", "6Rnd_RedSignal_F", "10Rnd_9x21_Mag", "Exile_Magazine_6Rnd_45ACP", "30Rnd_9x21_Mag", "6Rnd_45ACP_Cylinder", "Exile_Magazine_20Rnd_765x17_SA61", "6Rnd_45ACP_Cylinder", "16Rnd_9x21_Mag", "6Rnd_GreenSignal_F", "Exile_Magazine_7Rnd_45ACP", "Exile_Magazine_6Rnd_45ACP", "Exile_Magazine_10Rnd_765x17_SA61", "30Rnd_9x21_Mag", "Exile_Magazine_8Rnd_9x18", "10Rnd_9x21_Mag", "Exile_Magazine_10Rnd_765x17_SA61", "9Rnd_45ACP_Mag", "Exile_Magazine_8Rnd_9x18", "10Rnd_9x21_Mag", "Exile_Magazine_8Rnd_9x18", "9Rnd_45ACP_Mag"};
 
 		/*
 			Percental Item Spawn Chances of PistolAttachments:
@@ -3079,7 +3079,7 @@ class CfgExileLootServer
 			muzzle_snds_acp = 33,33%
 			muzzle_snds_L   = 33,33%
 		*/
-		PistolAttachments[] = {"muzzle_snds_acp", "muzzle_snds_acp", "muzzle_snds_L", "optic_MRD", "muzzle_snds_L", "optic_Yorris"};
+		PistolAttachments[] = {"muzzle_snds_L", "muzzle_snds_acp", "muzzle_snds_acp", "optic_Yorris", "muzzle_snds_L", "optic_MRD"};
 
 		/*
 			Percental Item Spawn Chances of Shotguns:
@@ -3103,7 +3103,7 @@ class CfgExileLootServer
 			SMG_05_F       = 25,00%
 			hgun_PDW2000_F = 25,00%
 		*/
-		SMG[] = {"hgun_PDW2000_F", "SMG_02_F", "SMG_01_F", "SMG_05_F"};
+		SMG[] = {"SMG_05_F", "hgun_PDW2000_F", "SMG_02_F", "SMG_01_F"};
 
 		/*
 			Percental Item Spawn Chances of SMGAmmo:
@@ -3115,7 +3115,7 @@ class CfgExileLootServer
 			30Rnd_9x21_Mag_SMG_02_Tracer_Yellow = 16,67%
 			30Rnd_9x21_Mag_SMG_02_Tracer_Green  = 16,67%
 		*/
-		SMGAmmo[] = {"30Rnd_9x21_Mag_SMG_02_Tracer_Green", "30Rnd_9x21_Mag_SMG_02", "30Rnd_45ACP_Mag_SMG_01_Tracer_Green", "30Rnd_9x21_Mag_SMG_02_Tracer_Red", "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow", "30Rnd_45ACP_Mag_SMG_01"};
+		SMGAmmo[] = {"30Rnd_45ACP_Mag_SMG_01", "30Rnd_9x21_Mag_SMG_02_Tracer_Red", "30Rnd_9x21_Mag_SMG_02_Tracer_Green", "30Rnd_9x21_Mag_SMG_02", "30Rnd_45ACP_Mag_SMG_01_Tracer_Green", "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow"};
 
 		/*
 			Percental Item Spawn Chances of SMGAttachments:
@@ -3127,126 +3127,167 @@ class CfgExileLootServer
 			optic_ACO_grn             = 16,67%
 			optic_Aco                 = 16,67%
 		*/
-		SMGAttachments[] = {"optic_ACO_grn_smg", "optic_Aco_smg", "optic_Aco", "optic_Holosight_smg", "optic_Holosight_smg_blk_F", "optic_ACO_grn"};
+		SMGAttachments[] = {"optic_Holosight_smg_blk_F", "optic_Holosight_smg", "optic_ACO_grn", "optic_ACO_grn_smg", "optic_Aco_smg", "optic_Aco"};
 
 		/*
 			Percental Item Spawn Chances of Rifles:
 
-			arifle_Katiba_GL_F       = 0,71%
-			arifle_Mk20_GL_F         = 0,71%
-			arifle_MX_GL_Black_F     = 0,71%
-			arifle_MX_GL_F           = 0,71%
-			arifle_MXM_F             = 0,71%
-			arifle_TRG21_GL_F        = 0,71%
-			Exile_Weapon_AK107_GL    = 0,71%
-			Exile_Weapon_AK74_GL     = 0,71%
-			arifle_AK12_GL_F         = 1,43%
-			arifle_AKM_F             = 1,43%
-			arifle_AKM_FL_F          = 1,43%
-			arifle_AKS_F             = 1,43%
-			arifle_ARX_blk_F         = 1,43%
-			arifle_ARX_ghex_F        = 1,43%
-			arifle_ARX_hex_F         = 1,43%
-			arifle_CTAR_blk_F        = 1,43%
-			arifle_CTAR_ghex_F       = 1,43%
-			arifle_CTAR_GL_blk_F     = 1,43%
-			arifle_CTAR_hex_F        = 1,43%
-			arifle_CTARS_blk_F       = 1,43%
-			arifle_CTARS_ghex_F      = 1,43%
-			arifle_CTARS_hex_F       = 1,43%
-			arifle_Katiba_F          = 1,43%
-			arifle_Mk20_F            = 1,43%
-			arifle_Mk20C_F           = 1,43%
-			arifle_MX_Black_F        = 1,43%
-			arifle_MX_F              = 1,43%
-			arifle_MXC_Black_F       = 1,43%
-			arifle_MXC_F             = 1,43%
-			arifle_MXM_Black_F       = 1,43%
-			arifle_SDAR_F            = 1,43%
-			arifle_SPAR_01_blk_F     = 1,43%
-			arifle_SPAR_01_GL_blk_F  = 1,43%
-			arifle_SPAR_01_GL_khk_F  = 1,43%
-			arifle_SPAR_01_GL_snd_F  = 1,43%
-			arifle_SPAR_01_khk_F     = 1,43%
-			arifle_SPAR_01_snd_F     = 1,43%
-			arifle_SPAR_02_blk_F     = 1,43%
-			arifle_SPAR_02_khk_F     = 1,43%
-			arifle_SPAR_02_snd_F     = 1,43%
-			arifle_SPAR_03_blk_F     = 1,43%
-			arifle_SPAR_03_khk_F     = 1,43%
-			arifle_SPAR_03_snd_F     = 1,43%
-			arifle_TRG20_F           = 1,43%
-			arifle_TRG21_F           = 1,43%
-			Exile_Weapon_AK107       = 1,43%
-			Exile_Weapon_AK74        = 1,43%
-			Exile_Weapon_DMR         = 1,43%
-			arifle_MXM_khk_F         = 2,14%
-			Exile_Weapon_AK47        = 2,14%
-			Exile_Weapon_AKS_Gold    = 2,14%
-			Exile_Weapon_SVD         = 2,14%
-			Exile_Weapon_SVDCamo     = 2,14%
-			Exile_Weapon_VSSVintorez = 2,14%
-			arifle_MX_GL_khk_F       = 2,14%
-			arifle_AK12_F            = 2,14%
-			Exile_Weapon_CZ550       = 2,14%
-			arifle_MX_khk_F          = 2,14%
-			arifle_MXC_khk_F         = 2,14%
-			Exile_Weapon_M4          = 2,14%
-			Exile_Weapon_M16A4       = 2,14%
-			Exile_Weapon_M16A2       = 2,14%
-			Exile_Weapon_LeeEnfield  = 7,14%
+			arifle_Katiba_GL_F          = 0,45%
+			arifle_Mk20_GL_F            = 0,45%
+			arifle_MX_GL_Black_F        = 0,45%
+			arifle_MX_GL_F              = 0,45%
+			arifle_MXM_F                = 0,45%
+			arifle_TRG21_GL_F           = 0,45%
+			Exile_Weapon_AK107_GL       = 0,45%
+			Exile_Weapon_AK74_GL        = 0,45%
+			arifle_AKS_F                = 0,90%
+			arifle_ARX_blk_F            = 0,90%
+			arifle_ARX_ghex_F           = 0,90%
+			arifle_ARX_hex_F            = 0,90%
+			arifle_CTAR_blk_F           = 0,90%
+			arifle_CTAR_ghex_F          = 0,90%
+			arifle_CTAR_GL_blk_F        = 0,90%
+			arifle_CTAR_hex_F           = 0,90%
+			arifle_CTARS_blk_F          = 0,90%
+			arifle_CTARS_ghex_F         = 0,90%
+			arifle_CTARS_hex_F          = 0,90%
+			arifle_Katiba_F             = 0,90%
+			arifle_Mk20_F               = 0,90%
+			arifle_Mk20C_F              = 0,90%
+			arifle_MX_Black_F           = 0,90%
+			arifle_MX_F                 = 0,90%
+			arifle_MXC_Black_F          = 0,90%
+			arifle_MXC_F                = 0,90%
+			arifle_MXM_Black_F          = 0,90%
+			arifle_SDAR_F               = 0,90%
+			arifle_SPAR_01_blk_F        = 0,90%
+			arifle_SPAR_01_GL_blk_F     = 0,90%
+			arifle_SPAR_01_GL_khk_F     = 0,90%
+			arifle_SPAR_01_GL_snd_F     = 0,90%
+			arifle_SPAR_01_khk_F        = 0,90%
+			arifle_SPAR_01_snd_F        = 0,90%
+			arifle_SPAR_02_blk_F        = 0,90%
+			arifle_SPAR_02_khk_F        = 0,90%
+			arifle_SPAR_02_snd_F        = 0,90%
+			arifle_TRG20_F              = 0,90%
+			arifle_TRG21_F              = 0,90%
+			Exile_Weapon_AK107          = 0,90%
+			Exile_Weapon_AK74           = 0,90%
+			Exile_Weapon_DMR            = 0,90%
+			arifle_MXM_khk_F            = 1,36%
+			Exile_Weapon_AKS_Gold       = 1,36%
+			arifle_MX_GL_khk_F          = 1,36%
+			Exile_Weapon_CZ550          = 1,36%
+			arifle_MX_khk_F             = 1,36%
+			arifle_MXC_khk_F            = 1,36%
+			Exile_Weapon_M4             = 1,36%
+			Exile_Weapon_M16A4          = 1,36%
+			Exile_Weapon_M16A2          = 1,36%
+			Exile_Weapon_LeeEnfield     = 4,52%
+			R3F_FAMAS_F1                = 1,36%
+			R3F_FAMAS_F1_DES            = 1,36%
+			R3F_FAMAS_F1_HG             = 1,36%
+			R3F_FAMAS_F1_HG_DES         = 1,36%
+			R3F_FAMAS_F1_M203           = 1,36%
+			R3F_FAMAS_F1_M203_DES       = 1,36%
+			R3F_FAMAS_G2                = 1,36%
+			R3F_FAMAS_G2_DES            = 1,36%
+			R3F_FAMAS_G2_HG             = 1,36%
+			R3F_FAMAS_G2_HG_DES         = 1,36%
+			R3F_FAMAS_G2_M203           = 1,36%
+			R3F_FAMAS_G2_M203_DES       = 1,36%
+			R3F_FAMAS_surb              = 1,36%
+			R3F_FAMAS_surb_DES          = 1,36%
+			R3F_FAMAS_surb_HG           = 1,36%
+			R3F_FAMAS_surb_HG_DES       = 1,36%
+			R3F_FAMAS_surb_M203         = 1,36%
+			R3F_FAMAS_surb_M203_DES     = 1,36%
+			R3F_FAMAS_FELIN             = 1,36%
+			R3F_FAMAS_FELIN_DES         = 1,36%
+			R3F_HK416M                  = 1,36%
+			R3F_HK416M_DES              = 1,36%
+			R3F_HK416M_HG               = 1,36%
+			R3F_HK416M_HG_DES           = 1,36%
+			R3F_HK416M_M203_DES         = 1,36%
+			R3F_HK416S_HG               = 1,36%
+			R3F_HK416S_HG_DES           = 1,36%
+			R3F_SIG551                  = 1,36%
+			R3F_SIG551_CE               = 1,36%
+			R3F_MP5A5                   = 1,36%
+			R3F_MP5SD                   = 1,36%
+			CUP_hgun_MicroUzi           = 1,36%
+			CUP_arifle_G36A             = 1,36%
+			CUP_arifle_MG36             = 1,36%
+			CUP_arifle_Mk16_CQC_FG      = 1,36%
+			CUP_arifle_XM8_Compact_Rail = 1,36%
 		*/
-		Rifles[] = {"arifle_MXM_F", "arifle_CTARS_blk_F", "Exile_Weapon_M16A2", "arifle_MXM_khk_F", "Exile_Weapon_AK47", "Exile_Weapon_M4", "arifle_MX_khk_F", "arifle_CTAR_GL_blk_F", "arifle_MXM_khk_F", "Exile_Weapon_M16A4", "arifle_SPAR_01_GL_snd_F", "arifle_CTARS_blk_F", "arifle_AK12_GL_F", "Exile_Weapon_AKS_Gold", "arifle_MXC_F", "Exile_Weapon_LeeEnfield", "Exile_Weapon_M16A2", "arifle_MX_Black_F", "Exile_Weapon_SVDCamo", "arifle_SPAR_02_blk_F", "arifle_MX_GL_khk_F", "arifle_TRG21_F", "arifle_CTAR_blk_F", "Exile_Weapon_SVD", "Exile_Weapon_DMR", "arifle_AKM_FL_F", "Exile_Weapon_AK107_GL", "arifle_MXM_Black_F", "arifle_SPAR_02_snd_F", "arifle_SPAR_01_khk_F", "arifle_AK12_F", "arifle_ARX_hex_F", "arifle_Mk20_F", "arifle_ARX_ghex_F", "arifle_TRG20_F", "arifle_SPAR_01_snd_F", "Exile_Weapon_M16A4", "arifle_SPAR_01_GL_khk_F", "Exile_Weapon_SVD", "Exile_Weapon_M16A4", "Exile_Weapon_SVDCamo", "Exile_Weapon_AK107", "Exile_Weapon_LeeEnfield", "arifle_MX_khk_F", "arifle_SPAR_01_blk_F", "arifle_AKS_F", "Exile_Weapon_LeeEnfield", "arifle_Mk20_F", "arifle_MX_F", "Exile_Weapon_M4", "arifle_SPAR_02_blk_F", "arifle_MX_Black_F", "arifle_SDAR_F", "Exile_Weapon_AK74", "arifle_SPAR_02_khk_F", "arifle_MXC_Black_F", "Exile_Weapon_AK107", "arifle_AK12_F", "Exile_Weapon_LeeEnfield", "arifle_ARX_hex_F", "Exile_Weapon_LeeEnfield", "Exile_Weapon_AKS_Gold", "arifle_SPAR_03_blk_F", "Exile_Weapon_VSSVintorez", "arifle_MX_GL_Black_F", "arifle_MX_GL_khk_F", "arifle_AKM_F", "Exile_Weapon_CZ550", "arifle_SPAR_01_GL_snd_F", "arifle_TRG20_F", "arifle_SPAR_01_blk_F", "arifle_ARX_ghex_F", "arifle_MXC_F", "Exile_Weapon_AK47", "arifle_ARX_blk_F", "Exile_Weapon_M16A2", "Exile_Weapon_SVDCamo", "arifle_ARX_blk_F", "arifle_MXM_khk_F", "arifle_Mk20_GL_F", "Exile_Weapon_VSSVintorez", "Exile_Weapon_CZ550", "arifle_CTARS_ghex_F", "arifle_MX_GL_F", "arifle_Katiba_GL_F", "arifle_Katiba_F", "Exile_Weapon_AKS_Gold", "arifle_MX_F", "Exile_Weapon_AK74_GL", "arifle_TRG21_GL_F", "arifle_SPAR_01_GL_blk_F", "Exile_Weapon_VSSVintorez", "Exile_Weapon_LeeEnfield", "arifle_MXC_khk_F", "Exile_Weapon_AK74", "arifle_AKM_F", "arifle_MXC_khk_F", "arifle_AKS_F", "Exile_Weapon_DMR", "arifle_AK12_GL_F", "Exile_Weapon_LeeEnfield", "arifle_MX_GL_khk_F", "arifle_SPAR_03_khk_F", "arifle_CTARS_ghex_F", "arifle_TRG21_F", "arifle_SPAR_02_snd_F", "arifle_CTAR_hex_F", "arifle_SPAR_03_blk_F", "arifle_CTAR_blk_F", "arifle_AKM_FL_F", "Exile_Weapon_LeeEnfield", "arifle_CTAR_ghex_F", "arifle_MX_khk_F", "Exile_Weapon_LeeEnfield", "arifle_CTARS_hex_F", "Exile_Weapon_LeeEnfield", "arifle_Katiba_F", "arifle_CTAR_hex_F", "arifle_SPAR_03_snd_F", "arifle_AK12_F", "arifle_SDAR_F", "arifle_SPAR_01_khk_F", "arifle_CTAR_GL_blk_F", "arifle_SPAR_03_snd_F", "arifle_Mk20C_F", "arifle_SPAR_02_khk_F", "arifle_MXC_khk_F", "Exile_Weapon_M4", "arifle_CTARS_hex_F", "arifle_SPAR_01_GL_blk_F", "arifle_SPAR_03_khk_F", "arifle_MXC_Black_F", "arifle_SPAR_01_GL_khk_F", "arifle_MXM_Black_F", "Exile_Weapon_CZ550", "arifle_CTAR_ghex_F", "arifle_SPAR_01_snd_F", "Exile_Weapon_SVD", "arifle_Mk20C_F", "Exile_Weapon_AK47"};
+		Rifles[] = {"Exile_Weapon_AKS_Gold", "arifle_Katiba_GL_F", "Exile_Weapon_AK107", "arifle_SPAR_02_snd_F", "R3F_FAMAS_F1_M203_DES", "arifle_MXC_khk_F", "arifle_MXM_khk_F", "R3F_FAMAS_F1_M203_DES", "arifle_MX_khk_F", "CUP_arifle_Mk16_CQC_FG", "R3F_FAMAS_G2", "Exile_Weapon_AK107_GL", "R3F_FAMAS_F1_M203", "R3F_FAMAS_G2_M203_DES", "Exile_Weapon_AK74", "arifle_SPAR_01_snd_F", "arifle_SPAR_01_blk_F", "R3F_FAMAS_F1_HG", "arifle_TRG21_GL_F", "arifle_SPAR_01_GL_khk_F", "arifle_Katiba_F", "arifle_CTAR_blk_F", "R3F_HK416M", "R3F_HK416M_HG_DES", "R3F_FAMAS_F1", "R3F_FAMAS_surb_HG_DES", "R3F_FAMAS_G2", "arifle_CTAR_hex_F", "R3F_FAMAS_F1_HG_DES", "arifle_CTAR_hex_F", "R3F_FAMAS_F1", "CUP_hgun_MicroUzi", "R3F_HK416M_M203_DES", "R3F_MP5SD", "Exile_Weapon_M16A4", "arifle_SPAR_02_snd_F", "arifle_SPAR_01_GL_blk_F", "Exile_Weapon_AK107", "R3F_FAMAS_surb_HG", "R3F_SIG551", "R3F_FAMAS_G2_DES", "Exile_Weapon_LeeEnfield", "Exile_Weapon_AK74", "CUP_arifle_XM8_Compact_Rail", "R3F_FAMAS_surb", "arifle_Mk20C_F", "R3F_HK416S_HG_DES", "R3F_FAMAS_G2_M203", "arifle_MX_GL_Black_F", "R3F_FAMAS_G2_M203_DES", "CUP_hgun_MicroUzi", "R3F_HK416S_HG_DES", "R3F_FAMAS_G2_HG", "R3F_FAMAS_FELIN", "arifle_MX_F", "Exile_Weapon_LeeEnfield", "R3F_FAMAS_surb_DES", "arifle_CTAR_GL_blk_F", "arifle_CTARS_blk_F", "arifle_SPAR_01_khk_F", "R3F_MP5A5", "R3F_FAMAS_G2_HG_DES", "R3F_FAMAS_FELIN", "R3F_MP5SD", "arifle_TRG20_F", "Exile_Weapon_M16A4", "CUP_arifle_XM8_Compact_Rail", "Exile_Weapon_LeeEnfield", "CUP_arifle_G36A", "R3F_FAMAS_F1_M203", "arifle_ARX_ghex_F", "arifle_SPAR_01_GL_snd_F", "arifle_MX_GL_khk_F", "arifle_CTAR_blk_F", "arifle_SPAR_01_GL_khk_F", "arifle_MXM_F", "arifle_SPAR_01_GL_snd_F", "Exile_Weapon_M16A4", "R3F_FAMAS_surb_DES", "arifle_MX_GL_F", "R3F_MP5SD", "arifle_ARX_hex_F", "arifle_Mk20C_F", "R3F_FAMAS_surb_DES", "Exile_Weapon_M4", "Exile_Weapon_LeeEnfield", "R3F_MP5A5", "arifle_ARX_blk_F", "arifle_SPAR_01_snd_F", "R3F_SIG551", "R3F_SIG551_CE", "arifle_AKS_F", "R3F_FAMAS_G2_HG_DES", "Exile_Weapon_M16A2", "R3F_FAMAS_F1_DES", "arifle_MXM_khk_F", "arifle_MXC_Black_F", "R3F_FAMAS_FELIN_DES", "R3F_FAMAS_F1_DES", "R3F_FAMAS_surb_M203_DES", "Exile_Weapon_AKS_Gold", "Exile_Weapon_DMR", "Exile_Weapon_M16A2", "arifle_SPAR_01_blk_F", "arifle_SDAR_F", "R3F_HK416M_M203_DES", "R3F_HK416S_HG_DES", "Exile_Weapon_M4", "arifle_TRG21_F", "R3F_FAMAS_surb_M203", "arifle_MX_khk_F", "arifle_MXC_Black_F", "arifle_SPAR_01_GL_blk_F", "CUP_arifle_MG36", "R3F_FAMAS_F1_HG_DES", "Exile_Weapon_AK74_GL", "arifle_MXM_Black_F", "R3F_FAMAS_G2_M203", "R3F_FAMAS_surb_HG_DES", "R3F_FAMAS_G2_HG", "R3F_SIG551_CE", "arifle_AKS_F", "arifle_MXC_F", "arifle_MXC_khk_F", "R3F_HK416S_HG", "arifle_MXM_khk_F", "R3F_FAMAS_F1", "arifle_ARX_hex_F", "arifle_ARX_ghex_F", "R3F_HK416S_HG", "arifle_SPAR_01_khk_F", "arifle_TRG21_F", "R3F_SIG551_CE", "CUP_arifle_Mk16_CQC_FG", "R3F_FAMAS_surb_HG", "R3F_HK416M_HG", "arifle_Mk20_F", "Exile_Weapon_LeeEnfield", "Exile_Weapon_LeeEnfield", "R3F_FAMAS_F1_HG", "arifle_MX_Black_F", "R3F_HK416M_M203_DES", "arifle_CTARS_ghex_F", "arifle_Mk20_GL_F", "arifle_MXC_khk_F", "R3F_FAMAS_surb_M203_DES", "R3F_MP5A5", "Exile_Weapon_LeeEnfield", "R3F_HK416M_HG", "R3F_FAMAS_FELIN_DES", "arifle_CTAR_ghex_F", "CUP_arifle_MG36", "R3F_HK416M_HG", "R3F_FAMAS_surb_HG", "arifle_MX_GL_khk_F", "arifle_ARX_blk_F", "arifle_SPAR_02_blk_F", "arifle_MX_Black_F", "R3F_HK416M", "CUP_arifle_XM8_Compact_Rail", "R3F_FAMAS_surb_HG_DES", "R3F_FAMAS_surb_M203_DES", "arifle_MX_khk_F", "R3F_FAMAS_G2_HG", "CUP_arifle_G36A", "R3F_SIG551", "CUP_arifle_MG36", "CUP_hgun_MicroUzi", "R3F_FAMAS_surb_M203", "R3F_FAMAS_G2_DES", "Exile_Weapon_LeeEnfield", "Exile_Weapon_CZ550", "R3F_FAMAS_G2_M203_DES", "Exile_Weapon_M4", "arifle_CTAR_GL_blk_F", "CUP_arifle_Mk16_CQC_FG", "arifle_CTARS_blk_F", "R3F_FAMAS_G2", "R3F_HK416M_DES", "R3F_HK416M_DES", "R3F_FAMAS_G2_M203", "R3F_FAMAS_surb_M203", "R3F_HK416M", "R3F_FAMAS_F1_HG", "arifle_Mk20_F", "R3F_FAMAS_surb", "R3F_HK416M_HG_DES", "R3F_FAMAS_G2_HG_DES", "CUP_arifle_G36A", "arifle_MXC_F", "Exile_Weapon_CZ550", "R3F_FAMAS_FELIN_DES", "arifle_SPAR_02_blk_F", "R3F_FAMAS_F1_DES", "Exile_Weapon_AKS_Gold", "Exile_Weapon_DMR", "R3F_HK416M_HG_DES", "arifle_TRG20_F", "R3F_FAMAS_surb", "R3F_FAMAS_F1_M203", "arifle_MX_GL_khk_F", "Exile_Weapon_LeeEnfield", "R3F_FAMAS_F1_HG_DES", "R3F_HK416S_HG", "arifle_SDAR_F", "arifle_SPAR_02_khk_F", "R3F_FAMAS_G2_DES", "arifle_CTARS_hex_F", "arifle_Katiba_F", "Exile_Weapon_M16A2", "arifle_SPAR_02_khk_F", "R3F_HK416M_DES", "arifle_CTARS_ghex_F", "R3F_FAMAS_F1_M203_DES", "R3F_FAMAS_FELIN", "Exile_Weapon_CZ550", "arifle_MXM_Black_F", "Exile_Weapon_LeeEnfield", "arifle_MX_F", "arifle_CTARS_hex_F", "arifle_CTAR_ghex_F"};
 
 		/*
 			Percental Item Spawn Chances of RifleAmmo:
 
-			20Rnd_556x45_UW_mag                    = 2,20%
-			30Rnd_556x45_Stanag                    = 2,20%
-			30Rnd_556x45_Stanag_green              = 2,20%
-			30Rnd_556x45_Stanag_red                = 2,20%
-			30Rnd_556x45_Stanag_Tracer_Green       = 2,20%
-			30Rnd_556x45_Stanag_Tracer_Red         = 2,20%
-			30Rnd_556x45_Stanag_Tracer_Yellow      = 2,20%
-			30Rnd_65x39_caseless_green             = 2,20%
-			30Rnd_65x39_caseless_green_mag_Tracer  = 2,20%
-			30Rnd_65x39_caseless_mag               = 2,20%
-			30Rnd_65x39_caseless_mag_Tracer        = 2,20%
-			Exile_Magazine_10Rnd_303               = 10,99%
-			Exile_Magazine_30Rnd_762x39_AK         = 2,20%
-			Exile_Magazine_30Rnd_545x39_AK         = 2,20%
-			Exile_Magazine_30Rnd_545x39_AK_Green   = 2,20%
-			Exile_Magazine_30Rnd_545x39_AK_Red     = 2,20%
-			Exile_Magazine_30Rnd_545x39_AK_White   = 2,20%
-			Exile_Magazine_30Rnd_545x39_AK_Yellow  = 2,20%
-			Exile_Magazine_20Rnd_762x51_DMR        = 1,10%
-			Exile_Magazine_20Rnd_762x51_DMR_Yellow = 1,10%
-			Exile_Magazine_20Rnd_762x51_DMR_Red    = 1,10%
-			Exile_Magazine_20Rnd_762x51_DMR_Green  = 1,10%
-			Exile_Magazine_20Rnd_762x51_DMR_White  = 1,10%
-			Exile_Magazine_5Rnd_22LR               = 2,20%
-			Exile_Magazine_10Rnd_762x54            = 2,20%
-			Exile_Magazine_10Rnd_9x39              = 2,20%
-			Exile_Magazine_20Rnd_9x39              = 2,20%
-			30Rnd_762x39_Mag_F                     = 2,20%
-			30Rnd_762x39_Mag_Green_F               = 2,20%
-			30Rnd_762x39_Mag_Tracer_F              = 2,20%
-			30Rnd_762x39_Mag_Tracer_Green_F        = 2,20%
-			30Rnd_762x39_AK47_M                    = 2,20%
-			30Rnd_545x39_Mag_F                     = 2,20%
-			30Rnd_545x39_Mag_Green_F               = 2,20%
-			30Rnd_545x39_Mag_Tracer_F              = 2,20%
-			30Rnd_545x39_Mag_Tracer_Green_F        = 2,20%
-			10Rnd_50BW_Mag_F                       = 2,20%
-			30Rnd_580x42_Mag_F                     = 2,20%
-			30Rnd_580x42_Mag_Tracer_F              = 2,20%
-			100Rnd_580x42_Mag_F                    = 2,20%
-			100Rnd_580x42_Mag_Tracer_F             = 2,20%
-			150Rnd_556x45_Drum_Mag_F               = 2,20%
-			150Rnd_556x45_Drum_Mag_Tracer_F        = 2,20%
-			20Rnd_762x51_Mag                       = 2,20%
+			20Rnd_556x45_UW_mag                    = 1,63%
+			30Rnd_556x45_Stanag                    = 1,63%
+			30Rnd_556x45_Stanag_green              = 1,63%
+			30Rnd_556x45_Stanag_red                = 1,63%
+			30Rnd_556x45_Stanag_Tracer_Green       = 1,63%
+			30Rnd_556x45_Stanag_Tracer_Red         = 1,63%
+			30Rnd_556x45_Stanag_Tracer_Yellow      = 1,63%
+			30Rnd_65x39_caseless_green             = 1,63%
+			30Rnd_65x39_caseless_green_mag_Tracer  = 1,63%
+			30Rnd_65x39_caseless_mag               = 1,63%
+			30Rnd_65x39_caseless_mag_Tracer        = 1,63%
+			Exile_Magazine_10Rnd_303               = 8,13%
+			Exile_Magazine_30Rnd_762x39_AK         = 1,63%
+			Exile_Magazine_30Rnd_545x39_AK         = 1,63%
+			Exile_Magazine_30Rnd_545x39_AK_Green   = 1,63%
+			Exile_Magazine_30Rnd_545x39_AK_Red     = 1,63%
+			Exile_Magazine_30Rnd_545x39_AK_White   = 1,63%
+			Exile_Magazine_30Rnd_545x39_AK_Yellow  = 1,63%
+			Exile_Magazine_20Rnd_762x51_DMR        = 0,81%
+			Exile_Magazine_20Rnd_762x51_DMR_Yellow = 0,81%
+			Exile_Magazine_20Rnd_762x51_DMR_Red    = 0,81%
+			Exile_Magazine_20Rnd_762x51_DMR_Green  = 0,81%
+			Exile_Magazine_20Rnd_762x51_DMR_White  = 0,81%
+			Exile_Magazine_5Rnd_22LR               = 1,63%
+			Exile_Magazine_10Rnd_762x54            = 1,63%
+			Exile_Magazine_10Rnd_9x39              = 1,63%
+			Exile_Magazine_20Rnd_9x39              = 1,63%
+			30Rnd_762x39_Mag_F                     = 1,63%
+			30Rnd_762x39_Mag_Green_F               = 1,63%
+			30Rnd_762x39_Mag_Tracer_F              = 1,63%
+			30Rnd_762x39_Mag_Tracer_Green_F        = 1,63%
+			30Rnd_762x39_AK47_M                    = 1,63%
+			30Rnd_545x39_Mag_F                     = 1,63%
+			30Rnd_545x39_Mag_Green_F               = 1,63%
+			30Rnd_545x39_Mag_Tracer_F              = 1,63%
+			30Rnd_545x39_Mag_Tracer_Green_F        = 1,63%
+			10Rnd_50BW_Mag_F                       = 1,63%
+			30Rnd_580x42_Mag_F                     = 1,63%
+			30Rnd_580x42_Mag_Tracer_F              = 1,63%
+			100Rnd_580x42_Mag_F                    = 1,63%
+			100Rnd_580x42_Mag_Tracer_F             = 1,63%
+			150Rnd_556x45_Drum_Mag_F               = 1,63%
+			150Rnd_556x45_Drum_Mag_Tracer_F        = 1,63%
+			20Rnd_762x51_Mag                       = 1,63%
+			R3F_25Rnd_556x45_FAMAS                 = 1,63%
+			R3F_25Rnd_556x45_TRACER_FAMAS          = 1,63%
+			R3F_30Rnd_556x45_FAMAS                 = 1,63%
+			R3F_30Rnd_556x45_TRACER_FAMAS          = 1,63%
+			R3F_20Rnd_762x51_HK417                 = 1,63%
+			R3F_20Rnd_762x51_TRACER_HK417          = 1,63%
+			R3F_30Rnd_556x45_HK416                 = 1,63%
+			R3F_30Rnd_556x45_TRACER_HK416          = 1,63%
+			R3F_30Rnd_556x45_SIG551                = 1,63%
+			R3F_30Rnd_556x45_TRACER_SIG551         = 1,63%
+			R3F_30Rnd_9x19_MP5                     = 1,63%
+			CUP_30Rnd_9x19_UZI                     = 1,63%
+			CUP_30Rnd_556x45_G36                   = 1,63%
+			CUP_100Rnd_556x45_BetaCMag             = 1,63%
+			CUP_20Rnd_762x51_B_SCAR                = 1,63%
+			CUP_20Rnd_762x51_FNFAL_M               = 1,63%
 		*/
-		RifleAmmo[] = {"30Rnd_762x39_Mag_F", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_545x39_Mag_F", "Exile_Magazine_30Rnd_545x39_AK", "30Rnd_762x39_Mag_Tracer_F", "Exile_Magazine_20Rnd_9x39", "30Rnd_545x39_Mag_Green_F", "30Rnd_580x42_Mag_Tracer_F", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_545x39_Mag_Tracer_Green_F", "Exile_Magazine_10Rnd_303", "30Rnd_580x42_Mag_F", "150Rnd_556x45_Drum_Mag_F", "30Rnd_556x45_Stanag_red", "30Rnd_556x45_Stanag_Tracer_Green", "20Rnd_762x51_Mag", "150Rnd_556x45_Drum_Mag_Tracer_F", "Exile_Magazine_20Rnd_762x51_DMR_Red", "30Rnd_545x39_Mag_F", "30Rnd_556x45_Stanag_Tracer_Red", "Exile_Magazine_5Rnd_22LR", "Exile_Magazine_10Rnd_303", "Exile_Magazine_30Rnd_545x39_AK_Yellow", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag", "30Rnd_545x39_Mag_Tracer_Green_F", "30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Tracer_Green_F", "Exile_Magazine_10Rnd_762x54", "Exile_Magazine_10Rnd_762x54", "30Rnd_762x39_Mag_Tracer_Green_F", "150Rnd_556x45_Drum_Mag_F", "100Rnd_580x42_Mag_F", "Exile_Magazine_20Rnd_762x51_DMR_White", "10Rnd_50BW_Mag_F", "30Rnd_762x39_AK47_M", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_556x45_Stanag_Tracer_Yellow", "Exile_Magazine_20Rnd_762x51_DMR_Green", "Exile_Magazine_10Rnd_303", "30Rnd_762x39_AK47_M", "Exile_Magazine_30Rnd_545x39_AK_Red", "20Rnd_556x45_UW_mag", "100Rnd_580x42_Mag_Tracer_F", "30Rnd_65x39_caseless_green", "Exile_Magazine_30Rnd_545x39_AK_White", "Exile_Magazine_10Rnd_303", "30Rnd_65x39_caseless_mag", "10Rnd_50BW_Mag_F", "30Rnd_65x39_caseless_mag", "Exile_Magazine_30Rnd_762x39_AK", "Exile_Magazine_10Rnd_303", "30Rnd_65x39_caseless_mag_Tracer", "100Rnd_580x42_Mag_F", "30Rnd_556x45_Stanag_Tracer_Red", "Exile_Magazine_10Rnd_9x39", "Exile_Magazine_20Rnd_9x39", "Exile_Magazine_30Rnd_545x39_AK_Green", "30Rnd_65x39_caseless_green", "100Rnd_580x42_Mag_Tracer_F", "Exile_Magazine_10Rnd_303", "Exile_Magazine_10Rnd_9x39", "30Rnd_762x39_Mag_F", "Exile_Magazine_30Rnd_545x39_AK_Yellow", "Exile_Magazine_20Rnd_762x51_DMR", "20Rnd_556x45_UW_mag", "30Rnd_65x39_caseless_mag_Tracer", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_762x39_Mag_Tracer_F", "30Rnd_556x45_Stanag_green", "Exile_Magazine_30Rnd_545x39_AK_Green", "30Rnd_580x42_Mag_F", "30Rnd_545x39_Mag_Green_F", "150Rnd_556x45_Drum_Mag_Tracer_F", "Exile_Magazine_10Rnd_303", "30Rnd_580x42_Mag_Tracer_F", "Exile_Magazine_5Rnd_22LR", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag_green", "Exile_Magazine_30Rnd_762x39_AK", "Exile_Magazine_10Rnd_303", "Exile_Magazine_10Rnd_303", "Exile_Magazine_20Rnd_762x51_DMR_Yellow", "20Rnd_762x51_Mag", "Exile_Magazine_30Rnd_545x39_AK", "30Rnd_556x45_Stanag_Tracer_Yellow", "Exile_Magazine_30Rnd_545x39_AK_Red", "30Rnd_556x45_Stanag_red", "Exile_Magazine_10Rnd_303", "Exile_Magazine_30Rnd_545x39_AK_White", "30Rnd_762x39_Mag_Green_F"};
+		RifleAmmo[] = {"CUP_20Rnd_762x51_FNFAL_M", "Exile_Magazine_10Rnd_303", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_Tracer_Red", "30Rnd_65x39_caseless_mag_Tracer", "Exile_Magazine_30Rnd_545x39_AK_Yellow", "20Rnd_556x45_UW_mag", "30Rnd_65x39_caseless_mag_Tracer", "Exile_Magazine_20Rnd_762x51_DMR_Yellow", "30Rnd_65x39_caseless_green", "10Rnd_50BW_Mag_F", "Exile_Magazine_10Rnd_9x39", "R3F_30Rnd_556x45_SIG551", "30Rnd_556x45_Stanag_green", "150Rnd_556x45_Drum_Mag_F", "Exile_Magazine_30Rnd_762x39_AK", "30Rnd_65x39_caseless_green", "R3F_20Rnd_762x51_TRACER_HK417", "R3F_30Rnd_556x45_TRACER_HK416", "R3F_30Rnd_556x45_FAMAS", "Exile_Magazine_10Rnd_762x54", "30Rnd_556x45_Stanag_red", "Exile_Magazine_30Rnd_545x39_AK_Red", "R3F_30Rnd_9x19_MP5", "30Rnd_762x39_AK47_M", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_556x45_Stanag", "Exile_Magazine_30Rnd_545x39_AK_Red", "Exile_Magazine_20Rnd_9x39", "30Rnd_762x39_AK47_M", "Exile_Magazine_10Rnd_303", "30Rnd_580x42_Mag_F", "30Rnd_556x45_Stanag_Tracer_Red", "Exile_Magazine_30Rnd_545x39_AK_Green", "CUP_20Rnd_762x51_FNFAL_M", "R3F_25Rnd_556x45_FAMAS", "Exile_Magazine_10Rnd_303", "30Rnd_545x39_Mag_F", "R3F_25Rnd_556x45_TRACER_FAMAS", "CUP_100Rnd_556x45_BetaCMag", "30Rnd_545x39_Mag_Tracer_F", "30Rnd_556x45_Stanag_Tracer_Yellow", "20Rnd_762x51_Mag", "R3F_30Rnd_556x45_TRACER_FAMAS", "Exile_Magazine_30Rnd_545x39_AK_White", "Exile_Magazine_20Rnd_762x51_DMR_White", "CUP_30Rnd_556x45_G36", "Exile_Magazine_20Rnd_9x39", "Exile_Magazine_10Rnd_303", "10Rnd_50BW_Mag_F", "30Rnd_556x45_Stanag", "30Rnd_762x39_Mag_Tracer_Green_F", "CUP_30Rnd_556x45_G36", "30Rnd_65x39_caseless_mag", "30Rnd_556x45_Stanag_Tracer_Green", "30Rnd_556x45_Stanag_red", "Exile_Magazine_10Rnd_9x39", "30Rnd_762x39_Mag_Green_F", "R3F_30Rnd_556x45_TRACER_SIG551", "30Rnd_762x39_Mag_F", "Exile_Magazine_5Rnd_22LR", "150Rnd_556x45_Drum_Mag_F", "30Rnd_762x39_Mag_Tracer_F", "150Rnd_556x45_Drum_Mag_Tracer_F", "30Rnd_545x39_Mag_Green_F", "Exile_Magazine_10Rnd_303", "R3F_25Rnd_556x45_FAMAS", "R3F_30Rnd_556x45_TRACER_HK416", "R3F_30Rnd_9x19_MP5", "30Rnd_545x39_Mag_Green_F", "30Rnd_580x42_Mag_F", "30Rnd_762x39_Mag_Tracer_Green_F", "CUP_20Rnd_762x51_B_SCAR", "Exile_Magazine_30Rnd_545x39_AK_White", "R3F_30Rnd_556x45_TRACER_SIG551", "Exile_Magazine_5Rnd_22LR", "Exile_Magazine_30Rnd_545x39_AK", "30Rnd_556x45_Stanag_green", "Exile_Magazine_30Rnd_762x39_AK", "30Rnd_580x42_Mag_Tracer_F", "30Rnd_762x39_Mag_F", "30Rnd_580x42_Mag_Tracer_F", "30Rnd_545x39_Mag_Tracer_Green_F", "30Rnd_65x39_caseless_green_mag_Tracer", "30Rnd_762x39_Mag_Tracer_F", "Exile_Magazine_10Rnd_303", "Exile_Magazine_30Rnd_545x39_AK_Yellow", "30Rnd_762x39_Mag_Green_F", "150Rnd_556x45_Drum_Mag_Tracer_F", "30Rnd_545x39_Mag_Tracer_Green_F", "Exile_Magazine_20Rnd_762x51_DMR_Green", "CUP_100Rnd_556x45_BetaCMag", "R3F_20Rnd_762x51_TRACER_HK417", "Exile_Magazine_10Rnd_303", "Exile_Magazine_30Rnd_545x39_AK", "100Rnd_580x42_Mag_Tracer_F", "20Rnd_762x51_Mag", "100Rnd_580x42_Mag_Tracer_F", "Exile_Magazine_20Rnd_762x51_DMR", "R3F_20Rnd_762x51_HK417", "Exile_Magazine_10Rnd_303", "30Rnd_65x39_caseless_mag", "Exile_Magazine_30Rnd_545x39_AK_Green", "Exile_Magazine_20Rnd_762x51_DMR_Red", "R3F_30Rnd_556x45_FAMAS", "CUP_20Rnd_762x51_B_SCAR", "R3F_30Rnd_556x45_HK416", "R3F_20Rnd_762x51_HK417", "CUP_30Rnd_9x19_UZI", "30Rnd_65x39_caseless_green_mag_Tracer", "R3F_30Rnd_556x45_HK416", "Exile_Magazine_10Rnd_762x54", "30Rnd_556x45_Stanag_Tracer_Yellow", "20Rnd_556x45_UW_mag", "Exile_Magazine_10Rnd_303", "Exile_Magazine_10Rnd_303", "30Rnd_545x39_Mag_F", "R3F_30Rnd_556x45_SIG551", "R3F_25Rnd_556x45_TRACER_FAMAS", "CUP_30Rnd_9x19_UZI", "100Rnd_580x42_Mag_F", "100Rnd_580x42_Mag_F", "R3F_30Rnd_556x45_TRACER_FAMAS"};
 
 		/*
 			Percental Item Spawn Chances of RifleAttachments:
@@ -3282,80 +3323,78 @@ class CfgExileLootServer
 			optic_ERCO_snd_F         = 3,39%
 			optic_NVS                = 1,69%
 		*/
-		RifleAttachments[] = {"muzzle_snds_65_TI_blk_F", "optic_Holosight_khk_F", "muzzle_snds_58_wdm_F", "muzzle_snds_H_snd_F", "muzzle_snds_H_MG_blk_F", "muzzle_snds_H_khk_F", "optic_Hamr_khk_F", "optic_ERCO_blk_F", "muzzle_snds_58_blk_F", "muzzle_snds_H", "muzzle_snds_H", "optic_Arco_ghex_F", "optic_ERCO_khk_F", "muzzle_snds_m_khk_F", "optic_Arco_blk_F", "optic_ERCO_snd_F", "optic_MRCO", "optic_Hamr", "muzzle_snds_65_TI_hex_F", "muzzle_snds_58_blk_F", "optic_DMS_ghex_F", "optic_Holosight_khk_F", "muzzle_snds_m_khk_F", "muzzle_snds_65_TI_blk_F", "acc_flashlight", "acc_pointer_IR", "optic_DMS", "optic_Arco_blk_F", "muzzle_snds_65_TI_hex_F", "muzzle_snds_H_snd_F", "optic_Arco", "muzzle_snds_H_MG_khk_F", "optic_DMS", "muzzle_snds_65_TI_ghex_F", "optic_ERCO_snd_F", "muzzle_snds_m_snd_F", "optic_Arco", "muzzle_snds_M", "muzzle_snds_M", "muzzle_snds_m_snd_F", "optic_Holosight_blk_F", "optic_Holosight_blk_F", "optic_Arco_ghex_F", "muzzle_snds_65_TI_ghex_F", "optic_MRCO", "muzzle_snds_58_wdm_F", "optic_Hamr_khk_F", "acc_flashlight", "optic_Holosight", "optic_Holosight", "muzzle_snds_H_MG_blk_F", "acc_pointer_IR", "optic_Hamr", "optic_DMS_ghex_F", "optic_ERCO_blk_F", "optic_ERCO_khk_F", "muzzle_snds_H_khk_F", "optic_NVS", "muzzle_snds_H_MG_khk_F"};
+		RifleAttachments[] = {"muzzle_snds_m_khk_F", "muzzle_snds_58_wdm_F", "optic_Hamr", "optic_Holosight_blk_F", "optic_Arco", "optic_Arco_ghex_F", "optic_Arco", "optic_DMS", "optic_Arco_blk_F", "optic_ERCO_khk_F", "acc_pointer_IR", "optic_Holosight_khk_F", "optic_Hamr_khk_F", "muzzle_snds_58_wdm_F", "optic_ERCO_snd_F", "muzzle_snds_65_TI_ghex_F", "optic_Holosight_blk_F", "muzzle_snds_M", "muzzle_snds_H_khk_F", "muzzle_snds_m_khk_F", "muzzle_snds_H_MG_blk_F", "optic_DMS", "muzzle_snds_65_TI_hex_F", "optic_ERCO_khk_F", "muzzle_snds_H_snd_F", "acc_flashlight", "optic_ERCO_blk_F", "optic_MRCO", "muzzle_snds_65_TI_hex_F", "optic_Arco_ghex_F", "optic_NVS", "optic_MRCO", "muzzle_snds_58_blk_F", "optic_ERCO_blk_F", "muzzle_snds_H_MG_blk_F", "optic_Holosight_khk_F", "muzzle_snds_58_blk_F", "muzzle_snds_H_MG_khk_F", "muzzle_snds_H_khk_F", "muzzle_snds_H", "optic_DMS_ghex_F", "muzzle_snds_H_snd_F", "optic_Arco_blk_F", "optic_Hamr_khk_F", "optic_Holosight", "optic_ERCO_snd_F", "optic_DMS_ghex_F", "muzzle_snds_65_TI_blk_F", "optic_Hamr", "optic_Holosight", "muzzle_snds_m_snd_F", "muzzle_snds_65_TI_ghex_F", "muzzle_snds_H_MG_khk_F", "muzzle_snds_m_snd_F", "acc_flashlight", "muzzle_snds_65_TI_blk_F", "muzzle_snds_M", "acc_pointer_IR", "muzzle_snds_H"};
 
 		/*
 			Percental Item Spawn Chances of LMG:
 
-			arifle_MX_SW_Black_F = 12,50%
-			arifle_MX_SW_F       = 12,50%
-			LMG_Mk200_F          = 12,50%
-			LMG_Zafir_F          = 12,50%
-			Exile_Weapon_RPK     = 12,50%
-			Exile_Weapon_PK      = 12,50%
-			Exile_Weapon_PKP     = 12,50%
-			LMG_03_F             = 12,50%
+			arifle_MX_SW_Black_F = 14,29%
+			arifle_MX_SW_F       = 14,29%
+			LMG_Mk200_F          = 14,29%
+			Exile_Weapon_PKP     = 14,29%
+			LMG_03_F             = 14,29%
+			R3F_Minimi           = 14,29%
+			R3F_Minimi_HG        = 14,29%
 		*/
-		LMG[] = {"arifle_MX_SW_F", "Exile_Weapon_PKP", "arifle_MX_SW_Black_F", "LMG_Zafir_F", "Exile_Weapon_RPK", "Exile_Weapon_PK", "LMG_03_F", "LMG_Mk200_F"};
+		LMG[] = {"arifle_MX_SW_F", "LMG_Mk200_F", "R3F_Minimi", "Exile_Weapon_PKP", "R3F_Minimi_HG", "arifle_MX_SW_Black_F", "LMG_03_F"};
 
 		/*
 			Percental Item Spawn Chances of LMGAmmo:
 
-			100Rnd_65x39_caseless_mag             = 7,69%
-			100Rnd_65x39_caseless_mag_Tracer      = 11,54%
-			150Rnd_762x54_Box                     = 11,54%
-			150Rnd_762x54_Box_Tracer              = 3,85%
-			130Rnd_338_Mag                        = 19,23%
-			150Rnd_93x64_Mag                      = 19,23%
-			Exile_Magazine_45Rnd_545x39_RPK_Green = 3,85%
-			Exile_Magazine_75Rnd_545x39_RPK_Green = 3,85%
-			Exile_Magazine_100Rnd_762x54_PK_Green = 3,85%
-			200Rnd_556x45_Box_F                   = 3,85%
-			200Rnd_556x45_Box_Red_F               = 3,85%
-			200Rnd_556x45_Box_Tracer_F            = 3,85%
-			200Rnd_556x45_Box_Tracer_Red_F        = 3,85%
+			100Rnd_65x39_caseless_mag             = 6,90%
+			100Rnd_65x39_caseless_mag_Tracer      = 10,34%
+			150Rnd_762x54_Box                     = 10,34%
+			150Rnd_762x54_Box_Tracer              = 3,45%
+			130Rnd_338_Mag                        = 17,24%
+			150Rnd_93x64_Mag                      = 17,24%
+			Exile_Magazine_45Rnd_545x39_RPK_Green = 3,45%
+			Exile_Magazine_75Rnd_545x39_RPK_Green = 3,45%
+			Exile_Magazine_100Rnd_762x54_PK_Green = 3,45%
+			200Rnd_556x45_Box_F                   = 3,45%
+			200Rnd_556x45_Box_Red_F               = 3,45%
+			200Rnd_556x45_Box_Tracer_F            = 3,45%
+			200Rnd_556x45_Box_Tracer_Red_F        = 3,45%
+			R3F_100Rnd_762x51_MINIMI              = 3,45%
+			R3F_200Rnd_556x45_MINIMI              = 6,90%
 		*/
-		LMGAmmo[] = {"150Rnd_93x64_Mag", "200Rnd_556x45_Box_Red_F", "Exile_Magazine_75Rnd_545x39_RPK_Green", "130Rnd_338_Mag", "Exile_Magazine_45Rnd_545x39_RPK_Green", "200Rnd_556x45_Box_F", "Exile_Magazine_100Rnd_762x54_PK_Green", "100Rnd_65x39_caseless_mag_Tracer", "130Rnd_338_Mag", "150Rnd_762x54_Box", "150Rnd_93x64_Mag", "130Rnd_338_Mag", "130Rnd_338_Mag", "150Rnd_93x64_Mag", "200Rnd_556x45_Box_Tracer_F", "150Rnd_762x54_Box", "150Rnd_93x64_Mag", "150Rnd_762x54_Box_Tracer", "150Rnd_762x54_Box", "200Rnd_556x45_Box_Tracer_Red_F", "100Rnd_65x39_caseless_mag", "100Rnd_65x39_caseless_mag", "100Rnd_65x39_caseless_mag_Tracer", "100Rnd_65x39_caseless_mag_Tracer", "150Rnd_93x64_Mag", "130Rnd_338_Mag"};
+		LMGAmmo[] = {"Exile_Magazine_45Rnd_545x39_RPK_Green", "Exile_Magazine_75Rnd_545x39_RPK_Green", "100Rnd_65x39_caseless_mag", "150Rnd_93x64_Mag", "130Rnd_338_Mag", "R3F_100Rnd_762x51_MINIMI", "R3F_200Rnd_556x45_MINIMI", "150Rnd_762x54_Box", "R3F_200Rnd_556x45_MINIMI", "130Rnd_338_Mag", "150Rnd_93x64_Mag", "130Rnd_338_Mag", "130Rnd_338_Mag", "150Rnd_762x54_Box_Tracer", "150Rnd_762x54_Box", "200Rnd_556x45_Box_Tracer_F", "130Rnd_338_Mag", "100Rnd_65x39_caseless_mag", "200Rnd_556x45_Box_Tracer_Red_F", "200Rnd_556x45_Box_F", "100Rnd_65x39_caseless_mag_Tracer", "150Rnd_93x64_Mag", "Exile_Magazine_100Rnd_762x54_PK_Green", "100Rnd_65x39_caseless_mag_Tracer", "150Rnd_93x64_Mag", "150Rnd_93x64_Mag", "200Rnd_556x45_Box_Red_F", "150Rnd_762x54_Box", "100Rnd_65x39_caseless_mag_Tracer"};
 
 		/*
 			Percental Item Spawn Chances of Snipers:
 
-			srifle_DMR_01_F      = 9,09%
-			srifle_EBR_F         = 9,09%
-			srifle_GM6_F         = 9,09%
-			srifle_LRR_F         = 9,09%
-			srifle_LRR_tna_F     = 9,09%
-			srifle_GM6_ghex_F    = 9,09%
-			srifle_DMR_07_blk_F  = 9,09%
-			srifle_DMR_07_hex_F  = 9,09%
-			srifle_DMR_07_ghex_F = 9,09%
-			Exile_Weapon_m107    = 9,09%
-			Exile_Weapon_ksvk    = 9,09%
+			srifle_DMR_07_blk_F  = 33,33%
+			srifle_DMR_07_hex_F  = 33,33%
+			srifle_DMR_07_ghex_F = 33,33%
 		*/
-		Snipers[] = {"Exile_Weapon_m107", "srifle_GM6_F", "Exile_Weapon_ksvk", "srifle_GM6_ghex_F", "srifle_LRR_F", "srifle_DMR_07_ghex_F", "srifle_LRR_tna_F", "srifle_EBR_F", "srifle_DMR_07_blk_F", "srifle_DMR_07_hex_F", "srifle_DMR_01_F"};
+		Snipers[] = {"srifle_DMR_07_ghex_F", "srifle_DMR_07_hex_F", "srifle_DMR_07_blk_F"};
 
 		/*
 			Percental Item Spawn Chances of SniperAmmo:
 
-			Exile_Magazine_5Rnd_127x108_APDS_Bullet_Cam_Mag      = 0,74%
-			Exile_Magazine_5Rnd_127x108_APDS_KSVK_Bullet_Cam_Mag = 0,74%
-			Exile_Magazine_5Rnd_127x108_KSVK_Bullet_Cam_Mag      = 1,48%
-			Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag           = 1,48%
-			Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag      = 2,22%
-			Exile_Magazine_7Rnd_408_Bullet_Cam_Mag               = 2,22%
-			Exile_Magazine_10Rnd_338_Bullet_Cam_Mag              = 3,70%
-			Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag     = 3,70%
-			Exile_Magazine_5Rnd_127x108_APDS_KSVK                = 5,93%
-			5Rnd_127x108_APDS_Mag                                = 5,93%
-			5Rnd_127x108_Mag                                     = 7,41%
-			Exile_Magazine_10Rnd_127x99_m107                     = 7,41%
-			Exile_Magazine_5Rnd_127x108_KSVK                     = 7,41%
-			7Rnd_408_Mag                                         = 7,41%
-			10Rnd_762x54_Mag                                     = 12,59%
-			20Rnd_762x51_Mag                                     = 14,07%
-			20Rnd_650x39_Cased_Mag_F                             = 15,56%
+			Exile_Magazine_5Rnd_127x108_APDS_Bullet_Cam_Mag      = 0,71%
+			Exile_Magazine_5Rnd_127x108_APDS_KSVK_Bullet_Cam_Mag = 0,71%
+			Exile_Magazine_5Rnd_127x108_KSVK_Bullet_Cam_Mag      = 1,43%
+			Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag           = 1,43%
+			Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag      = 2,14%
+			Exile_Magazine_7Rnd_408_Bullet_Cam_Mag               = 2,14%
+			Exile_Magazine_10Rnd_338_Bullet_Cam_Mag              = 3,57%
+			Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag     = 3,57%
+			Exile_Magazine_5Rnd_127x108_APDS_KSVK                = 5,71%
+			5Rnd_127x108_APDS_Mag                                = 5,71%
+			5Rnd_127x108_Mag                                     = 7,14%
+			Exile_Magazine_10Rnd_127x99_m107                     = 7,14%
+			Exile_Magazine_5Rnd_127x108_KSVK                     = 7,14%
+			7Rnd_408_Mag                                         = 7,14%
+			10Rnd_762x54_Mag                                     = 12,14%
+			20Rnd_762x51_Mag                                     = 13,57%
+			20Rnd_650x39_Cased_Mag_F                             = 15,00%
+			R3F_7Rnd_127x99_PGM                                  = 0,71%
+			R3F_7Rnd_127x99_PEI_PGM                              = 0,71%
+			R3F_10Rnd_127x99_M107                                = 0,71%
+			R3F_10Rnd_127x99_PEI_M107                            = 0,71%
+			R3F_5Rnd_127x99_PEI_TAC50                            = 0,71%
 		*/
-		SniperAmmo[] = {"10Rnd_762x54_Mag", "5Rnd_127x108_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "20Rnd_650x39_Cased_Mag_F", "5Rnd_127x108_APDS_Mag", "7Rnd_408_Mag", "20Rnd_650x39_Cased_Mag_F", "20Rnd_650x39_Cased_Mag_F", "10Rnd_762x54_Mag", "5Rnd_127x108_APDS_Mag", "10Rnd_762x54_Mag", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_127x99_m107", "7Rnd_408_Mag", "20Rnd_650x39_Cased_Mag_F", "10Rnd_762x54_Mag", "20Rnd_762x51_Mag", "20Rnd_650x39_Cased_Mag_F", "10Rnd_762x54_Mag", "7Rnd_408_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag", "5Rnd_127x108_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag", "20Rnd_762x51_Mag", "10Rnd_762x54_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "Exile_Magazine_10Rnd_127x99_m107", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "10Rnd_762x54_Mag", "5Rnd_127x108_Mag", "Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "7Rnd_408_Mag", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag", "20Rnd_650x39_Cased_Mag_F", "10Rnd_762x54_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "10Rnd_762x54_Mag", "20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "20Rnd_650x39_Cased_Mag_F", "20Rnd_762x51_Mag", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_5Rnd_127x108_KSVK", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "Exile_Magazine_10Rnd_127x99_m107", "Exile_Magazine_10Rnd_127x99_m107", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag", "5Rnd_127x108_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_10Rnd_127x99_m107", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_10Rnd_127x99_m107", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "7Rnd_408_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "5Rnd_127x108_Mag", "5Rnd_127x108_APDS_Mag", "7Rnd_408_Mag", "20Rnd_762x51_Mag", "5Rnd_127x108_APDS_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "10Rnd_762x54_Mag", "Exile_Magazine_10Rnd_127x99_m107", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "7Rnd_408_Mag", "Exile_Magazine_7Rnd_408_Bullet_Cam_Mag", "10Rnd_762x54_Mag", "Exile_Magazine_5Rnd_127x108_KSVK_Bullet_Cam_Mag", "7Rnd_408_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "20Rnd_650x39_Cased_Mag_F", "20Rnd_650x39_Cased_Mag_F", "20Rnd_650x39_Cased_Mag_F", "5Rnd_127x108_Mag", "20Rnd_762x51_Mag", "10Rnd_762x54_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "10Rnd_762x54_Mag", "5Rnd_127x108_Mag", "Exile_Magazine_7Rnd_408_Bullet_Cam_Mag", "20Rnd_762x51_Mag", "10Rnd_762x54_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "10Rnd_762x54_Mag", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_127x99_m107", "5Rnd_127x108_Mag", "20Rnd_650x39_Cased_Mag_F", "7Rnd_408_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_5Rnd_127x108_KSVK", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "20Rnd_762x51_Mag", "5Rnd_127x108_APDS_Mag", "20Rnd_762x51_Mag", "20Rnd_650x39_Cased_Mag_F", "20Rnd_762x51_Mag", "5Rnd_127x108_APDS_Mag", "20Rnd_650x39_Cased_Mag_F", "7Rnd_408_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_127x99_m107", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "20Rnd_762x51_Mag", "5Rnd_127x108_Mag", "Exile_Magazine_5Rnd_127x108_KSVK_Bullet_Cam_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "Exile_Magazine_10Rnd_127x99_m107", "Exile_Magazine_7Rnd_408_Bullet_Cam_Mag", "Exile_Magazine_5Rnd_127x108_APDS_Bullet_Cam_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "20Rnd_762x51_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_Mag", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "5Rnd_127x108_APDS_Mag", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag"};
+		SniperAmmo[] = {"Exile_Magazine_10Rnd_127x99_m107", "20Rnd_762x51_Mag", "5Rnd_127x108_Mag", "Exile_Magazine_10Rnd_127x99_m107", "10Rnd_762x54_Mag", "Exile_Magazine_10Rnd_127x99_m107", "20Rnd_762x51_Mag", "5Rnd_127x108_APDS_Mag", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "R3F_7Rnd_127x99_PEI_PGM", "20Rnd_762x51_Mag", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag", "7Rnd_408_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "5Rnd_127x108_Mag", "5Rnd_127x108_Mag", "Exile_Magazine_10Rnd_127x99_m107", "20Rnd_762x51_Mag", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag", "5Rnd_127x108_APDS_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_7Rnd_408_Bullet_Cam_Mag", "5Rnd_127x108_APDS_Mag", "20Rnd_650x39_Cased_Mag_F", "7Rnd_408_Mag", "R3F_5Rnd_127x99_PEI_TAC50", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "7Rnd_408_Mag", "20Rnd_762x51_Mag", "20Rnd_650x39_Cased_Mag_F", "20Rnd_762x51_Mag", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_5Rnd_127x108_Bullet_Cam_Mag", "7Rnd_408_Mag", "10Rnd_762x54_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "Exile_Magazine_5Rnd_127x108_KSVK", "10Rnd_762x54_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "20Rnd_650x39_Cased_Mag_F", "5Rnd_127x108_APDS_Mag", "7Rnd_408_Mag", "Exile_Magazine_10Rnd_127x99_m107", "20Rnd_650x39_Cased_Mag_F", "20Rnd_650x39_Cased_Mag_F", "R3F_10Rnd_127x99_PEI_M107", "Exile_Magazine_7Rnd_408_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "20Rnd_762x51_Mag", "Exile_Magazine_10Rnd_127x99_m107", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "10Rnd_762x54_Mag", "20Rnd_650x39_Cased_Mag_F", "7Rnd_408_Mag", "Exile_Magazine_5Rnd_127x108_KSVK_Bullet_Cam_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "20Rnd_650x39_Cased_Mag_F", "7Rnd_408_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_5Rnd_127x108_KSVK", "20Rnd_762x51_Mag", "7Rnd_408_Mag", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag", "7Rnd_408_Mag", "20Rnd_762x51_Mag", "20Rnd_650x39_Cased_Mag_F", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "20Rnd_762x51_Mag", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "R3F_7Rnd_127x99_PGM", "5Rnd_127x108_Mag", "Exile_Magazine_10Rnd_127x99_m107_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_93x64_DMR_05_Bullet_Cam_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_APDS_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "Exile_Magazine_10Rnd_127x99_m107", "10Rnd_762x54_Mag", "20Rnd_650x39_Cased_Mag_F", "Exile_Magazine_10Rnd_127x99_m107", "5Rnd_127x108_APDS_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "Exile_Magazine_10Rnd_127x99_m107", "20Rnd_650x39_Cased_Mag_F", "20Rnd_650x39_Cased_Mag_F", "20Rnd_650x39_Cased_Mag_F", "5Rnd_127x108_Mag", "Exile_Magazine_5Rnd_127x108_KSVK", "Exile_Magazine_5Rnd_127x108_KSVK", "20Rnd_762x51_Mag", "10Rnd_762x54_Mag", "Exile_Magazine_10Rnd_338_Bullet_Cam_Mag", "5Rnd_127x108_Mag", "10Rnd_762x54_Mag", "20Rnd_650x39_Cased_Mag_F", "5Rnd_127x108_Mag", "5Rnd_127x108_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "5Rnd_127x108_APDS_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "Exile_Magazine_5Rnd_127x108_KSVK_Bullet_Cam_Mag", "20Rnd_650x39_Cased_Mag_F", "10Rnd_762x54_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "5Rnd_127x108_APDS_Mag", "Exile_Magazine_7Rnd_408_Bullet_Cam_Mag", "10Rnd_762x54_Mag", "7Rnd_408_Mag", "5Rnd_127x108_Mag", "20Rnd_762x51_Mag", "R3F_10Rnd_127x99_M107", "5Rnd_127x108_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK", "20Rnd_650x39_Cased_Mag_F", "5Rnd_127x108_APDS_Mag", "Exile_Magazine_5Rnd_127x108_APDS_KSVK_Bullet_Cam_Mag", "20Rnd_762x51_Mag", "Exile_Magazine_10Rnd_127x99_m107", "10Rnd_762x54_Mag"};
 
 		/*
 			Percental Item Spawn Chances of SniperAttachments:
@@ -3370,27 +3409,13 @@ class CfgExileLootServer
 			optic_SOS_khk_F     = 11,11%
 			optic_DMS           = 11,11%
 		*/
-		SniperAttachments[] = {"muzzle_snds_B_khk_F", "muzzle_snds_B", "optic_DMS", "optic_LRPS_ghex_F", "optic_SOS_khk_F", "optic_LRPS_tna_F", "optic_SOS", "optic_LRPS", "muzzle_snds_B_snd_F"};
+		SniperAttachments[] = {"muzzle_snds_B", "optic_LRPS_ghex_F", "optic_SOS", "optic_SOS_khk_F", "optic_LRPS", "optic_LRPS_tna_F", "muzzle_snds_B_snd_F", "muzzle_snds_B_khk_F", "optic_DMS"};
 
 		/*
 			Percental Item Spawn Chances of DLCRifles:
 
-			srifle_DMR_03_F          = 4,05%
-			srifle_DMR_03_khaki_F    = 4,05%
-			srifle_DMR_03_tan_F      = 4,05%
-			srifle_DMR_03_woodland_F = 4,05%
-			srifle_DMR_06_camo_F     = 4,05%
-			srifle_DMR_06_olive_F    = 4,05%
-			srifle_DMR_02_camo_F     = 8,11%
-			srifle_DMR_02_F          = 8,11%
-			srifle_DMR_02_sniper_F   = 8,11%
-			srifle_DMR_04_F          = 9,46%
-			srifle_DMR_04_Tan_F      = 9,46%
-			srifle_DMR_05_blk_F      = 10,81%
-			srifle_DMR_05_hex_F      = 10,81%
-			srifle_DMR_05_tan_F      = 10,81%
 		*/
-		DLCRifles[] = {"srifle_DMR_03_woodland_F", "srifle_DMR_04_Tan_F", "srifle_DMR_05_blk_F", "srifle_DMR_05_hex_F", "srifle_DMR_02_camo_F", "srifle_DMR_04_F", "srifle_DMR_02_camo_F", "srifle_DMR_02_sniper_F", "srifle_DMR_05_tan_F", "srifle_DMR_05_hex_F", "srifle_DMR_04_Tan_F", "srifle_DMR_05_tan_F", "srifle_DMR_05_tan_F", "srifle_DMR_04_Tan_F", "srifle_DMR_06_olive_F", "srifle_DMR_05_blk_F", "srifle_DMR_02_F", "srifle_DMR_05_hex_F", "srifle_DMR_04_Tan_F", "srifle_DMR_05_tan_F", "srifle_DMR_06_camo_F", "srifle_DMR_03_khaki_F", "srifle_DMR_05_tan_F", "srifle_DMR_04_F", "srifle_DMR_02_camo_F", "srifle_DMR_05_tan_F", "srifle_DMR_03_woodland_F", "srifle_DMR_05_blk_F", "srifle_DMR_05_tan_F", "srifle_DMR_04_F", "srifle_DMR_06_olive_F", "srifle_DMR_05_hex_F", "srifle_DMR_06_camo_F", "srifle_DMR_03_tan_F", "srifle_DMR_05_blk_F", "srifle_DMR_04_F", "srifle_DMR_02_F", "srifle_DMR_05_blk_F", "srifle_DMR_03_khaki_F", "srifle_DMR_03_tan_F", "srifle_DMR_03_khaki_F", "srifle_DMR_02_F", "srifle_DMR_02_camo_F", "srifle_DMR_06_camo_F", "srifle_DMR_03_F", "srifle_DMR_05_hex_F", "srifle_DMR_05_hex_F", "srifle_DMR_04_F", "srifle_DMR_05_blk_F", "srifle_DMR_04_Tan_F", "srifle_DMR_02_F", "srifle_DMR_02_sniper_F", "srifle_DMR_04_F", "srifle_DMR_02_camo_F", "srifle_DMR_04_Tan_F", "srifle_DMR_02_sniper_F", "srifle_DMR_02_F", "srifle_DMR_05_blk_F", "srifle_DMR_05_blk_F", "srifle_DMR_02_sniper_F", "srifle_DMR_04_Tan_F", "srifle_DMR_02_sniper_F", "srifle_DMR_02_sniper_F", "srifle_DMR_06_olive_F", "srifle_DMR_03_F", "srifle_DMR_03_tan_F", "srifle_DMR_05_hex_F", "srifle_DMR_05_hex_F", "srifle_DMR_02_F", "srifle_DMR_03_woodland_F", "srifle_DMR_02_camo_F", "srifle_DMR_05_tan_F", "srifle_DMR_04_F", "srifle_DMR_03_F"};
+		DLCRifles[] = {};
 
 		/*
 			Percental Item Spawn Chances of DLCAmmo:
@@ -3400,7 +3425,7 @@ class CfgExileLootServer
 			10Rnd_338_Mag          = 30,00%
 			10Rnd_93x64_DMR_05_Mag = 30,00%
 		*/
-		DLCAmmo[] = {"20Rnd_762x51_Mag", "10Rnd_93x64_DMR_05_Mag", "10Rnd_338_Mag", "10Rnd_338_Mag", "20Rnd_762x51_Mag", "10Rnd_127x54_Mag", "10Rnd_127x54_Mag", "10Rnd_93x64_DMR_05_Mag", "10Rnd_93x64_DMR_05_Mag", "10Rnd_338_Mag"};
+		DLCAmmo[] = {"10Rnd_93x64_DMR_05_Mag", "10Rnd_127x54_Mag", "10Rnd_93x64_DMR_05_Mag", "10Rnd_338_Mag", "20Rnd_762x51_Mag", "10Rnd_127x54_Mag", "10Rnd_93x64_DMR_05_Mag", "10Rnd_338_Mag", "20Rnd_762x51_Mag", "10Rnd_338_Mag"};
 
 		/*
 			Percental Item Spawn Chances of DLCOptics:
@@ -3413,7 +3438,7 @@ class CfgExileLootServer
 			optic_KHS_old = 14,29%
 			optic_KHS_tan = 14,29%
 		*/
-		DLCOptics[] = {"optic_AMS_khk", "optic_AMS_snd", "optic_KHS_old", "optic_KHS_blk", "optic_KHS_tan", "optic_KHS_hex", "optic_AMS"};
+		DLCOptics[] = {"optic_AMS_snd", "optic_KHS_tan", "optic_KHS_hex", "optic_AMS_khk", "optic_KHS_blk", "optic_KHS_old", "optic_AMS"};
 
 		/*
 			Percental Item Spawn Chances of DLCSupressor:
@@ -3425,7 +3450,7 @@ class CfgExileLootServer
 			muzzle_snds_93mmg_tan = 16,67%
 			muzzle_snds_B         = 16,67%
 		*/
-		DLCSupressor[] = {"muzzle_snds_338_sand", "muzzle_snds_93mmg", "muzzle_snds_338_green", "muzzle_snds_338_black", "muzzle_snds_B", "muzzle_snds_93mmg_tan"};
+		DLCSupressor[] = {"muzzle_snds_338_black", "muzzle_snds_93mmg", "muzzle_snds_B", "muzzle_snds_93mmg_tan", "muzzle_snds_338_sand", "muzzle_snds_338_green"};
 
 		/*
 			Percental Item Spawn Chances of EpicWeapons:
@@ -3436,7 +3461,7 @@ class CfgExileLootServer
 			MMG_02_camo_F  = 20,00%
 			MMG_02_sand_F  = 20,00%
 		*/
-		EpicWeapons[] = {"MMG_02_camo_F", "MMG_02_black_F", "MMG_01_hex_F", "MMG_01_tan_F", "MMG_02_sand_F"};
+		EpicWeapons[] = {"MMG_02_camo_F", "MMG_01_hex_F", "MMG_02_black_F", "MMG_02_sand_F", "MMG_01_tan_F"};
 
 		/*
 			Percental Item Spawn Chances of Bipods:
@@ -3451,7 +3476,7 @@ class CfgExileLootServer
 			bipod_01_F_blk = 11,11%
 			bipod_01_F_khk = 11,11%
 		*/
-		Bipods[] = {"bipod_03_F_oli", "bipod_01_F_khk", "bipod_03_F_blk", "bipod_02_F_hex", "bipod_01_F_blk", "bipod_02_F_blk", "bipod_02_F_tan", "bipod_01_F_mtp", "bipod_01_F_snd"};
+		Bipods[] = {"bipod_03_F_oli", "bipod_01_F_khk", "bipod_02_F_blk", "bipod_02_F_hex", "bipod_01_F_mtp", "bipod_03_F_blk", "bipod_02_F_tan", "bipod_01_F_snd", "bipod_01_F_blk"};
 
 		/*
 			Percental Item Spawn Chances of HEGrenades:
@@ -3459,7 +3484,7 @@ class CfgExileLootServer
 			3Rnd_HE_Grenade_shell = 25,00%
 			1Rnd_HE_Grenade_shell = 75,00%
 		*/
-		HEGrenades[] = {"1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "3Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell"};
+		HEGrenades[] = {"1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "3Rnd_HE_Grenade_shell"};
 
 		/*
 			Percental Item Spawn Chances of UGLFlares:
@@ -3473,7 +3498,7 @@ class CfgExileLootServer
 			UGL_FlareWhite_F       = 18,75%
 			UGL_FlareYellow_F      = 18,75%
 		*/
-		UGLFlares[] = {"3Rnd_UGL_FlareGreen_F", "UGL_FlareWhite_F", "3Rnd_UGL_FlareWhite_F", "UGL_FlareRed_F", "UGL_FlareRed_F", "UGL_FlareGreen_F", "UGL_FlareYellow_F", "UGL_FlareYellow_F", "3Rnd_UGL_FlareRed_F", "UGL_FlareGreen_F", "UGL_FlareWhite_F", "UGL_FlareWhite_F", "UGL_FlareRed_F", "3Rnd_UGL_FlareYellow_F", "UGL_FlareGreen_F", "UGL_FlareYellow_F"};
+		UGLFlares[] = {"UGL_FlareRed_F", "UGL_FlareRed_F", "3Rnd_UGL_FlareYellow_F", "UGL_FlareWhite_F", "UGL_FlareYellow_F", "3Rnd_UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareGreen_F", "UGL_FlareWhite_F", "UGL_FlareWhite_F", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "3Rnd_UGL_FlareWhite_F", "3Rnd_UGL_FlareRed_F", "UGL_FlareYellow_F"};
 
 		/*
 			Percental Item Spawn Chances of UGLSmokes:
@@ -3493,7 +3518,7 @@ class CfgExileLootServer
 			1Rnd_SmokeRed_Grenade_shell    = 10,71%
 			1Rnd_SmokeYellow_Grenade_shell = 10,71%
 		*/
-		UGLSmokes[] = {"1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "3Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "3Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "3Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "3Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "3Rnd_SmokePurple_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "3Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "3Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell"};
+		UGLSmokes[] = {"3Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "3Rnd_SmokeBlue_Grenade_shell", "3Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "3Rnd_SmokeYellow_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "3Rnd_SmokePurple_Grenade_shell", "3Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "3Rnd_Smoke_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell"};
 
 		/*
 			Percental Item Spawn Chances of HandGrenades:
@@ -3501,7 +3526,7 @@ class CfgExileLootServer
 			HandGrenade = 50,00%
 			MiniGrenade = 50,00%
 		*/
-		HandGrenades[] = {"HandGrenade", "MiniGrenade"};
+		HandGrenades[] = {"MiniGrenade", "HandGrenade"};
 
 		/*
 			Percental Item Spawn Chances of Explosives:
@@ -3514,7 +3539,7 @@ class CfgExileLootServer
 			IEDLandSmall_Remote_Mag     = 15,79%
 			IEDUrbanSmall_Remote_Mag    = 15,79%
 		*/
-		Explosives[] = {"APERSTripMine_Wire_Mag", "IEDLandSmall_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "APERSTripMine_Wire_Mag", "APERSTripMine_Wire_Mag", "APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "DemoCharge_Remote_Mag", "APERSMine_Range_Mag", "APERSMine_Range_Mag", "DemoCharge_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "APERSBoundingMine_Range_Mag", "SatchelCharge_Remote_Mag", "IEDLandSmall_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "APERSBoundingMine_Range_Mag", "DemoCharge_Remote_Mag", "IEDLandSmall_Remote_Mag"};
+		Explosives[] = {"DemoCharge_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "APERSTripMine_Wire_Mag", "APERSTripMine_Wire_Mag", "SatchelCharge_Remote_Mag", "IEDLandSmall_Remote_Mag", "APERSTripMine_Wire_Mag", "IEDLandSmall_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "APERSBoundingMine_Range_Mag", "APERSBoundingMine_Range_Mag", "DemoCharge_Remote_Mag", "APERSMine_Range_Mag", "IEDUrbanSmall_Remote_Mag", "APERSMine_Range_Mag", "DemoCharge_Remote_Mag", "APERSMine_Range_Mag", "IEDLandSmall_Remote_Mag", "APERSBoundingMine_Range_Mag"};
 
 		/*
 			Percental Item Spawn Chances of CivilianItems:
@@ -3527,7 +3552,7 @@ class CfgExileLootServer
 			ItemMap                = 19,44%
 			Exile_Item_Heatpack    = 22,22%
 		*/
-		CivilianItems[] = {"ItemGPS", "ItemRadio", "Exile_Item_Heatpack", "ItemRadio", "ItemWatch", "Exile_Item_Heatpack", "ItemGPS", "Exile_Item_Heatpack", "ItemRadio", "ItemWatch", "ItemRadio", "Binocular", "ItemMap", "ItemWatch", "ItemMap", "ItemRadio", "Binocular", "ItemMap", "ItemMap", "ItemWatch", "ItemMap", "Binocular", "ItemMap", "Exile_Item_Heatpack", "ItemGPS", "ItemWatch", "Exile_Item_Heatpack", "ItemGPS", "Exile_Item_Heatpack", "Exile_Item_Heatpack", "ItemMap", "Exile_Item_Heatpack", "ItemRadio", "Exile_Item_MobilePhone", "ItemWatch", "Binocular"};
+		CivilianItems[] = {"ItemMap", "ItemRadio", "ItemGPS", "Exile_Item_Heatpack", "ItemWatch", "Exile_Item_MobilePhone", "ItemWatch", "ItemGPS", "ItemMap", "ItemMap", "ItemGPS", "ItemRadio", "Exile_Item_Heatpack", "Exile_Item_Heatpack", "ItemWatch", "Binocular", "Exile_Item_Heatpack", "Binocular", "Exile_Item_Heatpack", "Exile_Item_Heatpack", "ItemRadio", "ItemGPS", "ItemMap", "ItemWatch", "ItemWatch", "ItemRadio", "Binocular", "ItemMap", "Exile_Item_Heatpack", "Binocular", "ItemRadio", "Exile_Item_Heatpack", "ItemMap", "ItemWatch", "ItemMap", "ItemRadio"};
 
 		/*
 			Percental Item Spawn Chances of CivilianClothing:
@@ -3562,7 +3587,7 @@ class CfgExileLootServer
 			U_C_Scientist            = 5,26%
 			U_Rangemaster            = 5,26%
 		*/
-		CivilianClothing[] = {"U_C_Man_casual_4_F", "U_C_Poor_1", "U_C_Man_casual_6_F", "U_C_Poor_1", "U_C_Poloshirt_blue", "U_C_man_sport_1_F", "U_C_Man_casual_2_F", "U_C_Poor_shorts_1", "U_I_C_Soldier_Bandit_1_F", "U_C_HunterBody_grn", "U_Rangemaster", "U_C_Poor_2", "U_C_Scientist", "U_Rangemaster", "U_Rangemaster", "U_C_man_sport_1_F", "U_I_C_Soldier_Bandit_3_F", "U_Rangemaster", "U_C_Poloshirt_salmon", "U_C_Man_casual_6_F", "U_I_C_Soldier_Bandit_5_F", "U_C_Poor_2", "U_C_Journalist", "U_C_Man_casual_2_F", "U_I_C_Soldier_Bandit_1_F", "U_C_Poor_1", "U_I_C_Soldier_Bandit_4_F", "U_C_HunterBody_grn", "U_OrestesBody", "U_I_C_Soldier_Bandit_3_F", "U_C_man_sport_1_F", "U_C_Scientist", "U_C_man_sport_3_F", "U_C_Journalist", "U_C_Poor_2", "U_C_Poor_1", "U_C_Scientist", "U_I_C_Soldier_Bandit_3_F", "U_C_Journalist", "U_C_Poloshirt_salmon", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_stripped", "U_I_C_Soldier_Bandit_3_F", "U_Rangemaster", "U_C_HunterBody_grn", "U_C_Poloshirt_burgundy", "U_C_Poor_1", "U_C_Man_casual_3_F", "U_C_Poloshirt_blue", "U_C_Journalist", "U_C_Poor_shorts_1", "U_C_Poor_shorts_1", "U_I_C_Soldier_Bandit_2_F", "U_C_Poloshirt_salmon", "U_C_Poor_2", "U_C_Poloshirt_blue", "U_C_man_sport_2_F", "U_C_Poloshirt_burgundy", "U_C_HunterBody_grn", "U_C_Poloshirt_salmon", "U_C_Man_casual_4_F", "U_C_Poloshirt_stripped", "U_C_Scientist", "U_C_Man_casual_1_F", "U_C_Man_casual_2_F", "U_C_Poor_2", "U_I_C_Soldier_Bandit_4_F", "U_I_C_Soldier_Bandit_2_F", "U_C_Man_casual_1_F", "U_C_Poor_shorts_1", "U_C_Journalist", "U_C_Poloshirt_blue", "U_C_Man_casual_4_F", "U_C_Poloshirt_tricolour", "U_C_Scientist", "U_C_Man_casual_6_F", "U_C_Poor_1", "U_C_Poloshirt_tricolour", "U_C_man_sport_2_F", "U_Rangemaster", "U_C_Poor_2", "U_C_HunterBody_grn", "U_C_Poloshirt_burgundy", "U_C_Scientist", "U_C_Poloshirt_tricolour", "U_C_Man_casual_5_F", "U_C_HunterBody_grn", "U_C_man_sport_1_F", "U_Rangemaster", "U_I_C_Soldier_Bandit_1_F", "U_Rangemaster", "U_C_Journalist", "U_C_Poloshirt_blue", "U_C_Poor_1", "U_C_Poor_2", "U_C_man_sport_3_F", "U_C_Poor_shorts_1", "U_C_Poor_2", "U_NikosAgedBody", "U_C_Poloshirt_burgundy", "U_C_Journalist", "U_C_Man_casual_5_F", "U_C_man_sport_3_F", "U_C_Poor_1", "U_C_Scientist", "U_C_Poloshirt_stripped", "U_C_Poloshirt_stripped", "U_C_HunterBody_grn", "U_C_Poor_shorts_1", "U_C_HunterBody_grn", "U_C_Man_casual_3_F", "U_C_Poloshirt_burgundy", "U_C_Poloshirt_salmon", "U_C_Man_casual_2_F", "U_C_Man_casual_3_F", "U_C_man_sport_3_F", "U_I_C_Soldier_Bandit_2_F", "U_C_man_sport_1_F", "U_C_Poor_shorts_1", "U_C_Man_casual_4_F", "U_C_Journalist", "U_C_Scientist", "U_C_Man_casual_2_F", "U_I_C_Soldier_Bandit_4_F", "U_C_Poloshirt_blue", "U_C_Scientist", "U_I_C_Soldier_Bandit_3_F", "U_C_Man_casual_5_F", "U_C_Man_casual_3_F", "U_I_C_Soldier_Bandit_2_F", "U_I_C_Soldier_Bandit_5_F", "U_C_Journalist", "U_NikosBody", "U_Rangemaster", "U_C_Poor_shorts_1", "U_I_C_Soldier_Bandit_1_F", "U_C_Poloshirt_blue", "U_C_Poloshirt_salmon", "U_I_C_Soldier_Bandit_5_F", "U_C_Poloshirt_stripped", "U_C_Poor_shorts_1", "U_C_Man_casual_4_F", "U_I_C_Soldier_Bandit_4_F", "U_C_Man_casual_1_F", "U_C_Man_casual_3_F", "U_C_Poloshirt_burgundy", "U_I_C_Soldier_Bandit_5_F", "U_C_man_sport_2_F", "U_I_C_Soldier_Bandit_2_F", "U_C_Man_casual_6_F", "U_C_Poor_1", "U_C_Poloshirt_tricolour", "U_C_HunterBody_grn", "U_C_Man_casual_1_F", "U_C_Man_casual_6_F", "U_C_Poloshirt_tricolour", "U_C_Poloshirt_stripped", "U_C_Man_casual_1_F", "U_C_Poloshirt_tricolour", "U_C_Man_casual_5_F", "U_C_Poloshirt_stripped", "U_I_C_Soldier_Bandit_5_F", "U_C_man_sport_2_F", "U_C_Poor_2", "U_C_Man_casual_5_F", "U_C_man_sport_2_F", "U_C_man_sport_3_F", "U_I_C_Soldier_Bandit_1_F", "U_I_C_Soldier_Bandit_4_F", "U_C_Poloshirt_salmon", "U_C_Poloshirt_tricolour"};
+		CivilianClothing[] = {"U_C_Poloshirt_burgundy", "U_C_Poloshirt_stripped", "U_I_C_Soldier_Bandit_1_F", "U_C_Poloshirt_blue", "U_C_man_sport_3_F", "U_C_Poloshirt_stripped", "U_C_man_sport_3_F", "U_C_Poloshirt_burgundy", "U_C_Poor_2", "U_C_Poloshirt_tricolour", "U_C_Man_casual_5_F", "U_Rangemaster", "U_Rangemaster", "U_C_Scientist", "U_C_Poloshirt_burgundy", "U_C_Scientist", "U_C_Poloshirt_salmon", "U_C_HunterBody_grn", "U_I_C_Soldier_Bandit_2_F", "U_C_Poor_shorts_1", "U_C_Journalist", "U_C_man_sport_1_F", "U_C_Poloshirt_salmon", "U_C_Poloshirt_salmon", "U_C_Poloshirt_tricolour", "U_C_Poloshirt_blue", "U_C_Man_casual_3_F", "U_Rangemaster", "U_C_man_sport_2_F", "U_I_C_Soldier_Bandit_1_F", "U_C_Poor_shorts_1", "U_C_man_sport_2_F", "U_I_C_Soldier_Bandit_5_F", "U_C_Poor_1", "U_C_Poor_1", "U_C_Man_casual_3_F", "U_C_Scientist", "U_I_C_Soldier_Bandit_2_F", "U_I_C_Soldier_Bandit_3_F", "U_C_Poor_1", "U_C_Poloshirt_stripped", "U_C_Poor_2", "U_C_Poloshirt_salmon", "U_C_man_sport_2_F", "U_C_Poloshirt_burgundy", "U_C_Man_casual_6_F", "U_C_Scientist", "U_C_Man_casual_5_F", "U_C_Poloshirt_burgundy", "U_Rangemaster", "U_C_Poor_2", "U_C_Poloshirt_blue", "U_C_Man_casual_1_F", "U_C_Poloshirt_tricolour", "U_C_man_sport_1_F", "U_C_HunterBody_grn", "U_C_Poor_shorts_1", "U_C_Poloshirt_tricolour", "U_C_man_sport_1_F", "U_C_Man_casual_1_F", "U_C_Journalist", "U_C_Poor_2", "U_C_Scientist", "U_I_C_Soldier_Bandit_1_F", "U_C_HunterBody_grn", "U_I_C_Soldier_Bandit_2_F", "U_C_Poor_1", "U_C_HunterBody_grn", "U_I_C_Soldier_Bandit_4_F", "U_C_Man_casual_4_F", "U_C_Man_casual_2_F", "U_C_Poloshirt_salmon", "U_C_Poor_shorts_1", "U_C_Man_casual_3_F", "U_C_Poor_1", "U_C_Man_casual_4_F", "U_I_C_Soldier_Bandit_3_F", "U_C_Scientist", "U_C_Journalist", "U_C_Scientist", "U_Rangemaster", "U_I_C_Soldier_Bandit_5_F", "U_I_C_Soldier_Bandit_5_F", "U_C_Poor_1", "U_I_C_Soldier_Bandit_3_F", "U_C_man_sport_3_F", "U_C_Poloshirt_burgundy", "U_C_Man_casual_2_F", "U_C_man_sport_3_F", "U_OrestesBody", "U_I_C_Soldier_Bandit_3_F", "U_C_Poloshirt_blue", "U_C_Poor_1", "U_C_Man_casual_4_F", "U_C_Poor_2", "U_C_HunterBody_grn", "U_C_Man_casual_6_F", "U_C_Poloshirt_blue", "U_I_C_Soldier_Bandit_4_F", "U_C_Man_casual_5_F", "U_I_C_Soldier_Bandit_1_F", "U_C_Scientist", "U_C_HunterBody_grn", "U_C_Poloshirt_blue", "U_C_Poloshirt_salmon", "U_C_man_sport_1_F", "U_C_Journalist", "U_C_Man_casual_1_F", "U_C_Poor_shorts_1", "U_C_Man_casual_2_F", "U_C_Poor_shorts_1", "U_C_Man_casual_6_F", "U_C_Scientist", "U_C_Journalist", "U_C_man_sport_1_F", "U_C_Man_casual_3_F", "U_C_HunterBody_grn", "U_I_C_Soldier_Bandit_4_F", "U_I_C_Soldier_Bandit_5_F", "U_C_Poor_2", "U_C_Poor_2", "U_C_Journalist", "U_C_Man_casual_5_F", "U_C_man_sport_2_F", "U_C_Poor_2", "U_C_Man_casual_1_F", "U_C_Man_casual_5_F", "U_C_Journalist", "U_C_Poor_2", "U_C_Poloshirt_blue", "U_I_C_Soldier_Bandit_1_F", "U_C_Man_casual_1_F", "U_NikosBody", "U_C_Poloshirt_stripped", "U_C_Man_casual_6_F", "U_C_Man_casual_2_F", "U_NikosAgedBody", "U_C_Poloshirt_tricolour", "U_I_C_Soldier_Bandit_5_F", "U_C_man_sport_2_F", "U_Rangemaster", "U_C_Man_casual_3_F", "U_C_Poor_shorts_1", "U_C_Poloshirt_stripped", "U_I_C_Soldier_Bandit_2_F", "U_C_HunterBody_grn", "U_C_Poor_1", "U_C_Poor_shorts_1", "U_Rangemaster", "U_C_Man_casual_4_F", "U_C_Man_casual_4_F", "U_C_Poloshirt_tricolour", "U_C_Journalist", "U_Rangemaster", "U_C_Poor_shorts_1", "U_C_Journalist", "U_C_HunterBody_grn", "U_I_C_Soldier_Bandit_4_F", "U_Rangemaster", "U_I_C_Soldier_Bandit_4_F", "U_C_Poloshirt_stripped", "U_I_C_Soldier_Bandit_2_F", "U_C_Man_casual_6_F", "U_C_Poloshirt_tricolour", "U_C_Poor_1", "U_C_Poloshirt_stripped", "U_C_Man_casual_2_F", "U_C_Poloshirt_burgundy", "U_I_C_Soldier_Bandit_3_F", "U_C_Poloshirt_salmon", "U_C_man_sport_3_F"};
 
 		/*
 			Percental Item Spawn Chances of CivilianBackpacks:
@@ -3583,7 +3608,7 @@ class CfgExileLootServer
 			B_OutdoorPack_tan   = 6,67%
 			B_OutdoorPack_blk   = 6,67%
 		*/
-		CivilianBackpacks[] = {"B_AssaultPack_dgtl", "B_OutdoorPack_blk", "B_Kitbag_cbr", "B_OutdoorPack_blu", "B_Kitbag_sgg", "B_AssaultPack_mcamo", "B_AssaultPack_rgr", "B_HuntingBackpack", "B_AssaultPack_blk", "B_AssaultPack_tna_F", "B_AssaultPack_cbr", "B_AssaultPack_sgg", "B_AssaultPack_khk", "B_OutdoorPack_tan", "B_Kitbag_mcamo"};
+		CivilianBackpacks[] = {"B_AssaultPack_cbr", "B_AssaultPack_tna_F", "B_OutdoorPack_blu", "B_OutdoorPack_tan", "B_AssaultPack_dgtl", "B_OutdoorPack_blk", "B_AssaultPack_khk", "B_AssaultPack_blk", "B_Kitbag_sgg", "B_AssaultPack_mcamo", "B_Kitbag_cbr", "B_HuntingBackpack", "B_AssaultPack_rgr", "B_AssaultPack_sgg", "B_Kitbag_mcamo"};
 
 		/*
 			Percental Item Spawn Chances of CivilianVests:
@@ -3592,7 +3617,7 @@ class CfgExileLootServer
 			V_TacVest_blk_POLICE = 25,00%
 			V_Rangemaster_belt   = 50,00%
 		*/
-		CivilianVests[] = {"V_Rangemaster_belt", "V_Rangemaster_belt", "V_Press_F", "V_TacVest_blk_POLICE"};
+		CivilianVests[] = {"V_Rangemaster_belt", "V_Press_F", "V_Rangemaster_belt", "V_TacVest_blk_POLICE"};
 
 		/*
 			Percental Item Spawn Chances of CivilianHeadgear:
@@ -3616,7 +3641,7 @@ class CfgExileLootServer
 			H_StrawHat         = 5,56%
 			H_StrawHat_dark    = 5,56%
 		*/
-		CivilianHeadgear[] = {"H_Hat_checker", "H_Cap_oli", "H_Cap_blk", "H_Hat_tan", "H_Hat_blue", "H_Cap_tan", "H_StrawHat", "H_Cap_press", "H_Cap_grn", "H_Cap_headphones", "H_StrawHat_dark", "H_Beret_blk_POLICE", "H_Cap_blu", "H_Hat_grey", "H_Cap_red", "H_Bandanna_surfer", "H_Hat_brown", "H_Cap_blk_Raven"};
+		CivilianHeadgear[] = {"H_Cap_press", "H_Cap_headphones", "H_Beret_blk_POLICE", "H_Cap_red", "H_Cap_blk", "H_Cap_grn", "H_Hat_tan", "H_Cap_blk_Raven", "H_Hat_grey", "H_StrawHat_dark", "H_StrawHat", "H_Hat_checker", "H_Cap_blu", "H_Cap_tan", "H_Bandanna_surfer", "H_Cap_oli", "H_Hat_brown", "H_Hat_blue"};
 
 		/*
 			Percental Item Spawn Chances of GuerillaItems:
@@ -3629,7 +3654,7 @@ class CfgExileLootServer
 			O_NVGoggles_hex_F  = 6,25%
 			O_NVGoggles_urb_F  = 6,25%
 		*/
-		GuerillaItems[] = {"ItemCompass", "O_NVGoggles_hex_F", "NVGoggles", "ItemCompass", "NVGoggles_tna_F", "ItemCompass", "ItemCompass", "O_NVGoggles_ghex_F", "ItemCompass", "O_NVGoggles_urb_F", "Rangefinder", "ItemCompass", "ItemCompass", "ItemCompass", "ItemCompass", "ItemCompass"};
+		GuerillaItems[] = {"O_NVGoggles_ghex_F", "O_NVGoggles_urb_F", "NVGoggles", "ItemCompass", "ItemCompass", "ItemCompass", "NVGoggles_tna_F", "ItemCompass", "ItemCompass", "ItemCompass", "ItemCompass", "ItemCompass", "ItemCompass", "O_NVGoggles_hex_F", "Rangefinder", "ItemCompass"};
 
 		/*
 			Percental Item Spawn Chances of GuerillaClothing:
@@ -3649,7 +3674,7 @@ class CfgExileLootServer
 			U_IG_Guerilla2_2         = 10,53%
 			U_IG_Guerilla2_3         = 10,53%
 		*/
-		GuerillaClothing[] = {"U_IG_Guerilla2_2", "U_IG_Guerilla1_1", "U_IG_Guerilla3_2", "U_IG_Guerilla2_2", "U_I_C_Soldier_Para_4_F", "U_IG_leader", "U_IG_leader", "U_IG_Guerilla3_1", "U_I_C_Soldier_Camo_F", "U_I_C_Soldier_Para_5_F", "U_I_C_Soldier_Para_3_F", "U_I_C_Soldier_Camo_F", "U_IG_Guerilla3_1", "U_IG_Guerilla2_1", "U_IG_Guerilla3_1", "U_I_C_Soldier_Para_2_F", "U_IG_Guerilla2_1", "U_I_C_Soldier_Para_2_F", "U_IG_Guerilla3_1", "U_IG_Guerilla3_2", "U_I_C_Soldier_Para_2_F", "U_IG_Guerilla2_1", "U_IG_Guerilla2_3", "U_I_C_Soldier_Para_5_F", "U_IG_Guerilla3_2", "U_I_C_Soldier_Para_3_F", "U_IG_Guerilla3_2", "U_I_C_Soldier_Para_1_F", "U_I_C_Soldier_Para_1_F", "U_I_C_Soldier_Para_3_F", "U_I_C_Soldier_Para_4_F", "U_IG_Guerilla2_3", "U_IG_Guerilla2_2", "U_IG_Guerilla2_1", "U_I_G_resistanceLeader_F", "U_IG_Guerilla2_3", "U_I_C_Soldier_Para_1_F", "U_IG_Guerilla2_2", "U_IG_Guerilla2_1", "U_IG_Guerilla1_1", "U_I_C_Soldier_Para_4_F", "U_IG_Guerilla2_2", "U_IG_Guerilla1_1", "U_I_C_Soldier_Camo_F", "U_IG_Guerilla3_2", "U_IG_Guerilla2_3", "U_IG_Guerilla1_1", "U_IG_leader", "U_IG_Guerilla2_3", "U_IG_Guerilla1_1", "U_IG_Guerilla2_3", "U_IG_Guerilla2_1", "U_IG_Guerilla3_1", "U_IG_leader", "U_IG_Guerilla2_2", "U_IG_Guerilla1_1", "U_I_C_Soldier_Para_5_F"};
+		GuerillaClothing[] = {"U_IG_Guerilla2_1", "U_IG_leader", "U_I_C_Soldier_Camo_F", "U_I_C_Soldier_Para_4_F", "U_I_C_Soldier_Para_1_F", "U_IG_leader", "U_I_C_Soldier_Para_1_F", "U_IG_Guerilla2_2", "U_IG_Guerilla2_1", "U_IG_Guerilla2_3", "U_I_G_resistanceLeader_F", "U_I_C_Soldier_Para_2_F", "U_IG_Guerilla2_3", "U_IG_Guerilla2_2", "U_IG_Guerilla1_1", "U_IG_Guerilla3_1", "U_I_C_Soldier_Camo_F", "U_IG_leader", "U_IG_Guerilla2_1", "U_I_C_Soldier_Para_4_F", "U_IG_Guerilla2_3", "U_IG_Guerilla3_1", "U_IG_Guerilla2_3", "U_IG_Guerilla3_1", "U_IG_Guerilla2_3", "U_IG_leader", "U_IG_Guerilla2_2", "U_IG_Guerilla1_1", "U_IG_Guerilla3_2", "U_I_C_Soldier_Para_3_F", "U_I_C_Soldier_Camo_F", "U_IG_Guerilla1_1", "U_IG_Guerilla1_1", "U_I_C_Soldier_Para_5_F", "U_I_C_Soldier_Para_2_F", "U_IG_Guerilla3_1", "U_I_C_Soldier_Para_3_F", "U_IG_Guerilla2_1", "U_IG_Guerilla2_1", "U_IG_Guerilla2_3", "U_IG_Guerilla3_2", "U_IG_Guerilla1_1", "U_I_C_Soldier_Para_1_F", "U_IG_Guerilla2_2", "U_IG_Guerilla1_1", "U_IG_Guerilla3_2", "U_IG_Guerilla2_2", "U_IG_Guerilla3_1", "U_IG_Guerilla2_1", "U_I_C_Soldier_Para_5_F", "U_I_C_Soldier_Para_5_F", "U_I_C_Soldier_Para_3_F", "U_IG_Guerilla3_2", "U_IG_Guerilla2_2", "U_IG_Guerilla3_2", "U_I_C_Soldier_Para_4_F", "U_I_C_Soldier_Para_2_F"};
 
 		/*
 			Percental Item Spawn Chances of GuerillaBackpacks:
@@ -3676,7 +3701,7 @@ class CfgExileLootServer
 			B_FieldPack_ocamo          = 9,09%
 			B_FieldPack_oucamo         = 9,09%
 		*/
-		GuerillaBackpacks[] = {"B_FieldPack_blk", "B_ViperLightHarness_base_F", "B_ViperLightHarness_base_F", "B_FieldPack_ocamo", "B_ViperLightHarness_ghex_F", "B_ViperLightHarness_khk_F", "B_ViperLightHarness_oli_F", "B_FieldPack_ocamo", "B_FieldPack_cbr", "B_FieldPack_ocamo", "B_ViperHarness_blk_F", "B_ViperLightHarness_blk_F", "B_FieldPack_cbr", "B_FieldPack_cbr", "B_ViperHarness_oli_F", "B_ViperLightHarness_oli_F", "B_FieldPack_blk", "B_ViperLightHarness_hex_F", "B_FieldPack_cbr", "B_ViperHarness_ghex_F", "B_FieldPack_ghex_F", "B_FieldPack_cbr", "B_Bergen_mcamo", "B_ViperHarness_hex_F", "B_Bergen_rgr", "B_ViperHarness_base_F", "B_ViperLightHarness_oli_F", "B_FieldPack_oucamo", "B_ViperLightHarness_hex_F", "B_ViperHarness_ghex_F", "B_ViperHarness_base_F", "B_ViperHarness_khk_F", "B_FieldPack_blk", "B_FieldPack_oucamo", "B_ViperHarness_hex_F", "B_ViperLightHarness_blk_F", "B_FieldPack_ocamo", "B_ViperLightHarness_blk_F", "B_ViperHarness_khk_F", "B_ViperLightHarness_ghex_F", "B_Bergen_sgg", "B_FieldPack_oucamo", "B_ViperLightHarness_khk_F", "B_FieldPack_blk", "B_ViperLightHarness_hex_F", "B_ViperLightHarness_base_F", "B_ViperLightHarness_khk_F", "B_ViperHarness_blk_F", "B_ViperLightHarness_ghex_F", "B_Bergen_blk", "B_ViperHarness_oli_F", "B_FieldPack_oucamo", "B_FieldPack_oucamo", "B_FieldPack_ocamo", "B_FieldPack_blk"};
+		GuerillaBackpacks[] = {"B_FieldPack_blk", "B_ViperHarness_ghex_F", "B_ViperLightHarness_base_F", "B_FieldPack_ocamo", "B_ViperHarness_ghex_F", "B_ViperLightHarness_oli_F", "B_FieldPack_oucamo", "B_ViperLightHarness_oli_F", "B_FieldPack_ghex_F", "B_FieldPack_ocamo", "B_ViperHarness_hex_F", "B_FieldPack_ocamo", "B_FieldPack_oucamo", "B_ViperLightHarness_ghex_F", "B_ViperLightHarness_khk_F", "B_ViperLightHarness_hex_F", "B_FieldPack_cbr", "B_ViperLightHarness_hex_F", "B_ViperLightHarness_oli_F", "B_ViperLightHarness_khk_F", "B_ViperHarness_hex_F", "B_FieldPack_ocamo", "B_FieldPack_cbr", "B_ViperLightHarness_hex_F", "B_FieldPack_blk", "B_FieldPack_oucamo", "B_FieldPack_ocamo", "B_ViperHarness_khk_F", "B_Bergen_rgr", "B_ViperHarness_base_F", "B_FieldPack_blk", "B_FieldPack_cbr", "B_ViperLightHarness_khk_F", "B_ViperLightHarness_blk_F", "B_ViperLightHarness_base_F", "B_ViperLightHarness_blk_F", "B_FieldPack_cbr", "B_ViperHarness_khk_F", "B_ViperLightHarness_ghex_F", "B_FieldPack_cbr", "B_FieldPack_oucamo", "B_ViperLightHarness_ghex_F", "B_ViperLightHarness_blk_F", "B_ViperHarness_oli_F", "B_ViperHarness_blk_F", "B_FieldPack_blk", "B_ViperHarness_blk_F", "B_ViperLightHarness_base_F", "B_ViperHarness_oli_F", "B_FieldPack_oucamo", "B_ViperHarness_base_F", "B_Bergen_blk", "B_FieldPack_blk", "B_Bergen_sgg", "B_Bergen_mcamo"};
 
 		/*
 			Percental Item Spawn Chances of GuerillaVests:
@@ -3698,7 +3723,7 @@ class CfgExileLootServer
 			V_HarnessOSpec_brn       = 6,45%
 			V_HarnessOSpec_gry       = 6,45%
 		*/
-		GuerillaVests[] = {"V_Chestrig_blk", "V_HarnessOGL_brn", "V_Chestrig_blk", "V_Chestrig_rgr", "V_BandollierB_cbr", "V_HarnessO_gry", "V_BandollierB_rgr", "V_Chestrig_oli", "V_BandollierB_cbr", "V_Chestrig_rgr", "V_HarnessO_brn", "V_I_G_resistanceLeader_F", "V_BandollierB_khk", "V_HarnessOSpec_brn", "V_HarnessO_gry", "V_HarnessOSpec_gry", "V_HarnessOGL_gry", "V_HarnessO_brn", "V_Chestrig_oli", "V_BandollierB_blk", "V_BandollierB_khk", "V_BandollierB_oli", "V_Chestrig_khk", "V_HarnessOSpec_gry", "V_BandollierB_blk", "V_HarnessOGL_gry", "V_HarnessOSpec_brn", "V_BandollierB_oli", "V_Chestrig_khk", "V_HarnessOGL_brn", "V_BandollierB_rgr"};
+		GuerillaVests[] = {"V_Chestrig_khk", "V_Chestrig_oli", "V_BandollierB_rgr", "V_HarnessO_brn", "V_HarnessOGL_gry", "V_BandollierB_cbr", "V_BandollierB_rgr", "V_HarnessOGL_brn", "V_BandollierB_blk", "V_HarnessO_gry", "V_BandollierB_blk", "V_HarnessOSpec_brn", "V_Chestrig_blk", "V_HarnessOSpec_gry", "V_HarnessOGL_gry", "V_HarnessOSpec_gry", "V_I_G_resistanceLeader_F", "V_Chestrig_rgr", "V_BandollierB_oli", "V_BandollierB_oli", "V_Chestrig_rgr", "V_BandollierB_khk", "V_Chestrig_oli", "V_HarnessO_brn", "V_HarnessO_gry", "V_HarnessOGL_brn", "V_Chestrig_khk", "V_BandollierB_khk", "V_BandollierB_cbr", "V_Chestrig_blk", "V_HarnessOSpec_brn"};
 
 		/*
 			Percental Item Spawn Chances of GuerillaHeadgear:
@@ -3753,52 +3778,75 @@ class CfgExileLootServer
 			H_Booniehat_mcamo         = 3,28%
 			H_Booniehat_tan           = 3,28%
 		*/
-		GuerillaHeadgear[] = {"H_Cap_tan_specops_US", "H_Cap_khaki_specops_UK", "H_Beret_brn_SF", "H_Bandanna_camo", "H_Booniehat_mcamo", "H_Watchcap_camo", "H_Bandanna_sgg", "H_Booniehat_dirty", "H_Booniehat_dgtl", "H_Booniehat_dgtl", "H_Cap_brn_SPECOPS", "H_Booniehat_khk_hs", "H_Bandanna_cbr", "H_Booniehat_khk", "H_Bandanna_khk", "H_Shemag_olive", "H_Shemag_tan", "H_Beret_grn", "H_ShemagOpen_tan", "H_Booniehat_tna_F", "H_Booniehat_grn", "H_ShemagOpen_khk", "H_MilCap_ghex_F", "H_Watchcap_khk", "H_Shemag_olive_hs", "H_Bandanna_cbr", "H_Booniehat_tan", "H_Booniehat_indp", "H_Booniehat_khk_hs", "H_Bandanna_khk", "H_Shemag_tan", "H_Bandanna_mcamo", "H_Shemag_olive_hs", "Exile_Headgear_GasMask", "H_Cap_khaki_specops_UK", "H_Cap_tan_specops_US", "H_Cap_blk_Syndikat_F", "H_Booniehat_dirty", "H_Cap_blk_Syndikat_F", "H_Watchcap_blk", "H_Beret_ocamo", "H_Bandanna_sgg", "H_Booniehat_dirty", "H_Watchcap_khk", "H_Bandanna_khk", "H_MilCap_gen_F", "H_Booniehat_indp", "H_Bandanna_mcamo", "H_Booniehat_khk", "H_MilCap_gen_F", "H_Watchcap_sgg", "H_Watchcap_blk", "H_Cap_brn_SPECOPS", "H_Watchcap_sgg", "H_MilCap_ghex_F", "H_Bandanna_khk_hs", "H_Cap_tan_specops_US", "H_Booniehat_dirty", "H_FakeHeadgear_Syndikat_F", "H_Cap_khaki_specops_UK", "H_Bandanna_gry", "H_Beret_Colonel", "H_Booniehat_tan", "H_Cap_grn_Syndikat_F", "H_Watchcap_camo", "H_Beret_red", "H_Hat_camo", "H_Cap_grn_Syndikat_F", "H_Beret_blk", "H_Bandanna_mcamo", "H_Bandanna_cbr", "H_Booniehat_khk", "H_Booniehat_khk_hs", "H_Booniehat_mcamo", "Exile_Headgear_GasMask", "H_Bandanna_khk_hs", "H_Hat_camo", "H_Booniehat_grn", "H_MilCap_tna_F", "H_FakeHeadgear_Syndikat_F", "H_BandMask_blk", "H_Booniehat_indp", "H_Shemag_khk", "H_Cap_brn_SPECOPS", "H_Watchcap_blk", "H_Booniehat_indp", "H_Booniehat_khk_hs", "H_Shemag_olive", "H_Booniehat_tan", "Exile_Headgear_GasMask", "H_Bandanna_gry", "H_Booniehat_mcamo", "H_Booniehat_tan", "H_Bandanna_camo", "H_Cap_oli_Syndikat_F", "H_TurbanO_blk", "H_Booniehat_tna_F", "H_Booniehat_grn", "H_Booniehat_dgtl", "H_MilCap_tna_F", "H_BandMask_blk", "H_TurbanO_blk", "H_Booniehat_grn", "H_BandMask_blk", "H_Shemag_khk", "H_Watchcap_khk", "H_Bandanna_khk_hs", "H_Booniehat_dgtl", "H_Cap_oli_Syndikat_F", "H_Booniehat_mcamo", "H_Cap_tan_Syndikat_F", "H_Hat_camo", "H_Cap_tan_Syndikat_F", "H_ShemagOpen_tan", "Exile_Headgear_GasMask", "H_Beret_02", "H_Bandanna_gry", "H_ShemagOpen_khk", "H_Booniehat_khk", "H_Bandanna_sgg", "H_Bandanna_camo", "H_Beret_grn_SF"};
+		GuerillaHeadgear[] = {"H_Beret_red", "H_Bandanna_gry", "H_Booniehat_dirty", "H_TurbanO_blk", "H_Cap_khaki_specops_UK", "H_BandMask_blk", "H_Cap_brn_SPECOPS", "H_Bandanna_khk", "H_Cap_tan_Syndikat_F", "H_Booniehat_tan", "H_Booniehat_dgtl", "H_Beret_grn_SF", "H_Bandanna_sgg", "H_Bandanna_mcamo", "H_Beret_02", "H_Bandanna_cbr", "H_Shemag_tan", "H_Booniehat_khk", "H_Cap_tan_specops_US", "H_Bandanna_camo", "H_Beret_blk", "H_Booniehat_dgtl", "H_Watchcap_khk", "H_Beret_Colonel", "H_Beret_ocamo", "H_Cap_khaki_specops_UK", "H_MilCap_gen_F", "H_Watchcap_camo", "H_Cap_grn_Syndikat_F", "H_Booniehat_tna_F", "H_Bandanna_cbr", "H_Booniehat_tan", "H_Watchcap_khk", "H_Watchcap_blk", "H_Booniehat_grn", "H_Booniehat_khk_hs", "H_Booniehat_indp", "H_Cap_oli_Syndikat_F", "H_Cap_brn_SPECOPS", "Exile_Headgear_GasMask", "H_Cap_blk_Syndikat_F", "H_Booniehat_dirty", "H_Watchcap_camo", "H_Bandanna_sgg", "H_Booniehat_indp", "H_FakeHeadgear_Syndikat_F", "H_Shemag_khk", "H_ShemagOpen_khk", "H_ShemagOpen_tan", "H_ShemagOpen_khk", "H_TurbanO_blk", "H_Booniehat_dgtl", "H_Bandanna_mcamo", "H_BandMask_blk", "H_Watchcap_khk", "H_ShemagOpen_tan", "H_Cap_tan_specops_US", "H_Bandanna_sgg", "H_MilCap_ghex_F", "H_Shemag_tan", "H_Watchcap_blk", "H_Booniehat_tan", "H_Bandanna_khk_hs", "H_Booniehat_khk", "H_Booniehat_tna_F", "H_Cap_grn_Syndikat_F", "H_Bandanna_mcamo", "H_MilCap_ghex_F", "H_Bandanna_gry", "H_Bandanna_khk", "H_Bandanna_cbr", "H_Shemag_olive_hs", "H_Hat_camo", "H_Booniehat_dgtl", "H_Watchcap_blk", "H_Watchcap_sgg", "H_Booniehat_grn", "H_Booniehat_mcamo", "H_Booniehat_indp", "H_Bandanna_gry", "H_Cap_blk_Syndikat_F", "H_Bandanna_camo", "H_Booniehat_grn", "H_Shemag_khk", "H_Watchcap_sgg", "Exile_Headgear_GasMask", "H_Booniehat_tan", "H_Shemag_olive", "H_Bandanna_khk_hs", "H_Booniehat_mcamo", "H_Booniehat_grn", "H_Booniehat_khk", "H_Hat_camo", "H_Booniehat_indp", "Exile_Headgear_GasMask", "H_MilCap_tna_F", "H_Booniehat_khk", "H_Cap_brn_SPECOPS", "H_Booniehat_khk_hs", "H_Bandanna_camo", "H_Beret_grn", "H_Cap_khaki_specops_UK", "H_Shemag_olive", "H_BandMask_blk", "H_Beret_brn_SF", "H_Shemag_olive_hs", "H_MilCap_gen_F", "H_Booniehat_dirty", "H_FakeHeadgear_Syndikat_F", "H_Booniehat_mcamo", "H_Bandanna_khk", "H_Booniehat_khk_hs", "H_Bandanna_khk_hs", "H_MilCap_tna_F", "H_Booniehat_dirty", "H_Cap_tan_specops_US", "H_Cap_tan_Syndikat_F", "H_Cap_oli_Syndikat_F", "H_Booniehat_khk_hs", "Exile_Headgear_GasMask", "H_Hat_camo", "H_Booniehat_mcamo"};
 
 		/*
 			Percental Item Spawn Chances of MilitaryClothing:
 
-			U_B_Wetsuit                   = 1,32%
-			U_I_OfficerUniform            = 1,32%
-			U_I_Wetsuit                   = 1,32%
-			U_O_CombatUniform_ocamo       = 1,32%
-			U_O_CombatUniform_oucamo      = 1,32%
-			U_O_OfficerUniform_ocamo      = 1,32%
-			U_O_SpecopsUniform_blk        = 1,32%
-			U_O_SpecopsUniform_ocamo      = 1,32%
-			U_O_V_Soldier_Viper_F         = 1,32%
-			U_O_V_Soldier_Viper_hex_F     = 1,32%
-			U_O_Wetsuit                   = 1,32%
-			U_B_SpecopsUniform_sgg        = 1,97%
-			U_B_HeliPilotCoveralls        = 2,63%
-			U_B_PilotCoveralls            = 2,63%
-			U_I_CombatUniform             = 2,63%
-			U_I_CombatUniform_shortsleeve = 2,63%
-			U_I_CombatUniform_tshirt      = 2,63%
-			U_I_HeliPilotCoveralls        = 2,63%
-			U_I_pilotCoveralls            = 2,63%
-			U_O_PilotCoveralls            = 2,63%
-			U_B_CombatUniform_mcam        = 3,29%
-			U_B_CombatUniform_mcam_tshirt = 3,29%
-			U_B_CombatUniform_mcam_vest   = 3,29%
-			U_B_CombatUniform_mcam_worn   = 3,29%
-			U_B_CTRG_1                    = 3,29%
-			U_B_CTRG_2                    = 3,29%
-			U_B_CTRG_3                    = 3,29%
-			U_B_CTRG_Soldier_2_F          = 3,29%
-			U_B_CTRG_Soldier_3_F          = 3,29%
-			U_B_CTRG_Soldier_F            = 3,29%
-			U_B_CTRG_Soldier_urb_1_F      = 3,29%
-			U_B_CTRG_Soldier_urb_2_F      = 3,29%
-			U_B_CTRG_Soldier_urb_3_F      = 3,29%
-			U_B_GEN_Commander_F           = 3,29%
-			U_B_GEN_Soldier_F             = 3,29%
-			U_B_T_Soldier_AR_F            = 3,29%
-			U_B_T_Soldier_SL_F            = 3,29%
-			U_O_T_Officer_F               = 3,29%
-			U_O_T_Soldier_F               = 3,29%
+			U_B_Wetsuit                   = 0,82%
+			U_I_OfficerUniform            = 0,82%
+			U_I_Wetsuit                   = 0,82%
+			U_O_CombatUniform_ocamo       = 0,82%
+			U_O_CombatUniform_oucamo      = 0,82%
+			U_O_OfficerUniform_ocamo      = 0,82%
+			U_O_SpecopsUniform_blk        = 0,82%
+			U_O_SpecopsUniform_ocamo      = 0,82%
+			U_O_V_Soldier_Viper_F         = 0,82%
+			U_O_V_Soldier_Viper_hex_F     = 0,82%
+			U_O_Wetsuit                   = 0,82%
+			U_B_SpecopsUniform_sgg        = 1,23%
+			U_B_HeliPilotCoveralls        = 1,64%
+			U_B_PilotCoveralls            = 1,64%
+			U_I_CombatUniform             = 1,64%
+			U_I_CombatUniform_shortsleeve = 1,64%
+			U_I_CombatUniform_tshirt      = 1,64%
+			U_I_HeliPilotCoveralls        = 1,64%
+			U_I_pilotCoveralls            = 1,64%
+			U_O_PilotCoveralls            = 1,64%
+			U_B_CombatUniform_mcam        = 2,05%
+			U_B_CombatUniform_mcam_tshirt = 2,05%
+			U_B_CombatUniform_mcam_vest   = 2,05%
+			U_B_CombatUniform_mcam_worn   = 2,05%
+			U_B_CTRG_1                    = 2,05%
+			U_B_CTRG_2                    = 2,05%
+			U_B_CTRG_3                    = 2,05%
+			U_B_CTRG_Soldier_2_F          = 2,05%
+			U_B_CTRG_Soldier_3_F          = 2,05%
+			U_B_CTRG_Soldier_F            = 2,05%
+			U_B_CTRG_Soldier_urb_1_F      = 2,05%
+			U_B_CTRG_Soldier_urb_2_F      = 2,05%
+			U_B_CTRG_Soldier_urb_3_F      = 2,05%
+			U_B_GEN_Commander_F           = 2,05%
+			U_B_GEN_Soldier_F             = 2,05%
+			U_B_T_Soldier_AR_F            = 2,05%
+			U_B_T_Soldier_SL_F            = 2,05%
+			U_O_T_Officer_F               = 2,05%
+			U_O_T_Soldier_F               = 2,05%
+			R3F_UniformBox                = 1,64%
+			R3F_sousvet                   = 1,64%
+			R3F_uniform_pilot             = 1,64%
+			R3F_uniform_piheli            = 1,64%
+			R3F_uniform_piheli_DA         = 1,64%
+			R3F_uniform_diver             = 1,64%
+			R3F_uniform_Ghillie           = 1,64%
+			R3F_uniform_urr               = 1,64%
+			R3F_uniform_urr_medic         = 1,64%
+			R3F_uniform_off               = 1,64%
+			R3F_uniform_f1                = 1,64%
+			R3F_uniform_f1_medic          = 1,64%
+			R3F_uniform_apso              = 1,64%
+			R3F_uniform_Ghillie_DA        = 1,64%
+			R3F_uniform_urr_DA            = 1,64%
+			R3F_uniform_urr_medic_DA      = 1,64%
+			R3F_uniform_off_DA            = 1,64%
+			R3F_uniform_f1_DA             = 1,64%
+			R3F_uniform_f1_medic_DA       = 1,64%
+			R3F_uniform_apso_DA           = 1,64%
+			R3F_uniform_Ghillie_SNOW      = 1,64%
+			R3F_uniform_urr_SNOW          = 1,64%
+			R3F_uniform_f1_SNOW           = 1,64%
 		*/
-		MilitaryClothing[] = {"U_B_CTRG_3", "U_B_CombatUniform_mcam_worn", "U_B_CombatUniform_mcam_worn", "U_B_CombatUniform_mcam_tshirt", "U_B_GEN_Soldier_F", "U_B_CTRG_Soldier_3_F", "U_B_CTRG_1", "U_B_CTRG_Soldier_F", "U_B_CombatUniform_mcam_tshirt", "U_O_T_Soldier_F", "U_O_SpecopsUniform_ocamo", "U_B_HeliPilotCoveralls", "U_O_T_Soldier_F", "U_I_pilotCoveralls", "U_O_PilotCoveralls", "U_B_GEN_Commander_F", "U_B_GEN_Commander_F", "U_O_PilotCoveralls", "U_B_PilotCoveralls", "U_O_CombatUniform_oucamo", "U_O_T_Officer_F", "U_B_SpecopsUniform_sgg", "U_I_Wetsuit", "U_B_CTRG_Soldier_urb_1_F", "U_B_GEN_Commander_F", "U_O_T_Officer_F", "U_B_T_Soldier_AR_F", "U_B_GEN_Soldier_F", "U_O_T_Officer_F", "U_B_CTRG_3", "U_O_T_Soldier_F", "U_B_CombatUniform_mcam_vest", "U_B_PilotCoveralls", "U_B_GEN_Commander_F", "U_O_V_Soldier_Viper_F", "U_B_GEN_Soldier_F", "U_B_CombatUniform_mcam", "U_I_CombatUniform_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_CTRG_Soldier_urb_1_F", "U_B_CTRG_Soldier_urb_2_F", "U_B_T_Soldier_SL_F", "U_I_CombatUniform_shortsleeve", "U_O_CombatUniform_oucamo", "U_B_CTRG_Soldier_urb_3_F", "U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_vest", "U_B_CTRG_Soldier_urb_1_F", "U_B_CTRG_1", "U_B_CTRG_Soldier_F", "U_I_CombatUniform_tshirt", "U_B_CTRG_Soldier_F", "U_I_CombatUniform", "U_O_PilotCoveralls", "U_O_CombatUniform_ocamo", "U_B_CTRG_Soldier_urb_1_F", "U_B_SpecopsUniform_sgg", "U_B_CTRG_Soldier_urb_2_F", "U_B_GEN_Soldier_F", "U_B_GEN_Soldier_F", "U_I_HeliPilotCoveralls", "U_I_CombatUniform", "U_B_T_Soldier_AR_F", "U_O_V_Soldier_Viper_hex_F", "U_I_CombatUniform", "U_B_T_Soldier_SL_F", "U_I_CombatUniform", "U_B_CTRG_3", "U_O_SpecopsUniform_blk", "U_B_T_Soldier_SL_F", "U_O_V_Soldier_Viper_F", "U_B_SpecopsUniform_sgg", "U_B_CombatUniform_mcam_worn", "U_B_CTRG_Soldier_2_F", "U_I_HeliPilotCoveralls", "U_O_SpecopsUniform_ocamo", "U_B_CTRG_Soldier_urb_3_F", "U_B_CTRG_Soldier_urb_2_F", "U_I_pilotCoveralls", "U_B_CombatUniform_mcam", "U_B_CTRG_2", "U_B_CTRG_3", "U_O_SpecopsUniform_blk", "U_O_T_Officer_F", "U_B_CTRG_2", "U_B_CTRG_Soldier_3_F", "U_B_CombatUniform_mcam", "U_B_CTRG_Soldier_F", "U_B_CTRG_Soldier_2_F", "U_B_CombatUniform_mcam", "U_B_CTRG_Soldier_2_F", "U_O_T_Soldier_F", "U_O_CombatUniform_ocamo", "U_I_pilotCoveralls", "U_B_CTRG_Soldier_3_F", "U_B_HeliPilotCoveralls", "U_B_CTRG_2", "U_I_CombatUniform_shortsleeve", "U_B_CTRG_1", "U_B_CTRG_Soldier_F", "U_B_T_Soldier_AR_F", "U_B_CTRG_Soldier_3_F", "U_B_T_Soldier_SL_F", "U_B_CTRG_Soldier_2_F", "U_B_CombatUniform_mcam_tshirt", "U_B_CTRG_Soldier_urb_3_F", "U_I_CombatUniform_tshirt", "U_I_CombatUniform_tshirt", "U_B_CombatUniform_mcam_vest", "U_O_OfficerUniform_ocamo", "U_B_CombatUniform_mcam_tshirt", "U_I_pilotCoveralls", "U_B_CTRG_2", "U_B_PilotCoveralls", "U_I_HeliPilotCoveralls", "U_B_CombatUniform_mcam_vest", "U_B_T_Soldier_AR_F", "U_B_CTRG_Soldier_urb_2_F", "U_O_T_Officer_F", "U_I_CombatUniform_shortsleeve", "U_B_CTRG_Soldier_3_F", "U_B_CombatUniform_mcam_tshirt", "U_B_T_Soldier_SL_F", "U_I_HeliPilotCoveralls", "U_B_CTRG_3", "U_B_CTRG_Soldier_urb_2_F", "U_B_CTRG_Soldier_urb_3_F", "U_B_CTRG_1", "U_I_OfficerUniform", "U_B_PilotCoveralls", "U_I_CombatUniform_shortsleeve", "U_O_OfficerUniform_ocamo", "U_I_Wetsuit", "U_O_PilotCoveralls", "U_O_T_Soldier_F", "U_O_Wetsuit", "U_B_CTRG_Soldier_2_F", "U_B_T_Soldier_AR_F", "U_B_HeliPilotCoveralls", "U_B_CombatUniform_mcam", "U_B_CTRG_Soldier_urb_1_F", "U_B_CombatUniform_mcam_worn", "U_B_Wetsuit", "U_B_CTRG_2", "U_I_OfficerUniform", "U_B_CTRG_Soldier_urb_3_F", "U_O_V_Soldier_Viper_hex_F", "U_B_Wetsuit", "U_O_Wetsuit", "U_B_GEN_Commander_F", "U_B_CTRG_1", "U_B_HeliPilotCoveralls"};
+		MilitaryClothing[] = {"R3F_uniform_urr_SNOW", "R3F_uniform_f1_DA", "R3F_UniformBox", "R3F_uniform_off_DA", "R3F_uniform_f1", "U_B_CTRG_1", "R3F_uniform_Ghillie", "R3F_uniform_f1_SNOW", "R3F_uniform_pilot", "U_O_PilotCoveralls", "R3F_sousvet", "U_B_T_Soldier_AR_F", "U_B_CTRG_Soldier_3_F", "U_B_CombatUniform_mcam_worn", "U_B_T_Soldier_SL_F", "R3F_uniform_diver", "R3F_uniform_Ghillie_SNOW", "U_O_V_Soldier_Viper_F", "R3F_uniform_piheli_DA", "U_B_CombatUniform_mcam_vest", "U_O_SpecopsUniform_blk", "U_B_CombatUniform_mcam_tshirt", "R3F_uniform_f1_DA", "R3F_uniform_piheli", "R3F_uniform_off_DA", "U_I_OfficerUniform", "R3F_uniform_piheli_DA", "U_B_T_Soldier_SL_F", "R3F_uniform_urr_SNOW", "U_O_PilotCoveralls", "R3F_uniform_Ghillie", "U_B_CTRG_Soldier_2_F", "U_B_CTRG_Soldier_urb_1_F", "U_I_CombatUniform_tshirt", "U_B_CombatUniform_mcam", "U_I_CombatUniform", "U_O_T_Soldier_F", "U_B_CTRG_Soldier_2_F", "R3F_uniform_diver", "U_I_pilotCoveralls", "R3F_uniform_f1", "R3F_uniform_f1_medic_DA", "R3F_uniform_urr_SNOW", "R3F_UniformBox", "U_B_SpecopsUniform_sgg", "U_B_CTRG_Soldier_urb_2_F", "U_B_CombatUniform_mcam_worn", "R3F_uniform_Ghillie_SNOW", "U_O_T_Officer_F", "U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_tshirt", "R3F_uniform_Ghillie", "U_O_SpecopsUniform_ocamo", "U_B_GEN_Commander_F", "U_B_CTRG_3", "U_B_T_Soldier_SL_F", "R3F_uniform_apso_DA", "R3F_uniform_f1_SNOW", "U_B_CombatUniform_mcam_vest", "R3F_uniform_Ghillie", "R3F_uniform_urr", "U_O_V_Soldier_Viper_hex_F", "U_I_Wetsuit", "U_B_CombatUniform_mcam_worn", "U_O_SpecopsUniform_ocamo", "U_B_SpecopsUniform_sgg", "U_I_pilotCoveralls", "U_B_PilotCoveralls", "R3F_uniform_f1_SNOW", "R3F_uniform_pilot", "U_B_CTRG_Soldier_urb_2_F", "U_I_CombatUniform_shortsleeve", "U_O_CombatUniform_ocamo", "U_I_CombatUniform_shortsleeve", "U_I_CombatUniform_tshirt", "U_B_CTRG_Soldier_urb_1_F", "U_B_GEN_Soldier_F", "U_I_HeliPilotCoveralls", "U_B_CTRG_Soldier_2_F", "U_O_OfficerUniform_ocamo", "U_I_pilotCoveralls", "U_B_CTRG_3", "R3F_uniform_piheli", "U_B_HeliPilotCoveralls", "U_B_CombatUniform_mcam_tshirt", "U_B_CTRG_Soldier_urb_1_F", "U_O_CombatUniform_oucamo", "R3F_uniform_f1_medic", "U_O_T_Officer_F", "U_B_T_Soldier_AR_F", "R3F_uniform_apso", "U_B_CTRG_3", "U_O_T_Officer_F", "U_B_CTRG_2", "R3F_uniform_piheli_DA", "R3F_uniform_pilot", "U_O_T_Soldier_F", "U_B_GEN_Soldier_F", "R3F_uniform_apso", "U_B_CombatUniform_mcam_worn", "U_I_CombatUniform", "U_B_CTRG_Soldier_F", "U_I_HeliPilotCoveralls", "U_B_CTRG_Soldier_2_F", "R3F_uniform_urr_SNOW", "R3F_uniform_piheli", "U_B_CombatUniform_mcam", "R3F_uniform_off", "R3F_uniform_off_DA", "U_B_CTRG_2", "R3F_uniform_urr_DA", "R3F_uniform_apso_DA", "U_O_V_Soldier_Viper_hex_F", "R3F_uniform_apso", "R3F_uniform_urr_DA", "R3F_uniform_urr_medic", "R3F_uniform_urr_medic_DA", "U_B_CTRG_Soldier_urb_1_F", "U_B_T_Soldier_SL_F", "U_O_T_Officer_F", "U_O_OfficerUniform_ocamo", "U_O_V_Soldier_Viper_F", "U_B_CTRG_Soldier_urb_2_F", "U_O_T_Soldier_F", "U_B_HeliPilotCoveralls", "U_B_CTRG_Soldier_F", "R3F_uniform_urr_medic", "U_B_T_Soldier_AR_F", "R3F_uniform_pilot", "R3F_uniform_Ghillie_SNOW", "R3F_uniform_Ghillie_DA", "U_B_CTRG_Soldier_urb_3_F", "R3F_uniform_Ghillie_DA", "U_O_PilotCoveralls", "U_B_CTRG_Soldier_urb_1_F", "U_I_Wetsuit", "R3F_uniform_f1_medic_DA", "R3F_UniformBox", "U_B_PilotCoveralls", "R3F_uniform_diver", "U_B_T_Soldier_AR_F", "R3F_uniform_Ghillie_DA", "U_B_CTRG_Soldier_3_F", "U_B_CTRG_Soldier_urb_3_F", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_tshirt", "U_B_GEN_Commander_F", "U_B_CTRG_Soldier_urb_3_F", "U_B_CTRG_1", "U_B_CTRG_Soldier_F", "U_B_GEN_Commander_F", "U_O_SpecopsUniform_blk", "R3F_uniform_off_DA", "U_B_PilotCoveralls", "R3F_uniform_urr", "U_B_HeliPilotCoveralls", "U_B_CTRG_1", "U_O_CombatUniform_oucamo", "U_O_Wetsuit", "R3F_uniform_f1_medic", "U_O_T_Soldier_F", "R3F_uniform_f1_medic_DA", "U_B_CTRG_Soldier_2_F", "U_B_CTRG_Soldier_urb_2_F", "U_B_CTRG_Soldier_3_F", "R3F_uniform_apso_DA", "U_B_GEN_Commander_F", "U_B_Wetsuit", "U_B_CTRG_2", "R3F_uniform_piheli", "R3F_uniform_urr_DA", "U_I_pilotCoveralls", "R3F_uniform_off", "U_B_CTRG_1", "U_B_GEN_Soldier_F", "R3F_uniform_apso", "U_O_PilotCoveralls", "R3F_uniform_urr", "R3F_uniform_f1_DA", "U_B_CombatUniform_mcam", "R3F_uniform_f1_SNOW", "U_B_CombatUniform_mcam_worn", "R3F_uniform_f1_DA", "U_B_CTRG_2", "R3F_uniform_off", "R3F_sousvet", "U_B_CTRG_3", "U_B_GEN_Commander_F", "U_B_CTRG_1", "U_B_CombatUniform_mcam", "U_B_Wetsuit", "U_I_CombatUniform_shortsleeve", "R3F_uniform_f1_medic_DA", "U_I_CombatUniform_tshirt", "R3F_uniform_f1_medic", "U_B_GEN_Soldier_F", "U_B_CTRG_3", "R3F_uniform_f1_medic", "U_I_HeliPilotCoveralls", "U_B_CombatUniform_mcam_vest", "R3F_sousvet", "U_O_Wetsuit", "U_I_CombatUniform_tshirt", "R3F_uniform_urr_medic_DA", "U_B_PilotCoveralls", "U_B_HeliPilotCoveralls", "R3F_uniform_f1", "U_O_T_Soldier_F", "R3F_uniform_urr", "U_B_CTRG_Soldier_urb_3_F", "U_B_CTRG_Soldier_F", "U_B_CTRG_Soldier_F", "U_B_CombatUniform_mcam", "R3F_uniform_Ghillie_SNOW", "U_B_T_Soldier_SL_F", "U_B_CTRG_2", "U_I_CombatUniform", "U_I_OfficerUniform", "R3F_UniformBox", "R3F_uniform_urr_medic", "R3F_uniform_Ghillie_DA", "U_B_CTRG_Soldier_urb_3_F", "U_B_SpecopsUniform_sgg", "R3F_sousvet", "U_O_T_Officer_F", "R3F_uniform_diver", "U_B_CTRG_Soldier_3_F", "R3F_uniform_urr_medic_DA", "U_I_CombatUniform", "U_B_T_Soldier_AR_F", "R3F_uniform_f1", "R3F_uniform_off", "R3F_uniform_urr_DA", "U_I_CombatUniform_shortsleeve", "R3F_uniform_apso_DA", "R3F_uniform_urr_medic_DA", "R3F_uniform_urr_medic", "U_B_CombatUniform_mcam_vest", "U_B_CTRG_Soldier_urb_2_F", "U_O_CombatUniform_ocamo", "R3F_uniform_piheli_DA", "U_B_CTRG_Soldier_3_F", "U_I_HeliPilotCoveralls", "U_B_GEN_Soldier_F"};
 
 		/*
 			Percental Item Spawn Chances of MilitaryBackpacks:
@@ -3816,90 +3864,143 @@ class CfgExileLootServer
 			B_Carryall_cbr    = 10,53%
 			B_Carryall_ghex_F = 10,53%
 		*/
-		MilitaryBackpacks[] = {"B_Carryall_mcamo", "B_Carryall_cbr", "B_Bergen_tna_F", "B_Carryall_ocamo", "B_Carryall_oucamo", "B_Carryall_khk", "B_Carryall_ghex_F", "B_Carryall_ghex_F", "B_Carryall_oli", "B_Carryall_khk", "B_Carryall_oucamo", "B_Bergen_dgtl_F", "B_Bergen_mcamo_F", "B_Carryall_mcamo", "B_Bergen_Base_F", "B_Carryall_cbr", "B_Bergen_hex_F", "B_Carryall_oli", "B_Carryall_ocamo"};
+		MilitaryBackpacks[] = {"B_Bergen_tna_F", "B_Carryall_mcamo", "B_Bergen_Base_F", "B_Carryall_ghex_F", "B_Carryall_khk", "B_Carryall_oucamo", "B_Bergen_dgtl_F", "B_Carryall_cbr", "B_Carryall_oli", "B_Carryall_ghex_F", "B_Bergen_hex_F", "B_Carryall_oucamo", "B_Carryall_cbr", "B_Bergen_mcamo_F", "B_Carryall_oli", "B_Carryall_ocamo", "B_Carryall_khk", "B_Carryall_ocamo", "B_Carryall_mcamo"};
 
 		/*
 			Percental Item Spawn Chances of MilitaryVests:
 
-			V_PlateCarrierH_CTRG    = 5,00%
-			V_PlateCarrierL_CTRG    = 5,00%
-			V_PlateCarrier1_blk     = 10,00%
-			V_PlateCarrier1_rgr     = 10,00%
-			V_PlateCarrier2_rgr     = 10,00%
-			V_PlateCarrier3_rgr     = 10,00%
-			V_PlateCarrierGL_rgr    = 10,00%
-			V_PlateCarrierIA1_dgtl  = 10,00%
-			V_PlateCarrierIA2_dgtl  = 10,00%
-			V_PlateCarrierIAGL_dgtl = 10,00%
-			V_PlateCarrierSpec_rgr  = 10,00%
+			V_PlateCarrierH_CTRG    = 2,08%
+			V_PlateCarrierL_CTRG    = 2,08%
+			V_PlateCarrier1_blk     = 4,17%
+			V_PlateCarrier1_rgr     = 4,17%
+			V_PlateCarrier2_rgr     = 4,17%
+			V_PlateCarrier3_rgr     = 4,17%
+			V_PlateCarrierGL_rgr    = 4,17%
+			V_PlateCarrierIA1_dgtl  = 4,17%
+			V_PlateCarrierIA2_dgtl  = 4,17%
+			V_PlateCarrierIAGL_dgtl = 4,17%
+			V_PlateCarrierSpec_rgr  = 4,17%
+			R3F_veste_ce600         = 4,17%
+			R3F_veste_ce300         = 4,17%
+			R3F_vestetactique_noire = 4,17%
+			R3F_veste_noire         = 4,17%
+			R3F_veste_TAN           = 4,17%
+			R3F_veste_APSO          = 4,17%
+			R3F_veste_APSO_EOD      = 4,17%
+			R3F_veste_APSO_CE       = 4,17%
+			R3F_veste_APSO_EOD_CE   = 4,17%
+			R3F_veste_APSO_TAN      = 4,17%
+			R3F_veste_APSO_EOD_TAN  = 4,17%
+			R3F_veste_off           = 4,17%
+			R3F_veste_equipage      = 4,17%
+			R3F_veste_SNOW          = 4,17%
 		*/
-		MilitaryVests[] = {"V_PlateCarrierL_CTRG", "V_PlateCarrier3_rgr", "V_PlateCarrierIA1_dgtl", "V_PlateCarrier1_rgr", "V_PlateCarrier3_rgr", "V_PlateCarrier1_blk", "V_PlateCarrierH_CTRG", "V_PlateCarrierIAGL_dgtl", "V_PlateCarrierIAGL_dgtl", "V_PlateCarrierIA2_dgtl", "V_PlateCarrierIA1_dgtl", "V_PlateCarrierGL_rgr", "V_PlateCarrier2_rgr", "V_PlateCarrierSpec_rgr", "V_PlateCarrierGL_rgr", "V_PlateCarrierIA2_dgtl", "V_PlateCarrier2_rgr", "V_PlateCarrierSpec_rgr", "V_PlateCarrier1_blk", "V_PlateCarrier1_rgr"};
+		MilitaryVests[] = {"V_PlateCarrierSpec_rgr", "R3F_veste_APSO", "V_PlateCarrierIA2_dgtl", "R3F_veste_ce300", "V_PlateCarrierH_CTRG", "R3F_veste_off", "V_PlateCarrierIA1_dgtl", "R3F_veste_APSO_TAN", "V_PlateCarrier1_rgr", "V_PlateCarrier1_rgr", "V_PlateCarrier2_rgr", "V_PlateCarrier1_blk", "V_PlateCarrierSpec_rgr", "R3F_veste_APSO_EOD_CE", "V_PlateCarrierIA2_dgtl", "R3F_veste_APSO_CE", "R3F_veste_APSO_EOD_TAN", "V_PlateCarrierIAGL_dgtl", "V_PlateCarrierIAGL_dgtl", "R3F_vestetactique_noire", "R3F_veste_APSO_EOD", "R3F_veste_noire", "R3F_veste_APSO_TAN", "R3F_veste_APSO_CE", "R3F_veste_APSO", "V_PlateCarrierL_CTRG", "V_PlateCarrier1_blk", "R3F_veste_noire", "R3F_veste_ce600", "R3F_veste_APSO_EOD", "V_PlateCarrier2_rgr", "R3F_veste_SNOW", "V_PlateCarrierGL_rgr", "V_PlateCarrier3_rgr", "V_PlateCarrier3_rgr", "V_PlateCarrierIA1_dgtl", "R3F_veste_equipage", "R3F_veste_equipage", "R3F_veste_SNOW", "R3F_veste_ce300", "R3F_vestetactique_noire", "R3F_veste_off", "V_PlateCarrierGL_rgr", "R3F_veste_APSO_EOD_CE", "R3F_veste_TAN", "R3F_veste_APSO_EOD_TAN", "R3F_veste_TAN", "R3F_veste_ce600"};
 
 		/*
 			Percental Item Spawn Chances of MilitaryHeadgear:
 
-			H_CrewHelmetHeli_B        = 0,81%
-			H_CrewHelmetHeli_I        = 0,81%
-			H_CrewHelmetHeli_O        = 0,81%
-			H_HelmetB_camo            = 0,81%
-			H_HelmetCrew_B            = 0,81%
-			H_HelmetCrew_I            = 0,81%
-			H_HelmetCrew_O            = 0,81%
-			H_HelmetLeaderO_ocamo     = 0,81%
-			H_HelmetLeaderO_oucamo    = 0,81%
-			H_HelmetO_ghex_F          = 0,81%
-			H_HelmetO_ocamo           = 0,81%
-			H_HelmetO_oucamo          = 0,81%
-			H_HelmetSpecO_blk         = 0,81%
-			H_HelmetSpecO_ocamo       = 0,81%
-			H_PilotHelmetFighter_B    = 0,81%
-			H_PilotHelmetFighter_I    = 0,81%
-			H_PilotHelmetFighter_O    = 0,81%
-			H_PilotHelmetHeli_B       = 0,81%
-			H_PilotHelmetHeli_I       = 0,81%
-			H_PilotHelmetHeli_O       = 0,81%
-			H_BandMask_demon          = 1,63%
-			H_BandMask_khk            = 1,63%
-			H_BandMask_reaper         = 1,63%
-			H_Beret_gen_F             = 1,63%
-			H_Helmet_Skate            = 1,63%
-			H_HelmetB_black           = 1,63%
-			H_HelmetB_desert          = 1,63%
-			H_HelmetB_Enh_tna_F       = 1,63%
-			H_HelmetB_grass           = 1,63%
-			H_HelmetB_light_black     = 1,63%
-			H_HelmetB_light_desert    = 1,63%
-			H_HelmetB_light_grass     = 1,63%
-			H_HelmetB_light_sand      = 1,63%
-			H_HelmetB_light_snakeskin = 1,63%
-			H_HelmetB_Light_tna_F     = 1,63%
-			H_HelmetB_sand            = 1,63%
-			H_HelmetB_snakeskin       = 1,63%
-			H_HelmetB_TI_tna_F        = 1,63%
-			H_HelmetB_tna_F           = 1,63%
-			H_HelmetCrew_O_ghex_F     = 1,63%
-			H_HelmetIA_camo           = 1,63%
-			H_HelmetIA_net            = 1,63%
-			H_HelmetLeaderO_ghex_F    = 1,63%
-			H_HelmetSpecO_ghex_F      = 1,63%
-			H_HelmetB                 = 2,44%
-			H_HelmetB_light           = 2,44%
-			H_HelmetB_paint           = 2,44%
-			H_HelmetB_plain_blk       = 2,44%
-			H_HelmetIA                = 2,44%
-			H_HelmetSpecB             = 2,44%
-			H_HelmetSpecB_blk         = 2,44%
-			H_HelmetSpecB_paint1      = 2,44%
-			H_HelmetSpecB_paint2      = 2,44%
-			Exile_Headgear_GasMask    = 3,25%
-			H_MilCap_blue             = 3,25%
-			H_MilCap_dgtl             = 3,25%
-			H_MilCap_mcamo            = 3,25%
-			H_MilCap_ocamo            = 3,25%
-			H_MilCap_oucamo           = 3,25%
-			H_MilCap_rucamo           = 3,25%
+			H_CrewHelmetHeli_B           = 0,38%
+			H_CrewHelmetHeli_I           = 0,38%
+			H_CrewHelmetHeli_O           = 0,38%
+			H_HelmetB_camo               = 0,38%
+			H_HelmetCrew_B               = 0,38%
+			H_HelmetCrew_I               = 0,38%
+			H_HelmetCrew_O               = 0,38%
+			H_HelmetLeaderO_ocamo        = 0,38%
+			H_HelmetLeaderO_oucamo       = 0,38%
+			H_HelmetO_ghex_F             = 0,38%
+			H_HelmetO_ocamo              = 0,38%
+			H_HelmetO_oucamo             = 0,38%
+			H_HelmetSpecO_blk            = 0,38%
+			H_HelmetSpecO_ocamo          = 0,38%
+			H_PilotHelmetFighter_B       = 0,38%
+			H_PilotHelmetFighter_I       = 0,38%
+			H_PilotHelmetFighter_O       = 0,38%
+			H_PilotHelmetHeli_B          = 0,38%
+			H_PilotHelmetHeli_I          = 0,38%
+			H_PilotHelmetHeli_O          = 0,38%
+			H_BandMask_demon             = 0,77%
+			H_BandMask_khk               = 0,77%
+			H_BandMask_reaper            = 0,77%
+			H_Beret_gen_F                = 0,77%
+			H_Helmet_Skate               = 0,77%
+			H_HelmetB_black              = 0,77%
+			H_HelmetB_desert             = 0,77%
+			H_HelmetB_Enh_tna_F          = 0,77%
+			H_HelmetB_grass              = 0,77%
+			H_HelmetB_light_black        = 0,77%
+			H_HelmetB_light_desert       = 0,77%
+			H_HelmetB_light_grass        = 0,77%
+			H_HelmetB_light_sand         = 0,77%
+			H_HelmetB_light_snakeskin    = 0,77%
+			H_HelmetB_Light_tna_F        = 0,77%
+			H_HelmetB_sand               = 0,77%
+			H_HelmetB_snakeskin          = 0,77%
+			H_HelmetB_TI_tna_F           = 0,77%
+			H_HelmetB_tna_F              = 0,77%
+			H_HelmetCrew_O_ghex_F        = 0,77%
+			H_HelmetIA_camo              = 0,77%
+			H_HelmetIA_net               = 0,77%
+			H_HelmetLeaderO_ghex_F       = 0,77%
+			H_HelmetSpecO_ghex_F         = 0,77%
+			H_HelmetB                    = 1,15%
+			H_HelmetB_light              = 1,15%
+			H_HelmetB_paint              = 1,15%
+			H_HelmetB_plain_blk          = 1,15%
+			H_HelmetIA                   = 1,15%
+			H_HelmetSpecB                = 1,15%
+			H_HelmetSpecB_blk            = 1,15%
+			H_HelmetSpecB_paint1         = 1,15%
+			H_HelmetSpecB_paint2         = 1,15%
+			Exile_Headgear_GasMask       = 1,53%
+			H_MilCap_blue                = 1,53%
+			H_MilCap_dgtl                = 1,53%
+			H_MilCap_mcamo               = 1,53%
+			H_MilCap_ocamo               = 1,53%
+			H_MilCap_oucamo              = 1,53%
+			H_MilCap_rucamo              = 1,53%
+			R3F_casque_spectra           = 1,15%
+			R3F_casque_spectra_jaune     = 1,15%
+			R3F_casque_spectra_bleu      = 1,15%
+			R3F_casque_spectra_vert      = 1,15%
+			R3F_casque_spectra_orange    = 1,15%
+			R3F_casque_spectra_violet    = 1,15%
+			R3F_casque_spectra_EOD       = 1,15%
+			R3F_casque_pilote            = 1,15%
+			R3F_casque_equipage          = 1,15%
+			R3F_casquette                = 1,15%
+			R3F_casquette_TAN            = 1,15%
+			R3F_casquette_ops            = 1,15%
+			R3F_casquette_ops_TAN        = 1,15%
+			R3F_chapeaubrousse_CE        = 1,53%
+			R3F_chapeaubrousse_TAN       = 1,53%
+			R3F_beret                    = 1,53%
+			R3F_beret_para               = 1,53%
+			R3F_beret_commando           = 1,53%
+			R3F_beret_alat               = 1,53%
+			R3F_Bonnet                   = 1,15%
+			R3F_Bonnet_vert              = 1,15%
+			R3F_Bonnet_snow              = 1,15%
+			R3F_casquette_off            = 1,15%
+			R3F_casquette_off_DA         = 1,15%
+			R3F_casque_spectra_DA        = 1,53%
+			R3F_casque_spectra_DA_jaune  = 1,53%
+			R3F_casque_spectra_DA_bleu   = 1,53%
+			R3F_casque_spectra_DA_vert   = 1,53%
+			R3F_casque_spectra_DA_orange = 1,53%
+			R3F_casque_spectra_DA_violet = 1,53%
+			R3F_casque_spectra_EOD_DA    = 1,53%
+			R3F_casqueFS_olive           = 1,53%
+			R3F_casqueFS_TAN             = 1,53%
+			R3F_casqueFS_noir            = 1,53%
+			R3F_casqueFS_snow            = 1,53%
+			R3F_bandana_olive            = 1,53%
+			R3F_bandana_TAN              = 1,53%
+			R3F_bandana_noir             = 1,53%
+			R3F_casque_spectra_SNOW      = 1,53%
 		*/
-		MilitaryHeadgear[] = {"H_HelmetO_ocamo", "H_HelmetIA", "H_BandMask_demon", "H_HelmetB_plain_blk", "H_HelmetLeaderO_ghex_F", "H_PilotHelmetHeli_I", "H_HelmetB_desert", "H_HelmetB_light_sand", "H_BandMask_khk", "H_Helmet_Skate", "H_HelmetO_ghex_F", "H_HelmetIA_camo", "H_MilCap_dgtl", "H_MilCap_blue", "H_HelmetLeaderO_ocamo", "H_HelmetB_light", "H_HelmetB_paint", "H_MilCap_dgtl", "H_MilCap_rucamo", "Exile_Headgear_GasMask", "H_HelmetO_oucamo", "H_CrewHelmetHeli_I", "H_HelmetSpecB", "H_HelmetB_light_grass", "H_HelmetSpecB_paint2", "Exile_Headgear_GasMask", "H_HelmetB", "H_HelmetSpecB", "H_MilCap_rucamo", "H_HelmetLeaderO_ghex_F", "H_MilCap_mcamo", "H_BandMask_reaper", "H_HelmetB_tna_F", "H_PilotHelmetFighter_I", "H_HelmetB_desert", "H_HelmetB_grass", "H_MilCap_ocamo", "H_HelmetB_snakeskin", "H_HelmetB_grass", "H_MilCap_mcamo", "H_HelmetB", "H_MilCap_blue", "H_HelmetB_plain_blk", "H_HelmetSpecB_blk", "H_HelmetB_black", "H_HelmetB_light_snakeskin", "H_HelmetB_black", "H_HelmetSpecB", "H_MilCap_blue", "H_HelmetB_sand", "H_MilCap_dgtl", "H_HelmetB_light_desert", "H_HelmetB_TI_tna_F", "Exile_Headgear_GasMask", "H_HelmetSpecO_ghex_F", "H_HelmetB_sand", "H_BandMask_khk", "H_HelmetCrew_I", "H_MilCap_ocamo", "H_MilCap_oucamo", "H_HelmetB_tna_F", "H_MilCap_ocamo", "H_HelmetIA", "H_HelmetB_light_black", "H_MilCap_dgtl", "H_HelmetSpecB_paint2", "H_HelmetB_light_sand", "H_HelmetB_light", "H_HelmetCrew_O_ghex_F", "H_MilCap_oucamo", "H_HelmetSpecB_paint1", "H_MilCap_oucamo", "H_HelmetSpecB_paint2", "H_HelmetB", "H_HelmetIA_camo", "H_Helmet_Skate", "H_MilCap_blue", "H_HelmetSpecB_paint1", "H_HelmetIA_net", "H_PilotHelmetFighter_O", "H_HelmetCrew_O", "H_HelmetSpecO_ocamo", "H_HelmetB_plain_blk", "H_PilotHelmetFighter_B", "H_MilCap_rucamo", "H_HelmetB_Light_tna_F", "H_Beret_gen_F", "H_HelmetB_paint", "H_HelmetB_light_grass", "H_HelmetB_light", "H_HelmetB_Enh_tna_F", "H_HelmetLeaderO_oucamo", "H_HelmetSpecB_paint1", "H_PilotHelmetHeli_O", "H_HelmetCrew_O_ghex_F", "H_HelmetB_camo", "H_HelmetSpecO_blk", "H_MilCap_mcamo", "H_MilCap_mcamo", "H_HelmetB_light_snakeskin", "H_HelmetB_snakeskin", "H_HelmetB_paint", "H_HelmetB_Light_tna_F", "H_HelmetSpecB_blk", "H_HelmetCrew_B", "H_CrewHelmetHeli_B", "H_HelmetB_light_desert", "H_PilotHelmetHeli_B", "H_HelmetB_TI_tna_F", "H_MilCap_ocamo", "H_HelmetIA", "H_HelmetSpecB_blk", "H_BandMask_demon", "H_HelmetB_light_black", "H_HelmetB_Enh_tna_F", "H_HelmetIA_net", "H_CrewHelmetHeli_O", "H_Beret_gen_F", "H_MilCap_oucamo", "H_HelmetSpecO_ghex_F", "H_MilCap_rucamo", "H_BandMask_reaper", "Exile_Headgear_GasMask"};
+		MilitaryHeadgear[] = {"R3F_casque_spectra_orange", "R3F_chapeaubrousse_CE", "R3F_casque_spectra_DA_vert", "R3F_casque_spectra", "R3F_Bonnet_snow", "R3F_casque_spectra_DA", "R3F_casque_spectra_EOD", "H_HelmetB_TI_tna_F", "R3F_casque_spectra_DA_bleu", "R3F_casque_spectra_SNOW", "R3F_casque_spectra_vert", "H_MilCap_blue", "R3F_Bonnet", "R3F_bandana_TAN", "H_HelmetSpecB_paint2", "R3F_Bonnet_vert", "R3F_casque_spectra_DA_jaune", "R3F_beret_alat", "H_MilCap_dgtl", "R3F_casque_equipage", "R3F_casqueFS_snow", "R3F_casqueFS_olive", "R3F_chapeaubrousse_CE", "R3F_Bonnet", "R3F_casque_spectra_violet", "H_HelmetCrew_O_ghex_F", "R3F_casque_pilote", "H_MilCap_rucamo", "R3F_casqueFS_noir", "R3F_casqueFS_TAN", "H_CrewHelmetHeli_I", "R3F_bandana_TAN", "R3F_casqueFS_snow", "R3F_casquette_off", "Exile_Headgear_GasMask", "H_HelmetB_snakeskin", "H_HelmetB_light_grass", "H_HelmetSpecB_paint1", "H_PilotHelmetFighter_O", "H_HelmetSpecO_ocamo", "H_HelmetB_plain_blk", "R3F_casquette_ops_TAN", "R3F_casque_spectra_SNOW", "H_HelmetO_oucamo", "H_HelmetB_tna_F", "R3F_chapeaubrousse_TAN", "H_HelmetSpecB_paint2", "R3F_casque_spectra_DA", "R3F_casque_spectra", "R3F_bandana_TAN", "H_HelmetSpecB", "H_HelmetB_grass", "H_HelmetCrew_B", "R3F_casque_spectra_DA_violet", "R3F_beret_commando", "R3F_bandana_TAN", "R3F_casque_spectra_DA_violet", "R3F_casque_equipage", "H_HelmetB_black", "H_PilotHelmetFighter_B", "H_CrewHelmetHeli_O", "R3F_bandana_olive", "H_Beret_gen_F", "H_HelmetCrew_O_ghex_F", "R3F_casque_spectra_SNOW", "Exile_Headgear_GasMask", "H_MilCap_blue", "R3F_casque_spectra_bleu", "R3F_casquette", "R3F_bandana_noir", "H_HelmetSpecB_paint2", "R3F_casque_spectra_DA_orange", "H_HelmetB_sand", "H_MilCap_dgtl", "R3F_casque_spectra_DA_bleu", "H_PilotHelmetHeli_O", "R3F_casque_spectra_EOD_DA", "R3F_casque_spectra_EOD_DA", "H_HelmetB_light", "H_HelmetSpecB", "R3F_casque_spectra_bleu", "R3F_casque_spectra_bleu", "R3F_beret_alat", "R3F_casque_spectra", "R3F_casquette", "H_HelmetB_light", "R3F_bandana_olive", "R3F_casqueFS_snow", "H_MilCap_blue", "H_HelmetLeaderO_ocamo", "R3F_chapeaubrousse_TAN", "R3F_casqueFS_olive", "H_MilCap_ocamo", "H_HelmetO_ocamo", "H_BandMask_reaper", "R3F_casque_spectra_DA_orange", "H_HelmetIA", "H_HelmetSpecO_ghex_F", "R3F_casque_equipage", "H_HelmetB_paint", "R3F_beret", "H_HelmetB_camo", "H_HelmetIA_net", "R3F_casqueFS_TAN", "R3F_bandana_noir", "H_HelmetB", "H_HelmetB_tna_F", "H_HelmetIA_camo", "R3F_casque_spectra_SNOW", "H_MilCap_oucamo", "H_BandMask_khk", "H_HelmetCrew_I", "R3F_beret_alat", "H_MilCap_rucamo", "H_HelmetB_light_desert", "R3F_casquette_ops_TAN", "R3F_casqueFS_olive", "R3F_casque_spectra_DA_jaune", "H_HelmetB", "H_MilCap_blue", "R3F_bandana_noir", "H_HelmetB_light_sand", "R3F_beret_para", "H_PilotHelmetFighter_I", "R3F_casque_spectra_DA", "R3F_casque_spectra_vert", "R3F_beret", "R3F_Bonnet_snow", "H_HelmetIA_camo", "H_HelmetLeaderO_ghex_F", "R3F_beret_alat", "H_MilCap_mcamo", "R3F_Bonnet", "R3F_Bonnet_snow", "R3F_chapeaubrousse_TAN", "H_BandMask_demon", "H_HelmetB_black", "R3F_casqueFS_noir", "H_MilCap_mcamo", "H_HelmetB_light_sand", "R3F_beret_commando", "H_HelmetB_snakeskin", "H_HelmetSpecB_blk", "R3F_chapeaubrousse_CE", "R3F_casque_spectra_EOD_DA", "H_MilCap_dgtl", "R3F_casque_spectra_EOD_DA", "R3F_chapeaubrousse_TAN", "R3F_casquette_off_DA", "H_MilCap_ocamo", "R3F_casque_spectra_DA_violet", "R3F_casqueFS_olive", "R3F_bandana_noir", "R3F_casque_spectra_DA_orange", "R3F_casqueFS_TAN", "R3F_casque_pilote", "H_Helmet_Skate", "R3F_casque_spectra_vert", "R3F_casquette_off_DA", "H_BandMask_khk", "R3F_casqueFS_TAN", "R3F_casquette_off_DA", "R3F_casque_spectra_DA_jaune", "R3F_chapeaubrousse_CE", "R3F_casqueFS_snow", "H_HelmetSpecO_ghex_F", "R3F_casque_spectra_jaune", "H_HelmetSpecB_blk", "H_HelmetB_Light_tna_F", "H_MilCap_oucamo", "H_HelmetLeaderO_oucamo", "R3F_beret", "H_MilCap_ocamo", "H_PilotHelmetHeli_B", "R3F_casque_spectra_DA_vert", "R3F_beret_para", "R3F_Bonnet_vert", "H_MilCap_ocamo", "R3F_beret_para", "Exile_Headgear_GasMask", "H_HelmetSpecO_blk", "R3F_casquette_ops", "H_HelmetIA", "H_HelmetB_paint", "H_HelmetB", "H_HelmetSpecB", "H_HelmetB_light_grass", "H_MilCap_mcamo", "H_HelmetB_desert", "R3F_casque_spectra_DA_bleu", "R3F_casquette_ops_TAN", "H_HelmetB_TI_tna_F", "R3F_bandana_olive", "R3F_casque_spectra_DA_vert", "R3F_casquette_off", "H_HelmetIA", "R3F_casque_spectra_orange", "R3F_beret_commando", "H_HelmetB_Enh_tna_F", "H_HelmetB_Enh_tna_F", "H_HelmetB_Light_tna_F", "R3F_beret_para", "H_HelmetB_light_black", "R3F_casquette_ops", "H_HelmetB_desert", "R3F_casque_spectra_DA", "R3F_beret_commando", "R3F_casquette", "Exile_Headgear_GasMask", "R3F_bandana_olive", "H_PilotHelmetHeli_I", "H_HelmetCrew_O", "H_Beret_gen_F", "H_HelmetB_plain_blk", "R3F_casque_spectra_jaune", "H_HelmetSpecB_blk", "R3F_casque_spectra_violet", "R3F_casque_spectra_orange", "R3F_beret", "R3F_casqueFS_noir", "R3F_casque_spectra_jaune", "H_CrewHelmetHeli_B", "H_HelmetSpecB_paint1", "H_MilCap_mcamo", "H_MilCap_dgtl", "H_HelmetB_light_snakeskin", "R3F_casque_spectra_DA_orange", "H_MilCap_oucamo", "R3F_Bonnet_vert", "H_HelmetB_light_snakeskin", "R3F_casque_spectra_DA_jaune", "H_HelmetSpecB_paint1", "R3F_casquette_TAN", "H_BandMask_reaper", "R3F_casque_spectra_DA_bleu", "R3F_casquette_ops", "H_HelmetIA_net", "H_BandMask_demon", "H_HelmetO_ghex_F", "H_HelmetB_light_desert", "H_MilCap_rucamo", "R3F_casquette_off", "R3F_casque_spectra_EOD", "R3F_casque_spectra_EOD", "R3F_casquette_TAN", "H_HelmetB_paint", "H_MilCap_rucamo", "H_Helmet_Skate", "R3F_casqueFS_noir", "H_HelmetLeaderO_ghex_F", "R3F_casquette_TAN", "R3F_casque_pilote", "H_HelmetB_plain_blk", "R3F_casque_spectra_DA_vert", "H_HelmetB_light", "H_HelmetB_grass", "R3F_casque_spectra_violet", "H_MilCap_oucamo", "R3F_casque_spectra_DA_violet", "H_HelmetB_sand", "H_HelmetB_light_black"};
 
 		/*
 			Percental Item Spawn Chances of Ghillies:
@@ -3908,7 +4009,7 @@ class CfgExileLootServer
 			U_O_GhillieSuit = 33,33%
 			U_I_GhillieSuit = 33,33%
 		*/
-		Ghillies[] = {"U_O_GhillieSuit", "U_B_GhillieSuit", "U_I_GhillieSuit"};
+		Ghillies[] = {"U_B_GhillieSuit", "U_I_GhillieSuit", "U_O_GhillieSuit"};
 
 		/*
 			Percental Item Spawn Chances of DLCGhillies:
@@ -3928,7 +4029,7 @@ class CfgExileLootServer
 			U_O_T_Sniper_F          = 14,71%
 			U_O_T_FullGhillie_tna_F = 14,71%
 		*/
-		DLCGhillies[] = {"U_B_T_FullGhillie_tna_F", "U_O_FullGhillie_ard", "U_B_T_Soldier_F", "U_O_FullGhillie_sard", "U_B_T_Soldier_F", "U_B_T_FullGhillie_tna_F", "U_B_FullGhillie_ard", "U_O_T_FullGhillie_tna_F", "U_B_T_Soldier_F", "U_O_T_FullGhillie_tna_F", "U_B_T_Soldier_F", "U_B_T_Sniper_F", "U_O_T_FullGhillie_tna_F", "U_B_T_FullGhillie_tna_F", "U_I_FullGhillie_ard", "U_I_FullGhillie_sard", "U_O_T_Sniper_F", "U_B_T_Sniper_F", "U_B_T_Sniper_F", "U_O_T_Sniper_F", "U_B_T_FullGhillie_tna_F", "U_O_FullGhillie_lsh", "U_O_T_FullGhillie_tna_F", "U_O_T_Sniper_F", "U_O_T_FullGhillie_tna_F", "U_B_T_Sniper_F", "U_B_T_FullGhillie_tna_F", "U_B_FullGhillie_lsh", "U_O_T_Sniper_F", "U_O_T_Sniper_F", "U_B_T_Sniper_F", "U_I_FullGhillie_lsh", "U_B_FullGhillie_sard", "U_B_T_Soldier_F"};
+		DLCGhillies[] = {"U_B_T_FullGhillie_tna_F", "U_O_T_Sniper_F", "U_O_T_FullGhillie_tna_F", "U_O_T_Sniper_F", "U_I_FullGhillie_lsh", "U_O_FullGhillie_lsh", "U_O_T_FullGhillie_tna_F", "U_B_FullGhillie_ard", "U_O_T_FullGhillie_tna_F", "U_B_T_Soldier_F", "U_O_FullGhillie_sard", "U_O_T_Sniper_F", "U_B_T_Soldier_F", "U_I_FullGhillie_ard", "U_B_T_FullGhillie_tna_F", "U_B_T_FullGhillie_tna_F", "U_B_T_Sniper_F", "U_B_T_Soldier_F", "U_I_FullGhillie_sard", "U_B_T_Sniper_F", "U_B_T_Sniper_F", "U_B_T_Sniper_F", "U_B_T_Sniper_F", "U_O_FullGhillie_ard", "U_B_T_Soldier_F", "U_O_T_FullGhillie_tna_F", "U_B_T_Soldier_F", "U_B_T_FullGhillie_tna_F", "U_O_T_Sniper_F", "U_O_T_FullGhillie_tna_F", "U_B_FullGhillie_sard", "U_B_T_FullGhillie_tna_F", "U_O_T_Sniper_F", "U_B_FullGhillie_lsh"};
 
 		/*
 			Percental Item Spawn Chances of DLCVests:
@@ -3955,7 +4056,7 @@ class CfgExileLootServer
 			V_PlateCarrier1_rgr_noflag_F = 4,76%
 			V_PlateCarrier2_rgr_noflag_F = 4,76%
 		*/
-		DLCVests[] = {"V_TacVest_gen_F", "V_PlateCarrierSpec_mtp", "V_PlateCarrier1_rgr_noflag_F", "V_PlateCarrierGL_rgr", "V_PlateCarrierSpec_blk", "V_PlateCarrier1_tna_F", "V_BandollierB_ghex_F", "V_PlateCarrierGL_mtp", "V_PlateCarrier2_tna_F", "V_PlateCarrier2_rgr_noflag_F", "V_TacChestrig_oli_F", "V_TacChestrig_cbr_F", "V_TacChestrig_grn_F", "V_HarnessOGL_ghex_F", "V_HarnessO_ghex_F", "V_PlateCarrierSpec_rgr", "V_PlateCarrierGL_tna_F", "V_PlateCarrierIAGL_oli", "V_PlateCarrierGL_blk", "V_PlateCarrierSpec_tna_F", "V_PlateCarrierIAGL_dgtl"};
+		DLCVests[] = {"V_PlateCarrier2_rgr_noflag_F", "V_PlateCarrierSpec_tna_F", "V_PlateCarrierSpec_rgr", "V_PlateCarrierIAGL_oli", "V_TacChestrig_cbr_F", "V_PlateCarrierGL_tna_F", "V_PlateCarrierSpec_blk", "V_TacChestrig_grn_F", "V_PlateCarrierGL_rgr", "V_PlateCarrier1_tna_F", "V_PlateCarrier2_tna_F", "V_HarnessOGL_ghex_F", "V_BandollierB_ghex_F", "V_PlateCarrierGL_blk", "V_HarnessO_ghex_F", "V_TacVest_gen_F", "V_PlateCarrier1_rgr_noflag_F", "V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp", "V_PlateCarrierIAGL_dgtl", "V_TacChestrig_oli_F"};
 
 		/*
 			Percental Item Spawn Chances of Rebreathers:
@@ -3964,7 +4065,7 @@ class CfgExileLootServer
 			V_RebreatherIR = 33,33%
 			V_RebreatherIA = 33,33%
 		*/
-		Rebreathers[] = {"V_RebreatherIA", "V_RebreatherB", "V_RebreatherIR"};
+		Rebreathers[] = {"V_RebreatherIR", "V_RebreatherB", "V_RebreatherIA"};
 
 		/*
 			Percental Item Spawn Chances of MedicalItems:
@@ -3974,34 +4075,35 @@ class CfgExileLootServer
 			Exile_Item_Vishpirin = 36,36%
 			Exile_Item_Heatpack  = 36,36%
 		*/
-		MedicalItems[] = {"Exile_Item_Heatpack", "Exile_Item_Bandage", "Exile_Item_Vishpirin", "Exile_Item_Vishpirin", "Exile_Item_Vishpirin", "Exile_Item_Vishpirin", "Exile_Item_Heatpack", "Exile_Item_Heatpack", "Exile_Item_InstaDoc", "Exile_Item_Bandage", "Exile_Item_Heatpack"};
+		MedicalItems[] = {"Exile_Item_Heatpack", "Exile_Item_InstaDoc", "Exile_Item_Vishpirin", "Exile_Item_Vishpirin", "Exile_Item_Vishpirin", "Exile_Item_Vishpirin", "Exile_Item_Heatpack", "Exile_Item_Heatpack", "Exile_Item_Bandage", "Exile_Item_Heatpack", "Exile_Item_Bandage"};
 
 		/*
 			Percental Item Spawn Chances of IndustrialItems:
 
-			Exile_Item_ThermalScannerPro    = 0,66%
-			Exile_Item_Knife                = 1,32%
-			Exile_Item_Cement               = 1,97%
-			Exile_Item_FloodLightKit        = 1,97%
-			Exile_Item_PortableGeneratorKit = 1,97%
-			Exile_Item_CamoTentKit          = 2,63%
-			Exile_Item_MetalBoard           = 2,63%
-			Exile_Item_Foolbox              = 2,63%
-			Exile_Item_Sand                 = 2,63%
-			Exile_Item_Grinder              = 3,29%
-			Exile_Item_MetalScrews          = 3,29%
-			Exile_Melee_SledgeHammer        = 3,29%
-			Exile_Item_ExtensionCord        = 5,26%
-			Exile_Item_LightBulb            = 5,92%
-			Exile_Item_WaterCanisterEmpty   = 6,58%
-			Exile_Melee_Shovel              = 6,58%
-			Exile_Item_JunkMetal            = 7,24%
-			Exile_Item_Handsaw              = 8,55%
-			Exile_Item_Pliers               = 8,55%
-			Exile_Item_ScrewDriver          = 8,55%
-			Exile_Melee_Axe                 = 14,47%
+			Exile_Item_ThermalScannerPro    = 0,65%
+			Exile_Item_Knife                = 1,30%
+			Exile_Magazine_Battery          = 1,95%
+			Exile_Item_Cement               = 1,95%
+			Exile_Item_FloodLightKit        = 1,95%
+			Exile_Item_PortableGeneratorKit = 1,95%
+			Exile_Item_CamoTentKit          = 2,60%
+			Exile_Item_MetalBoard           = 2,60%
+			Exile_Item_Foolbox              = 2,60%
+			Exile_Item_Sand                 = 2,60%
+			Exile_Item_Grinder              = 3,25%
+			Exile_Item_MetalScrews          = 3,25%
+			Exile_Melee_SledgeHammer        = 3,25%
+			Exile_Item_ExtensionCord        = 5,19%
+			Exile_Item_LightBulb            = 5,84%
+			Exile_Item_WaterCanisterEmpty   = 6,49%
+			Exile_Melee_Shovel              = 6,49%
+			Exile_Item_JunkMetal            = 7,14%
+			Exile_Item_Handsaw              = 7,79%
+			Exile_Item_Pliers               = 8,44%
+			Exile_Item_ScrewDriver          = 8,44%
+			Exile_Melee_Axe                 = 14,29%
 		*/
-		IndustrialItems[] = {"Exile_Melee_Axe", "Exile_Item_Pliers", "Exile_Item_ThermalScannerPro", "Exile_Item_JunkMetal", "Exile_Item_MetalBoard", "Exile_Item_ScrewDriver", "Exile_Item_CamoTentKit", "Exile_Melee_Shovel", "Exile_Item_ScrewDriver", "Exile_Melee_Axe", "Exile_Melee_Axe", "Exile_Item_Sand", "Exile_Item_MetalScrews", "Exile_Melee_Axe", "Exile_Item_Handsaw", "Exile_Item_Knife", "Exile_Item_ExtensionCord", "Exile_Melee_Shovel", "Exile_Item_ScrewDriver", "Exile_Item_WaterCanisterEmpty", "Exile_Item_ScrewDriver", "Exile_Item_Grinder", "Exile_Item_PortableGeneratorKit", "Exile_Item_JunkMetal", "Exile_Item_Sand", "Exile_Melee_Axe", "Exile_Item_Grinder", "Exile_Item_CamoTentKit", "Exile_Melee_Shovel", "Exile_Item_Handsaw", "Exile_Item_Pliers", "Exile_Item_Pliers", "Exile_Item_Pliers", "Exile_Melee_SledgeHammer", "Exile_Item_Handsaw", "Exile_Melee_Axe", "Exile_Melee_Axe", "Exile_Item_LightBulb", "Exile_Item_ScrewDriver", "Exile_Item_ScrewDriver", "Exile_Item_ScrewDriver", "Exile_Item_ExtensionCord", "Exile_Item_Pliers", "Exile_Item_ExtensionCord", "Exile_Melee_Shovel", "Exile_Melee_Axe", "Exile_Item_LightBulb", "Exile_Item_ScrewDriver", "Exile_Item_Handsaw", "Exile_Melee_SledgeHammer", "Exile_Item_Pliers", "Exile_Item_JunkMetal", "Exile_Melee_Shovel", "Exile_Item_ScrewDriver", "Exile_Item_Grinder", "Exile_Item_Pliers", "Exile_Item_MetalScrews", "Exile_Item_Foolbox", "Exile_Item_MetalBoard", "Exile_Melee_Shovel", "Exile_Item_LightBulb", "Exile_Melee_Axe", "Exile_Item_JunkMetal", "Exile_Item_Foolbox", "Exile_Item_Handsaw", "Exile_Item_WaterCanisterEmpty", "Exile_Item_LightBulb", "Exile_Item_Foolbox", "Exile_Item_ScrewDriver", "Exile_Item_Cement", "Exile_Item_WaterCanisterEmpty", "Exile_Item_LightBulb", "Exile_Item_MetalBoard", "Exile_Item_Knife", "Exile_Item_Handsaw", "Exile_Melee_Axe", "Exile_Item_Pliers", "Exile_Item_Pliers", "Exile_Item_LightBulb", "Exile_Item_Sand", "Exile_Item_PortableGeneratorKit", "Exile_Melee_SledgeHammer", "Exile_Item_Handsaw", "Exile_Item_MetalScrews", "Exile_Item_ExtensionCord", "Exile_Melee_Axe", "Exile_Item_LightBulb", "Exile_Melee_SledgeHammer", "Exile_Item_Grinder", "Exile_Item_JunkMetal", "Exile_Item_CamoTentKit", "Exile_Item_FloodLightKit", "Exile_Item_WaterCanisterEmpty", "Exile_Item_Pliers", "Exile_Item_Handsaw", "Exile_Item_WaterCanisterEmpty", "Exile_Melee_Axe", "Exile_Item_MetalBoard", "Exile_Melee_Axe", "Exile_Melee_Shovel", "Exile_Item_WaterCanisterEmpty", "Exile_Melee_Axe", "Exile_Item_ExtensionCord", "Exile_Melee_Shovel", "Exile_Item_ScrewDriver", "Exile_Item_FloodLightKit", "Exile_Melee_Shovel", "Exile_Item_Handsaw", "Exile_Melee_Shovel", "Exile_Item_Handsaw", "Exile_Item_Pliers", "Exile_Item_JunkMetal", "Exile_Item_ExtensionCord", "Exile_Item_Cement", "Exile_Melee_Axe", "Exile_Item_PortableGeneratorKit", "Exile_Item_JunkMetal", "Exile_Melee_Axe", "Exile_Item_WaterCanisterEmpty", "Exile_Item_Handsaw", "Exile_Item_JunkMetal", "Exile_Item_LightBulb", "Exile_Item_JunkMetal", "Exile_Melee_Axe", "Exile_Item_Handsaw", "Exile_Item_Foolbox", "Exile_Melee_Axe", "Exile_Item_ScrewDriver", "Exile_Item_Pliers", "Exile_Item_WaterCanisterEmpty", "Exile_Item_MetalScrews", "Exile_Item_Sand", "Exile_Item_Handsaw", "Exile_Item_CamoTentKit", "Exile_Item_ExtensionCord", "Exile_Item_WaterCanisterEmpty", "Exile_Item_JunkMetal", "Exile_Item_ExtensionCord", "Exile_Item_Pliers", "Exile_Melee_Axe", "Exile_Melee_Axe", "Exile_Item_WaterCanisterEmpty", "Exile_Item_ScrewDriver", "Exile_Item_Cement", "Exile_Melee_SledgeHammer", "Exile_Melee_Axe", "Exile_Item_MetalScrews", "Exile_Item_JunkMetal", "Exile_Item_LightBulb", "Exile_Item_FloodLightKit", "Exile_Item_Grinder", "Exile_Melee_Axe"};
+		IndustrialItems[] = {"Exile_Item_WaterCanisterEmpty", "Exile_Item_MetalBoard", "Exile_Item_Sand", "Exile_Item_Cement", "Exile_Item_Pliers", "Exile_Item_ExtensionCord", "Exile_Item_Handsaw", "Exile_Item_Pliers", "Exile_Melee_Axe", "Exile_Item_Handsaw", "Exile_Item_ScrewDriver", "Exile_Item_Knife", "Exile_Item_ExtensionCord", "Exile_Item_ScrewDriver", "Exile_Melee_SledgeHammer", "Exile_Melee_Axe", "Exile_Magazine_Battery", "Exile_Item_Grinder", "Exile_Item_Handsaw", "Exile_Melee_Axe", "Exile_Item_LightBulb", "Exile_Melee_Shovel", "Exile_Item_Grinder", "Exile_Item_Sand", "Exile_Item_FloodLightKit", "Exile_Item_JunkMetal", "Exile_Item_JunkMetal", "Exile_Item_ThermalScannerPro", "Exile_Item_Pliers", "Exile_Item_ScrewDriver", "Exile_Item_LightBulb", "Exile_Item_ScrewDriver", "Exile_Melee_SledgeHammer", "Exile_Item_JunkMetal", "Exile_Item_Handsaw", "Exile_Item_Pliers", "Exile_Melee_SledgeHammer", "Exile_Item_Grinder", "Exile_Melee_Shovel", "Exile_Melee_SledgeHammer", "Exile_Item_FloodLightKit", "Exile_Item_ScrewDriver", "Exile_Item_MetalBoard", "Exile_Item_Cement", "Exile_Item_LightBulb", "Exile_Item_CamoTentKit", "Exile_Item_LightBulb", "Exile_Item_Pliers", "Exile_Item_Handsaw", "Exile_Item_WaterCanisterEmpty", "Exile_Item_JunkMetal", "Exile_Melee_Axe", "Exile_Item_MetalBoard", "Exile_Melee_Axe", "Exile_Item_Pliers", "Exile_Item_WaterCanisterEmpty", "Exile_Melee_Axe", "Exile_Item_Pliers", "Exile_Item_ScrewDriver", "Exile_Melee_Axe", "Exile_Item_Pliers", "Exile_Item_ScrewDriver", "Exile_Item_MetalScrews", "Exile_Item_JunkMetal", "Exile_Item_Pliers", "Exile_Item_LightBulb", "Exile_Item_Grinder", "Exile_Item_Cement", "Exile_Melee_Shovel", "Exile_Item_Handsaw", "Exile_Melee_Shovel", "Exile_Item_ExtensionCord", "Exile_Item_CamoTentKit", "Exile_Item_ScrewDriver", "Exile_Item_MetalBoard", "Exile_Item_Foolbox", "Exile_Item_Knife", "Exile_Magazine_Battery", "Exile_Item_Handsaw", "Exile_Item_LightBulb", "Exile_Melee_Axe", "Exile_Item_Pliers", "Exile_Item_WaterCanisterEmpty", "Exile_Item_WaterCanisterEmpty", "Exile_Item_JunkMetal", "Exile_Item_JunkMetal", "Exile_Item_JunkMetal", "Exile_Melee_Shovel", "Exile_Item_ScrewDriver", "Exile_Item_Handsaw", "Exile_Melee_Shovel", "Exile_Item_ScrewDriver", "Exile_Item_Handsaw", "Exile_Melee_Axe", "Exile_Melee_Axe", "Exile_Item_Handsaw", "Exile_Item_WaterCanisterEmpty", "Exile_Item_ExtensionCord", "Exile_Item_Foolbox", "Exile_Item_Pliers", "Exile_Melee_Axe", "Exile_Item_ScrewDriver", "Exile_Item_ScrewDriver", "Exile_Item_WaterCanisterEmpty", "Exile_Melee_SledgeHammer", "Exile_Item_ExtensionCord", "Exile_Item_Pliers", "Exile_Item_MetalScrews", "Exile_Melee_Shovel", "Exile_Item_Pliers", "Exile_Melee_Axe", "Exile_Item_Foolbox", "Exile_Item_ExtensionCord", "Exile_Melee_Axe", "Exile_Item_Grinder", "Exile_Melee_Axe", "Exile_Item_MetalScrews", "Exile_Melee_Axe", "Exile_Melee_Axe", "Exile_Melee_Axe", "Exile_Item_ExtensionCord", "Exile_Item_WaterCanisterEmpty", "Exile_Melee_Axe", "Exile_Item_LightBulb", "Exile_Item_Sand", "Exile_Item_JunkMetal", "Exile_Item_PortableGeneratorKit", "Exile_Item_Sand", "Exile_Item_MetalScrews", "Exile_Item_ScrewDriver", "Exile_Item_LightBulb", "Exile_Item_CamoTentKit", "Exile_Item_MetalScrews", "Exile_Item_JunkMetal", "Exile_Melee_Shovel", "Exile_Item_ExtensionCord", "Exile_Magazine_Battery", "Exile_Item_Foolbox", "Exile_Melee_Axe", "Exile_Melee_Axe", "Exile_Item_CamoTentKit", "Exile_Item_LightBulb", "Exile_Melee_Shovel", "Exile_Melee_Axe", "Exile_Item_Handsaw", "Exile_Item_PortableGeneratorKit", "Exile_Melee_Axe", "Exile_Item_JunkMetal", "Exile_Item_PortableGeneratorKit", "Exile_Item_WaterCanisterEmpty", "Exile_Item_WaterCanisterEmpty", "Exile_Item_FloodLightKit", "Exile_Item_Handsaw", "Exile_Melee_Shovel"};
 
 		/*
 			Percental Item Spawn Chances of Vehicle:
@@ -4010,7 +4112,7 @@ class CfgExileLootServer
 			Exile_Item_FuelCanisterEmpty = 50,00%
 			Exile_Item_DuctTape          = 10,00%
 		*/
-		Vehicle[] = {"Exile_Item_FuelCanisterFull", "Exile_Item_FuelCanisterEmpty", "Exile_Item_FuelCanisterEmpty", "Exile_Item_FuelCanisterEmpty", "Exile_Item_DuctTape", "Exile_Item_FuelCanisterFull", "Exile_Item_FuelCanisterFull", "Exile_Item_FuelCanisterEmpty", "Exile_Item_FuelCanisterEmpty", "Exile_Item_FuelCanisterFull"};
+		Vehicle[] = {"Exile_Item_FuelCanisterEmpty", "Exile_Item_FuelCanisterEmpty", "Exile_Item_FuelCanisterEmpty", "Exile_Item_FuelCanisterFull", "Exile_Item_FuelCanisterFull", "Exile_Item_FuelCanisterFull", "Exile_Item_FuelCanisterEmpty", "Exile_Item_FuelCanisterFull", "Exile_Item_DuctTape", "Exile_Item_FuelCanisterEmpty"};
 
 		/*
 			Percental Item Spawn Chances of Chemlights:
@@ -4020,7 +4122,7 @@ class CfgExileLootServer
 			Chemlight_red    = 25,00%
 			Chemlight_yellow = 25,00%
 		*/
-		Chemlights[] = {"Chemlight_blue", "Chemlight_red", "Chemlight_green", "Chemlight_yellow"};
+		Chemlights[] = {"Chemlight_blue", "Chemlight_green", "Chemlight_red", "Chemlight_yellow"};
 
 		/*
 			Percental Item Spawn Chances of RoadFlares:
@@ -4030,7 +4132,7 @@ class CfgExileLootServer
 			FlareWhite_F  = 25,00%
 			FlareYellow_F = 25,00%
 		*/
-		RoadFlares[] = {"FlareRed_F", "FlareYellow_F", "FlareGreen_F", "FlareWhite_F"};
+		RoadFlares[] = {"FlareYellow_F", "FlareRed_F", "FlareGreen_F", "FlareWhite_F"};
 
 		/*
 			Percental Item Spawn Chances of SmokeGrenades:
@@ -4043,7 +4145,7 @@ class CfgExileLootServer
 			SmokeShellBlue   = 14,29%
 			SmokeShellOrange = 14,29%
 		*/
-		SmokeGrenades[] = {"SmokeShellBlue", "SmokeShell", "SmokeShellYellow", "SmokeShellPurple", "SmokeShellGreen", "SmokeShellOrange", "SmokeShellRed"};
+		SmokeGrenades[] = {"SmokeShellRed", "SmokeShellBlue", "SmokeShellYellow", "SmokeShellGreen", "SmokeShell", "SmokeShellOrange", "SmokeShellPurple"};
 
 		/*
 			Percental Item Spawn Chances of Restraints:
@@ -4058,7 +4160,7 @@ class CfgExileLootServer
 			Exile_Item_Laptop        = 50,00%
 			Exile_Item_BaseCameraKit = 50,00%
 		*/
-		Electronics[] = {"Exile_Item_BaseCameraKit", "Exile_Item_Laptop"};
+		Electronics[] = {"Exile_Item_Laptop", "Exile_Item_BaseCameraKit"};
 
 		/*
 			Percental Item Spawn Chances of Trash:
@@ -4071,7 +4173,7 @@ class CfgExileLootServer
 			Exile_Item_PlasticBottleEmpty = 25,00%
 			Exile_Item_ToiletPaper        = 25,00%
 		*/
-		Trash[] = {"Exile_Item_PlasticBottleEmpty", "Exile_Item_Can_Empty", "Exile_Item_Magazine02", "Exile_Item_Can_Empty", "Exile_Item_Can_Empty", "Exile_Item_PlasticBottleEmpty", "Exile_Item_PlasticBottleEmpty", "Exile_Item_Magazine04", "Exile_Item_Can_Empty", "Exile_Item_ToiletPaper", "Exile_Item_Magazine01", "Exile_Item_ToiletPaper", "Exile_Item_ToiletPaper", "Exile_Item_PlasticBottleEmpty", "Exile_Item_Magazine03", "Exile_Item_ToiletPaper"};
+		Trash[] = {"Exile_Item_ToiletPaper", "Exile_Item_PlasticBottleEmpty", "Exile_Item_ToiletPaper", "Exile_Item_Can_Empty", "Exile_Item_ToiletPaper", "Exile_Item_Magazine02", "Exile_Item_PlasticBottleEmpty", "Exile_Item_Can_Empty", "Exile_Item_ToiletPaper", "Exile_Item_Magazine04", "Exile_Item_PlasticBottleEmpty", "Exile_Item_Magazine01", "Exile_Item_Magazine03", "Exile_Item_Can_Empty", "Exile_Item_Can_Empty", "Exile_Item_PlasticBottleEmpty"};
 
 		/*
 			Percental Item Spawn Chances of Unused:
@@ -4086,7 +4188,7 @@ class CfgExileLootServer
 			Exile_Item_OilCanister         = 11,11%
 			Exile_Item_Hammer              = 11,11%
 		*/
-		Unused[] = {"Exile_Item_Defibrillator", "Exile_Item_OilCanister", "Exile_Item_SleepingMat", "Exile_Item_Rope", "Exile_Item_FireExtinguisher", "Exile_Item_CordlessScrewdriver", "Exile_Item_Wrench", "Exile_Item_Hammer", "Exile_Item_Carwheel"};
+		Unused[] = {"Exile_Item_SleepingMat", "Exile_Item_Wrench", "Exile_Item_Hammer", "Exile_Item_CordlessScrewdriver", "Exile_Item_Defibrillator", "Exile_Item_FireExtinguisher", "Exile_Item_OilCanister", "Exile_Item_Carwheel", "Exile_Item_Rope"};
 	};
 };
 class CfgSettings
@@ -4097,7 +4199,7 @@ class CfgSettings
 	class CBA 
 	{
 		// Set this to 1 if you want to have CBA support
-		useStackedEH = 0;
+		useStackedEH = 1;
 
 		// If you set this to 1 ...........................................
 		iReallyWantToGetHackedAndImRetarded = 0;
@@ -4155,10 +4257,10 @@ class CfgSettings
 		class Database 
 		{
 			// Remove all deleted items from the database after X days
-			permanentlyDeleteTime = 3;
+			permanentlyDeleteTime = 7;
 			
 			// Remove all territories (and contructions + containers in it) that were not paid after X days
-			territoryLifeTime = 7;
+			territoryLifeTime = 15;
 
 			// Remove all containers outside of territories that have not been used for X days
 			// Example: Tents
@@ -4217,7 +4319,7 @@ class CfgSettings
 		{
 			unlucky = 1; // Dying for an unknown reason costs you 1% respect
 			crash = 1; // Crashing your car costs you 1% respect
-			suicide = 2; // Comitting suicide costs you 2% of your respect
+			suicide = 5; // Comitting suicide costs you 2% of your respect
 			friendyFire = 3; // Friendly fire costs you 3% 
 			npc = 4; // Being killed by an NPC costs you 4%
 			bambiKill = 5; // Killing a bambi costs you 5%
@@ -4258,7 +4360,7 @@ class CfgSettings
 			killStreak = 50;
 
 			// Kills within this amount of seconds stack (default: 2 minutes)
-			killStreakTimeout = 120;
+			killStreakTimeout = 300;
 		};
 	};
 
@@ -4316,7 +4418,7 @@ class CfgSettings
 		/**
 		 * Parachute drop height in meters. 
 		 */
-		parachuteDropHeight = 1000;
+		parachuteDropHeight = 800;
 
 		/**
 		 * Number of minutes where a fresh spawned player remains in the
@@ -4341,8 +4443,11 @@ class CfgSettings
 		 */
 		spawnZoneVehicles[] =
 		{
-			{5, "Exile_Bike_OldBike"},
-			{5, "Exile_Bike_MountainBike"}
+			{2,"Exile_Car_Volha_Blue"},
+			{2,"Exile_Car_Volha_White"},
+			{2,"Exile_Car_Lada_Green"},
+			{2,"Exile_Car_UAZ_Open_Green"},
+			{2,"Exile_Car_UAZ_Green"}
 		};
 	};
 
@@ -4476,8 +4581,8 @@ class CfgSettings
 			Add the keyframes here. The server will pick one random, so if you want one 
 			weather type of be more dominant compared to others, add it multiple times
 		*/
-		//keyframes[] = {"Sunny", "Cloudy", "Thunderstorm"}; 
-		keyframes[] = {"Sunny"}; 
+		keyframes[] = {"Sunny", "Sunny", "Sunny", "Sunny", "Cloudy", "Cloudy", "Cloudy", "Rainy", "Rainy", "Thunderstorm"}; 
+		//keyframes[] = {"Sunny"}; 
 
 		/*
 			This is a keyframe. Look up the BIKI to get more details about the parameters
@@ -4496,8 +4601,8 @@ class CfgSettings
 		*/
 		class Sunny
 		{
-			fogValue = 0.1;
-			fogDecay = 0.2;
+			fogValue = 0;
+			fogDecay = 0;
 			fogBase = 5;
 			overcast = 0.2;
 			waves = 0.2;
@@ -4521,6 +4626,20 @@ class CfgSettings
 			lightnings = 0.1;
 			rainbows = 1;
 		};
+		
+		class Rainy
+		{
+			fogValue = 0.2;
+			fogDecay = 0.1;
+			fogBase = 5;
+			overcast = 0.6;
+			waves = 0.6;
+			wind = 0.50;
+			gusts = 0.5;
+			rain = 0.50;
+			lightnings = 0.1;
+			rainbows = 1;
+		};
 
 		class Thunderstorm
 		{
@@ -4529,7 +4648,7 @@ class CfgSettings
 			fogBase = 5;
 			overcast = 1;
 			waves = 1;
-			wind = 0.25;
+			wind = 1;
 			gusts = 0.5;
 			rain = 1;
 			lightnings = 1;
@@ -4548,7 +4667,7 @@ class CfgSettings
 		// time in ARMA FORMAT << CONFIG
 		// https://community.bistudio.com/wiki/setDate
 
-		staticTime[] = {2039,10,24,15,30};
+		staticTime[] = {2039,10,24,09,00};
 	};
 
 
@@ -4562,10 +4681,10 @@ class CfgSettings
 		serverPassword = "password";
 
 		// Autolocks server until its ready to accept players
-		useAutoLock = 0;
+		useAutoLock = 1;
 
 		// Server will autoLock at that time before restart (minutes)
-		restartAutoLock = 3;
+		restartAutoLock = 2;
 
 		/*
 			Number of hours and minutes of your restart period.
@@ -4575,7 +4694,7 @@ class CfgSettings
 			{4, 0} = Every 4 hours
 			{1, 30} = Every one and a half hour (who the hell would do this?)
 		*/
-		restartTimer[] = {2, 33};
+		restartTimer[] = {3, 59};
 
 		/*
 			Kicks players before restart to prevent gear loss.
@@ -4584,7 +4703,7 @@ class CfgSettings
 			0 = off
 			1 = on
 		*/
-		useAutoKick = 0;
+		useAutoKick = 1;
 
 		/*
 			Number of minutes before the server kicks players that did
@@ -4599,7 +4718,7 @@ class CfgSettings
 			0 = off
 			1 = on
 		*/
-		useRestartMessages = 0;
+		useRestartMessages = 1;
 
 		/*
 			Number of minutes before the restart to inform your players.
@@ -4613,7 +4732,7 @@ class CfgSettings
 			to try to shutdown the server
 		*/
 
-		useShutdown = 0;
+		useShutdown = 1;
 	};
 
 	class ServerSettings
@@ -4648,7 +4767,7 @@ class CfgSettings
 		/*
 			A list of events that are active
 		*/
-		enabledEvents[] = {"SupplyBox", "AbandonedSafe", "AmbientFlyOver", "EarthQuake"}; 
+		enabledEvents[] = {"SupplyBox", "AbandonedSafe", "AmbientFlyOver"}; 
 
 		class EarthQuake 
 		{
@@ -4668,11 +4787,11 @@ class CfgSettings
 			*/
 			type = "spawn";
 			function = "ExileServer_system_event_supplyBox_start";
-			minTime = 60; // minutes
+			minTime = 10; // minutes
 			maxTime = 180; // minutes
-			minimumPlayersOnline = 10;
+			minimumPlayersOnline = 1;
 			dropRadius = 500; // 500m around an airport (including the main airport on Altis!)
-			dropAltitude = 100; // altitude of the drop
+			dropAltitude = 200; // altitude of the drop
 			markerTime = 10; // minutes
 
 			/*
@@ -4681,7 +4800,7 @@ class CfgSettings
 				The type of box is chosen randomly from the following list.
 				Add a type multiple times to increase the chance of being used.
 			*/
-			types[] = {"Beer", "Beer", "Tools", "Food", "Food", "RepairParts"};
+			types[] = {"Beer", "Beer", "Tools", "Food", "Food", "RepairParts","Survival","Terminator"};
 
 			class BoxTypes
 			{
@@ -4719,6 +4838,7 @@ class CfgSettings
 						{"Exile_Item_Pliers", 1},
 						{"Exile_Item_Handsaw", 1},
 						{"Exile_Item_FireExtinguisher", 1},
+						{"Exile_Item_Knife", 1},
 						{"Exile_Item_DuctTape", 1}
 					};
 				};
@@ -4731,7 +4851,28 @@ class CfgSettings
 						{"Exile_Item_FuelCanisterFull", 4},
 						{"Exile_Item_OilCanister", 1},
 						{"Exile_Item_Grinder", 1},
+						{"Exile_Headgear_GasMask", 1},
 						{"Exile_Item_CordlessScrewdriver", 1}
+					};
+				};
+				class Survival 
+				{
+					items[] = 
+					{
+						{"Exile_Item_InstaDoc", 2},
+						{"Exile_Item_Vishpirin", 1},
+						{"Exile_Item_Defibrillator", 1},
+						{"Exile_Item_InstantCoffee", 1}
+					};
+				};
+				class Terminator 
+				{
+					items[] = 
+					{
+						{"Exile_Magazine_Battery", 2},
+						{"Exile_Item_Laptop", 1},
+						{"Exile_Weapon_m107", 1},
+						{"Exile_Magazine_10Rnd_127x99_m107", 2}
 					};
 				};
 			};

@@ -75,6 +75,7 @@
 				<Original>You've changed the look</Original>
 			</Key>
 		</Container>
+	</Package>
 	<Package name="Hacking">
 		<Container name="Notifications">
 			<Key ID="STR_ExAd_HACKING_NOTI_MAX_TERRITORY_HACKS_REACHED">

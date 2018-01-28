@@ -16,11 +16,11 @@
 	limitations under the License.
 */
 
-ExAd_GRINDING_PROGRESS_INTERVALL = 5;	//SCALAR - Grinding, interval time measured in seconds.
+ExAd_GRINDING_PROGRESS_INTERVALL = 60;	//SCALAR - Grinding, interval time measured in seconds.
 
 ExAd_GRINDING_PROGRESS = 30;			//SCALAR - Damage each finished interval will take from the code lock.
 
-ExAd_GRINDING_OBJECT_MAX = 300;			//SCALAR - Code lock sustainability.
+ExAd_GRINDING_OBJECT_MAX = 900;			//SCALAR - Code lock sustainability.
 
 ExAd_GRINDING_PROGRESSBAR_POS = "Mid";	//SCALAR/STRING - You can use values between 0.3-2 or using "LOW"|"MID"|"HIGH"
 
