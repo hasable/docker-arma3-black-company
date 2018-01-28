@@ -7603,7 +7603,7 @@ Extensions[] = {
 		/* Quickly get an Offroad */
 		{"Offroad", "['getvehicle', 'B_G_Offroad_01_armed_F'] call AdminToolkit_doAction"},
 		/* Quickly get a Helicopter */
-	    {"Heli", "['getvehicle', 'B_Heli_Light_01_F'] call AdminToolkit_doAction"},
+	    {"Heli", "['getvehicle', 'B_Heli_Light_01_F'] call AdminToolkit_doAction"}
     };
 };
 

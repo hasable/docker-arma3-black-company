@@ -1,3 +1,4 @@
+#include "CfgPatches.hpp"
 
 class CfgVemfReloadedOverrides
 {
@@ -19,6 +20,7 @@ class CfgVemfReloadedOverrides
             aiMode = 0; // 0 = Guerilla | 1 = Regular Police | 2 = Police SF (Special Forces) | 3 = Gendarmerie (needs Apex DLC) | 4 = Apex Bandits (needs Apex DLC)
             aiMoney = 10; // (max) amount of money that AI will have on them
         };
+		
     class missionSettings{
         class DynamicLocationInvasion{ // DynamicLocationInvasion (mission) settings
             class heliPatrol{
@@ -27,6 +29,7 @@ class CfgVemfReloadedOverrides
             killPercentage = 75; // How much of total AI has to be killed for mission completion (in percentage)
         };
     };
+	
     class aiCleanUp // Contains settings for removal of items from each AI that gets eliminated
     {
         aiDeathRemovalEffect = no; // enable/disable the "death effect" from Virtual Arsenal. Flashes AI and deletes it after being eliminated

@@ -19,9 +19,10 @@ services:
       - EXILE_DATABASE_USER=altisu
       - EXILE_DATABASE_PASS=altispw
       - ATK_CONFIG_ADMIN_LIST=76561197990024201,76561198007339024
+      - CONFIG=/home/steamu/config
     volumes:
       - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
-      - /mnt/shares/configs:/home/steamu/configs
+      - /mnt/shares/config:/home/steamu/config
     links:
         - "arma-3-exile-database:database"
   arma-3-exile-database:

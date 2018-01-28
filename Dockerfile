@@ -4,6 +4,12 @@ LABEL maintainer='hasable'
 ARG USER_NAME=steamu
 
 USER root
+COPY bin/docker-entrypoint /usr/local/bin/
+RUN apt-get install -y rsync \
+	&& apt-get clean \
+	&& chmod +x /usr/local/bin/docker-entrypoint  \
+	&& sync 
+
 WORKDIR /home/steamu
 COPY sources sources
 RUN chown -R ${steamu}:${steamu} sources
@@ -12,10 +18,10 @@ RUN chown -R ${steamu}:${steamu} sources
 USER ${USER_NAME}
 WORKDIR /opt/arma3
 
-USER root
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint", "/opt/arma3/arma3server"]
 CMD ["\"-config=conf/exile.cfg\"", \
 		"\"-servermod=@ExileServer;@A3XAI;@AdminToolkitServer;@AdvancedRappelling;@AdvancedUrbanRappelling;@DMS;@Enigma;@ExAd;@Occupation;@VEMF;@ZCP\"", \
 		"\"-mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites\"", \
 		"-world=empty", \
 		"-autoinit"]
+		

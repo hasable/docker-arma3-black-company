@@ -2,6 +2,11 @@
 set -e
 confd -onetime -backend env
 
+# include external sources
+if [ ! -z "${CONFIG}" ]; then
+	rsync -r ${CONFIG}/ /home/steamu/sources
+fi
+
 # Update AdminToolKit configuration...
 # Add admins
 if [ ! -z "${ATK_CONFIG_ADMIN_LIST}" ]; then 
