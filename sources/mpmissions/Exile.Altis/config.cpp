@@ -7609,7 +7609,7 @@ Extensions[] = {
 
 class CfgXM8
 {
-    extraApps[] = {"ExAd_Info", "ExAd_CHVD", "ExAd_SB","BRAmaRecipes"};
+    extraApps[] = {"ExAd_Info", "ExAd_CHVD", "ExAd_SB", "BRAmaRecipes"};
 	
 	class ExAd_Info 
 	{
