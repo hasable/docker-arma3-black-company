@@ -12,7 +12,7 @@ RUN apt-get install -y rsync \
 
 WORKDIR /home/steamu
 COPY sources sources
-RUN chown -R ${steamu}:${steamu} sources
+RUN chown -R ${USER_NAME}:${USER_NAME} sources
 
 # Server user
 USER ${USER_NAME}
