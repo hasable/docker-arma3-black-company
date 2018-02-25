@@ -34,17 +34,17 @@ class CfgA3XAISettings {
 	loadCustomFile = 0;
 	
 	//Minimum server FPS to spawn/respawn AI (Default: 0)
-	minFPS = 0; //0
+	minFPS = 10; //0
 	
 	//0: A3XAI uses individual threads to manage each spawned AI group (more accurate ammo/fuel reloading). 1: A3XAI will use a single thread to manage all AI groups (better performance). (Default: 0)
-	groupManageMode = 0;
+	groupManageMode = 1;
 	
 	
 	/*	A3XAI HC Settings
 	--------------------------------------------------------------------------------------------------------------------*/	
 
 	//Enables A3XAI headless client support. (Default: 0)
-	enableHC = 0;
+	enableHC = 1;
 	
 	//If HC support enabled, A3XAI will pause during post-initialization until HC has successfully connected. (Default: 0)
 	//IMPORTANT: It is highly recommended to ensure that the HC is properly setup before enabling this option, otherwise A3XAI may be stuck waiting for HC to to connect.

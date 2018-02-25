@@ -3792,6 +3792,15 @@ class CfgInteractionMenus
 				condition = "call ExileClient_object_vehicle_interaction_show";
 				action = "_this call ExileClient_object_vehicle_drain";
 			};
+
+            class PackDeployedVehicle: ExileAbstractAction
+            {
+            title = "Pack Vehicle";
+            condition = "call ExAd_XM8_DV_fnc_canPack";
+            action = "call ExAd_XM8_DV_fnc_pack";
+            };
+            //__INTERACT_ACTION_MARKER_FOR_Car__//
+
 		};
 	};
 
@@ -4250,6 +4259,15 @@ class CfgInteractionMenus
 				condition = "true";
 				action = "_this call ExileClient_object_vehicle_flip";
 			};
+
+            class PackDeployedVehicle: ExileAbstractAction
+            {
+            title = "Pack Bike";
+            condition = "call ExAd_XM8_DV_fnc_canPack";
+            action = "call ExAd_XM8_DV_fnc_pack";
+            };
+            //__INTERACT_ACTION_MARKER_FOR_Bikes__//
+
 		};
 	};
 
@@ -7672,4 +7690,6 @@ class CfgXM8
 
 class CfgDeveloperOptions {
     enableDebugMarkers=1;
+	useDebugLevel=2;
 };
+
