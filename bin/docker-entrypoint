@@ -68,7 +68,11 @@ for mod in @*; do
 	pushd ${mod}/addons/
 	for dir in *; do
 		if [ -d ${dir} ]; then 
-			makepbo -N ${dir}
+			if [ "${dir}" = "a3_vemf_reloaded" ]; then
+				makepbo -N -@=a3_vemf_reloaded ${dir}
+			else
+				makepbo -N ${dir}
+			fi
 			mv -f ${dir}.pbo /opt/arma3/${mod}/addons/${dir}.pbo
 			chmod 755 /opt/arma3/${mod}/addons/${dir}.pbo
 			echo " - added /opt/arma3/${mod}/addons/${dir}.pbo"

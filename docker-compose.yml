@@ -20,6 +20,8 @@ services:
       - EXILE_DATABASE_PASS=altispw
       - ATK_CONFIG_ADMIN_LIST=76561197990024201,76561198007339024
       - HC_LIST=hc0
+    command: "-config=conf/exile.cfg -servermod=@ExileServer;@AdminToolkitServer;@AdvancedRappelling;@AdvancedUrbanRappelling;@DMS;@Enigma;@ExAd;@Occupation;@VEMF;@ZCP; -mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites; -world=empty -autoinit"
+    #command: "-config=conf/exile.cfg -servermod=@ExileServer;@AdminToolkitServer;@ExAd;@VEMF; -mod=@Exile; -world=empty -autoinit"
     volumes:
       - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
       - /mnt/shares/config:/home/steamu/config
@@ -37,6 +39,7 @@ services:
     entrypoint: 
       - /usr/local/bin/docker-entrypoint-hc
     command: -mod=@Exile;@A3XAI_HC;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites -name=HC0
+    #command: -mod=@Exile; -name=HC0
     networks:
       armanet:
         aliases:
