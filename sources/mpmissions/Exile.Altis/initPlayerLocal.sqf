@@ -613,5 +613,7 @@ _traders =
 ]
 call ExileClient_object_trader_create;
 
+execVM "eye.sqf";
+
 call compile preprocessfilelinenumbers "zcp.sqf"; 
 
