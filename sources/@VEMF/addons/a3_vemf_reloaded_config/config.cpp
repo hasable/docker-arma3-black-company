@@ -14,6 +14,9 @@ class CfgVemfReloadedOverrides
 
     debugMode =3; // Overrides CfgVemfReloaded >> debugMode
     maxGlobalMissions = 3; // Overrides CfgVemfReloaded >> maxGlobalMissions
+	sayKilledName = no; // enable/disable the usage of AI's names instead of just "AI"
+	timeOutTime = 20;
+	
    	class Exile // Exile specific settings
       {
         aiMode = 0; // 0 = Guerilla | 1 = Regular Police | 2 = Police SF (Special Forces) | 3 = Gendarmerie (needs Apex DLC) | 4 = Apex Bandits (needs Apex DLC)
