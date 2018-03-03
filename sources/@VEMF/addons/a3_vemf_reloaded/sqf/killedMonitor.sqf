@@ -23,7 +23,8 @@ if ( ( count _a ) > 0 ) then
 				scopeName "while";
 				_k = 0;
 				{ if ( ( ( damage _x ) isEqualTo 1 ) OR ( isNull _x ) ) then { _k = _k + 1 } } forEach _a;
-				[ "DynamicLocationInvasion", 1, format [ "only %1 dead over %2...", _k, _cnt ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
+				[ "DynamicLocationInvasion", 1, format [ "%1 dead over %2 (<%3)", _k, _cnt, _kp ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
 				if ( _k < _kp ) then { uiSleep 10 } else { breakOut "while" };
 			};
+		[ "DynamicLocationInvasion", 1, format [ "%1 dead over %2 (>%3)", _k, _cnt, _kp ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );	
 	};
