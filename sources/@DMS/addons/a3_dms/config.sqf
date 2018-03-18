@@ -85,7 +85,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_ShowMarkerCircle				= false;					// Whether or not to show the colored "circle" around a mission marker.
 	DMS_MarkerText_ShowMissionPrefix	= true;						// Whether or not to place a prefix before the mission marker text. Enable this if your players get confused by the marker names :P
 	DMS_MarkerText_MissionPrefix		= "Mission:";				// The text displayed before the mission name in the mission marker.
-	DMS_MarkerText_ShowAICount			= true;						// Whether or not to display the number of remaining AI in the marker name.
+	DMS_MarkerText_ShowAICount			= false;						// Whether or not to display the number of remaining AI in the marker name.
 	DMS_MarkerText_ShowAICount_Static	= true;						// Whether or not to display the number of remaining AI in the marker name for STATIC missions.
 	DMS_MarkerText_AIName				= "Units";					// What the AI will be called in the map marker. For example, the marker text can show: "Car Dealer (3 Units remaining)"
 	DMS_MarkerPosRandomization			= false;					// Randomize the position of the circle marker of a mission
@@ -185,7 +185,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	/*Mine settings*/
 
 	DMS_MinPlayerCount					= 0; 						// Minimum number of players until mission start
-	DMS_MinServerFPS					= 5; 						// Minimum server FPS for missions to start
+	DMS_MinServerFPS					= 10; 						// Minimum server FPS for missions to start
 
 	/*Mission notification settings*/
 	DMS_PlayerNotificationTypes =		[									// Notification types. Supported values are: ["dynamicTextRequest", "standardHintRequest", "systemChatRequest", "textTilesRequest", "ExileToasts"]. Details below.
@@ -452,7 +452,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 
 	DMS_ai_offload_to_client			= true;						// Offload spawned AI groups to random clients. Helps with server performance.
 	DMS_ai_offload_Only_DMS_AI			= true;						// Don't set this to false unless you know what you're doing.
-	DMS_ai_offload_notifyClient			= false;					// Notify the client when AI has been offloaded to the client.
+	DMS_ai_offload_notifyClient			= true;					// Notify the client when AI has been offloaded to the client.
 
 	DMS_ai_allowFreezing				= true;						// Whether or not to "freeze" AI that are a certain distance away from players (and therefore inactive).
 	DMS_ai_freeze_Only_DMS_AI			= false;					// Whether or not to "freeze" AI that are not spawned by DMS.
@@ -462,7 +462,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_ai_freezeCheckingDelay			= 15;						// How often (in seconds) DMS will check whether to freeze/un-freeze AI.
 	DMS_ai_freezeOnSpawn				= true;						// Whether or not to freeze an AI group when initially spawned.
 
-	DMS_ai_share_info					= false;					// Share info about killer
+	DMS_ai_share_info					= true;					// Share info about killer
 	DMS_ai_share_info_distance			= 25;						// The distance killer's info will be shared to other AI
 
 	DMS_ai_nighttime_accessory_chance	= 75;						// Percentage chance that AI will have a flashlight or laser pointer on their guns if spawned during nighttime
@@ -474,7 +474,7 @@ DMS_SpawnMissions_Scheduled = false;	// Whether or not to spawn missions in a sc
 	DMS_ai_skill_moderate				= [["aimingAccuracy",0.60],["aimingShake",0.60],["aimingSpeed",0.60],["spotDistance",0.60],["spotTime",0.60],["courage",1.00],["reloadSpeed",1.00],["commanding",1.00],["general",0.60]];	// Moderate
 	DMS_ai_skill_difficult				= [["aimingAccuracy",0.70],["aimingShake",0.70],["aimingSpeed",0.70],["spotDistance",0.70],["spotTime",0.80],["courage",1.00],["reloadSpeed",1.00],["commanding",1.00],["general",0.70]]; 	// Difficult
 	DMS_ai_skill_hardcore				= [["aimingAccuracy",1.00],["aimingShake",1.00],["aimingSpeed",1.00],["spotDistance",1.00],["spotTime",1.00],["courage",1.00],["reloadSpeed",1.00],["commanding",1.00],["general",1.00]]; 	// Hardcore
-	DMS_ai_skill_random					= ["hardcore","difficult","difficult","difficult","moderate","moderate","moderate","moderate","easy","easy"];	// Skill frequencies for "random" AI skills | Default: 10% hardcore, 30% difficult, 40% moderate, and 20% easy
+	DMS_ai_skill_random					= ["hardcore","hardcore","difficult","difficult","difficult","moderate","moderate","easy"];	// Skill frequencies for "random" AI skills | Default: 10% hardcore, 30% difficult, 40% moderate, and 20% easy
 	DMS_ai_skill_randomDifficult		= ["hardcore","hardcore","difficult","difficult","difficult"];	// 60% chance for "difficult", 40% chance for "hardcore" AI.
 	DMS_ai_skill_randomEasy				= ["moderate","moderate","easy","easy","easy"];					// 60% chance for "easy", 40% chance for "moderate" AI.
 	DMS_ai_skill_randomIntermediate		= ["difficult","difficult","moderate","moderate","moderate"];	// 60% chance for "moderate", 40% chance for "difficult" AI.

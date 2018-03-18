@@ -2217,41 +2217,41 @@ class CfgExileArsenal
     ///////////////////////////////////////////////////////////////////////////////
     // R3F Ammunition
     ///////////////////////////////////////////////////////////////////////////////
-    class R3F_25Rnd_556x45_FAMAS                    { quality = 1; price = 20; }
-    class R3F_25Rnd_556x45_TRACER_FAMAS             { quality = 1; price = 20; }
-    class R3F_30Rnd_556x45_FAMAS                    { quality = 1; price = 20; }
-    class R3F_30Rnd_556x45_TRACER_FAMAS             { quality = 1; price = 20; }
+    class R3F_25Rnd_556x45_FAMAS                    { quality = 1; price = 20; };
+    class R3F_25Rnd_556x45_TRACER_FAMAS             { quality = 1; price = 20; };
+    class R3F_30Rnd_556x45_FAMAS                    { quality = 1; price = 20; };
+    class R3F_30Rnd_556x45_TRACER_FAMAS             { quality = 1; price = 20; };
 
-    class R3F_20Rnd_762x51_HK417                    { quality = 3; price = 20; }
-    class R3F_20Rnd_762x51_TRACER_HK417             { quality = 3; price = 20; }
+    class R3F_20Rnd_762x51_HK417                    { quality = 3; price = 20; };
+    class R3F_20Rnd_762x51_TRACER_HK417             { quality = 3; price = 20; };
 
-    class R3F_30Rnd_556x45_HK416                    { quality = 1; price = 20; }
-    class R3F_30Rnd_556x45_TRACER_HK416             { quality = 1; price = 20; }
+    class R3F_30Rnd_556x45_HK416                    { quality = 1; price = 20; };
+    class R3F_30Rnd_556x45_TRACER_HK416             { quality = 1; price = 20; };
 
-    class R3F_30Rnd_556x45_SIG551                   { quality = 1; price = 20; }
-    class R3F_30Rnd_556x45_TRACER_SIG551            { quality = 1; price = 20; }
+    class R3F_30Rnd_556x45_SIG551                   { quality = 1; price = 20; };
+    class R3F_30Rnd_556x45_TRACER_SIG551            { quality = 1; price = 20; };
 
-    class R3F_30Rnd_9x19_MP5                        { quality = 1; price = 20; }
+    class R3F_30Rnd_9x19_MP5                        { quality = 1; price = 20; };
 
-    class R3F_200Rnd_556x45_MINIMI                  { quality = 1; price = 30; }
-    class R3F_100Rnd_762x51_MINIMI                  { quality = 3; price = 30; }
+    class R3F_200Rnd_556x45_MINIMI                  { quality = 1; price = 30; };
+    class R3F_100Rnd_762x51_MINIMI                  { quality = 3; price = 30; };
 
-    class R3F_7Rnd_127x99_PGM                       { quality = 6; price = 30; }
-    class R3F_7Rnd_127x99_PEI_PGM                   { quality = 6; price = 30; }
-    class R3F_10Rnd_127x99_M107                     { quality = 6; price = 30; }
-    class R3F_10Rnd_127x99_PEI_M107                 { quality = 6; price = 30; }
-    class R3F_5Rnd_127x99_PEI_TAC50                 { quality = 6; price = 30; }
+    class R3F_7Rnd_127x99_PGM                       { quality = 6; price = 30; };
+    class R3F_7Rnd_127x99_PEI_PGM                   { quality = 6; price = 30; };
+    class R3F_10Rnd_127x99_M107                     { quality = 6; price = 30; };
+    class R3F_10Rnd_127x99_PEI_M107                 { quality = 6; price = 30; };
+    class R3F_5Rnd_127x99_PEI_TAC50                 { quality = 6; price = 30; };
 
     ///////////////////////////////////////////////////////////////////////////////
     // R3F Headgear
     ///////////////////////////////////////////////////////////////////////////////
-    class R3F_casque_spectra                        { quality = 4; price = 40; };
-    class R3F_casque_spectra_jaune                  { quality = 4; price = 40; };
-    class R3F_casque_spectra_bleu                   { quality = 4; price = 40; };
-    class R3F_casque_spectra_vert                   { quality = 4; price = 40; };
-    class R3F_casque_spectra_orange                 { quality = 4; price = 40; };
-    class R3F_casque_spectra_violet                 { quality = 4; price = 40; };
-    class R3F_casque_spectra_EOD                    { quality = 4; price = 40; };
+    class R3F_casque_spectra                        { quality = 6; price = 500; };
+    class R3F_casque_spectra_jaune                  { quality = 6; price = 500; };
+    class R3F_casque_spectra_bleu                   { quality = 6; price = 500; };
+    class R3F_casque_spectra_vert                   { quality = 6; price = 500; };
+    class R3F_casque_spectra_orange                 { quality = 6; price = 500; };
+    class R3F_casque_spectra_violet                 { quality = 6; price = 500; };
+    class R3F_casque_spectra_EOD                    { quality = 6; price = 500; };
     class R3F_casque_pilote                         { quality = 4; price = 40; };
     class R3F_casque_equipage                       { quality = 4; price = 40; };
     class R3F_casquette                             { quality = 4; price = 40; };
@@ -2269,13 +2269,13 @@ class CfgExileArsenal
     class R3F_Bonnet_snow                           { quality = 4; price = 40; };
     class R3F_casquette_off                         { quality = 4; price = 80; };
     class R3F_casquette_off_DA                      { quality = 4; price = 80; };
-    class R3F_casque_spectra_DA                     { quality = 4; price = 80; };
-    class R3F_casque_spectra_DA_jaune               { quality = 4; price = 80; };
-    class R3F_casque_spectra_DA_bleu                { quality = 4; price = 80; };
-    class R3F_casque_spectra_DA_vert                { quality = 4; price = 80; };
-    class R3F_casque_spectra_DA_orange              { quality = 4; price = 80; };
-    class R3F_casque_spectra_DA_violet              { quality = 4; price = 80; };
-    class R3F_casque_spectra_EOD_DA                 { quality = 4; price = 80; };
+    class R3F_casque_spectra_DA                     { quality = 6; price = 500; };
+    class R3F_casque_spectra_DA_jaune               { quality = 6; price = 500; };
+    class R3F_casque_spectra_DA_bleu                { quality = 6; price = 500; };
+    class R3F_casque_spectra_DA_vert                { quality = 6; price = 500; };
+    class R3F_casque_spectra_DA_orange              { quality = 6; price = 500; };
+    class R3F_casque_spectra_DA_violet              { quality = 6; price = 500; };
+    class R3F_casque_spectra_EOD_DA                 { quality = 6; price = 500; };
     class R3F_casqueFS_olive                        { quality = 4; price = 80; };
     class R3F_casqueFS_TAN                          { quality = 4; price = 80; };
     class R3F_casqueFS_noir                         { quality = 4; price = 80; };
@@ -2283,93 +2283,116 @@ class CfgExileArsenal
     class R3F_bandana_olive                         { quality = 4; price = 40; };
     class R3F_bandana_TAN                           { quality = 4; price = 40; };
     class R3F_bandana_noir                          { quality = 4; price = 40; };
-    class R3F_casque_spectra_SNOW                   { quality = 4; price = 80; };
+    class R3F_casque_spectra_SNOW                   { quality = 6; price = 500; };
 
     ///////////////////////////////////////////////////////////////////////////////
     // R3F Vest
     ///////////////////////////////////////////////////////////////////////////////
 
-    class R3F_veste_ce600                           {quality = 5; price = 250;}
-    class R3F_veste_ce300                           {quality = 5; price = 250;}
-    class R3F_veste_APSO                            {quality = 5; price = 250;}
-    class R3F_veste_APSO_EOD                        {quality = 5; price = 250;}
-    class R3F_veste_APSO_CE                         {quality = 5; price = 250;}
-    class R3F_veste_APSO_EOD_CE                     {quality = 5; price = 250;}
-    class R3F_veste_APSO_TAN                        {quality = 5; price = 250;}
-    class R3F_veste_APSO_EOD_TAN                    {quality = 5; price = 250;}
-    class R3F_vestetactique_noire                   {quality = 5; price = 250;}
-    class R3F_veste_noire                           {quality = 5; price = 250;}
-    class R3F_veste_TAN                             {quality = 5; price = 250;}
-    class R3F_veste_off                             {quality = 5; price = 12;}
-    class R3F_veste_equipage                        {quality = 5; price = 250;}
-    class R3F_veste_SNOW                            {quality = 5; price = 250;}
+    class R3F_veste_ce600                           {quality = 5; price = 500;};
+    class R3F_veste_ce300                           {quality = 5; price = 500;};
+    class R3F_veste_APSO                            {quality = 5; price = 250;};
+    class R3F_veste_APSO_EOD                        {quality = 6; price = 1000;};
+    class R3F_veste_APSO_CE                         {quality = 5; price = 250;};
+    class R3F_veste_APSO_EOD_CE                     {quality = 6; price = 1000;};
+    class R3F_veste_APSO_TAN                        {quality = 5; price = 250;};
+    class R3F_veste_APSO_EOD_TAN                    {quality = 6; price = 1000;};
+    class R3F_vestetactique_noire                   {quality = 5; price = 250;};
+    class R3F_veste_noire                           {quality = 5; price = 250;};
+    class R3F_veste_TAN                             {quality = 5; price = 250;};
+    class R3F_veste_off                             {quality = 5; price = 250;};
+    class R3F_veste_SNOW                            {quality = 5; price = 250;};
 
     ///////////////////////////////////////////////////////////////////////////////
     // R3F Uniform
     ///////////////////////////////////////////////////////////////////////////////
 
-    class R3F_UniformBox                            {quality = 6; price = 200;}
-    class R3F_sousvet                               {quality = 6; price = 200;}
-    class R3F_uniform_pilot                         {quality = 6; price = 200;}
-    class R3F_uniform_piheli                        {quality = 6; price = 200;}
-    class R3F_uniform_piheli_DA                     {quality = 6; price = 200;}
-    class R3F_uniform_diver                         {quality = 6; price = 200;}
-    class R3F_uniform_Ghillie                       {quality = 6; price = 200;}
-    class R3F_uniform_urr                           {quality = 6; price = 200;}
-    class R3F_uniform_urr_medic                     {quality = 6; price = 200;}
-    class R3F_uniform_off                           {quality = 6; price = 200;}
-    class R3F_uniform_f1                            {quality = 6; price = 200;}
-    class R3F_uniform_f1_medic                      {quality = 6; price = 200;}
-    class R3F_uniform_apso                          {quality = 6; price = 200;}
-    class R3F_uniform_Ghillie_DA                    {quality = 6; price = 200;}
-    class R3F_uniform_urr_DA                        {quality = 6; price = 200;}
-    class R3F_uniform_urr_medic_DA                  {quality = 6; price = 200;}
-    class R3F_uniform_off_DA                        {quality = 6; price = 200;}
-    class R3F_uniform_f1_DA                         {quality = 6; price = 200;}
-    class R3F_uniform_f1_medic_DA                   {quality = 6; price = 200;}
-    class R3F_uniform_apso_DA                       {quality = 6; price = 200;}
-    class R3F_uniform_Ghillie_SNOW                  {quality = 6; price = 200;}
-    class R3F_uniform_urr_SNOW                      {quality = 6; price = 200;}
-    class R3F_uniform_f1_SNOW                       {quality = 6; price = 200;}
+    class R3F_UniformBox                            {quality = 6; price = 200;};
+    class R3F_sousvet                               {quality = 6; price = 200;};
+    class R3F_uniform_pilot                         {quality = 6; price = 200;};
+    class R3F_uniform_piheli                        {quality = 6; price = 200;};
+    class R3F_uniform_piheli_DA                     {quality = 6; price = 200;};
+    class R3F_uniform_diver                         {quality = 6; price = 200;};
+    class R3F_uniform_Ghillie                       {quality = 6; price = 200;};
+    class R3F_uniform_urr                           {quality = 6; price = 200;};
+    class R3F_uniform_urr_medic                     {quality = 6; price = 200;};
+    class R3F_uniform_off                           {quality = 6; price = 200;};
+    class R3F_uniform_f1                            {quality = 6; price = 200;};
+    class R3F_uniform_f1_medic                      {quality = 6; price = 200;};
+    class R3F_uniform_apso                          {quality = 6; price = 200;};
+    class R3F_uniform_Ghillie_DA                    {quality = 6; price = 200;};
+    class R3F_uniform_urr_DA                        {quality = 6; price = 200;};
+    class R3F_uniform_urr_medic_DA                  {quality = 6; price = 200;};
+    class R3F_uniform_off_DA                        {quality = 6; price = 200;};
+    class R3F_uniform_f1_DA                         {quality = 6; price = 200;};
+    class R3F_uniform_f1_medic_DA                   {quality = 6; price = 200;};
+    class R3F_uniform_apso_DA                       {quality = 6; price = 200;};
+    class R3F_uniform_Ghillie_SNOW                  {quality = 6; price = 200;};
+    class R3F_uniform_urr_SNOW                      {quality = 6; price = 200;};
+    class R3F_uniform_f1_SNOW                       {quality = 6; price = 200;};
 
     ///////////////////////////////////////////////////////////////////////////////
     // R3F Backpacks
     ///////////////////////////////////////////////////////////////////////////////
 
-    class R3F_sac_petit_noir                        {quality = 2; price = 100;}
-    class R3F_sac_petit_TE_noir                     {quality = 2; price = 100;}
-    class R3F_sac_moyen_CE                          {quality = 3; price = 200;}
-    class R3F_sac_moyen_TAN                         {quality = 3; price = 200;}
-    class R3F_sac_moyen_SNOW                        {quality = 3; price = 200;}
-    class R3F_sac_moyen_medic_CE                    {quality = 3; price = 200;}
-    class R3F_sac_moyen_medic_noir                  {quality = 3; price = 200;}
-    class R3F_sac_moyen_medic_TAN                   {quality = 3; price = 200;}
-    class R3F_sac_lourd_CE                          {quality = 4; price = 300;}
-    class R3F_sac_lourd_APSO_CE                     {quality = 4; price = 12;}
-    class R3F_sac_lourd_TAN                         {quality = 4; price = 300;}
-    class R3F_sac_lourd_APSO_TAN                    {quality = 4; price = 12;}
-    class R3F_sac_lourd_noir                        {quality = 4; price = 300;}
-    class R3F_sac_lourd_SNOW                        {quality = 4; price = 300;}
+    class R3F_sac_petit_noir                        {quality = 2; price = 100;};
+    class R3F_sac_petit_TE_noir                     {quality = 2; price = 100;};
+    class R3F_sac_moyen_CE                          {quality = 3; price = 200;};
+    class R3F_sac_moyen_TAN                         {quality = 3; price = 200;};
+    class R3F_sac_moyen_SNOW                        {quality = 3; price = 200;};
+    class R3F_sac_moyen_medic_CE                    {quality = 3; price = 200;};
+    class R3F_sac_moyen_medic_noir                  {quality = 3; price = 200;};
+    class R3F_sac_moyen_medic_TAN                   {quality = 3; price = 200;};
+    class R3F_sac_lourd_CE                          {quality = 4; price = 300;};
+    class R3F_sac_lourd_TAN                         {quality = 4; price = 300;};
+    class R3F_sac_lourd_noir                        {quality = 4; price = 300;};
+    class R3F_sac_lourd_SNOW                        {quality = 4; price = 300;};
+
+    ///////////////////////////////////////////////////////////////////////////////
+    // R3F Vehicle Price List
+    ///////////////////////////////////////////////////////////////////////////////
+    ///// Wheeled
+    class R3F_FENNEC_CE                             {quality = 6; price = 90000;}; //strider
+    class R3F_FENNEC_DA                             {quality = 6; price = 90000;}; //strider
+    class R3F_MATV_CE                               {quality = 5; price = 38000;}; //hunter
+    class R3F_MATV_DA                               {quality = 5; price = 38000;}; //hunter
+    class R3F_HEMTT_CE_log                          {quality = 4; price = 70000;};
+    class R3F_HEMTT_DA_log                          {quality = 4; price = 70000;};
+    class R3F_HEMTT_trans                           {quality = 4; price = 70000;};
+    class R3F_KAMAZ_CE_fuel                         {quality = 6; price = 80000;};
+    class R3F_KAMAZ_DA_fuel                         {quality = 6; price = 80000;};
+    class R3F_KAMAZ_CE_trans                        {quality = 6; price = 80000;};
+    class R3F_KAMAZ_DA_trans                        {quality = 6; price = 80000;};
+    class R3F_KAMAZ_CE_VPC                          {quality = 6; price = 80000;};
+    class R3F_KAMAZ_DA_VPC                          {quality = 6; price = 80000;};
+    
+    ///// Air Helis
+    class R3F_AH6_CE                                {quality = 2; price = 25000;};
+    class R3F_AH6_DA                                {quality = 2; price = 25000;};
+    class R3F_LYNX_CE                               {quality = 3; price = 40000;};
+    class R3F_LYNX_DA                               {quality = 3; price = 40000;};
+    class R3F_MERLIN_CE                             {quality = 5; price = 80000;};
+    class R3F_MERLIN_DA                             {quality = 5; price = 80000;};
 
     /////////////////////////////////////////////
     // CUP weapon Price List
     /////////////////////////////////////////////
-    class CUP_hgun_MicroUzi                         {quality = 2; price = 300;}
-    class CUP_arifle_G36A                           {quality = 3; price = 300;}
-    class CUP_arifle_MG36                           {quality = 3; price = 300;}
-    class CUP_arifle_Mk16_CQC_FG                    {quality = 3; price = 300;}
-    class CUP_arifle_Mk17_CQC                       {quality = 4; price = 300;}
-    class CUP_arifle_XM8_Compact_Rail               {quality = 4; price = 300;}
-    class CUP_arifle_FNFAL                          {quality = 4; price = 300;}
+    class CUP_hgun_MicroUzi                         {quality = 2; price = 300;};
+    class CUP_arifle_G36A                           {quality = 3; price = 300;};
+    class CUP_arifle_MG36                           {quality = 3; price = 300;};
+    class CUP_arifle_Mk16_CQC_FG                    {quality = 3; price = 300;};
+    class CUP_arifle_Mk17_CQC                       {quality = 4; price = 300;};
+    class CUP_arifle_XM8_Compact_Rail               {quality = 4; price = 300;};
+    class CUP_arifle_FNFAL                          {quality = 4; price = 300;};
     
     /////////////////////////////////////////////
     // CUP Ammunition Price List
     /////////////////////////////////////////////
-    class CUP_30Rnd_9x19_UZI                        {quality = 2; price = 20;}
-    class CUP_30Rnd_556x45_G36                      {quality = 3; price = 30;}
-    class CUP_100Rnd_556x45_BetaCMag                {quality = 3; price = 100;}
-    class CUP_20Rnd_762x51_B_SCAR                   {quality = 4; price = 30;}
-    class CUP_20Rnd_762x51_FNFAL_M                  {quality = 4; price = 30;}
+    class CUP_30Rnd_9x19_UZI                        {quality = 2; price = 20;};
+    class CUP_30Rnd_556x45_G36                      {quality = 3; price = 30;};
+    class CUP_100Rnd_556x45_BetaCMag                {quality = 3; price = 100;};
+    class CUP_20Rnd_762x51_B_SCAR                   {quality = 4; price = 30;};
+    class CUP_20Rnd_762x51_FNFAL_M                  {quality = 4; price = 30;};
 
     ///////////////////////////////////////////////////////////////////////////////
     // ArmA 2 Ammunition
@@ -3292,30 +3315,30 @@ class CfgExileArsenal
     // EBM
     ///////////////////////////////////////////////////////////////////////////////
     ///////////////////////// V0.3.1 
-class EBM_Brickwall_window_Kit								{ quality = 1; price = 3000;sellPrice = 50;  };
-class EBM_Brickwall_stairs_Kit								{ quality = 1; price = 1000;sellPrice = 50;  };
-class EBM_Brickwall_floorport_door_Kit						{ quality = 1; price = 10000;sellPrice = 50;  };
-class EBM_Brickwall_floorport_Kit							{ quality = 1; price = 1000;sellPrice = 50;  };
-class EBM_Brickwall_floor_Kit								{ quality = 1; price = 1000;sellPrice = 50;  };
-class EBM_Brickwall_door_Kit								{ quality = 1; price = 5000;sellPrice = 50;  };
-class EBM_Brickwall_hole_Kit								{ quality = 1; price = 1000;sellPrice = 50;  };
-class EBM_Helipad_Kit										{ quality = 1; price = 50000;sellPrice = 50;  };
-class EBM_Airhook_Kit										{ quality = 1; price = 10000;sellPrice = 50;  };
-class EBM_Parksign_Kit										{ quality = 1; price = 500;sellPrice = 50;  };
-class EBM_Brickwall_Kit										{ quality = 1; price = 1000;sellPrice = 50;  };
-///////////////////////// V0.3.4 
-class EBM_Metalwall_window_Kit								{ quality = 5; price = 30000;sellPrice = 50;  };
-class EBM_Metalwall_stairs_Kit								{ quality = 5; price = 10000;sellPrice = 50;  };
-class EBM_Metalwall_floorport_door_Kit						{ quality = 5; price = 100000;sellPrice = 50;  };
-class EBM_Metalwall_floorport_Kit							{ quality = 5; price = 20000;sellPrice = 50;  };
-class EBM_Metalwall_floor_Kit								{ quality = 5; price = 10000;sellPrice = 50;  };
-class EBM_Metalwall_door_Kit								{ quality = 5; price = 50000;sellPrice = 50;  };
-class EBM_Metalwall_hole_Kit								{ quality = 5; price = 20000;sellPrice = 50;  };
-class EBM_Metalwall_half_Kit								{ quality = 5; price = 20000;sellPrice = 50;  };
-class EBM_Metalwall_Kit										{ quality = 5; price = 10000;sellPrice = 50;  };
-class EBM_Medikit_Kit										{ quality = 5; price = 50000;sellPrice = 50;  };
-class EBM_pollard_Kit										{ quality = 5; price = 10000;sellPrice = 50;  };
-class EBM_ATM_Kit										{ quality = 5; price = 10000;sellPrice = 50;  };
+    class EBM_Brickwall_window_Kit								{ quality = 1; price = 3000;sellPrice = 50;  };
+    class EBM_Brickwall_stairs_Kit								{ quality = 1; price = 1000;sellPrice = 50;  };
+    class EBM_Brickwall_floorport_door_Kit						{ quality = 1; price = 10000;sellPrice = 50;  };
+    class EBM_Brickwall_floorport_Kit							{ quality = 1; price = 1000;sellPrice = 50;  };
+    class EBM_Brickwall_floor_Kit								{ quality = 1; price = 1000;sellPrice = 50;  };
+    class EBM_Brickwall_door_Kit								{ quality = 1; price = 5000;sellPrice = 50;  };
+    class EBM_Brickwall_hole_Kit								{ quality = 1; price = 1000;sellPrice = 50;  };
+    class EBM_Helipad_Kit										{ quality = 1; price = 50000;sellPrice = 50;  };
+    class EBM_Airhook_Kit										{ quality = 1; price = 10000;sellPrice = 50;  };
+    class EBM_Parksign_Kit										{ quality = 1; price = 500;sellPrice = 50;  };
+    class EBM_Brickwall_Kit										{ quality = 1; price = 1000;sellPrice = 50;  };
+    ///////////////////////// V0.3.4 
+    class EBM_Metalwall_window_Kit								{ quality = 5; price = 30000;sellPrice = 50;  };
+    class EBM_Metalwall_stairs_Kit								{ quality = 5; price = 10000;sellPrice = 50;  };
+    class EBM_Metalwall_floorport_door_Kit						{ quality = 5; price = 100000;sellPrice = 50;  };
+    class EBM_Metalwall_floorport_Kit							{ quality = 5; price = 20000;sellPrice = 50;  };
+    class EBM_Metalwall_floor_Kit								{ quality = 5; price = 10000;sellPrice = 50;  };
+    class EBM_Metalwall_door_Kit								{ quality = 5; price = 50000;sellPrice = 50;  };
+    class EBM_Metalwall_hole_Kit								{ quality = 5; price = 20000;sellPrice = 50;  };
+    class EBM_Metalwall_half_Kit								{ quality = 5; price = 20000;sellPrice = 50;  };
+    class EBM_Metalwall_Kit										{ quality = 5; price = 10000;sellPrice = 50;  };
+    class EBM_Medikit_Kit										{ quality = 5; price = 50000;sellPrice = 50;  };
+    class EBM_pollard_Kit										{ quality = 5; price = 10000;sellPrice = 50;  };
+    class EBM_ATM_Kit										    { quality = 5; price = 10000;sellPrice = 50;  };
 
 };
 
@@ -3351,7 +3374,7 @@ class CfgExileCustomCode
     ExileClient_object_player_death_startBleedingOut = "Custom\EnigmaRevive\ExileClient_object_player_death_startBleedingOut.sqf";
     ExileClient_object_player_event_onInventoryOpened = "Custom\EnigmaRevive\ExileClient_object_player_event_onInventoryOpened.sqf";
     // IgiLoad
-    ExileClient_object_player_event_onEnterSafezon = "Igiload\ExileClient_object_player_event_onEnterSafezone.sqf";
+    ExileClient_object_player_event_onEnterSafezon = "IgiLoad\ExileClient_object_player_event_onEnterSafezone.sqf";
     //__CUSTOM_CODE_MARKER__//
 };
 class CfgExileEnvironment
@@ -4622,13 +4645,13 @@ class CfgTerritories
 	 * Defines the minimum distance to safe zones / trader cities where players
 	 * cannot build territories
 	 */
-	minimumDistanceToTraderZones = 1000;
+	minimumDistanceToTraderZones = 750;
 
 	/**
 	 * Defines the minimum distance to spawn zones where players
 	 * cannot build territories
 	 */
-	minimumDistanceToSpawnZones = 1000;
+	minimumDistanceToSpawnZones = 750;
 
 	// Amount of pop tabs per object to pay
     popTabAmountPerObject = 73;
@@ -4964,7 +4987,6 @@ class CfgTraderCategories
             "R3F_veste_APSO_TAN",
             "R3F_veste_APSO_EOD_TAN",
             "R3F_veste_off",
-            "R3F_veste_equipage",
             "R3F_veste_SNOW"
 
 		};
@@ -5641,9 +5663,7 @@ class CfgTraderCategories
             "R3F_sac_moyen_medic_noir",
             "R3F_sac_moyen_medic_TAN",
             "R3F_sac_lourd_CE",
-            "R3F_sac_lourd_APSO_CE",
             "R3F_sac_lourd_TAN",
-            "R3F_sac_lourd_APSO_TAN",
             "R3F_sac_lourd_noir",
             "R3F_sac_lourd_SNOW"
 
@@ -6253,7 +6273,11 @@ class CfgTraderCategories
             "CUP_B_BRDM2_CDF",
             "CUP_O_BTR60_TK",
             "CUP_B_M1133_MEV_Desert",
-            "CUP_B_M1133_MEV_Woodland"
+            "CUP_B_M1133_MEV_Woodland",
+            "R3F_FENNEC_CE",
+            "R3F_FENNEC_DA",
+            "R3F_MATV_CE",
+            "R3F_MATV_DA"
 		};
 	};
 
@@ -6311,7 +6335,16 @@ class CfgTraderCategories
             "CUP_I_Ural_UN",
             "CUP_B_T810_ARMED_CZ_WDL",
             "CUP_B_Ridgback_LMG_GB_W",
-            "CUP_B_Ridgback_HMG_GB_W"
+            "CUP_B_Ridgback_HMG_GB_W",
+            "R3F_HEMTT_CE_log",
+            "R3F_HEMTT_DA_log",
+            "R3F_HEMTT_trans",
+            "R3F_KAMAZ_CE_fuel",
+            "R3F_KAMAZ_DA_fuel",
+            "R3F_KAMAZ_CE_trans",
+            "R3F_KAMAZ_DA_trans",
+            "R3F_KAMAZ_CE_VPC",
+            "R3F_KAMAZ_DA_VPC"
 		};
 	};
 
@@ -6397,7 +6430,13 @@ class CfgTraderCategories
             "CUP_C_Mi17_Civilian_RU",
             "CUP_B_Merlin_HC3A_GB",
 ///            "CUP_B_SA330_Puma_HC1_BAF",
-            "CUP_B_SA330_Puma_HC2_BAF"
+            "CUP_B_SA330_Puma_HC2_BAF",
+            "R3F_AH6_CE",
+            "R3F_AH6_DA",
+            "R3F_LYNX_CE",
+            "R3F_LYNX_DA",
+            "R3F_MERLIN_CE",
+            "R3F_MERLIN_DA"
 		};
 	};
 

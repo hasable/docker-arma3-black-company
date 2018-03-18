@@ -28,3 +28,7 @@ if ( ( count _a ) > 0 ) then
 			};
 		[ "DynamicLocationInvasion", 1, format [ "%1 dead over %2 (>%3)", _k, _cnt, _kp ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );	
 	};
+
+// attempt to force ending this script...
+//[ "DynamicLocationInvasion", 1, "Killing current script..."] ExecVM ( "log" call VEMFr_fnc_scriptPath );	
+//terminate _thisScript ;

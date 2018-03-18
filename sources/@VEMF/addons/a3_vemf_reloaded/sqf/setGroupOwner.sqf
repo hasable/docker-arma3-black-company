@@ -44,6 +44,7 @@ if not ( isNull _grp ) then
 
          if not ( isNil "_to" ) then
             {
+				[ "setGroupOwner", 1, format [ "setting %1 to %2", groupId(_grp), _to ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
                _grp setGroupOwner ( owner _to );
                _grp setVariable [ "isVEMFrGroupLocal", false, true ];
             };

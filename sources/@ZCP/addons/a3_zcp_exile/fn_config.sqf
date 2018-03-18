@@ -18,7 +18,7 @@
 // Being first in the zone starts the timer.
 // Holding a zone  gives you a reward after x Min.
 
-ZCP_dev = true; // Devmode for shorter development capture times
+ZCP_dev = false; // Devmode for shorter development capture times
 
 ZCP_AI_Type = 'DMS'; // NONE | DMS | FUMS
 
@@ -35,7 +35,7 @@ ZCP_DMS_ExileToasts_Message_Font		= "PuristaLight";			// Exile Toasts font for "
 ZCP_AI_useLaunchersChance = 25; // %Change to spawn Launcher on AI soldier ( never exceeds the MIN and MAX defined per cappoint).
 
 // Put the following to -1 to disable it.
-ZCP_AI_killAIAfterMissionCompletionTimer = 60; // Amount of seconds before all ZCP AI get auto killed after a mission is completed. ( DMS only ).
+ZCP_AI_killAIAfterMissionCompletionTimer = 600; // Amount of seconds before all ZCP AI get auto killed after a mission is completed. ( DMS only ).
 
 // ZCP_Min_AI_Amount = 4; Not used anymore
 // ZCP_Random_AI_Max = 8; Not used anymore
@@ -46,7 +46,7 @@ ZCP_MessagePlayersBeforeWaves = true; // True -> Inform for an icoming wave of A
 ZCP_ServerStartWaitTime = 120;
 ZCP_MinWaitTime = 120; // seconds to wait to spawn a new capturepoint when 1 was capped.
 ZCP_MaxWaitTime = 120; // random between 0 and THIS number added to the ZCP_MinWaitTime to counter spawning points at the same time
-ZCP_BaseCleanupDelay = 180; // seconds to wait to delete a captured base.
+ZCP_BaseCleanupDelay = 480; // seconds to wait to delete a captured base.
 
 ZCP_RewardRelativeToPlayersOnline = true; // This will recalculate the crypto reward according the amount of online players.
 ZCP_PoptabReward = 25; // Poptab reward for capping per player online. ( When poptab reward is selected or randomly chosen ).
@@ -62,7 +62,7 @@ ZCP_CleanupBaseWithAIBomber = true; // Cleanup with a airstrike
 ZCP_CleanupAIVehicleClasses = ['B_Plane_CAS_01_F']; // Any flying vehicle in arma (default B_Plane_CAS_01_F = A10)
 ZCP_FlyHeight = 150; // Height of the flying plane;
 
-ZCP_BomberCanDestroyMapBuildings = false; // if true damage of the bombs are applied to all objects in the blastradius.
+ZCP_BomberCanDestroyMapBuildings = true; // if true damage of the bombs are applied to all objects in the blastradius.
 // If false nothing gets hit ( except players and vehicles ) - base cleanup will happen in both cases after explosion.
 
 ZCP_UseSpecificNamesForCappers = true; // Use the player name, if false it says 'A player'
@@ -135,7 +135,7 @@ ZCP_BuildingBox = "O_CargoNet_01_ammo_F";
 ZCP_WeaponBox = "I_CargoNet_01_ammo_F";
 
 /* 3.1 new configs */
-ZCP_CONFIG_TerritoryDistance = 500;  // Distance from territories. ( 0 to disable )
+ZCP_CONFIG_TerritoryDistance = 250;  // Distance from territories. ( 0 to disable )
 
 ZCP_CONFIG_AI_side = east; // The side where the AI is on.
 ZCP_CONFIG_AI_soldierClass = 'O_G_Soldier_F'; // The class model for the soldier ( This needs to be a soldier from the AI faction! -> otherwise they shoot eachother on spawn)
@@ -143,20 +143,20 @@ ZCP_CONFIG_MaxRandomAIMoney = 100; // Max poptabs on in AI it's inventory. ( Ran
 
 // These are used when the cappoint is a city point.
 ZCP_CONFIG_UseCityName = true; // Use City name CP for maker naming instead of ZCP alpha..
-ZCP_CONFIG_CityDistanceToPlayer = 100; // distance for the town to be from a player ( From center town )
+ZCP_CONFIG_CityDistanceToPlayer = 250; // distance for the town to be from a player ( From center town )
 ZCP_CONFIG_CityDistanceToTrader = 500; // distance for the town to be from a trader ( From center town )
 ZCP_CONFIG_CityDistanceToSpawn = 500; // distance for the town to be from a spawnpoint ( From center town )
-ZCP_CONFIG_CityDistanceToTerritory = 100; // distance for the town to be from a spawnpoint ( From center town )
+ZCP_CONFIG_CityDistanceToTerritory = 250; // distance for the town to be from a spawnpoint ( From center town )
 ZCP_CONFIG_CityDistanceToAI = 100; // distance for the town to be from other AI missions, patrols ..
 
 /* END NEW CONFIGS 3.1 */
 
 // Same as DMS -> Credits DMS
-ZCP_DistanceBetweenMissions = 500;
+ZCP_DistanceBetweenMissions = 250;
 ZCP_SpawnZoneDistance = 500;
 ZCP_TradeZoneDistance = 500;
 ZCP_DistanceFromWater = 100;
-ZCP_DistanceFromPlayers = 200;
+ZCP_DistanceFromPlayers = 250;
 ZCP_DistanceFromBaseObjects = 100;
 
 ZCP_CONFIG_BaseObjectsClasses = [

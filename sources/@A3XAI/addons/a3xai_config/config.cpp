@@ -135,32 +135,32 @@ class CfgA3XAISettings {
 	chanceScalingThreshold = 0.75;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_village = 3;
+	minAI_village = 4;
 	addAI_village = 3;
-	unitLevel_village = 1;
+	unitLevel_village = 2;
 	spawnChance_village = 0.60;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_city = 6;
-	addAI_city = 6;
-	unitLevel_city = 1;
+	minAI_city = 5;
+	addAI_city = 3;
+	unitLevel_city = 2;
 	spawnChance_city = 0.70;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
 	minAI_capitalCity = 6;
-	addAI_capitalCity = 6;
-	unitLevel_capitalCity = 2;
+	addAI_capitalCity = 4;
+	unitLevel_capitalCity = 3;
 	spawnChance_capitalCity = 0.80;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
 	minAI_remoteArea = 6;
 	addAI_remoteArea = 6;
-	unitLevel_remoteArea = 2;
+	unitLevel_remoteArea = 3;
 	spawnChance_remoteArea = 0.90;
 	
 	//(Static/Dynamic/Random Spawns) minAI: Minimum number of units. addAI: maximum number of additional units. unitLevel: Unit level (0-3)
-	minAI_wilderness = 12;
-	addAI_wilderness = 8;
+	minAI_wilderness = 6;
+	addAI_wilderness = 6;
 	unitLevel_wilderness = 2;
 	spawnChance_wilderness = 0.50;
 	
@@ -194,7 +194,7 @@ class CfgA3XAISettings {
 	
 	//If enabled, A3XAI will remove all explosive ammo (missiles, rockets, bombs - but not HE rounds) from spawned AI air vehicles.  (Default: 1)
 	//Affects: All AI air vehicle types (patrols/custom/reinforcement). Does not affect UAV/UGVs.
-	removeExplosiveAmmo = 0;
+	removeExplosiveAmmo = 1;
 	
 	//if enabled, AI units suffer no damage from vehicle collisions. (Default: 1)
 	noCollisionDamage = 1;
@@ -250,7 +250,7 @@ class CfgA3XAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/		
 
 	//Upper limit of dynamic spawns on map at once. Set to 0 to disable dynamic spawns (Default: 15)
-	maxDynamicSpawns = 50;
+	maxDynamicSpawns = 100;
 	
 	//Minimum time (in seconds) that must pass between dynamic spawns for each player (Default: 900)
 	timePerDynamicSpawn = 300;
@@ -317,14 +317,14 @@ class CfgA3XAISettings {
 	
 	//Classnames of air vehicle types to use, with the maximum amount of each type to spawn.
 	airVehicleList[] = {
-		{"B_Heli_Light_01_armed_F",5},
+		{"B_Heli_Light_01_armed_F",2},
 		{"B_Heli_Transport_01_F",5},
 		{"B_Heli_Transport_03_F",2}
 	};
 	
 	//Maximum number of gunner units per air vehicle. Limited by actual number of available gunner positions. (Default: 2)
 	//Affects: All AI air vehicle patrols, including custom and reinforcement.
-	airGunnerUnits = 2;
+	airGunnerUnits = 4;
 	
 	//Probability of AI helicopter sucessfully detecting player if there is line-of-sight. AI helicopters will conduct a visual sweep upon arriving at each waypoint and some distance after leaving. (Default: 0.80)
 	//Affects: All AI air vehicle patrols, including custom and reinforcement.
@@ -332,7 +332,7 @@ class CfgA3XAISettings {
 	
 	//Probability of AI to deploy infantry units by parachute if players are nearby when helicopter is investigating a waypoint. (Default: 1.00)
 	//Affects: Air vehicle patrols.
-	paradropChance = 0.55;
+	paradropChance = 0.75;
 	
 	//Cooldown time for AI paradrop deployment in seconds. (Default: 1800).
 	//Affects: Air vehicle patrols.
@@ -340,7 +340,7 @@ class CfgA3XAISettings {
 	
 	//Number of infantry AI to paradrop if players are nearby when helicopter is investigating a waypoint, or if helicopter is reinforcing a dynamic AI spawn. Limited by number of cargo seats available in the vehicle. (Default: 3)
 	//Affects: Air vehicle patrols, air reinforcements.
-	paradropAmount = 4;
+	paradropAmount = 8;
 	
 	
 	/*	AI Land Vehicle patrol settings. These AI vehicles will randomly travel between different cities and towns.
@@ -351,7 +351,7 @@ class CfgA3XAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/	
 
 	//Global maximum number of active AI land vehicle patrols. Set at 0 to disable (Default: 0).	
-	maxLandPatrols = 18;
+	maxLandPatrols = 0;
 	
 	//Probability of spawning Level 0/1/2/3 AI land vehicle spawns. Probabilities should add up to 1.00		
 	levelChancesLand[] = {0.00,0.50,0.35,0.15};
@@ -632,7 +632,7 @@ class CfgA3XAISettings {
 		{"courage",0.30,0.50},
 		{"reloadSpeed",0.30,0.50},
 		{"commanding",0.30,0.50},
-		{"general",0.30,0.50}
+		{"general",0.40,0.60}
 	};
 	
 	//AI skill settings level 1 (Skill, Minimum skill, Maximum skill). Defaults: Accuracy 0.10-0.15, Others 0.40-0.60
@@ -645,7 +645,7 @@ class CfgA3XAISettings {
 		{"courage",0.40,0.60},
 		{"reloadSpeed",0.40,0.60},
 		{"commanding",0.40,0.60},
-		{"general",0.40,0.60}	
+		{"general",0.50,0.70}	
 	};
 	
 	//AI skill settings level 2 (Skill, Minimum skill, Maximum skill). Defaults: Accuracy 0.15-0.20, Others 0.50-0.70
@@ -658,7 +658,7 @@ class CfgA3XAISettings {
 		{"courage",0.50,0.70},
 		{"reloadSpeed",0.50,0.70},
 		{"commanding",0.50,0.70},
-		{"general",0.50,0.70}
+		{"general",0.60,0.80}
 	};
 	
 	//AI skill settings level 3 (Skill, Minimum skill, Maximum skill). Defaults: Accuracy 0.20-0.25, Others 0.60-0.80
@@ -671,7 +671,7 @@ class CfgA3XAISettings {
 		{"courage",0.60,0.80},
 		{"reloadSpeed",0.60,0.80},
 		{"commanding",0.60,0.80},
-		{"general",0.60,0.80}
+		{"general",0.70,0.90}
 	};
 	
 	

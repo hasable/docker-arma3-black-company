@@ -173,20 +173,18 @@ if ( VEMFrInvasionCount <= ( ( [ [ "missionSettings", _this0 ], [ "maxInvasions"
 					else { [ _this0, 0, format [ "failed to place %1 mines at %2", count _mnsPlcd, _ln ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath ) };
 				};
 
-			// Wait for Mission Completion
-			_h = [ _nts, _this0 ] ExecVM ( "killedMonitor" call VEMFr_fnc_scriptPath );
-			//waitUntil { if ( scriptDone _h ) then { true } else { uiSleep 1; false } };
-			waitUntil { 
-				[ "DynamicLocationInvasion", 1, format [ "waiting for mission %1 to be completed...", _ln ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
-				//if ( isNull {_h} ) exitWith {true};
-				[ "DynamicLocationInvasion", 1, format [ " -> mission %1 : handler not null...", _ln ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
-				if ( scriptDone _h ) exitWith {true};
-				[ "DynamicLocationInvasion", 1, format [ " -> mission %1 : mission not done...", _ln ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
-				uiSleep 30;
-				[ "DynamicLocationInvasion", 1, format [ " -> mission %1 : sleeping for  30 seconds...", _ln ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
-				false
-			};
+				// Wait for Mission Completion
+				//_h = [ _nts, _this0 ] ExecVM ( "killedMonitor" call VEMFr_fnc_scriptPath );
+				//waitUntil { if ( scriptDone _h ) then { true } else { uiSleep 1; false } };
+				//waitUntil { 
+				//	uiSleep 10;
+				//	[ "DynamicLocationInvasion", 1, format [ " -> mission %1 : sleeping for 10 seconds...", _ln ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
+				//	if ( scriptDone _h ) then { [ "DynamicLocationInvasion", 1, " ->  done" ] ExecVM ( "log" call VEMFr_fnc_scriptPath ) } else { [ "DynamicLocationInvasion", 1, " -> not done" ] ExecVM ( "log" call VEMFr_fnc_scriptPath ) };
+				//	if ( isNull _h )     then { [ "DynamicLocationInvasion", 1, " ->  null" ] ExecVM ( "log" call VEMFr_fnc_scriptPath ) } else { [ "DynamicLocationInvasion", 1, " -> not null" ] ExecVM ( "log" call VEMFr_fnc_scriptPath ) };
+				//	scriptDone _h || isNull _h
+				//};
 
+			[ _nts, _this0 ] call compile preprocessFileLineNumbers ( "killedMonitor" call VEMFr_fnc_scriptPath );
 			[ "DynamicLocationInvasion", 1, format [ "mission in %1 has been completed!", _ln ] ] ExecVM ( "log" call VEMFr_fnc_scriptPath );
 
 			if ( _ms12 isEqualTo "yes" ) then
