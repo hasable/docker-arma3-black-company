@@ -558,7 +558,8 @@ if (isnil "IL_Variables") then
 		"Box_IND_Ammo_F",
 		"Box_IND_Support_F",
 		"Box_East_Support_F",
-		"Box_NATO_Support_F"
+		"Box_NATO_Support_F",
+		"Exile_Container_SupplyBox"
 	];
 	IL_Supported_Cargo20 = 
 	[
