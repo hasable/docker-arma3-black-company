@@ -5,7 +5,8 @@ ARG USER_NAME=steamu
 
 USER root
 COPY bin/docker-entrypoint /usr/local/bin/
-RUN apt-get install -y rsync \
+RUN apt-get update \
+	&& apt-get install -y rsync \
 	&& apt-get clean \
 	&& chmod +x /usr/local/bin/docker-entrypoint  \
 	&& sync 
@@ -21,7 +22,7 @@ WORKDIR /opt/arma3
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint", "/opt/arma3/arma3server"]
 CMD ["\"-config=conf/exile.cfg\"", \
 		"\"-servermod=@ExileServer;@A3XAI;@AdminToolkitServer;@AdvancedRappelling;@AdvancedUrbanRappelling;@DMS;@Enigma;@ExAd;@Occupation;@VEMF;@ZCP\"", \
-		"\"-mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites\"", \
+		"\"-mod=@Exile;@EBM;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites\"", \
 		"-world=empty", \
 		"-autoinit"]
 		

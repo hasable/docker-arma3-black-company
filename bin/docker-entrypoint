@@ -118,7 +118,7 @@ if [  ! -z "${HC_LIST}" ]; then
 			IP_LIST="${IP_LIST}${IP_SEP}\"${IP}\""
 			IP_SEP=", "
 		fi	
-		
+
 	done
 
 	echo "localClient[]={${IP_LIST}};" >> /opt/arma3/conf/exile.cfg

@@ -3,8 +3,10 @@ services:
   arma-3-bots:
     image: "hasable/arma3-black-company"
     container_name: "arma-3-black-company"
+    build:
+      context: .
     depends_on: 
-        - arma-3-database
+      - arma-3-database
     ports:
       - "2302:2302/udp" 
       - "2303:2303/udp" 
@@ -21,10 +23,7 @@ services:
       - ATK_CONFIG_ADMIN_LIST=76561197990024201,76561198007339024
       - HC_LIST=hc0
     #command: "-config=conf/exile.cfg -servermod=@ExileServer;@AdminToolkitServer;@AdvancedRappelling;@AdvancedUrbanRappelling;@DMS;@Enigma;@ExAd;@Occupation;@VEMF;@ZCP; -mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites; -world=empty -autoinit"
-    command: "-config=conf/exile.cfg -servermod=@ExileServer;@AdminToolkitServer;@ExAd;@VEMF; -mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites -world=empty -autoinit"
-    volumes:
-      - /mnt/shares/logs:/opt/arma3/@ExileServer/extDB/logs/
-      - /mnt/shares/config:/home/steamu/config
+    #command: "-config=conf/exile.cfg -servermod=@ExileServer;@AdminToolkitServer;@ExAd;@VEMF; -mod=@Exile;@CBA_A3;@CUPWeapons;@CUPUnits;@CUPVehicles;@R3FArmes;@R3FUnites -world=empty -autoinit"
     networks:
       armanet:
         aliases:
@@ -51,7 +50,6 @@ services:
     container_name: "arma-3-database"
     volumes:
       - database-content:/var/lib/mysql
-      - /mnt/shares/mysql/logs:/var/log
     command: "--sql-mode=ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
     networks:
       armanet:
@@ -64,4 +62,4 @@ networks:
 volumes:
     database-content:
         external:
-            name: database
+            name: exile-database-content
