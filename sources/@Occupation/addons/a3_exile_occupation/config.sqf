@@ -46,7 +46,7 @@ SC_occupyLootCrates		    	= true;						// true if you want to have random loot c
 
 SC_occupyRandomSpawn        	= true;                		// (WORK IN PROGRESS) true if you want random spawning AI that hunt for nearby players
 SC_occupyMilitary 		    	= false;			    	// true if you want military buildings patrolled
-SC_occupyVehicle				= false;						// true if you want to have roaming AI land vehicles
+SC_occupyVehicle				= true;						// true if you want to have roaming AI land vehicles
 SC_occupySky					= true;					// true if you want to have roaming AI helis
 SC_occupySea					= false;					// true if you want to have roaming AI boats
 SC_occupyHeliCrashes			= true;						// true if you want to have Dayz style helicrashes
@@ -274,7 +274,7 @@ SC_occupyVehicleFixedPositions	= [
 
 // Array of arrays of ground vehicles which can be used by AI patrols (the number next to next vehicle is the maximum amount of that class allowed, 0 for no limit)				
 SC_VehicleClassToUse 			=   [	
-									["Exile_Car_LandRover_Green",0],
+									["Exile_Car_LandRover_Green",1],
                                     ["Exile_Bike_QuadBike_Black",2],
                                     ["Exile_Car_UAZ_Open_Green",2],
                                     ["Exile_Car_SUV_Grey",3], 
@@ -313,7 +313,7 @@ SC_VehicleClassToUseRare		=   [
 								
 // Array of arrays of ground vehicles which can be used by Survivor AI patrols (the number next to next vehicle is the maximum amount of that class allowed, 0 for no limit)									
 SC_SurvivorVehicleClassToUse 			=   [	
-									["Exile_Car_LandRover_Green",0],
+									["Exile_Car_LandRover_Green",1],
                                     ["Exile_Bike_QuadBike_Black",2],
                                     ["Exile_Car_UAZ_Open_Green",2] 
                                 ];

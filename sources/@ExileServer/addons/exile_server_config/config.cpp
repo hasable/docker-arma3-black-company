@@ -4264,14 +4264,14 @@ class CfgSettings
 
 			// Remove all containers outside of territories that have not been used for X days
 			// Example: Tents
-			containerLifeTime = 10;
+			containerLifeTime = 30;
 
 			// Remove all constructions outside of territories that are older than X days or not moved for X days 
 			// Example: Work Benches
 			constructionLifeTime = 2;
 
 			// Remove all vehicles that were not moved/used for X days
-			vehicleLifeTime = 3;
+			vehicleLifeTime = 15;
 			
 			// Set safe as abandoned
 			abandonedTime = 7;

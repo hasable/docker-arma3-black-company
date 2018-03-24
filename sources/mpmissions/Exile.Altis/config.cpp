@@ -2171,7 +2171,7 @@ class CfgGrinding
 	enableGrinding = 1;
 	
 	// Time it takes to grind a fresh lock in minutes
-	grindDuration = 25;
+	grindDuration = 5;
 	
 	// Percentage chance the grinding will fail
 	failChance = 25;
@@ -2191,12 +2191,12 @@ class CfgHacking
 	enableHacking = 1;
 	
 	// Time it takes to hack in minutes
-	hackDuration = 20;
+	hackDuration = 5;
 	
 	// Percentage chance the hacking will fail
 	failChance = 50;
 	
-	// Percentage chance the laptop will be removed on fail
+	// Percentage chance the laptop will beed on remov fail
 	removeChance = 5;
 	
 	// Max attepts to hack a safe during one restart
@@ -3134,7 +3134,7 @@ class CfgTerritories
 	minimumDistanceToOtherTerritories = 325; 
 
 	// Maximum number of territories a player can own
-    maximumNumberOfTerritoriesPerPlayer = 1;
+    maximumNumberOfTerritoriesPerPlayer = 10;
 
 	/**
 	 * Defines the minimum distance to safe zones / trader cities where players
