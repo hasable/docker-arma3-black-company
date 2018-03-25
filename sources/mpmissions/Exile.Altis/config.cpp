@@ -2439,12 +2439,13 @@ class CfgInteractionMenus
 				action = "_this spawn ExileClient_object_lock_setPin";
 			};
 
-			class HackLock: ExileAbstractAction
+            class HackLock: ExileAbstractAction
             {
-            title = "Hack Safe";
-            condition = "call ExAd_fnc_canHackSafe";
-            action = "_this spawn ExAd_fnc_startHack";
+            title = "Hack Lock";
+            condition = "(getNumber(missionConfigFile >> 'CfgHacking' >> 'enableHacking') isEqualTo 1) && ('Exile_Item_Laptop' in (magazines player)) && ((ExileClientInteractionObject getvariable ['ExileIsLocked',1]) isEqualTo -1) && !ExilePlayerInSafezone";
+            action = "['HackLock', _this select 0] call ExileClient_action_execute";
             };
+
 		};
 	};
 
