@@ -1800,9 +1800,12 @@ class CfgExileCustomCode
         ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
     */
    
-        // Extended base
+    // Extended base
     exileclient_system_lootmanager_thread_spawn = "EBM\exileclient_system_lootmanager_thread_spawn.sqf";
-    // Custom Loadout
+	// ExAd
+    ExileClient_gui_xm8_slide = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_slide.sqf";
+    ExileClient_gui_xm8_show  = "ExAdClient\XM8\CustomCode\ExileClient_gui_xm8_show.sqf";
+	// Custom Loadout
     ExileServer_object_player_createBambi = "Custom\Loadout\ExileServer_object_player_createBambi.sqf";
     ExileServer_object_player_network_createPlayerRequest = "Custom\Loadout\ExileServer_object_player_network_createPlayerRequest.sqf";
     // Enigma
@@ -4096,7 +4099,7 @@ class CfgVirtualGarage
 			0: Disable virtual garage
 			1: Enable virtual garage
 	*/
-	enableVirtualGarage = 1;	
+	enableVirtualGarage = 0;	
 	
 	/*
 		Enables or disables the ability to access virtual garage while in combat
@@ -4141,6 +4144,8 @@ class CfgVirtualGarage
 };
 class CfgXM8 
 {
+	extraApps[] = {"ExAd_JX","ExAd_Info","ExAd_CHVD","BRAmaRecipes","BaseMarker","ExAd_SB","ExAd_Quad","ExAd_Unit"};
+	
 	class settings
 	{
 		controlID = 4070;
@@ -4160,6 +4165,85 @@ class CfgXM8
 		controlID = 4140;
 		appID = "App03";
 		title = "Sloth Machine";
+	};
+	
+	/* Make sure you change the server rules to match your desires.
+	* You can find the file at ExAdClientXM8appsinfo
+	* The file you want to change is message.sqf
+	*/
+	class ExAd_Info
+	{
+		title = "Server Rules"; //IDC:50100 -> 50102 || These need to be unique and out of range from each other
+		controlID = 50100;
+		logo = "ExadClient\XM8\Apps\Info\Icon_SI.paa";
+		onLoad = "ExAdClient\XM8\Apps\Info\onLoad.sqf";
+		onOpen = "ExAdClient\XM8\Apps\Info\onOpen.sqf";
+		onClose = "ExAdClient\XM8\Apps\Info\onClose.sqf";
+	};
+	class ExAd_CHVD
+	{
+		title = "View Distance Settings";
+		controlID = 50200;
+		config = "ExadClient\XM8\Apps\CHVD\config.sqf";
+		logo = "ExadClient\XM8\Apps\CHVD\Icon_CHVD.paa";
+		onLoad = "ExAdClient\XM8\Apps\CHVD\onLoad.sqf";
+		onOpen = "ExAdClient\XM8\Apps\CHVD\onOpen.sqf";
+		onClose = "ExAdClient\XM8\Apps\CHVD\onClose.sqf";
+	};
+	class ExAd_JX
+	{
+		title = "Unit Scanner";
+		controlID = 85100;
+		logo = "ExadClient\XM8\Apps\JX\logo.paa";
+		onLoad = "ExAdClient\XM8\Apps\JX\onLoad.sqf";
+		onOpen = "ExAdClient\XM8\Apps\JX\onOpen.sqf";
+		onClose = "ExAdClient\XM8\Apps\JX\onClose.sqf";
+	};
+	class BRAmaRecipes
+	{
+		controlID = 107000;
+		title = "Recipies";
+		logo = "ExAdClient\XM8\Apps\BRAmaRecipes\BRAma.paa";
+		config = "ExAdClient\XM8\Apps\BRAmaRecipes\config.sqf";
+		onLoad = "ExAdClient\XM8\Apps\BRAmaRecipes\onLoad.sqf";
+		onOpen = "ExAdClient\XM8\Apps\BRAmaRecipes\onOpen.sqf";
+	};
+	class BaseMarker
+	{
+		title = "Base Marker";
+		controlID = 70001;
+		logo = "ExAdClient\XM8\Apps\BaseMarker\BaseMarker.paa";
+		onLoad = "ExAdClient\XM8\Apps\BaseMarker\onLoad.sqf";
+	};
+	class ExAd_SB
+	{
+		title = "Statsbar Settings";
+		controlID = 50400;               //IDC:50400 -> 50475 || These need to be unique and out of range from each other
+		logo = "exile_assets\texture\ui\xm8_app_settings_ca.paa";
+		onLoad = "ExAdClient\XM8\Apps\SB_Settings\onLoad.sqf";
+	};
+	class ExAd_Quad
+	{
+		title = "Deploy Quad Bike";
+		config = "ExAdClient\XM8\Apps\DeployVehicle\config.sqf";
+		logo = "ExAdClient\XM8\Apps\DeployVehicle\Quad.paa";
+		bambiState = 0;
+		vehicleClass = "Exile_Bike_QuadBike_Fia";
+		recipe[] = {{"Exile_Item_ExtensionCord",1}};
+		packable = 1;
+		autoCleanUp = 1;
+		quickFunction = "['ExAd_Quad'] call ExAd_XM8_DV_fnc_spawnVehicle";
+	};
+	class ExAd_Unit
+	{
+		title = "Recruit Soldier: x2 Beef Parts needed";
+		logo = "ExAdClient\XM8\Apps\DeployVehicle\dog.paa";
+		bambiState = 0;
+		vehicleClass = "Land_AncientStatue_01_F";
+		recipe[] = {{"Exile_Item_BeefParts",1}};
+		packable = 0;
+		autoCleanUp = 0;
+		quickFunction = "['ExAd_Unit'] call ExAd_XM8_DV_fnc_spawnVehicle";
 	};
 };
 /*
@@ -4209,66 +4293,66 @@ class XM8_App04_Button: RscExileXM8AppButton1x1
 
 class XM8_App05_Button: RscExileXM8AppButton1x1
 {
-    textureNoShortcut = "";
-    text = "";
-    onButtonClick = "";
-    resource = "";
+        textureNoShortcut = "ExadClient\XM8\Apps\CHVD\Icon_CHVD.paa";
+        text = "View Distance Settings";
+        onButtonClick = "['ExAd_CHVD', 0] call ExileClient_gui_xm8_slide";
+        resource = "";
 };
 
 class XM8_App06_Button: RscExileXM8AppButton1x1
 {
-    textureNoShortcut = "";
-    text = "";
-    onButtonClick = "";
-    resource = "";
+        textureNoShortcut = "ExadClient\XM8\Apps\Info\Icon_SI.paa";
+        text = "Server Rules";
+        onButtonClick = "['ExAd_Info', 0] call ExileClient_gui_xm8_slide";
+        resource = "";
 };
 
 class XM8_App07_Button: RscExileXM8AppButton1x1
 {
-    textureNoShortcut = "";
-    text = "";
-    onButtonClick = "";
-    resource = "";
+        textureNoShortcut = "ExadClient\XM8\Apps\JX\logo.paa";
+        text = "Unit Scanner";
+        onButtonClick = "['ExAd_JX', 0] call ExileClient_gui_xm8_slide";
+        resource = "";
 };
 
 class XM8_App08_Button: RscExileXM8AppButton1x1
 {
-    textureNoShortcut = "";
-    text = "";
-    onButtonClick = "";
-    resource = "";
+        textureNoShortcut = "ExAdClient\XM8\Apps\DeployVehicle\dog.paa";
+        text = "Recruit Soldier: 1x Beef Parts needed";
+        onButtonClick = "ExileClientXM8CurrentSlide = 'apps';closeDialog 0;[] execVM 'ExAdClient\XM8\Apps\DeployVehicle\bodyguard.sqf'";
+        resource = "";
 };
 
 class XM8_App09_Button: RscExileXM8AppButton1x1
 {
-    textureNoShortcut = "";
-    text = "";
-    onButtonClick = "";
-    resource = "";
+        textureNoShortcut = "ExAdClient\XM8\Apps\BRAmaRecipes\BRAma.paa";
+        text = "BRAmaRecipes";
+        onButtonClick = "['BRAmaRecipes', 0] call ExileClient_gui_xm8_slide";
+        resource = "";
 };
 
 class XM8_App10_Button: RscExileXM8AppButton1x1
 {
-    textureNoShortcut = "";
-    text = "";
-    onButtonClick = "";
-    resource = "";
+        textureNoShortcut = "ExAdClient\XM8\Apps\BaseMarker\BaseMarker.paa";
+        text = "Base Marker";
+        onButtonClick = "['Basemarker', 0] call ExileClient_gui_xm8_slide";
+        resource = "";
 };
 
 class XM8_App11_Button: RscExileXM8AppButton1x1
 {
-    textureNoShortcut = "";
-    text = "";
-    onButtonClick = "";
-    resource = "";
+        textureNoShortcut = "exile_assets\texture\ui\xm8_app_settings_ca.paa";
+        text = "Status Bar Settings";
+        onButtonClick = "['ExAd_SB', 0] call ExileClient_gui_xm8_slide";
+        resource = "";
 };
 
 class XM8_App12_Button: RscExileXM8AppButton1x1
 {
-    textureNoShortcut = "";
-    text = "";
-    onButtonClick = "";
-    resource = "";
+        textureNoShortcut = "ExAdClient\XM8\Apps\DeployVehicle\Quad.paa";
+        text = "Deploy Quad Bike";
+        onButtonClick = "['ExAd_Quad'] call ExAd_XM8_DV_fnc_spawnVehicle";
+        resource = "";
 };
 
 class XM8_App13_Button: RscExileXM8AppButton1x1
